@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "trainen", "trainen.vcproj", "{93DC71D7-FFC5-4EF6-ACAB-6C0A2E802504}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A9E1B239-B1C3-4196-BE71-0B1B4F5473C1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{93DC71D7-FFC5-4EF6-ACAB-6C0A2E802504}.Debug|Win32.ActiveCfg = Debug|Win32
+		{93DC71D7-FFC5-4EF6-ACAB-6C0A2E802504}.Debug|Win32.Build.0 = Debug|Win32
+		{93DC71D7-FFC5-4EF6-ACAB-6C0A2E802504}.Release|Win32.ActiveCfg = Release|Win32
+		{93DC71D7-FFC5-4EF6-ACAB-6C0A2E802504}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

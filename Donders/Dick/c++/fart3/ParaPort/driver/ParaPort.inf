@@ -1,0 +1,84 @@
+; ParaPort.inf
+
+;--------- Version Section ---------------------------------------------------
+
+[Version]
+Signature="$Windows 95$"
+Provider=%ProviderName%
+
+Class=NewDeviceClass
+ClassGUID={ff646f80-8def-11d2-9449-00105a075f6b}
+
+;--------- ClassInstall/ClassInstall32 Section -------------------------------
+
+; 9X Style
+[ClassInstall]
+Addreg=Class_AddReg
+
+; NT Style
+[ClassInstall32]
+Addreg=Class_AddReg
+
+[Class_AddReg]
+HKR,,,,%DeviceClassName%
+HKR,,Icon,,"-23"
+
+;--------- DestinationDirs Section -------------------------------------------
+
+[DestinationDirs]
+ParaPort_Files_Driver = 10,System32\Drivers
+
+;--------- Manufacturer and Models Sections ----------------------------------
+
+[Manufacturer]
+%MfgName%=Mfg0
+
+[Mfg0]
+%DeviceDesc%=ParaPort_DDI, *ParaPort
+
+;---------- DDInstall Sections -----------------------------------------------
+; --------- Windows 9X -----------------
+
+[ParaPort_DDI]
+CopyFiles=ParaPort_Files_Driver
+AddReg=ParaPort_9X_AddReg
+
+[ParaPort_9X_AddReg]
+HKR,,DevLoader,,*ntkern
+HKR,,NTMPDriver,,ParaPort.sys
+HKR, "Parameters", "BreakOnEntry", 0x00010001, 0
+
+; --------- Windows NT -----------------
+
+[ParaPort_DDI.NT]
+CopyFiles=ParaPort_Files_Driver
+AddReg=ParaPort_NT_AddReg
+
+[ParaPort_DDI.NT.Services]
+Addservice = ParaPort, 0x00000002, ParaPort_AddService
+
+[ParaPort_AddService]
+DisplayName    = %SvcDesc%
+ServiceType    = 1                  ; SERVICE_KERNEL_DRIVER
+StartType      = 2                  ; SERVICE_AUTO_START
+ErrorControl   = 1                  ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %10%\System32\Drivers\ParaPort.sys
+
+[ParaPort_NT_AddReg]
+HKLM, "System\CurrentControlSet\Services\ParaPort\Parameters",\
+	"BreakOnEntry", 0x00010001, 0
+
+
+; --------- Files (common) -------------
+
+[ParaPort_Files_Driver]
+ParaPort.sys
+
+;--------- Strings Section ---------------------------------------------------
+
+[Strings]
+ProviderName="ParaPort.net"
+MfgName="www.ParaPort.net"
+DeviceDesc="ParaPort Driver"
+DeviceClassName="Ports (ParaPort)"
+SvcDesc="ParaPort Driver"

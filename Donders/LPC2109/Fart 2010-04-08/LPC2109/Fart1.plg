@@ -1,0 +1,20 @@
+<html>
+<body>
+<pre>
+<h1>µVision3 Build Log</h1>
+<h2>Project:</h2>
+Y:\dick\Fart\Fart 10-04-08\LPC2109\Fart.uv2
+Project File Date:  04/08/2010
+
+<h2>Output:</h2>
+Build target 'Fart'
+compiling Fart.c...
+FART.C(344): error C110: non-constant case/dim expression
+FART.C(1107): warning C122: '[]': unknown size
+Target not created
+Build target 'Fart'
+compiling Fart.c...
+linking...
+Program Size: data=12308 const=622 code=23148
+creating hex file from "Fart1"...
+"Fart1" - 0 Error(s), 0 Warning(s).

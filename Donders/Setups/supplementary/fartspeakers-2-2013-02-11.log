@@ -1,0 +1,3063 @@
+ 	File: D:\HumanV1\Marc\DAT\fartspeakers-2-2013-02-11.log
+ ---------------------------------------------------------------
+	Max.Trl	Rpts	Dif.Trl	ITI--Range		Rnd	#
+ 0	2030		1	1015		0	0		0	8
+ ---------------------------------------------------------------
+	channr	LP	rate	#	name
+ 0	0		250	1017	600	Eye H
+ 0	1		250	1017	600	Eye V
+ 0	2		250	1017	600	Eye F
+ 0	3		250	1017	600	Button
+ 0	4		250	1017	600	chan 5
+ 0	5		250	1017	600	chan 6
+ 0	6		250	1017	600	chan 7
+ 0	7		250	1017	600	chan 8
+ ===============================================================
+							ITI->	set	real	span
+ Trl	Stm	Type	X	Y	On	Off	Int	Attr	Bit	Flnk
+ ===============================================================
+ 								0	0	0
+  1	 1	Snd1	   0	   1	    1	 1003	  30	   8	   0	   1
+  1	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	   1
+ 								0	0	0
+  2	 1	Snd1	   0	   2	    1	 1003	  30	   8	   0	   2
+  2	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	   2
+ 								0	0	0
+  3	 1	Snd1	   0	   3	    1	 1003	  30	   8	   0	   3
+  3	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	   3
+ 								0	0	0
+  4	 1	Snd1	   0	   4	    1	 1003	  30	   8	   0	   4
+  4	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	   4
+ 								0	0	0
+  5	 1	Snd1	   0	   5	    1	 1003	  30	   8	   0	   5
+  5	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	   5
+ 								0	0	0
+  6	 1	Snd1	   0	   6	    0	 1002	  30	   8	   0	   6
+  6	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	   6
+ 								0	0	0
+  7	 1	Snd1	   0	   7	    0	 1003	  30	   8	   0	   7
+  7	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	   7
+ 								0	0	0
+  8	 1	Snd1	   0	   8	    0	 1003	  30	   8	   0	   8
+  8	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	   8
+ 								0	0	0
+  9	 1	Snd1	   0	   9	    1	 1003	  30	   8	   0	   9
+  9	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	   9
+ 								0	0	0
+ 10	 1	Snd1	   0	  10	    0	 1003	  30	   8	   0	  10
+ 10	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	  10
+ 								0	0	0
+ 11	 1	Snd1	   0	  11	    1	 1003	  30	   8	   0	  11
+ 11	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	  11
+ 								0	0	0
+ 12	 1	Snd1	   0	  12	    1	 1003	  30	   8	   0	  12
+ 12	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	  12
+ 								0	0	0
+ 13	 1	Snd1	   0	  13	    1	 1003	  30	   8	   0	  13
+ 13	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	  13
+ 								0	0	0
+ 14	 1	Snd1	   0	  14	    1	 1003	  30	   8	   0	  14
+ 14	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	  14
+ 								0	0	0
+ 15	 1	Snd1	   0	  15	    1	 1003	  30	   8	   0	  15
+ 15	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	  15
+ 								0	0	0
+ 16	 1	Snd1	   0	  16	    0	 1003	  30	   8	   0	  16
+ 16	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	  16
+ 								0	0	0
+ 17	 1	Snd1	   0	  17	    1	 1003	  30	   8	   0	  17
+ 17	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	  17
+ 								0	0	0
+ 18	 1	Snd1	   0	  18	    0	 1003	  30	   8	   0	  18
+ 18	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	  18
+ 								0	0	0
+ 19	 1	Snd1	   0	  19	    0	 1003	  30	   8	   0	  19
+ 19	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	  19
+ 								0	0	0
+ 20	 1	Snd1	   0	  20	    1	 1003	  30	   8	   0	  20
+ 20	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	  20
+ 								0	0	0
+ 21	 1	Snd1	   0	  21	    0	 1002	  30	   8	   0	  21
+ 21	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	  21
+ 								0	0	0
+ 22	 1	Snd1	   0	  22	    1	 1003	  30	   8	   0	  22
+ 22	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	  22
+ 								0	0	0
+ 23	 1	Snd1	   0	  23	    0	 1003	  30	   8	   0	  23
+ 23	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	  23
+ 								0	0	0
+ 24	 1	Snd1	   0	  24	    0	 1003	  30	   8	   0	  24
+ 24	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	  24
+ 								0	0	0
+ 25	 1	Snd1	   0	  25	    0	 1003	  30	   8	   0	  25
+ 25	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	  25
+ 								0	0	0
+ 26	 1	Snd1	   0	  26	    0	 1002	  30	   8	   0	  26
+ 26	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	  26
+ 								0	0	0
+ 27	 1	Snd1	   0	  27	    0	 1003	  30	   8	   0	  27
+ 27	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	  27
+ 								0	0	0
+ 28	 1	Snd1	   0	  28	    1	 1003	  30	   8	   0	  28
+ 28	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	  28
+ 								0	0	0
+ 29	 1	Snd1	   0	  29	    0	 1002	  30	   8	   0	  29
+ 29	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	  29
+ 								0	0	0
+ 30	 1	Snd1	   0	   1	    0	 1002	  40	   8	   0	  30
+ 30	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	  30
+ 								0	0	0
+ 31	 1	Snd1	   0	   2	    1	 1003	  40	   8	   0	  31
+ 31	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	  31
+ 								0	0	0
+ 32	 1	Snd1	   0	   3	    0	 1003	  40	   8	   0	  32
+ 32	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	  32
+ 								0	0	0
+ 33	 1	Snd1	   0	   4	    1	 1003	  40	   8	   0	  33
+ 33	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	  33
+ 								0	0	0
+ 34	 1	Snd1	   0	   5	    1	 1003	  40	   8	   0	  34
+ 34	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	  34
+ 								0	0	0
+ 35	 1	Snd1	   0	   6	    0	 1003	  40	   8	   0	  35
+ 35	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	  35
+ 								0	0	0
+ 36	 1	Snd1	   0	   7	    1	 1003	  40	   8	   0	  36
+ 36	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	  36
+ 								0	0	0
+ 37	 1	Snd1	   0	   8	    1	 1003	  40	   8	   0	  37
+ 37	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	  37
+ 								0	0	0
+ 38	 1	Snd1	   0	   9	    1	 1003	  40	   8	   0	  38
+ 38	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	  38
+ 								0	0	0
+ 39	 1	Snd1	   0	  10	    0	 1002	  40	   8	   0	  39
+ 39	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	  39
+ 								0	0	0
+ 40	 1	Snd1	   0	  11	    1	 1003	  40	   8	   0	  40
+ 40	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	  40
+ 								0	0	0
+ 41	 1	Snd1	   0	  12	    0	 1003	  40	   8	   0	  41
+ 41	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	  41
+ 								0	0	0
+ 42	 1	Snd1	   0	  13	    1	 1003	  40	   8	   0	  42
+ 42	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	  42
+ 								0	0	0
+ 43	 1	Snd1	   0	  14	    1	 1003	  40	   8	   0	  43
+ 43	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	  43
+ 								0	0	0
+ 44	 1	Snd1	   0	  15	    0	 1003	  40	   8	   0	  44
+ 44	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	  44
+ 								0	0	0
+ 45	 1	Snd1	   0	  16	    1	 1003	  40	   8	   0	  45
+ 45	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	  45
+ 								0	0	0
+ 46	 1	Snd1	   0	  17	    1	 1003	  40	   8	   0	  46
+ 46	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	  46
+ 								0	0	0
+ 47	 1	Snd1	   0	  18	    1	 1003	  40	   8	   0	  47
+ 47	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	  47
+ 								0	0	0
+ 48	 1	Snd1	   0	  19	    0	 1003	  40	   8	   0	  48
+ 48	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	  48
+ 								0	0	0
+ 49	 1	Snd1	   0	  20	    1	 1003	  40	   8	   0	  49
+ 49	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	  49
+ 								0	0	0
+ 50	 1	Snd1	   0	  21	    1	 1003	  40	   8	   0	  50
+ 50	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	  50
+ 								0	0	0
+ 51	 1	Snd1	   0	  22	    0	 1003	  40	   8	   0	  51
+ 51	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	  51
+ 								0	0	0
+ 52	 1	Snd1	   0	  23	    0	 1003	  40	   8	   0	  52
+ 52	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	  52
+ 								0	0	0
+ 53	 1	Snd1	   0	  24	    0	 1003	  40	   8	   0	  53
+ 53	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	  53
+ 								0	0	0
+ 54	 1	Snd1	   0	  25	    1	 1003	  40	   8	   0	  54
+ 54	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	  54
+ 								0	0	0
+ 55	 1	Snd1	   0	  26	    0	 1003	  40	   8	   0	  55
+ 55	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	  55
+ 								0	0	0
+ 56	 1	Snd1	   0	  27	    1	 1003	  40	   8	   0	  56
+ 56	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	  56
+ 								0	0	0
+ 57	 1	Snd1	   0	  28	    0	 1003	  40	   8	   0	  57
+ 57	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	  57
+ 								0	0	0
+ 58	 1	Snd1	   0	  29	    1	 1003	  40	   8	   0	  58
+ 58	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	  58
+ 								0	0	0
+ 59	 1	Snd1	   0	   1	    1	 1003	  50	   8	   0	  59
+ 59	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	  59
+ 								0	0	0
+ 60	 1	Snd1	   0	   2	    0	 1003	  50	   8	   0	  60
+ 60	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	  60
+ 								0	0	0
+ 61	 1	Snd1	   0	   3	    1	 1003	  50	   8	   0	  61
+ 61	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	  61
+ 								0	0	0
+ 62	 1	Snd1	   0	   4	    1	 1003	  50	   8	   0	  62
+ 62	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	  62
+ 								0	0	0
+ 63	 1	Snd1	   0	   5	    1	 1003	  50	   8	   0	  63
+ 63	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	  63
+ 								0	0	0
+ 64	 1	Snd1	   0	   6	    0	 1003	  50	   8	   0	  64
+ 64	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	  64
+ 								0	0	0
+ 65	 1	Snd1	   0	   7	    0	 1002	  50	   8	   0	  65
+ 65	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	  65
+ 								0	0	0
+ 66	 1	Snd1	   0	   8	    1	 1003	  50	   8	   0	  66
+ 66	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	  66
+ 								0	0	0
+ 67	 1	Snd1	   0	   9	    0	 1003	  50	   8	   0	  67
+ 67	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	  67
+ 								0	0	0
+ 68	 1	Snd1	   0	  10	    1	 1003	  50	   8	   0	  68
+ 68	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	  68
+ 								0	0	0
+ 69	 1	Snd1	   0	  11	    1	 1003	  50	   8	   0	  69
+ 69	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	  69
+ 								0	0	0
+ 70	 1	Snd1	   0	  12	    1	 1003	  50	   8	   0	  70
+ 70	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	  70
+ 								0	0	0
+ 71	 1	Snd1	   0	  13	    1	 1003	  50	   8	   0	  71
+ 71	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	  71
+ 								0	0	0
+ 72	 1	Snd1	   0	  14	    1	 1003	  50	   8	   0	  72
+ 72	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	  72
+ 								0	0	0
+ 73	 1	Snd1	   0	  15	    1	 1003	  50	   8	   0	  73
+ 73	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	  73
+ 								0	0	0
+ 74	 1	Snd1	   0	  16	    0	 1003	  50	   8	   0	  74
+ 74	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	  74
+ 								0	0	0
+ 75	 1	Snd1	   0	  17	    1	 1003	  50	   8	   0	  75
+ 75	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	  75
+ 								0	0	0
+ 76	 1	Snd1	   0	  18	    0	 1003	  50	   8	   0	  76
+ 76	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	  76
+ 								0	0	0
+ 77	 1	Snd1	   0	  19	    0	 1003	  50	   8	   0	  77
+ 77	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	  77
+ 								0	0	0
+ 78	 1	Snd1	   0	  20	    1	 1003	  50	   8	   0	  78
+ 78	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	  78
+ 								0	0	0
+ 79	 1	Snd1	   0	  21	    1	 1003	  50	   8	   0	  79
+ 79	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	  79
+ 								0	0	0
+ 80	 1	Snd1	   0	  22	    1	 1003	  50	   8	   0	  80
+ 80	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	  80
+ 								0	0	0
+ 81	 1	Snd1	   0	  23	    1	 1003	  50	   8	   0	  81
+ 81	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	  81
+ 								0	0	0
+ 82	 1	Snd1	   0	  24	    1	 1003	  50	   8	   0	  82
+ 82	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	  82
+ 								0	0	0
+ 83	 1	Snd1	   0	  25	    1	 1003	  50	   8	   0	  83
+ 83	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	  83
+ 								0	0	0
+ 84	 1	Snd1	   0	  26	    0	 1003	  50	   8	   0	  84
+ 84	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	  84
+ 								0	0	0
+ 85	 1	Snd1	   0	  27	    1	 1003	  50	   8	   0	  85
+ 85	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	  85
+ 								0	0	0
+ 86	 1	Snd1	   0	  28	    1	 1003	  50	   8	   0	  86
+ 86	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	  86
+ 								0	0	0
+ 87	 1	Snd1	   0	  29	    0	 1003	  50	   8	   0	  87
+ 87	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	  87
+ 								0	0	0
+ 88	 1	Snd1	   0	   1	    1	 1003	  60	   8	   0	  88
+ 88	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	  88
+ 								0	0	0
+ 89	 1	Snd1	   0	   2	    0	 1003	  60	   8	   0	  89
+ 89	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	  89
+ 								0	0	0
+ 90	 1	Snd1	   0	   3	    0	 1002	  60	   8	   0	  90
+ 90	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	  90
+ 								0	0	0
+ 91	 1	Snd1	   0	   4	    1	 1003	  60	   8	   0	  91
+ 91	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	  91
+ 								0	0	0
+ 92	 1	Snd1	   0	   5	    1	 1003	  60	   8	   0	  92
+ 92	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	  92
+ 								0	0	0
+ 93	 1	Snd1	   0	   6	    0	 1003	  60	   8	   0	  93
+ 93	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	  93
+ 								0	0	0
+ 94	 1	Snd1	   0	   7	    1	 1003	  60	   8	   0	  94
+ 94	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	  94
+ 								0	0	0
+ 95	 1	Snd1	   0	   8	    0	 1002	  60	   8	   0	  95
+ 95	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	  95
+ 								0	0	0
+ 96	 1	Snd1	   0	   9	    0	 1003	  60	   8	   0	  96
+ 96	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	  96
+ 								0	0	0
+ 97	 1	Snd1	   0	  10	    1	 1003	  60	   8	   0	  97
+ 97	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	  97
+ 								0	0	0
+ 98	 1	Snd1	   0	  11	    0	 1003	  60	   8	   0	  98
+ 98	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	  98
+ 								0	0	0
+ 99	 1	Snd1	   0	  12	    1	 1003	  60	   8	   0	  99
+ 99	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	  99
+ 								0	0	0
+100	 1	Snd1	   0	  13	    0	 1003	  60	   8	   0	 100
+100	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 100
+ 								0	0	0
+101	 1	Snd1	   0	  14	    1	 1003	  60	   8	   0	 101
+101	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 101
+ 								0	0	0
+102	 1	Snd1	   0	  15	    1	 1003	  60	   8	   0	 102
+102	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 102
+ 								0	0	0
+103	 1	Snd1	   0	  16	    1	 1003	  60	   8	   0	 103
+103	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 103
+ 								0	0	0
+104	 1	Snd1	   0	  17	    1	 1003	  60	   8	   0	 104
+104	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 104
+ 								0	0	0
+105	 1	Snd1	   0	  18	    0	 1003	  60	   8	   0	 105
+105	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 105
+ 								0	0	0
+106	 1	Snd1	   0	  19	    0	 1003	  60	   8	   0	 106
+106	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 106
+ 								0	0	0
+107	 1	Snd1	   0	  20	    0	 1003	  60	   8	   0	 107
+107	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 107
+ 								0	0	0
+108	 1	Snd1	   0	  21	    1	 1003	  60	   8	   0	 108
+108	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 108
+ 								0	0	0
+109	 1	Snd1	   0	  22	    0	 1003	  60	   8	   0	 109
+109	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 109
+ 								0	0	0
+110	 1	Snd1	   0	  23	    0	 1003	  60	   8	   0	 110
+110	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 110
+ 								0	0	0
+111	 1	Snd1	   0	  24	    0	 1003	  60	   8	   0	 111
+111	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 111
+ 								0	0	0
+112	 1	Snd1	   0	  25	    1	 1003	  60	   8	   0	 112
+112	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 112
+ 								0	0	0
+113	 1	Snd1	   0	  26	    1	 1003	  60	   8	   0	 113
+113	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 113
+ 								0	0	0
+114	 1	Snd1	   0	  27	    1	 1003	  60	   8	   0	 114
+114	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 114
+ 								0	0	0
+115	 1	Snd1	   0	  28	    0	 1003	  60	   8	   0	 115
+115	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 115
+ 								0	0	0
+116	 1	Snd1	   0	  29	    1	 1003	  60	   8	   0	 116
+116	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 116
+ 								0	0	0
+117	 1	Snd1	   0	   1	    0	 1003	  70	   8	   0	 117
+117	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 117
+ 								0	0	0
+118	 1	Snd1	   0	   2	    0	 1003	  70	   8	   0	 118
+118	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 118
+ 								0	0	0
+119	 1	Snd1	   0	   3	    1	 1003	  70	   8	   0	 119
+119	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 119
+ 								0	0	0
+120	 1	Snd1	   0	   4	    0	 1003	  70	   8	   0	 120
+120	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 120
+ 								0	0	0
+121	 1	Snd1	   0	   5	    1	 1003	  70	   8	   0	 121
+121	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 121
+ 								0	0	0
+122	 1	Snd1	   0	   6	    1	 1003	  70	   8	   0	 122
+122	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 122
+ 								0	0	0
+123	 1	Snd1	   0	   7	    1	 1003	  70	   8	   0	 123
+123	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 123
+ 								0	0	0
+124	 1	Snd1	   0	   8	    0	 1003	  70	   8	   0	 124
+124	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 124
+ 								0	0	0
+125	 1	Snd1	   0	   9	    0	 1003	  70	   8	   0	 125
+125	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 125
+ 								0	0	0
+126	 1	Snd1	   0	  10	    1	 1003	  70	   8	   0	 126
+126	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 126
+ 								0	0	0
+127	 1	Snd1	   0	  11	    1	 1003	  70	   8	   0	 127
+127	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 127
+ 								0	0	0
+128	 1	Snd1	   0	  12	    1	 1003	  70	   8	   0	 128
+128	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 128
+ 								0	0	0
+129	 1	Snd1	   0	  13	    0	 1003	  70	   8	   0	 129
+129	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 129
+ 								0	0	0
+130	 1	Snd1	   0	  14	    0	 1003	  70	   8	   0	 130
+130	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 130
+ 								0	0	0
+131	 1	Snd1	   0	  15	    0	 1003	  70	   8	   0	 131
+131	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 131
+ 								0	0	0
+132	 1	Snd1	   0	  16	    1	 1003	  70	   8	   0	 132
+132	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 132
+ 								0	0	0
+133	 1	Snd1	   0	  17	    1	 1003	  70	   8	   0	 133
+133	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 133
+ 								0	0	0
+134	 1	Snd1	   0	  18	    0	 1003	  70	   8	   0	 134
+134	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 134
+ 								0	0	0
+135	 1	Snd1	   0	  19	    1	 1003	  70	   8	   0	 135
+135	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 135
+ 								0	0	0
+136	 1	Snd1	   0	  20	    0	 1003	  70	   8	   0	 136
+136	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 136
+ 								0	0	0
+137	 1	Snd1	   0	  21	    1	 1003	  70	   8	   0	 137
+137	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 137
+ 								0	0	0
+138	 1	Snd1	   0	  22	    1	 1003	  70	   8	   0	 138
+138	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 138
+ 								0	0	0
+139	 1	Snd1	   0	  23	    0	 1002	  70	   8	   0	 139
+139	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 139
+ 								0	0	0
+140	 1	Snd1	   0	  24	    1	 1003	  70	   8	   0	 140
+140	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 140
+ 								0	0	0
+141	 1	Snd1	   0	  25	    1	 1003	  70	   8	   0	 141
+141	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 141
+ 								0	0	0
+142	 1	Snd1	   0	  26	    0	 1003	  70	   8	   0	 142
+142	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 142
+ 								0	0	0
+143	 1	Snd1	   0	  27	    0	 1003	  70	   8	   0	 143
+143	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 143
+ 								0	0	0
+144	 1	Snd1	   0	  28	    1	 1003	  70	   8	   0	 144
+144	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 144
+ 								0	0	0
+145	 1	Snd1	   0	  29	    1	 1003	  70	   8	   0	 145
+145	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 145
+ 								0	0	0
+146	 1	Snd1	   0	   1	    0	 1003	  30	   9	   0	 146
+146	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 146
+ 								0	0	0
+147	 1	Snd1	   0	   2	    1	 1003	  30	   9	   0	 147
+147	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 147
+ 								0	0	0
+148	 1	Snd1	   0	   3	    1	 1003	  30	   9	   0	 148
+148	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 148
+ 								0	0	0
+149	 1	Snd1	   0	   4	    1	 1003	  30	   9	   0	 149
+149	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 149
+ 								0	0	0
+150	 1	Snd1	   0	   5	    0	 1003	  30	   9	   0	 150
+150	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 150
+ 								0	0	0
+151	 1	Snd1	   0	   6	    1	 1003	  30	   9	   0	 151
+151	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 151
+ 								0	0	0
+152	 1	Snd1	   0	   7	    1	 1003	  30	   9	   0	 152
+152	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 152
+ 								0	0	0
+153	 1	Snd1	   0	   8	    1	 1003	  30	   9	   0	 153
+153	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 153
+ 								0	0	0
+154	 1	Snd1	   0	   9	    1	 1003	  30	   9	   0	 154
+154	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 154
+ 								0	0	0
+155	 1	Snd1	   0	  10	    1	 1003	  30	   9	   0	 155
+155	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 155
+ 								0	0	0
+156	 1	Snd1	   0	  11	    1	 1003	  30	   9	   0	 156
+156	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 156
+ 								0	0	0
+157	 1	Snd1	   0	  12	    1	 1003	  30	   9	   0	 157
+157	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 157
+ 								0	0	0
+158	 1	Snd1	   0	  13	    1	 1003	  30	   9	   0	 158
+158	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 158
+ 								0	0	0
+159	 1	Snd1	   0	  14	    1	 1003	  30	   9	   0	 159
+159	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 159
+ 								0	0	0
+160	 1	Snd1	   0	  15	    1	 1003	  30	   9	   0	 160
+160	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 160
+ 								0	0	0
+161	 1	Snd1	   0	  16	    0	 1002	  30	   9	   0	 161
+161	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 161
+ 								0	0	0
+162	 1	Snd1	   0	  17	    0	 1003	  30	   9	   0	 162
+162	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 162
+ 								0	0	0
+163	 1	Snd1	   0	  18	    1	 1003	  30	   9	   0	 163
+163	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 163
+ 								0	0	0
+164	 1	Snd1	   0	  19	    1	 1003	  30	   9	   0	 164
+164	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 164
+ 								0	0	0
+165	 1	Snd1	   0	  20	    0	 1002	  30	   9	   0	 165
+165	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 165
+ 								0	0	0
+166	 1	Snd1	   0	  21	    1	 1003	  30	   9	   0	 166
+166	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 166
+ 								0	0	0
+167	 1	Snd1	   0	  22	    1	 1003	  30	   9	   0	 167
+167	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 167
+ 								0	0	0
+168	 1	Snd1	   0	  23	    0	 1003	  30	   9	   0	 168
+168	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 168
+ 								0	0	0
+169	 1	Snd1	   0	  24	    1	 1003	  30	   9	   0	 169
+169	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 169
+ 								0	0	0
+170	 1	Snd1	   0	  25	    1	 1003	  30	   9	   0	 170
+170	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 170
+ 								0	0	0
+171	 1	Snd1	   0	  26	    1	 1003	  30	   9	   0	 171
+171	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 171
+ 								0	0	0
+172	 1	Snd1	   0	  27	    1	 1003	  30	   9	   0	 172
+172	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 172
+ 								0	0	0
+173	 1	Snd1	   0	  28	    1	 1003	  30	   9	   0	 173
+173	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 173
+ 								0	0	0
+174	 1	Snd1	   0	  29	    0	 1003	  30	   9	   0	 174
+174	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 174
+ 								0	0	0
+175	 1	Snd1	   0	   1	    1	 1003	  40	   9	   0	 175
+175	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 175
+ 								0	0	0
+176	 1	Snd1	   0	   2	    1	 1003	  40	   9	   0	 176
+176	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 176
+ 								0	0	0
+177	 1	Snd1	   0	   3	    0	 1003	  40	   9	   0	 177
+177	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 177
+ 								0	0	0
+178	 1	Snd1	   0	   4	    1	 1003	  40	   9	   0	 178
+178	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 178
+ 								0	0	0
+179	 1	Snd1	   0	   5	    0	 1002	  40	   9	   0	 179
+179	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 179
+ 								0	0	0
+180	 1	Snd1	   0	   6	    1	 1003	  40	   9	   0	 180
+180	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 180
+ 								0	0	0
+181	 1	Snd1	   0	   7	    0	 1002	  40	   9	   0	 181
+181	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 181
+ 								0	0	0
+182	 1	Snd1	   0	   8	    1	 1003	  40	   9	   0	 182
+182	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 182
+ 								0	0	0
+183	 1	Snd1	   0	   9	    0	 1003	  40	   9	   0	 183
+183	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 183
+ 								0	0	0
+184	 1	Snd1	   0	  10	    0	 1003	  40	   9	   0	 184
+184	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 184
+ 								0	0	0
+185	 1	Snd1	   0	  11	    1	 1003	  40	   9	   0	 185
+185	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 185
+ 								0	0	0
+186	 1	Snd1	   0	  12	    1	 1003	  40	   9	   0	 186
+186	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 186
+ 								0	0	0
+187	 1	Snd1	   0	  13	    0	 1003	  40	   9	   0	 187
+187	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 187
+ 								0	0	0
+188	 1	Snd1	   0	  14	    1	 1003	  40	   9	   0	 188
+188	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 188
+ 								0	0	0
+189	 1	Snd1	   0	  15	    0	 1002	  40	   9	   0	 189
+189	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 189
+ 								0	0	0
+190	 1	Snd1	   0	  16	    1	 1003	  40	   9	   0	 190
+190	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 190
+ 								0	0	0
+191	 1	Snd1	   0	  17	    0	 1003	  40	   9	   0	 191
+191	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 191
+ 								0	0	0
+192	 1	Snd1	   0	  18	    1	 1003	  40	   9	   0	 192
+192	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 192
+ 								0	0	0
+193	 1	Snd1	   0	  19	    0	 1003	  40	   9	   0	 193
+193	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 193
+ 								0	0	0
+194	 1	Snd1	   0	  20	    1	 1003	  40	   9	   0	 194
+194	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 194
+ 								0	0	0
+195	 1	Snd1	   0	  21	    1	 1003	  40	   9	   0	 195
+195	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 195
+ 								0	0	0
+196	 1	Snd1	   0	  22	    0	 1003	  40	   9	   0	 196
+196	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 196
+ 								0	0	0
+197	 1	Snd1	   0	  23	    1	 1003	  40	   9	   0	 197
+197	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 197
+ 								0	0	0
+198	 1	Snd1	   0	  24	    1	 1003	  40	   9	   0	 198
+198	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 198
+ 								0	0	0
+199	 1	Snd1	   0	  25	    0	 1003	  40	   9	   0	 199
+199	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 199
+ 								0	0	0
+200	 1	Snd1	   0	  26	    0	 1003	  40	   9	   0	 200
+200	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 200
+ 								0	0	0
+201	 1	Snd1	   0	  27	    0	 1003	  40	   9	   0	 201
+201	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 201
+ 								0	0	0
+202	 1	Snd1	   0	  28	    1	 1003	  40	   9	   0	 202
+202	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 202
+ 								0	0	0
+203	 1	Snd1	   0	  29	    0	 1003	  40	   9	   0	 203
+203	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 203
+ 								0	0	0
+204	 1	Snd1	   0	   1	    0	 1003	  50	   9	   0	 204
+204	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 204
+ 								0	0	0
+205	 1	Snd1	   0	   2	    1	 1003	  50	   9	   0	 205
+205	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 205
+ 								0	0	0
+206	 1	Snd1	   0	   3	    0	 1003	  50	   9	   0	 206
+206	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 206
+ 								0	0	0
+207	 1	Snd1	   0	   4	    0	 1003	  50	   9	   0	 207
+207	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 207
+ 								0	0	0
+208	 1	Snd1	   0	   5	    1	 1003	  50	   9	   0	 208
+208	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 208
+ 								0	0	0
+209	 1	Snd1	   0	   6	    1	 1003	  50	   9	   0	 209
+209	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 209
+ 								0	0	0
+210	 1	Snd1	   0	   7	    0	 1003	  50	   9	   0	 210
+210	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 210
+ 								0	0	0
+211	 1	Snd1	   0	   8	    1	 1003	  50	   9	   0	 211
+211	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 211
+ 								0	0	0
+212	 1	Snd1	   0	   9	    1	 1003	  50	   9	   0	 212
+212	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 212
+ 								0	0	0
+213	 1	Snd1	   0	  10	    0	 1003	  50	   9	   0	 213
+213	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 213
+ 								0	0	0
+214	 1	Snd1	   0	  11	    0	 1003	  50	   9	   0	 214
+214	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 214
+ 								0	0	0
+215	 1	Snd1	   0	  12	    1	 1003	  50	   9	   0	 215
+215	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 215
+ 								0	0	0
+216	 1	Snd1	   0	  13	    1	 1003	  50	   9	   0	 216
+216	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 216
+ 								0	0	0
+217	 1	Snd1	   0	  14	    0	 1003	  50	   9	   0	 217
+217	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 217
+ 								0	0	0
+218	 1	Snd1	   0	  15	    1	 1003	  50	   9	   0	 218
+218	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 218
+ 								0	0	0
+219	 1	Snd1	   0	  16	    0	 1003	  50	   9	   0	 219
+219	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 219
+ 								0	0	0
+220	 1	Snd1	   0	  17	    1	 1003	  50	   9	   0	 220
+220	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 220
+ 								0	0	0
+221	 1	Snd1	   0	  18	    0	 1003	  50	   9	   0	 221
+221	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 221
+ 								0	0	0
+222	 1	Snd1	   0	  19	    1	 1003	  50	   9	   0	 222
+222	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 222
+ 								0	0	0
+223	 1	Snd1	   0	  20	    0	 1003	  50	   9	   0	 223
+223	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 223
+ 								0	0	0
+224	 1	Snd1	   0	  21	    0	 1003	  50	   9	   0	 224
+224	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 224
+ 								0	0	0
+225	 1	Snd1	   0	  22	    0	 1002	  50	   9	   0	 225
+225	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 225
+ 								0	0	0
+226	 1	Snd1	   0	  23	    1	 1003	  50	   9	   0	 226
+226	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 226
+ 								0	0	0
+227	 1	Snd1	   0	  24	    0	 1003	  50	   9	   0	 227
+227	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 227
+ 								0	0	0
+228	 1	Snd1	   0	  25	    1	 1003	  50	   9	   0	 228
+228	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 228
+ 								0	0	0
+229	 1	Snd1	   0	  26	    0	 1003	  50	   9	   0	 229
+229	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 229
+ 								0	0	0
+230	 1	Snd1	   0	  27	    1	 1003	  50	   9	   0	 230
+230	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 230
+ 								0	0	0
+231	 1	Snd1	   0	  28	    1	 1003	  50	   9	   0	 231
+231	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 231
+ 								0	0	0
+232	 1	Snd1	   0	  29	    1	 1003	  50	   9	   0	 232
+232	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 232
+ 								0	0	0
+233	 1	Snd1	   0	   1	    1	 1003	  60	   9	   0	 233
+233	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 233
+ 								0	0	0
+234	 1	Snd1	   0	   2	    1	 1003	  60	   9	   0	 234
+234	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 234
+ 								0	0	0
+235	 1	Snd1	   0	   3	    1	 1003	  60	   9	   0	 235
+235	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 235
+ 								0	0	0
+236	 1	Snd1	   0	   4	    1	 1003	  60	   9	   0	 236
+236	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 236
+ 								0	0	0
+237	 1	Snd1	   0	   5	    0	 1003	  60	   9	   0	 237
+237	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 237
+ 								0	0	0
+238	 1	Snd1	   0	   6	    1	 1003	  60	   9	   0	 238
+238	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 238
+ 								0	0	0
+239	 1	Snd1	   0	   7	    0	 1002	  60	   9	   0	 239
+239	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 239
+ 								0	0	0
+240	 1	Snd1	   0	   8	    1	 1003	  60	   9	   0	 240
+240	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 240
+ 								0	0	0
+241	 1	Snd1	   0	   9	    1	 1003	  60	   9	   0	 241
+241	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 241
+ 								0	0	0
+242	 1	Snd1	   0	  10	    1	 1003	  60	   9	   0	 242
+242	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 242
+ 								0	0	0
+243	 1	Snd1	   0	  11	    0	 1002	  60	   9	   0	 243
+243	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 243
+ 								0	0	0
+244	 1	Snd1	   0	  12	    1	 1003	  60	   9	   0	 244
+244	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 244
+ 								0	0	0
+245	 1	Snd1	   0	  13	    1	 1003	  60	   9	   0	 245
+245	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 245
+ 								0	0	0
+246	 1	Snd1	   0	  14	    1	 1003	  60	   9	   0	 246
+246	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 246
+ 								0	0	0
+247	 1	Snd1	   0	  15	    1	 1003	  60	   9	   0	 247
+247	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 247
+ 								0	0	0
+248	 1	Snd1	   0	  16	    1	 1003	  60	   9	   0	 248
+248	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 248
+ 								0	0	0
+249	 1	Snd1	   0	  17	    1	 1003	  60	   9	   0	 249
+249	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 249
+ 								0	0	0
+250	 1	Snd1	   0	  18	    0	 1003	  60	   9	   0	 250
+250	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 250
+ 								0	0	0
+251	 1	Snd1	   0	  19	    1	 1003	  60	   9	   0	 251
+251	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 251
+ 								0	0	0
+252	 1	Snd1	   0	  20	    1	 1003	  60	   9	   0	 252
+252	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 252
+ 								0	0	0
+253	 1	Snd1	   0	  21	    1	 1003	  60	   9	   0	 253
+253	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 253
+ 								0	0	0
+254	 1	Snd1	   0	  22	    1	 1003	  60	   9	   0	 254
+254	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 254
+ 								0	0	0
+255	 1	Snd1	   0	  23	    0	 1003	  60	   9	   0	 255
+255	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 255
+ 								0	0	0
+256	 1	Snd1	   0	  24	    1	 1003	  60	   9	   0	 256
+256	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 256
+ 								0	0	0
+257	 1	Snd1	   0	  25	    0	 1003	  60	   9	   0	 257
+257	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 257
+ 								0	0	0
+258	 1	Snd1	   0	  26	    0	 1003	  60	   9	   0	 258
+258	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 258
+ 								0	0	0
+259	 1	Snd1	   0	  27	    1	 1003	  60	   9	   0	 259
+259	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 259
+ 								0	0	0
+260	 1	Snd1	   0	  28	    1	 1003	  60	   9	   0	 260
+260	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 260
+ 								0	0	0
+261	 1	Snd1	   0	  29	    1	 1003	  60	   9	   0	 261
+261	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 261
+ 								0	0	0
+262	 1	Snd1	   0	   1	    1	 1003	  70	   9	   0	 262
+262	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 262
+ 								0	0	0
+263	 1	Snd1	   0	   2	    1	 1003	  70	   9	   0	 263
+263	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 263
+ 								0	0	0
+264	 1	Snd1	   0	   3	    1	 1003	  70	   9	   0	 264
+264	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 264
+ 								0	0	0
+265	 1	Snd1	   0	   4	    0	 1003	  70	   9	   0	 265
+265	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 265
+ 								0	0	0
+266	 1	Snd1	   0	   5	    0	 1003	  70	   9	   0	 266
+266	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 266
+ 								0	0	0
+267	 1	Snd1	   0	   6	    0	 1003	  70	   9	   0	 267
+267	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 267
+ 								0	0	0
+268	 1	Snd1	   0	   7	    1	 1003	  70	   9	   0	 268
+268	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 268
+ 								0	0	0
+269	 1	Snd1	   0	   8	    0	 1003	  70	   9	   0	 269
+269	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 269
+ 								0	0	0
+270	 1	Snd1	   0	   9	    1	 1003	  70	   9	   0	 270
+270	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 270
+ 								0	0	0
+271	 1	Snd1	   0	  10	    1	 1003	  70	   9	   0	 271
+271	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 271
+ 								0	0	0
+272	 1	Snd1	   0	  11	    0	 1003	  70	   9	   0	 272
+272	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 272
+ 								0	0	0
+273	 1	Snd1	   0	  12	    0	 1003	  70	   9	   0	 273
+273	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 273
+ 								0	0	0
+274	 1	Snd1	   0	  13	    0	 1003	  70	   9	   0	 274
+274	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 274
+ 								0	0	0
+275	 1	Snd1	   0	  14	    0	 1003	  70	   9	   0	 275
+275	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 275
+ 								0	0	0
+276	 1	Snd1	   0	  15	    1	 1003	  70	   9	   0	 276
+276	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 276
+ 								0	0	0
+277	 1	Snd1	   0	  16	    1	 1003	  70	   9	   0	 277
+277	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 277
+ 								0	0	0
+278	 1	Snd1	   0	  17	    0	 1003	  70	   9	   0	 278
+278	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 278
+ 								0	0	0
+279	 1	Snd1	   0	  18	    1	 1003	  70	   9	   0	 279
+279	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 279
+ 								0	0	0
+280	 1	Snd1	   0	  19	    1	 1003	  70	   9	   0	 280
+280	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 280
+ 								0	0	0
+281	 1	Snd1	   0	  20	    1	 1003	  70	   9	   0	 281
+281	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 281
+ 								0	0	0
+282	 1	Snd1	   0	  21	    1	 1003	  70	   9	   0	 282
+282	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 282
+ 								0	0	0
+283	 1	Snd1	   0	  22	    1	 1003	  70	   9	   0	 283
+283	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 283
+ 								0	0	0
+284	 1	Snd1	   0	  23	    0	 1003	  70	   9	   0	 284
+284	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 284
+ 								0	0	0
+285	 1	Snd1	   0	  24	    1	 1003	  70	   9	   0	 285
+285	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 285
+ 								0	0	0
+286	 1	Snd1	   0	  25	    0	 1003	  70	   9	   0	 286
+286	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 286
+ 								0	0	0
+287	 1	Snd1	   0	  26	    0	 1003	  70	   9	   0	 287
+287	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 287
+ 								0	0	0
+288	 1	Snd1	   0	  27	    0	 1003	  70	   9	   0	 288
+288	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 288
+ 								0	0	0
+289	 1	Snd1	   0	  28	    1	 1003	  70	   9	   0	 289
+289	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 289
+ 								0	0	0
+290	 1	Snd1	   0	  29	    0	 1003	  70	   9	   0	 290
+290	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 290
+ 								0	0	0
+291	 1	Snd1	   0	   1	    0	 1003	  30	  10	   0	 291
+291	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 291
+ 								0	0	0
+292	 1	Snd1	   0	   2	    1	 1003	  30	  10	   0	 292
+292	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 292
+ 								0	0	0
+293	 1	Snd1	   0	   3	    1	 1003	  30	  10	   0	 293
+293	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 293
+ 								0	0	0
+294	 1	Snd1	   0	   4	    1	 1003	  30	  10	   0	 294
+294	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 294
+ 								0	0	0
+295	 1	Snd1	   0	   5	    0	 1003	  30	  10	   0	 295
+295	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 295
+ 								0	0	0
+296	 1	Snd1	   0	   6	    0	 1003	  30	  10	   0	 296
+296	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 296
+ 								0	0	0
+297	 1	Snd1	   0	   7	    0	 1003	  30	  10	   0	 297
+297	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 297
+ 								0	0	0
+298	 1	Snd1	   0	   8	    1	 1003	  30	  10	   0	 298
+298	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 298
+ 								0	0	0
+299	 1	Snd1	   0	   9	    1	 1003	  30	  10	   0	 299
+299	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 299
+ 								0	0	0
+300	 1	Snd1	   0	  10	    1	 1003	  30	  10	   0	 300
+300	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 300
+ 								0	0	0
+301	 1	Snd1	   0	  11	    1	 1003	  30	  10	   0	 301
+301	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 301
+ 								0	0	0
+302	 1	Snd1	   0	  12	    1	 1003	  30	  10	   0	 302
+302	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 302
+ 								0	0	0
+303	 1	Snd1	   0	  13	    1	 1003	  30	  10	   0	 303
+303	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 303
+ 								0	0	0
+304	 1	Snd1	   0	  14	    1	 1003	  30	  10	   0	 304
+304	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 304
+ 								0	0	0
+305	 1	Snd1	   0	  15	    1	 1003	  30	  10	   0	 305
+305	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 305
+ 								0	0	0
+306	 1	Snd1	   0	  16	    1	 1003	  30	  10	   0	 306
+306	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 306
+ 								0	0	0
+307	 1	Snd1	   0	  17	    1	 1003	  30	  10	   0	 307
+307	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 307
+ 								0	0	0
+308	 1	Snd1	   0	  18	    1	 1003	  30	  10	   0	 308
+308	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 308
+ 								0	0	0
+309	 1	Snd1	   0	  19	    0	 1003	  30	  10	   0	 309
+309	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 309
+ 								0	0	0
+310	 1	Snd1	   0	  20	    1	 1003	  30	  10	   0	 310
+310	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 310
+ 								0	0	0
+311	 1	Snd1	   0	  21	    1	 1003	  30	  10	   0	 311
+311	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 311
+ 								0	0	0
+312	 1	Snd1	   0	  22	    1	 1003	  30	  10	   0	 312
+312	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 312
+ 								0	0	0
+313	 1	Snd1	   0	  23	    0	 1003	  30	  10	   0	 313
+313	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 313
+ 								0	0	0
+314	 1	Snd1	   0	  24	    1	 1003	  30	  10	   0	 314
+314	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 314
+ 								0	0	0
+315	 1	Snd1	   0	  25	    0	 1003	  30	  10	   0	 315
+315	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 315
+ 								0	0	0
+316	 1	Snd1	   0	  26	    1	 1003	  30	  10	   0	 316
+316	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 316
+ 								0	0	0
+317	 1	Snd1	   0	  27	    0	 1003	  30	  10	   0	 317
+317	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 317
+ 								0	0	0
+318	 1	Snd1	   0	  28	    0	 1003	  30	  10	   0	 318
+318	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 318
+ 								0	0	0
+319	 1	Snd1	   0	  29	    1	 1003	  30	  10	   0	 319
+319	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 319
+ 								0	0	0
+320	 1	Snd1	   0	   1	    0	 1002	  40	  10	   0	 320
+320	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 320
+ 								0	0	0
+321	 1	Snd1	   0	   2	    0	 1003	  40	  10	   0	 321
+321	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 321
+ 								0	0	0
+322	 1	Snd1	   0	   3	    0	 1003	  40	  10	   0	 322
+322	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 322
+ 								0	0	0
+323	 1	Snd1	   0	   4	    1	 1003	  40	  10	   0	 323
+323	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 323
+ 								0	0	0
+324	 1	Snd1	   0	   5	    1	 1003	  40	  10	   0	 324
+324	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 324
+ 								0	0	0
+325	 1	Snd1	   0	   6	    1	 1003	  40	  10	   0	 325
+325	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 325
+ 								0	0	0
+326	 1	Snd1	   0	   7	    1	 1003	  40	  10	   0	 326
+326	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 326
+ 								0	0	0
+327	 1	Snd1	   0	   8	    0	 1003	  40	  10	   0	 327
+327	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 327
+ 								0	0	0
+328	 1	Snd1	   0	   9	    1	 1003	  40	  10	   0	 328
+328	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 328
+ 								0	0	0
+329	 1	Snd1	   0	  10	    1	 1003	  40	  10	   0	 329
+329	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 329
+ 								0	0	0
+330	 1	Snd1	   0	  11	    1	 1003	  40	  10	   0	 330
+330	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 330
+ 								0	0	0
+331	 1	Snd1	   0	  12	    0	 1003	  40	  10	   0	 331
+331	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 331
+ 								0	0	0
+332	 1	Snd1	   0	  13	    0	 1003	  40	  10	   0	 332
+332	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 332
+ 								0	0	0
+333	 1	Snd1	   0	  14	    1	 1003	  40	  10	   0	 333
+333	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 333
+ 								0	0	0
+334	 1	Snd1	   0	  15	    1	 1003	  40	  10	   0	 334
+334	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 334
+ 								0	0	0
+335	 1	Snd1	   0	  16	    0	 1003	  40	  10	   0	 335
+335	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 335
+ 								0	0	0
+336	 1	Snd1	   0	  17	    1	 1003	  40	  10	   0	 336
+336	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 336
+ 								0	0	0
+337	 1	Snd1	   0	  18	    0	 1003	  40	  10	   0	 337
+337	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 337
+ 								0	0	0
+338	 1	Snd1	   0	  19	    1	 1003	  40	  10	   0	 338
+338	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 338
+ 								0	0	0
+339	 1	Snd1	   0	  20	    0	 1002	  40	  10	   0	 339
+339	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 339
+ 								0	0	0
+340	 1	Snd1	   0	  21	    1	 1003	  40	  10	   0	 340
+340	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 340
+ 								0	0	0
+341	 1	Snd1	   0	  22	    1	 1003	  40	  10	   0	 341
+341	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 341
+ 								0	0	0
+342	 1	Snd1	   0	  23	    1	 1003	  40	  10	   0	 342
+342	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 342
+ 								0	0	0
+343	 1	Snd1	   0	  24	    1	 1003	  40	  10	   0	 343
+343	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 343
+ 								0	0	0
+344	 1	Snd1	   0	  25	    1	 1003	  40	  10	   0	 344
+344	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 344
+ 								0	0	0
+345	 1	Snd1	   0	  26	    0	 1003	  40	  10	   0	 345
+345	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 345
+ 								0	0	0
+346	 1	Snd1	   0	  27	    1	 1003	  40	  10	   0	 346
+346	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 346
+ 								0	0	0
+347	 1	Snd1	   0	  28	    1	 1003	  40	  10	   0	 347
+347	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 347
+ 								0	0	0
+348	 1	Snd1	   0	  29	    0	 1003	  40	  10	   0	 348
+348	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 348
+ 								0	0	0
+349	 1	Snd1	   0	   1	    0	 1002	  50	  10	   0	 349
+349	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 349
+ 								0	0	0
+350	 1	Snd1	   0	   2	    1	 1003	  50	  10	   0	 350
+350	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 350
+ 								0	0	0
+351	 1	Snd1	   0	   3	    1	 1003	  50	  10	   0	 351
+351	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 351
+ 								0	0	0
+352	 1	Snd1	   0	   4	    1	 1003	  50	  10	   0	 352
+352	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 352
+ 								0	0	0
+353	 1	Snd1	   0	   5	    1	 1003	  50	  10	   0	 353
+353	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 353
+ 								0	0	0
+354	 1	Snd1	   0	   6	    1	 1003	  50	  10	   0	 354
+354	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 354
+ 								0	0	0
+355	 1	Snd1	   0	   7	    0	 1003	  50	  10	   0	 355
+355	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 355
+ 								0	0	0
+356	 1	Snd1	   0	   8	    1	 1003	  50	  10	   0	 356
+356	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 356
+ 								0	0	0
+357	 1	Snd1	   0	   9	    1	 1003	  50	  10	   0	 357
+357	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 357
+ 								0	0	0
+358	 1	Snd1	   0	  10	    1	 1003	  50	  10	   0	 358
+358	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 358
+ 								0	0	0
+359	 1	Snd1	   0	  11	    0	 1002	  50	  10	   0	 359
+359	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 359
+ 								0	0	0
+360	 1	Snd1	   0	  12	    0	 1003	  50	  10	   0	 360
+360	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 360
+ 								0	0	0
+361	 1	Snd1	   0	  13	    1	 1003	  50	  10	   0	 361
+361	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 361
+ 								0	0	0
+362	 1	Snd1	   0	  14	    0	 1003	  50	  10	   0	 362
+362	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 362
+ 								0	0	0
+363	 1	Snd1	   0	  15	    1	 1003	  50	  10	   0	 363
+363	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 363
+ 								0	0	0
+364	 1	Snd1	   0	  16	    0	 1003	  50	  10	   0	 364
+364	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 364
+ 								0	0	0
+365	 1	Snd1	   0	  17	    1	 1003	  50	  10	   0	 365
+365	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 365
+ 								0	0	0
+366	 1	Snd1	   0	  18	    1	 1003	  50	  10	   0	 366
+366	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 366
+ 								0	0	0
+367	 1	Snd1	   0	  19	    0	 1003	  50	  10	   0	 367
+367	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 367
+ 								0	0	0
+368	 1	Snd1	   0	  20	    1	 1003	  50	  10	   0	 368
+368	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 368
+ 								0	0	0
+369	 1	Snd1	   0	  21	    0	 1003	  50	  10	   0	 369
+369	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 369
+ 								0	0	0
+370	 1	Snd1	   0	  22	    1	 1003	  50	  10	   0	 370
+370	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 370
+ 								0	0	0
+371	 1	Snd1	   0	  23	    1	 1003	  50	  10	   0	 371
+371	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 371
+ 								0	0	0
+372	 1	Snd1	   0	  24	    0	 1002	  50	  10	   0	 372
+372	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 372
+ 								0	0	0
+373	 1	Snd1	   0	  25	    1	 1003	  50	  10	   0	 373
+373	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 373
+ 								0	0	0
+374	 1	Snd1	   0	  26	    1	 1003	  50	  10	   0	 374
+374	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 374
+ 								0	0	0
+375	 1	Snd1	   0	  27	    0	 1003	  50	  10	   0	 375
+375	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 375
+ 								0	0	0
+376	 1	Snd1	   0	  28	    0	 1003	  50	  10	   0	 376
+376	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 376
+ 								0	0	0
+377	 1	Snd1	   0	  29	    1	 1003	  50	  10	   0	 377
+377	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 377
+ 								0	0	0
+378	 1	Snd1	   0	   1	    1	 1003	  60	  10	   0	 378
+378	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 378
+ 								0	0	0
+379	 1	Snd1	   0	   2	    0	 1003	  60	  10	   0	 379
+379	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 379
+ 								0	0	0
+380	 1	Snd1	   0	   3	    0	 1002	  60	  10	   0	 380
+380	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 380
+ 								0	0	0
+381	 1	Snd1	   0	   4	    0	 1002	  60	  10	   0	 381
+381	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 381
+ 								0	0	0
+382	 1	Snd1	   0	   5	    0	 1003	  60	  10	   0	 382
+382	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 382
+ 								0	0	0
+383	 1	Snd1	   0	   6	    0	 1003	  60	  10	   0	 383
+383	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 383
+ 								0	0	0
+384	 1	Snd1	   0	   7	    0	 1003	  60	  10	   0	 384
+384	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 384
+ 								0	0	0
+385	 1	Snd1	   0	   8	    0	 1003	  60	  10	   0	 385
+385	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 385
+ 								0	0	0
+386	 1	Snd1	   0	   9	    1	 1003	  60	  10	   0	 386
+386	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 386
+ 								0	0	0
+387	 1	Snd1	   0	  10	    1	 1003	  60	  10	   0	 387
+387	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 387
+ 								0	0	0
+388	 1	Snd1	   0	  11	    1	 1003	  60	  10	   0	 388
+388	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 388
+ 								0	0	0
+389	 1	Snd1	   0	  12	    1	 1003	  60	  10	   0	 389
+389	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 389
+ 								0	0	0
+390	 1	Snd1	   0	  13	    0	 1003	  60	  10	   0	 390
+390	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 390
+ 								0	0	0
+391	 1	Snd1	   0	  14	    1	 1003	  60	  10	   0	 391
+391	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 391
+ 								0	0	0
+392	 1	Snd1	   0	  15	    1	 1003	  60	  10	   0	 392
+392	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 392
+ 								0	0	0
+393	 1	Snd1	   0	  16	    1	 1003	  60	  10	   0	 393
+393	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 393
+ 								0	0	0
+394	 1	Snd1	   0	  17	    0	 1003	  60	  10	   0	 394
+394	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 394
+ 								0	0	0
+395	 1	Snd1	   0	  18	    1	 1003	  60	  10	   0	 395
+395	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 395
+ 								0	0	0
+396	 1	Snd1	   0	  19	    0	 1003	  60	  10	   0	 396
+396	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 396
+ 								0	0	0
+397	 1	Snd1	   0	  20	    1	 1003	  60	  10	   0	 397
+397	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 397
+ 								0	0	0
+398	 1	Snd1	   0	  21	    0	 1003	  60	  10	   0	 398
+398	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 398
+ 								0	0	0
+399	 1	Snd1	   0	  22	    0	 1003	  60	  10	   0	 399
+399	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 399
+ 								0	0	0
+400	 1	Snd1	   0	  23	    1	 1003	  60	  10	   0	 400
+400	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 400
+ 								0	0	0
+401	 1	Snd1	   0	  24	    1	 1003	  60	  10	   0	 401
+401	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 401
+ 								0	0	0
+402	 1	Snd1	   0	  25	    1	 1003	  60	  10	   0	 402
+402	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 402
+ 								0	0	0
+403	 1	Snd1	   0	  26	    0	 1003	  60	  10	   0	 403
+403	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 403
+ 								0	0	0
+404	 1	Snd1	   0	  27	    1	 1003	  60	  10	   0	 404
+404	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 404
+ 								0	0	0
+405	 1	Snd1	   0	  28	    1	 1003	  60	  10	   0	 405
+405	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 405
+ 								0	0	0
+406	 1	Snd1	   0	  29	    0	 1003	  60	  10	   0	 406
+406	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 406
+ 								0	0	0
+407	 1	Snd1	   0	   1	    1	 1003	  70	  10	   0	 407
+407	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 407
+ 								0	0	0
+408	 1	Snd1	   0	   2	    0	 1003	  70	  10	   0	 408
+408	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 408
+ 								0	0	0
+409	 1	Snd1	   0	   3	    0	 1003	  70	  10	   0	 409
+409	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 409
+ 								0	0	0
+410	 1	Snd1	   0	   4	    1	 1003	  70	  10	   0	 410
+410	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 410
+ 								0	0	0
+411	 1	Snd1	   0	   5	    0	 1003	  70	  10	   0	 411
+411	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 411
+ 								0	0	0
+412	 1	Snd1	   0	   6	    1	 1003	  70	  10	   0	 412
+412	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 412
+ 								0	0	0
+413	 1	Snd1	   0	   7	    0	 1003	  70	  10	   0	 413
+413	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 413
+ 								0	0	0
+414	 1	Snd1	   0	   8	    1	 1003	  70	  10	   0	 414
+414	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 414
+ 								0	0	0
+415	 1	Snd1	   0	   9	    0	 1002	  70	  10	   0	 415
+415	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 415
+ 								0	0	0
+416	 1	Snd1	   0	  10	    1	 1003	  70	  10	   0	 416
+416	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 416
+ 								0	0	0
+417	 1	Snd1	   0	  11	    1	 1003	  70	  10	   0	 417
+417	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 417
+ 								0	0	0
+418	 1	Snd1	   0	  12	    0	 1002	  70	  10	   0	 418
+418	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 418
+ 								0	0	0
+419	 1	Snd1	   0	  13	    1	 1003	  70	  10	   0	 419
+419	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 419
+ 								0	0	0
+420	 1	Snd1	   0	  14	    0	 1003	  70	  10	   0	 420
+420	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 420
+ 								0	0	0
+421	 1	Snd1	   0	  15	    0	 1002	  70	  10	   0	 421
+421	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 421
+ 								0	0	0
+422	 1	Snd1	   0	  16	    1	 1003	  70	  10	   0	 422
+422	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 422
+ 								0	0	0
+423	 1	Snd1	   0	  17	    1	 1003	  70	  10	   0	 423
+423	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 423
+ 								0	0	0
+424	 1	Snd1	   0	  18	    1	 1003	  70	  10	   0	 424
+424	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 424
+ 								0	0	0
+425	 1	Snd1	   0	  19	    0	 1003	  70	  10	   0	 425
+425	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 425
+ 								0	0	0
+426	 1	Snd1	   0	  20	    1	 1003	  70	  10	   0	 426
+426	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 426
+ 								0	0	0
+427	 1	Snd1	   0	  21	    1	 1003	  70	  10	   0	 427
+427	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 427
+ 								0	0	0
+428	 1	Snd1	   0	  22	    1	 1003	  70	  10	   0	 428
+428	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 428
+ 								0	0	0
+429	 1	Snd1	   0	  23	    1	 1003	  70	  10	   0	 429
+429	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 429
+ 								0	0	0
+430	 1	Snd1	   0	  24	    0	 1003	  70	  10	   0	 430
+430	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 430
+ 								0	0	0
+431	 1	Snd1	   0	  25	    1	 1003	  70	  10	   0	 431
+431	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 431
+ 								0	0	0
+432	 1	Snd1	   0	  26	    1	 1003	  70	  10	   0	 432
+432	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 432
+ 								0	0	0
+433	 1	Snd1	   0	  27	    0	 1003	  70	  10	   0	 433
+433	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 433
+ 								0	0	0
+434	 1	Snd1	   0	  28	    1	 1003	  70	  10	   0	 434
+434	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 434
+ 								0	0	0
+435	 1	Snd1	   0	  29	    0	 1003	  70	  10	   0	 435
+435	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 435
+ 								0	0	0
+436	 1	Snd1	   0	   1	    0	 1003	  30	  11	   0	 436
+436	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 436
+ 								0	0	0
+437	 1	Snd1	   0	   2	    0	 1002	  30	  11	   0	 437
+437	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 437
+ 								0	0	0
+438	 1	Snd1	   0	   3	    1	 1003	  30	  11	   0	 438
+438	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 438
+ 								0	0	0
+439	 1	Snd1	   0	   4	    0	 1003	  30	  11	   0	 439
+439	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 439
+ 								0	0	0
+440	 1	Snd1	   0	   5	    1	 1003	  30	  11	   0	 440
+440	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 440
+ 								0	0	0
+441	 1	Snd1	   0	   6	    0	 1003	  30	  11	   0	 441
+441	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 441
+ 								0	0	0
+442	 1	Snd1	   0	   7	    0	 1002	  30	  11	   0	 442
+442	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 442
+ 								0	0	0
+443	 1	Snd1	   0	   8	    0	 1003	  30	  11	   0	 443
+443	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 443
+ 								0	0	0
+444	 1	Snd1	   0	   9	    1	 1003	  30	  11	   0	 444
+444	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 444
+ 								0	0	0
+445	 1	Snd1	   0	  10	    0	 1003	  30	  11	   0	 445
+445	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 445
+ 								0	0	0
+446	 1	Snd1	   0	  11	    1	 1003	  30	  11	   0	 446
+446	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 446
+ 								0	0	0
+447	 1	Snd1	   0	  12	    0	 1002	  30	  11	   0	 447
+447	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 447
+ 								0	0	0
+448	 1	Snd1	   0	  13	    1	 1003	  30	  11	   0	 448
+448	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 448
+ 								0	0	0
+449	 1	Snd1	   0	  14	    1	 1003	  30	  11	   0	 449
+449	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 449
+ 								0	0	0
+450	 1	Snd1	   0	  15	    1	 1003	  30	  11	   0	 450
+450	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 450
+ 								0	0	0
+451	 1	Snd1	   0	  16	    1	 1003	  30	  11	   0	 451
+451	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 451
+ 								0	0	0
+452	 1	Snd1	   0	  17	    1	 1003	  30	  11	   0	 452
+452	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 452
+ 								0	0	0
+453	 1	Snd1	   0	  18	    0	 1003	  30	  11	   0	 453
+453	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 453
+ 								0	0	0
+454	 1	Snd1	   0	  19	    1	 1003	  30	  11	   0	 454
+454	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 454
+ 								0	0	0
+455	 1	Snd1	   0	  20	    1	 1003	  30	  11	   0	 455
+455	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 455
+ 								0	0	0
+456	 1	Snd1	   0	  21	    1	 1003	  30	  11	   0	 456
+456	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 456
+ 								0	0	0
+457	 1	Snd1	   0	  22	    1	 1003	  30	  11	   0	 457
+457	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 457
+ 								0	0	0
+458	 1	Snd1	   0	  23	    1	 1003	  30	  11	   0	 458
+458	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 458
+ 								0	0	0
+459	 1	Snd1	   0	  24	    0	 1003	  30	  11	   0	 459
+459	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 459
+ 								0	0	0
+460	 1	Snd1	   0	  25	    0	 1003	  30	  11	   0	 460
+460	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 460
+ 								0	0	0
+461	 1	Snd1	   0	  26	    1	 1003	  30	  11	   0	 461
+461	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 461
+ 								0	0	0
+462	 1	Snd1	   0	  27	    1	 1003	  30	  11	   0	 462
+462	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 462
+ 								0	0	0
+463	 1	Snd1	   0	  28	    1	 1003	  30	  11	   0	 463
+463	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 463
+ 								0	0	0
+464	 1	Snd1	   0	  29	    1	 1003	  30	  11	   0	 464
+464	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 464
+ 								0	0	0
+465	 1	Snd1	   0	   1	    1	 1003	  40	  11	   0	 465
+465	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 465
+ 								0	0	0
+466	 1	Snd1	   0	   2	    1	 1003	  40	  11	   0	 466
+466	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 466
+ 								0	0	0
+467	 1	Snd1	   0	   3	    0	 1002	  40	  11	   0	 467
+467	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 467
+ 								0	0	0
+468	 1	Snd1	   0	   4	    1	 1003	  40	  11	   0	 468
+468	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 468
+ 								0	0	0
+469	 1	Snd1	   0	   5	    0	 1003	  40	  11	   0	 469
+469	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 469
+ 								0	0	0
+470	 1	Snd1	   0	   6	    1	 1003	  40	  11	   0	 470
+470	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 470
+ 								0	0	0
+471	 1	Snd1	   0	   7	    0	 1003	  40	  11	   0	 471
+471	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 471
+ 								0	0	0
+472	 1	Snd1	   0	   8	    0	 1002	  40	  11	   0	 472
+472	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 472
+ 								0	0	0
+473	 1	Snd1	   0	   9	    1	 1003	  40	  11	   0	 473
+473	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 473
+ 								0	0	0
+474	 1	Snd1	   0	  10	    1	 1003	  40	  11	   0	 474
+474	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 474
+ 								0	0	0
+475	 1	Snd1	   0	  11	    1	 1003	  40	  11	   0	 475
+475	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 475
+ 								0	0	0
+476	 1	Snd1	   0	  12	    1	 1003	  40	  11	   0	 476
+476	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 476
+ 								0	0	0
+477	 1	Snd1	   0	  13	    1	 1003	  40	  11	   0	 477
+477	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 477
+ 								0	0	0
+478	 1	Snd1	   0	  14	    1	 1003	  40	  11	   0	 478
+478	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 478
+ 								0	0	0
+479	 1	Snd1	   0	  15	    1	 1003	  40	  11	   0	 479
+479	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 479
+ 								0	0	0
+480	 1	Snd1	   0	  16	    1	 1003	  40	  11	   0	 480
+480	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 480
+ 								0	0	0
+481	 1	Snd1	   0	  17	    1	 1003	  40	  11	   0	 481
+481	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 481
+ 								0	0	0
+482	 1	Snd1	   0	  18	    1	 1003	  40	  11	   0	 482
+482	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 482
+ 								0	0	0
+483	 1	Snd1	   0	  19	    1	 1003	  40	  11	   0	 483
+483	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 483
+ 								0	0	0
+484	 1	Snd1	   0	  20	    1	 1003	  40	  11	   0	 484
+484	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 484
+ 								0	0	0
+485	 1	Snd1	   0	  21	    1	 1003	  40	  11	   0	 485
+485	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 485
+ 								0	0	0
+486	 1	Snd1	   0	  22	    1	 1003	  40	  11	   0	 486
+486	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 486
+ 								0	0	0
+487	 1	Snd1	   0	  23	    1	 1003	  40	  11	   0	 487
+487	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 487
+ 								0	0	0
+488	 1	Snd1	   0	  24	    0	 1003	  40	  11	   0	 488
+488	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 488
+ 								0	0	0
+489	 1	Snd1	   0	  25	    0	 1003	  40	  11	   0	 489
+489	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 489
+ 								0	0	0
+490	 1	Snd1	   0	  26	    0	 1003	  40	  11	   0	 490
+490	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 490
+ 								0	0	0
+491	 1	Snd1	   0	  27	    0	 1003	  40	  11	   0	 491
+491	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 491
+ 								0	0	0
+492	 1	Snd1	   0	  28	    1	 1003	  40	  11	   0	 492
+492	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 492
+ 								0	0	0
+493	 1	Snd1	   0	  29	    0	 1002	  40	  11	   0	 493
+493	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 493
+ 								0	0	0
+494	 1	Snd1	   0	   1	    0	 1003	  50	  11	   0	 494
+494	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 494
+ 								0	0	0
+495	 1	Snd1	   0	   2	    1	 1003	  50	  11	   0	 495
+495	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 495
+ 								0	0	0
+496	 1	Snd1	   0	   3	    1	 1003	  50	  11	   0	 496
+496	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 496
+ 								0	0	0
+497	 1	Snd1	   0	   4	    1	 1003	  50	  11	   0	 497
+497	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 497
+ 								0	0	0
+498	 1	Snd1	   0	   5	    0	 1003	  50	  11	   0	 498
+498	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 498
+ 								0	0	0
+499	 1	Snd1	   0	   6	    0	 1002	  50	  11	   0	 499
+499	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 499
+ 								0	0	0
+500	 1	Snd1	   0	   7	    1	 1003	  50	  11	   0	 500
+500	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 500
+ 								0	0	0
+501	 1	Snd1	   0	   8	    1	 1003	  50	  11	   0	 501
+501	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 501
+ 								0	0	0
+502	 1	Snd1	   0	   9	    1	 1003	  50	  11	   0	 502
+502	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 502
+ 								0	0	0
+503	 1	Snd1	   0	  10	    0	 1003	  50	  11	   0	 503
+503	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 503
+ 								0	0	0
+504	 1	Snd1	   0	  11	    1	 1003	  50	  11	   0	 504
+504	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 504
+ 								0	0	0
+505	 1	Snd1	   0	  12	    1	 1003	  50	  11	   0	 505
+505	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 505
+ 								0	0	0
+506	 1	Snd1	   0	  13	    1	 1003	  50	  11	   0	 506
+506	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 506
+ 								0	0	0
+507	 1	Snd1	   0	  14	    1	 1003	  50	  11	   0	 507
+507	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 507
+ 								0	0	0
+508	 1	Snd1	   0	  15	    1	 1003	  50	  11	   0	 508
+508	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 508
+ 								0	0	0
+509	 1	Snd1	   0	  16	    0	 1002	  50	  11	   0	 509
+509	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 509
+ 								0	0	0
+510	 1	Snd1	   0	  17	    0	 1003	  50	  11	   0	 510
+510	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 510
+ 								0	0	0
+511	 1	Snd1	   0	  18	    1	 1003	  50	  11	   0	 511
+511	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 511
+ 								0	0	0
+512	 1	Snd1	   0	  19	    0	 1003	  50	  11	   0	 512
+512	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 512
+ 								0	0	0
+513	 1	Snd1	   0	  20	    1	 1003	  50	  11	   0	 513
+513	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 513
+ 								0	0	0
+514	 1	Snd1	   0	  21	    1	 1003	  50	  11	   0	 514
+514	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 514
+ 								0	0	0
+515	 1	Snd1	   0	  22	    1	 1003	  50	  11	   0	 515
+515	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 515
+ 								0	0	0
+516	 1	Snd1	   0	  23	    1	 1003	  50	  11	   0	 516
+516	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 516
+ 								0	0	0
+517	 1	Snd1	   0	  24	    0	 1003	  50	  11	   0	 517
+517	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 517
+ 								0	0	0
+518	 1	Snd1	   0	  25	    1	 1003	  50	  11	   0	 518
+518	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 518
+ 								0	0	0
+519	 1	Snd1	   0	  26	    1	 1003	  50	  11	   0	 519
+519	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 519
+ 								0	0	0
+520	 1	Snd1	   0	  27	    1	 1003	  50	  11	   0	 520
+520	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 520
+ 								0	0	0
+521	 1	Snd1	   0	  28	    0	 1003	  50	  11	   0	 521
+521	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 521
+ 								0	0	0
+522	 1	Snd1	   0	  29	    1	 1003	  50	  11	   0	 522
+522	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 522
+ 								0	0	0
+523	 1	Snd1	   0	   1	    1	 1003	  60	  11	   0	 523
+523	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 523
+ 								0	0	0
+524	 1	Snd1	   0	   2	    1	 1003	  60	  11	   0	 524
+524	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 524
+ 								0	0	0
+525	 1	Snd1	   0	   3	    0	 1003	  60	  11	   0	 525
+525	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 525
+ 								0	0	0
+526	 1	Snd1	   0	   4	    1	 1003	  60	  11	   0	 526
+526	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 526
+ 								0	0	0
+527	 1	Snd1	   0	   5	    0	 1003	  60	  11	   0	 527
+527	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 527
+ 								0	0	0
+528	 1	Snd1	   0	   6	    1	 1003	  60	  11	   0	 528
+528	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 528
+ 								0	0	0
+529	 1	Snd1	   0	   7	    1	 1003	  60	  11	   0	 529
+529	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 529
+ 								0	0	0
+530	 1	Snd1	   0	   8	    1	 1003	  60	  11	   0	 530
+530	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 530
+ 								0	0	0
+531	 1	Snd1	   0	   9	    1	 1003	  60	  11	   0	 531
+531	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 531
+ 								0	0	0
+532	 1	Snd1	   0	  10	    1	 1003	  60	  11	   0	 532
+532	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 532
+ 								0	0	0
+533	 1	Snd1	   0	  11	    1	 1003	  60	  11	   0	 533
+533	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 533
+ 								0	0	0
+534	 1	Snd1	   0	  12	    1	 1003	  60	  11	   0	 534
+534	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 534
+ 								0	0	0
+535	 1	Snd1	   0	  13	    1	 1003	  60	  11	   0	 535
+535	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 535
+ 								0	0	0
+536	 1	Snd1	   0	  14	    1	 1003	  60	  11	   0	 536
+536	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 536
+ 								0	0	0
+537	 1	Snd1	   0	  15	    0	 1003	  60	  11	   0	 537
+537	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 537
+ 								0	0	0
+538	 1	Snd1	   0	  16	    1	 1003	  60	  11	   0	 538
+538	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 538
+ 								0	0	0
+539	 1	Snd1	   0	  17	    1	 1003	  60	  11	   0	 539
+539	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 539
+ 								0	0	0
+540	 1	Snd1	   0	  18	    0	 1003	  60	  11	   0	 540
+540	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 540
+ 								0	0	0
+541	 1	Snd1	   0	  19	    1	 1003	  60	  11	   0	 541
+541	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 541
+ 								0	0	0
+542	 1	Snd1	   0	  20	    1	 1003	  60	  11	   0	 542
+542	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 542
+ 								0	0	0
+543	 1	Snd1	   0	  21	    1	 1003	  60	  11	   0	 543
+543	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 543
+ 								0	0	0
+544	 1	Snd1	   0	  22	    1	 1003	  60	  11	   0	 544
+544	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 544
+ 								0	0	0
+545	 1	Snd1	   0	  23	    1	 1003	  60	  11	   0	 545
+545	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 545
+ 								0	0	0
+546	 1	Snd1	   0	  24	    0	 1003	  60	  11	   0	 546
+546	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 546
+ 								0	0	0
+547	 1	Snd1	   0	  25	    1	 1003	  60	  11	   0	 547
+547	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 547
+ 								0	0	0
+548	 1	Snd1	   0	  26	    1	 1003	  60	  11	   0	 548
+548	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 548
+ 								0	0	0
+549	 1	Snd1	   0	  27	    1	 1003	  60	  11	   0	 549
+549	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 549
+ 								0	0	0
+550	 1	Snd1	   0	  28	    1	 1003	  60	  11	   0	 550
+550	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 550
+ 								0	0	0
+551	 1	Snd1	   0	  29	    1	 1003	  60	  11	   0	 551
+551	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 551
+ 								0	0	0
+552	 1	Snd1	   0	   1	    0	 1003	  70	  11	   0	 552
+552	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 552
+ 								0	0	0
+553	 1	Snd1	   0	   2	    0	 1003	  70	  11	   0	 553
+553	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 553
+ 								0	0	0
+554	 1	Snd1	   0	   3	    1	 1003	  70	  11	   0	 554
+554	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 554
+ 								0	0	0
+555	 1	Snd1	   0	   4	    0	 1003	  70	  11	   0	 555
+555	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 555
+ 								0	0	0
+556	 1	Snd1	   0	   5	    1	 1003	  70	  11	   0	 556
+556	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 556
+ 								0	0	0
+557	 1	Snd1	   0	   6	    1	 1003	  70	  11	   0	 557
+557	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 557
+ 								0	0	0
+558	 1	Snd1	   0	   7	    0	 1003	  70	  11	   0	 558
+558	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 558
+ 								0	0	0
+559	 1	Snd1	   0	   8	    1	 1003	  70	  11	   0	 559
+559	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 559
+ 								0	0	0
+560	 1	Snd1	   0	   9	    0	 1003	  70	  11	   0	 560
+560	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 560
+ 								0	0	0
+561	 1	Snd1	   0	  10	    1	 1003	  70	  11	   0	 561
+561	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 561
+ 								0	0	0
+562	 1	Snd1	   0	  11	    1	 1003	  70	  11	   0	 562
+562	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 562
+ 								0	0	0
+563	 1	Snd1	   0	  12	    1	 1003	  70	  11	   0	 563
+563	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 563
+ 								0	0	0
+564	 1	Snd1	   0	  13	    0	 1002	  70	  11	   0	 564
+564	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 564
+ 								0	0	0
+565	 1	Snd1	   0	  14	    0	 1002	  70	  11	   0	 565
+565	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 565
+ 								0	0	0
+566	 1	Snd1	   0	  15	    1	 1003	  70	  11	   0	 566
+566	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 566
+ 								0	0	0
+567	 1	Snd1	   0	  16	    1	 1003	  70	  11	   0	 567
+567	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 567
+ 								0	0	0
+568	 1	Snd1	   0	  17	    1	 1003	  70	  11	   0	 568
+568	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 568
+ 								0	0	0
+569	 1	Snd1	   0	  18	    1	 1003	  70	  11	   0	 569
+569	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 569
+ 								0	0	0
+570	 1	Snd1	   0	  19	    0	 1003	  70	  11	   0	 570
+570	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 570
+ 								0	0	0
+571	 1	Snd1	   0	  20	    0	 1003	  70	  11	   0	 571
+571	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 571
+ 								0	0	0
+572	 1	Snd1	   0	  21	    0	 1003	  70	  11	   0	 572
+572	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 572
+ 								0	0	0
+573	 1	Snd1	   0	  22	    1	 1003	  70	  11	   0	 573
+573	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 573
+ 								0	0	0
+574	 1	Snd1	   0	  23	    1	 1003	  70	  11	   0	 574
+574	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 574
+ 								0	0	0
+575	 1	Snd1	   0	  24	    0	 1003	  70	  11	   0	 575
+575	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 575
+ 								0	0	0
+576	 1	Snd1	   0	  25	    1	 1003	  70	  11	   0	 576
+576	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 576
+ 								0	0	0
+577	 1	Snd1	   0	  26	    1	 1003	  70	  11	   0	 577
+577	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 577
+ 								0	0	0
+578	 1	Snd1	   0	  27	    1	 1003	  70	  11	   0	 578
+578	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 578
+ 								0	0	0
+579	 1	Snd1	   0	  28	    1	 1003	  70	  11	   0	 579
+579	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 579
+ 								0	0	0
+580	 1	Snd1	   0	  29	    1	 1003	  70	  11	   0	 580
+580	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 580
+ 								0	0	0
+581	 1	Snd1	   0	   1	    1	 1003	  30	  12	   0	 581
+581	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 581
+ 								0	0	0
+582	 1	Snd1	   0	   2	    0	 1003	  30	  12	   0	 582
+582	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 582
+ 								0	0	0
+583	 1	Snd1	   0	   3	    0	 1003	  30	  12	   0	 583
+583	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 583
+ 								0	0	0
+584	 1	Snd1	   0	   4	    0	 1003	  30	  12	   0	 584
+584	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 584
+ 								0	0	0
+585	 1	Snd1	   0	   5	    1	 1003	  30	  12	   0	 585
+585	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 585
+ 								0	0	0
+586	 1	Snd1	   0	   6	    1	 1003	  30	  12	   0	 586
+586	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 586
+ 								0	0	0
+587	 1	Snd1	   0	   7	    1	 1003	  30	  12	   0	 587
+587	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 587
+ 								0	0	0
+588	 1	Snd1	   0	   8	    0	 1002	  30	  12	   0	 588
+588	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 588
+ 								0	0	0
+589	 1	Snd1	   0	   9	    1	 1003	  30	  12	   0	 589
+589	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 589
+ 								0	0	0
+590	 1	Snd1	   0	  10	    0	 1003	  30	  12	   0	 590
+590	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 590
+ 								0	0	0
+591	 1	Snd1	   0	  11	    1	 1003	  30	  12	   0	 591
+591	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 591
+ 								0	0	0
+592	 1	Snd1	   0	  12	    1	 1003	  30	  12	   0	 592
+592	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 592
+ 								0	0	0
+593	 1	Snd1	   0	  13	    1	 1003	  30	  12	   0	 593
+593	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 593
+ 								0	0	0
+594	 1	Snd1	   0	  14	    1	 1003	  30	  12	   0	 594
+594	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 594
+ 								0	0	0
+595	 1	Snd1	   0	  15	    0	 1003	  30	  12	   0	 595
+595	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 595
+ 								0	0	0
+596	 1	Snd1	   0	  16	    0	 1003	  30	  12	   0	 596
+596	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 596
+ 								0	0	0
+597	 1	Snd1	   0	  17	    1	 1003	  30	  12	   0	 597
+597	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 597
+ 								0	0	0
+598	 1	Snd1	   0	  18	    1	 1003	  30	  12	   0	 598
+598	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 598
+ 								0	0	0
+599	 1	Snd1	   0	  19	    0	 1003	  30	  12	   0	 599
+599	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 599
+ 								0	0	0
+600	 1	Snd1	   0	  20	    0	 1003	  30	  12	   0	 600
+600	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 600
+ 								0	0	0
+601	 1	Snd1	   0	  21	    0	 1003	  30	  12	   0	 601
+601	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 601
+ 								0	0	0
+602	 1	Snd1	   0	  22	    1	 1003	  30	  12	   0	 602
+602	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 602
+ 								0	0	0
+603	 1	Snd1	   0	  23	    0	 1003	  30	  12	   0	 603
+603	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 603
+ 								0	0	0
+604	 1	Snd1	   0	  24	    1	 1003	  30	  12	   0	 604
+604	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 604
+ 								0	0	0
+605	 1	Snd1	   0	  25	    1	 1003	  30	  12	   0	 605
+605	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 605
+ 								0	0	0
+606	 1	Snd1	   0	  26	    0	 1003	  30	  12	   0	 606
+606	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 606
+ 								0	0	0
+607	 1	Snd1	   0	  27	    1	 1003	  30	  12	   0	 607
+607	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 607
+ 								0	0	0
+608	 1	Snd1	   0	  28	    0	 1003	  30	  12	   0	 608
+608	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 608
+ 								0	0	0
+609	 1	Snd1	   0	  29	    1	 1003	  30	  12	   0	 609
+609	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 609
+ 								0	0	0
+610	 1	Snd1	   0	   1	    1	 1003	  40	  12	   0	 610
+610	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 610
+ 								0	0	0
+611	 1	Snd1	   0	   2	    1	 1003	  40	  12	   0	 611
+611	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 611
+ 								0	0	0
+612	 1	Snd1	   0	   3	    1	 1003	  40	  12	   0	 612
+612	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 612
+ 								0	0	0
+613	 1	Snd1	   0	   4	    0	 1003	  40	  12	   0	 613
+613	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 613
+ 								0	0	0
+614	 1	Snd1	   0	   5	    0	 1003	  40	  12	   0	 614
+614	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 614
+ 								0	0	0
+615	 1	Snd1	   0	   6	    0	 1003	  40	  12	   0	 615
+615	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 615
+ 								0	0	0
+616	 1	Snd1	   0	   7	    0	 1003	  40	  12	   0	 616
+616	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 616
+ 								0	0	0
+617	 1	Snd1	   0	   8	    1	 1003	  40	  12	   0	 617
+617	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 617
+ 								0	0	0
+618	 1	Snd1	   0	   9	    1	 1003	  40	  12	   0	 618
+618	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 618
+ 								0	0	0
+619	 1	Snd1	   0	  10	    1	 1003	  40	  12	   0	 619
+619	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 619
+ 								0	0	0
+620	 1	Snd1	   0	  11	    1	 1003	  40	  12	   0	 620
+620	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 620
+ 								0	0	0
+621	 1	Snd1	   0	  12	    1	 1003	  40	  12	   0	 621
+621	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 621
+ 								0	0	0
+622	 1	Snd1	   0	  13	    0	 1003	  40	  12	   0	 622
+622	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 622
+ 								0	0	0
+623	 1	Snd1	   0	  14	    0	 1003	  40	  12	   0	 623
+623	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 623
+ 								0	0	0
+624	 1	Snd1	   0	  15	    1	 1003	  40	  12	   0	 624
+624	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 624
+ 								0	0	0
+625	 1	Snd1	   0	  16	    0	 1002	  40	  12	   0	 625
+625	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 625
+ 								0	0	0
+626	 1	Snd1	   0	  17	    1	 1003	  40	  12	   0	 626
+626	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 626
+ 								0	0	0
+627	 1	Snd1	   0	  18	    0	 1003	  40	  12	   0	 627
+627	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 627
+ 								0	0	0
+628	 1	Snd1	   0	  19	    1	 1003	  40	  12	   0	 628
+628	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 628
+ 								0	0	0
+629	 1	Snd1	   0	  20	    1	 1003	  40	  12	   0	 629
+629	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 629
+ 								0	0	0
+630	 1	Snd1	   0	  21	    0	 1002	  40	  12	   0	 630
+630	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 630
+ 								0	0	0
+631	 1	Snd1	   0	  22	    0	 1002	  40	  12	   0	 631
+631	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 631
+ 								0	0	0
+632	 1	Snd1	   0	  23	    1	 1003	  40	  12	   0	 632
+632	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 632
+ 								0	0	0
+633	 1	Snd1	   0	  24	    1	 1003	  40	  12	   0	 633
+633	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 633
+ 								0	0	0
+634	 1	Snd1	   0	  25	    0	 1003	  40	  12	   0	 634
+634	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 634
+ 								0	0	0
+635	 1	Snd1	   0	  26	    1	 1003	  40	  12	   0	 635
+635	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 635
+ 								0	0	0
+636	 1	Snd1	   0	  27	    0	 1003	  40	  12	   0	 636
+636	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 636
+ 								0	0	0
+637	 1	Snd1	   0	  28	    0	 1003	  40	  12	   0	 637
+637	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 637
+ 								0	0	0
+638	 1	Snd1	   0	  29	    0	 1003	  40	  12	   0	 638
+638	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 638
+ 								0	0	0
+639	 1	Snd1	   0	   1	    1	 1003	  50	  12	   0	 639
+639	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 639
+ 								0	0	0
+640	 1	Snd1	   0	   2	    1	 1003	  50	  12	   0	 640
+640	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 640
+ 								0	0	0
+641	 1	Snd1	   0	   3	    1	 1003	  50	  12	   0	 641
+641	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 641
+ 								0	0	0
+642	 1	Snd1	   0	   4	    0	 1003	  50	  12	   0	 642
+642	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 642
+ 								0	0	0
+643	 1	Snd1	   0	   5	    1	 1003	  50	  12	   0	 643
+643	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 643
+ 								0	0	0
+644	 1	Snd1	   0	   6	    1	 1003	  50	  12	   0	 644
+644	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 644
+ 								0	0	0
+645	 1	Snd1	   0	   7	    1	 1003	  50	  12	   0	 645
+645	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 645
+ 								0	0	0
+646	 1	Snd1	   0	   8	    0	 1003	  50	  12	   0	 646
+646	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 646
+ 								0	0	0
+647	 1	Snd1	   0	   9	    1	 1003	  50	  12	   0	 647
+647	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 647
+ 								0	0	0
+648	 1	Snd1	   0	  10	    1	 1003	  50	  12	   0	 648
+648	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 648
+ 								0	0	0
+649	 1	Snd1	   0	  11	    1	 1003	  50	  12	   0	 649
+649	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 649
+ 								0	0	0
+650	 1	Snd1	   0	  12	    0	 1003	  50	  12	   0	 650
+650	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 650
+ 								0	0	0
+651	 1	Snd1	   0	  13	    1	 1003	  50	  12	   0	 651
+651	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 651
+ 								0	0	0
+652	 1	Snd1	   0	  14	    0	 1003	  50	  12	   0	 652
+652	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 652
+ 								0	0	0
+653	 1	Snd1	   0	  15	    0	 1003	  50	  12	   0	 653
+653	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 653
+ 								0	0	0
+654	 1	Snd1	   0	  16	    1	 1003	  50	  12	   0	 654
+654	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 654
+ 								0	0	0
+655	 1	Snd1	   0	  17	    0	 1003	  50	  12	   0	 655
+655	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 655
+ 								0	0	0
+656	 1	Snd1	   0	  18	    0	 1002	  50	  12	   0	 656
+656	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 656
+ 								0	0	0
+657	 1	Snd1	   0	  19	    0	 1003	  50	  12	   0	 657
+657	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 657
+ 								0	0	0
+658	 1	Snd1	   0	  20	    1	 1003	  50	  12	   0	 658
+658	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 658
+ 								0	0	0
+659	 1	Snd1	   0	  21	    0	 1002	  50	  12	   0	 659
+659	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 659
+ 								0	0	0
+660	 1	Snd1	   0	  22	    1	 1003	  50	  12	   0	 660
+660	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 660
+ 								0	0	0
+661	 1	Snd1	   0	  23	    0	 1003	  50	  12	   0	 661
+661	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 661
+ 								0	0	0
+662	 1	Snd1	   0	  24	    1	 1003	  50	  12	   0	 662
+662	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 662
+ 								0	0	0
+663	 1	Snd1	   0	  25	    1	 1003	  50	  12	   0	 663
+663	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 663
+ 								0	0	0
+664	 1	Snd1	   0	  26	    1	 1003	  50	  12	   0	 664
+664	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 664
+ 								0	0	0
+665	 1	Snd1	   0	  27	    1	 1003	  50	  12	   0	 665
+665	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 665
+ 								0	0	0
+666	 1	Snd1	   0	  28	    1	 1003	  50	  12	   0	 666
+666	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 666
+ 								0	0	0
+667	 1	Snd1	   0	  29	    1	 1003	  50	  12	   0	 667
+667	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 667
+ 								0	0	0
+668	 1	Snd1	   0	   1	    1	 1003	  60	  12	   0	 668
+668	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 668
+ 								0	0	0
+669	 1	Snd1	   0	   2	    1	 1003	  60	  12	   0	 669
+669	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 669
+ 								0	0	0
+670	 1	Snd1	   0	   3	    1	 1003	  60	  12	   0	 670
+670	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 670
+ 								0	0	0
+671	 1	Snd1	   0	   4	    1	 1003	  60	  12	   0	 671
+671	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 671
+ 								0	0	0
+672	 1	Snd1	   0	   5	    1	 1003	  60	  12	   0	 672
+672	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 672
+ 								0	0	0
+673	 1	Snd1	   0	   6	    1	 1003	  60	  12	   0	 673
+673	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 673
+ 								0	0	0
+674	 1	Snd1	   0	   7	    1	 1003	  60	  12	   0	 674
+674	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 674
+ 								0	0	0
+675	 1	Snd1	   0	   8	    0	 1003	  60	  12	   0	 675
+675	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 675
+ 								0	0	0
+676	 1	Snd1	   0	   9	    0	 1002	  60	  12	   0	 676
+676	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 676
+ 								0	0	0
+677	 1	Snd1	   0	  10	    0	 1003	  60	  12	   0	 677
+677	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 677
+ 								0	0	0
+678	 1	Snd1	   0	  11	    1	 1003	  60	  12	   0	 678
+678	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 678
+ 								0	0	0
+679	 1	Snd1	   0	  12	    1	 1003	  60	  12	   0	 679
+679	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 679
+ 								0	0	0
+680	 1	Snd1	   0	  13	    1	 1003	  60	  12	   0	 680
+680	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 680
+ 								0	0	0
+681	 1	Snd1	   0	  14	    0	 1003	  60	  12	   0	 681
+681	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 681
+ 								0	0	0
+682	 1	Snd1	   0	  15	    0	 1003	  60	  12	   0	 682
+682	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 682
+ 								0	0	0
+683	 1	Snd1	   0	  16	    1	 1003	  60	  12	   0	 683
+683	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 683
+ 								0	0	0
+684	 1	Snd1	   0	  17	    0	 1003	  60	  12	   0	 684
+684	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 684
+ 								0	0	0
+685	 1	Snd1	   0	  18	    1	 1003	  60	  12	   0	 685
+685	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 685
+ 								0	0	0
+686	 1	Snd1	   0	  19	    1	 1003	  60	  12	   0	 686
+686	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 686
+ 								0	0	0
+687	 1	Snd1	   0	  20	    0	 1003	  60	  12	   0	 687
+687	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 687
+ 								0	0	0
+688	 1	Snd1	   0	  21	    0	 1002	  60	  12	   0	 688
+688	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 688
+ 								0	0	0
+689	 1	Snd1	   0	  22	    1	 1003	  60	  12	   0	 689
+689	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 689
+ 								0	0	0
+690	 1	Snd1	   0	  23	    1	 1003	  60	  12	   0	 690
+690	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 690
+ 								0	0	0
+691	 1	Snd1	   0	  24	    1	 1003	  60	  12	   0	 691
+691	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 691
+ 								0	0	0
+692	 1	Snd1	   0	  25	    1	 1003	  60	  12	   0	 692
+692	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 692
+ 								0	0	0
+693	 1	Snd1	   0	  26	    1	 1003	  60	  12	   0	 693
+693	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 693
+ 								0	0	0
+694	 1	Snd1	   0	  27	    1	 1003	  60	  12	   0	 694
+694	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 694
+ 								0	0	0
+695	 1	Snd1	   0	  28	    0	 1003	  60	  12	   0	 695
+695	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 695
+ 								0	0	0
+696	 1	Snd1	   0	  29	    0	 1003	  60	  12	   0	 696
+696	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 696
+ 								0	0	0
+697	 1	Snd1	   0	   1	    0	 1003	  70	  12	   0	 697
+697	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 697
+ 								0	0	0
+698	 1	Snd1	   0	   2	    1	 1003	  70	  12	   0	 698
+698	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 698
+ 								0	0	0
+699	 1	Snd1	   0	   3	    0	 1003	  70	  12	   0	 699
+699	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 699
+ 								0	0	0
+700	 1	Snd1	   0	   4	    1	 1003	  70	  12	   0	 700
+700	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 700
+ 								0	0	0
+701	 1	Snd1	   0	   5	    0	 1002	  70	  12	   0	 701
+701	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 701
+ 								0	0	0
+702	 1	Snd1	   0	   6	    1	 1003	  70	  12	   0	 702
+702	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 702
+ 								0	0	0
+703	 1	Snd1	   0	   7	    1	 1003	  70	  12	   0	 703
+703	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 703
+ 								0	0	0
+704	 1	Snd1	   0	   8	    1	 1003	  70	  12	   0	 704
+704	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 704
+ 								0	0	0
+705	 1	Snd1	   0	   9	    0	 1003	  70	  12	   0	 705
+705	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 705
+ 								0	0	0
+706	 1	Snd1	   0	  10	    1	 1003	  70	  12	   0	 706
+706	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 706
+ 								0	0	0
+707	 1	Snd1	   0	  11	    1	 1003	  70	  12	   0	 707
+707	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 707
+ 								0	0	0
+708	 1	Snd1	   0	  12	    1	 1003	  70	  12	   0	 708
+708	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 708
+ 								0	0	0
+709	 1	Snd1	   0	  13	    1	 1003	  70	  12	   0	 709
+709	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 709
+ 								0	0	0
+710	 1	Snd1	   0	  14	    1	 1003	  70	  12	   0	 710
+710	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 710
+ 								0	0	0
+711	 1	Snd1	   0	  15	    0	 1003	  70	  12	   0	 711
+711	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 711
+ 								0	0	0
+712	 1	Snd1	   0	  16	    0	 1003	  70	  12	   0	 712
+712	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 712
+ 								0	0	0
+713	 1	Snd1	   0	  17	    1	 1003	  70	  12	   0	 713
+713	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 713
+ 								0	0	0
+714	 1	Snd1	   0	  18	    1	 1003	  70	  12	   0	 714
+714	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 714
+ 								0	0	0
+715	 1	Snd1	   0	  19	    0	 1003	  70	  12	   0	 715
+715	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 715
+ 								0	0	0
+716	 1	Snd1	   0	  20	    1	 1003	  70	  12	   0	 716
+716	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 716
+ 								0	0	0
+717	 1	Snd1	   0	  21	    0	 1003	  70	  12	   0	 717
+717	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 717
+ 								0	0	0
+718	 1	Snd1	   0	  22	    0	 1003	  70	  12	   0	 718
+718	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 718
+ 								0	0	0
+719	 1	Snd1	   0	  23	    1	 1003	  70	  12	   0	 719
+719	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 719
+ 								0	0	0
+720	 1	Snd1	   0	  24	    0	 1003	  70	  12	   0	 720
+720	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 720
+ 								0	0	0
+721	 1	Snd1	   0	  25	    1	 1003	  70	  12	   0	 721
+721	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 721
+ 								0	0	0
+722	 1	Snd1	   0	  26	    0	 1003	  70	  12	   0	 722
+722	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 722
+ 								0	0	0
+723	 1	Snd1	   0	  27	    0	 1003	  70	  12	   0	 723
+723	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 723
+ 								0	0	0
+724	 1	Snd1	   0	  28	    1	 1003	  70	  12	   0	 724
+724	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 724
+ 								0	0	0
+725	 1	Snd1	   0	  29	    1	 1003	  70	  12	   0	 725
+725	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 725
+ 								0	0	0
+726	 1	Snd1	   0	   1	    1	 1003	  30	  13	   0	 726
+726	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 726
+ 								0	0	0
+727	 1	Snd1	   0	   2	    1	 1003	  30	  13	   0	 727
+727	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 727
+ 								0	0	0
+728	 1	Snd1	   0	   3	    0	 1003	  30	  13	   0	 728
+728	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 728
+ 								0	0	0
+729	 1	Snd1	   0	   4	    1	 1003	  30	  13	   0	 729
+729	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 729
+ 								0	0	0
+730	 1	Snd1	   0	   5	    1	 1003	  30	  13	   0	 730
+730	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 730
+ 								0	0	0
+731	 1	Snd1	   0	   6	    1	 1003	  30	  13	   0	 731
+731	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 731
+ 								0	0	0
+732	 1	Snd1	   0	   7	    1	 1003	  30	  13	   0	 732
+732	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 732
+ 								0	0	0
+733	 1	Snd1	   0	   8	    1	 1003	  30	  13	   0	 733
+733	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 733
+ 								0	0	0
+734	 1	Snd1	   0	   9	    1	 1003	  30	  13	   0	 734
+734	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 734
+ 								0	0	0
+735	 1	Snd1	   0	  10	    0	 1003	  30	  13	   0	 735
+735	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 735
+ 								0	0	0
+736	 1	Snd1	   0	  11	    1	 1003	  30	  13	   0	 736
+736	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 736
+ 								0	0	0
+737	 1	Snd1	   0	  12	    1	 1003	  30	  13	   0	 737
+737	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 737
+ 								0	0	0
+738	 1	Snd1	   0	  13	    1	 1003	  30	  13	   0	 738
+738	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 738
+ 								0	0	0
+739	 1	Snd1	   0	  14	    1	 1003	  30	  13	   0	 739
+739	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 739
+ 								0	0	0
+740	 1	Snd1	   0	  15	    0	 1002	  30	  13	   0	 740
+740	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 740
+ 								0	0	0
+741	 1	Snd1	   0	  16	    1	 1003	  30	  13	   0	 741
+741	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 741
+ 								0	0	0
+742	 1	Snd1	   0	  17	    0	 1002	  30	  13	   0	 742
+742	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 742
+ 								0	0	0
+743	 1	Snd1	   0	  18	    1	 1003	  30	  13	   0	 743
+743	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 743
+ 								0	0	0
+744	 1	Snd1	   0	  19	    1	 1003	  30	  13	   0	 744
+744	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 744
+ 								0	0	0
+745	 1	Snd1	   0	  20	    1	 1003	  30	  13	   0	 745
+745	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 745
+ 								0	0	0
+746	 1	Snd1	   0	  21	    0	 1003	  30	  13	   0	 746
+746	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 746
+ 								0	0	0
+747	 1	Snd1	   0	  22	    1	 1003	  30	  13	   0	 747
+747	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 747
+ 								0	0	0
+748	 1	Snd1	   0	  23	    1	 1003	  30	  13	   0	 748
+748	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 748
+ 								0	0	0
+749	 1	Snd1	   0	  24	    1	 1003	  30	  13	   0	 749
+749	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 749
+ 								0	0	0
+750	 1	Snd1	   0	  25	    1	 1003	  30	  13	   0	 750
+750	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 750
+ 								0	0	0
+751	 1	Snd1	   0	  26	    1	 1003	  30	  13	   0	 751
+751	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 751
+ 								0	0	0
+752	 1	Snd1	   0	  27	    1	 1003	  30	  13	   0	 752
+752	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 752
+ 								0	0	0
+753	 1	Snd1	   0	  28	    0	 1002	  30	  13	   0	 753
+753	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 753
+ 								0	0	0
+754	 1	Snd1	   0	  29	    1	 1003	  30	  13	   0	 754
+754	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 754
+ 								0	0	0
+755	 1	Snd1	   0	   1	    1	 1003	  40	  13	   0	 755
+755	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 755
+ 								0	0	0
+756	 1	Snd1	   0	   2	    1	 1003	  40	  13	   0	 756
+756	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 756
+ 								0	0	0
+757	 1	Snd1	   0	   3	    0	 1003	  40	  13	   0	 757
+757	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 757
+ 								0	0	0
+758	 1	Snd1	   0	   4	    0	 1003	  40	  13	   0	 758
+758	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 758
+ 								0	0	0
+759	 1	Snd1	   0	   5	    1	 1003	  40	  13	   0	 759
+759	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 759
+ 								0	0	0
+760	 1	Snd1	   0	   6	    0	 1003	  40	  13	   0	 760
+760	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 760
+ 								0	0	0
+761	 1	Snd1	   0	   7	    1	 1003	  40	  13	   0	 761
+761	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 761
+ 								0	0	0
+762	 1	Snd1	   0	   8	    0	 1002	  40	  13	   0	 762
+762	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 762
+ 								0	0	0
+763	 1	Snd1	   0	   9	    0	 1003	  40	  13	   0	 763
+763	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 763
+ 								0	0	0
+764	 1	Snd1	   0	  10	    1	 1003	  40	  13	   0	 764
+764	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 764
+ 								0	0	0
+765	 1	Snd1	   0	  11	    1	 1003	  40	  13	   0	 765
+765	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 765
+ 								0	0	0
+766	 1	Snd1	   0	  12	    1	 1003	  40	  13	   0	 766
+766	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 766
+ 								0	0	0
+767	 1	Snd1	   0	  13	    1	 1003	  40	  13	   0	 767
+767	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 767
+ 								0	0	0
+768	 1	Snd1	   0	  14	    1	 1003	  40	  13	   0	 768
+768	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 768
+ 								0	0	0
+769	 1	Snd1	   0	  15	    1	 1003	  40	  13	   0	 769
+769	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 769
+ 								0	0	0
+770	 1	Snd1	   0	  16	    1	 1003	  40	  13	   0	 770
+770	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 770
+ 								0	0	0
+771	 1	Snd1	   0	  17	    1	 1003	  40	  13	   0	 771
+771	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 771
+ 								0	0	0
+772	 1	Snd1	   0	  18	    0	 1002	  40	  13	   0	 772
+772	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 772
+ 								0	0	0
+773	 1	Snd1	   0	  19	    0	 1003	  40	  13	   0	 773
+773	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 773
+ 								0	0	0
+774	 1	Snd1	   0	  20	    0	 1003	  40	  13	   0	 774
+774	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 774
+ 								0	0	0
+775	 1	Snd1	   0	  21	    0	 1003	  40	  13	   0	 775
+775	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 775
+ 								0	0	0
+776	 1	Snd1	   0	  22	    1	 1003	  40	  13	   0	 776
+776	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 776
+ 								0	0	0
+777	 1	Snd1	   0	  23	    1	 1003	  40	  13	   0	 777
+777	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 777
+ 								0	0	0
+778	 1	Snd1	   0	  24	    0	 1003	  40	  13	   0	 778
+778	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 778
+ 								0	0	0
+779	 1	Snd1	   0	  25	    0	 1003	  40	  13	   0	 779
+779	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 779
+ 								0	0	0
+780	 1	Snd1	   0	  26	    1	 1003	  40	  13	   0	 780
+780	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 780
+ 								0	0	0
+781	 1	Snd1	   0	  27	    0	 1003	  40	  13	   0	 781
+781	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 781
+ 								0	0	0
+782	 1	Snd1	   0	  28	    1	 1003	  40	  13	   0	 782
+782	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 782
+ 								0	0	0
+783	 1	Snd1	   0	  29	    1	 1003	  40	  13	   0	 783
+783	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 783
+ 								0	0	0
+784	 1	Snd1	   0	   1	    0	 1003	  50	  13	   0	 784
+784	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 784
+ 								0	0	0
+785	 1	Snd1	   0	   2	    1	 1003	  50	  13	   0	 785
+785	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 785
+ 								0	0	0
+786	 1	Snd1	   0	   3	    1	 1003	  50	  13	   0	 786
+786	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 786
+ 								0	0	0
+787	 1	Snd1	   0	   4	    1	 1003	  50	  13	   0	 787
+787	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 787
+ 								0	0	0
+788	 1	Snd1	   0	   5	    1	 1003	  50	  13	   0	 788
+788	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 788
+ 								0	0	0
+789	 1	Snd1	   0	   6	    1	 1003	  50	  13	   0	 789
+789	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 789
+ 								0	0	0
+790	 1	Snd1	   0	   7	    1	 1003	  50	  13	   0	 790
+790	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 790
+ 								0	0	0
+791	 1	Snd1	   0	   8	    0	 1003	  50	  13	   0	 791
+791	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 791
+ 								0	0	0
+792	 1	Snd1	   0	   9	    0	 1003	  50	  13	   0	 792
+792	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 792
+ 								0	0	0
+793	 1	Snd1	   0	  10	    1	 1003	  50	  13	   0	 793
+793	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 793
+ 								0	0	0
+794	 1	Snd1	   0	  11	    1	 1003	  50	  13	   0	 794
+794	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 794
+ 								0	0	0
+795	 1	Snd1	   0	  12	    1	 1003	  50	  13	   0	 795
+795	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 795
+ 								0	0	0
+796	 1	Snd1	   0	  13	    0	 1003	  50	  13	   0	 796
+796	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 796
+ 								0	0	0
+797	 1	Snd1	   0	  14	    0	 1003	  50	  13	   0	 797
+797	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 797
+ 								0	0	0
+798	 1	Snd1	   0	  15	    0	 1003	  50	  13	   0	 798
+798	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 798
+ 								0	0	0
+799	 1	Snd1	   0	  16	    1	 1003	  50	  13	   0	 799
+799	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 799
+ 								0	0	0
+800	 1	Snd1	   0	  17	    0	 1002	  50	  13	   0	 800
+800	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 800
+ 								0	0	0
+801	 1	Snd1	   0	  18	    0	 1003	  50	  13	   0	 801
+801	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 801
+ 								0	0	0
+802	 1	Snd1	   0	  19	    0	 1003	  50	  13	   0	 802
+802	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 802
+ 								0	0	0
+803	 1	Snd1	   0	  20	    0	 1003	  50	  13	   0	 803
+803	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 803
+ 								0	0	0
+804	 1	Snd1	   0	  21	    1	 1003	  50	  13	   0	 804
+804	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 804
+ 								0	0	0
+805	 1	Snd1	   0	  22	    1	 1003	  50	  13	   0	 805
+805	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 805
+ 								0	0	0
+806	 1	Snd1	   0	  23	    1	 1003	  50	  13	   0	 806
+806	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 806
+ 								0	0	0
+807	 1	Snd1	   0	  24	    1	 1003	  50	  13	   0	 807
+807	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 807
+ 								0	0	0
+808	 1	Snd1	   0	  25	    1	 1003	  50	  13	   0	 808
+808	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 808
+ 								0	0	0
+809	 1	Snd1	   0	  26	    1	 1003	  50	  13	   0	 809
+809	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 809
+ 								0	0	0
+810	 1	Snd1	   0	  27	    1	 1003	  50	  13	   0	 810
+810	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 810
+ 								0	0	0
+811	 1	Snd1	   0	  28	    1	 1003	  50	  13	   0	 811
+811	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 811
+ 								0	0	0
+812	 1	Snd1	   0	  29	    1	 1003	  50	  13	   0	 812
+812	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 812
+ 								0	0	0
+813	 1	Snd1	   0	   1	    1	 1003	  60	  13	   0	 813
+813	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 813
+ 								0	0	0
+814	 1	Snd1	   0	   2	    1	 1003	  60	  13	   0	 814
+814	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 814
+ 								0	0	0
+815	 1	Snd1	   0	   3	    1	 1003	  60	  13	   0	 815
+815	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 815
+ 								0	0	0
+816	 1	Snd1	   0	   4	    0	 1003	  60	  13	   0	 816
+816	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 816
+ 								0	0	0
+817	 1	Snd1	   0	   5	    1	 1003	  60	  13	   0	 817
+817	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 817
+ 								0	0	0
+818	 1	Snd1	   0	   6	    0	 1002	  60	  13	   0	 818
+818	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 818
+ 								0	0	0
+819	 1	Snd1	   0	   7	    0	 1002	  60	  13	   0	 819
+819	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 819
+ 								0	0	0
+820	 1	Snd1	   0	   8	    1	 1003	  60	  13	   0	 820
+820	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 820
+ 								0	0	0
+821	 1	Snd1	   0	   9	    1	 1003	  60	  13	   0	 821
+821	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 821
+ 								0	0	0
+822	 1	Snd1	   0	  10	    0	 1003	  60	  13	   0	 822
+822	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 822
+ 								0	0	0
+823	 1	Snd1	   0	  11	    0	 1003	  60	  13	   0	 823
+823	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 823
+ 								0	0	0
+824	 1	Snd1	   0	  12	    1	 1003	  60	  13	   0	 824
+824	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 824
+ 								0	0	0
+825	 1	Snd1	   0	  13	    0	 1003	  60	  13	   0	 825
+825	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 825
+ 								0	0	0
+826	 1	Snd1	   0	  14	    0	 1003	  60	  13	   0	 826
+826	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 826
+ 								0	0	0
+827	 1	Snd1	   0	  15	    1	 1003	  60	  13	   0	 827
+827	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 827
+ 								0	0	0
+828	 1	Snd1	   0	  16	    0	 1003	  60	  13	   0	 828
+828	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 828
+ 								0	0	0
+829	 1	Snd1	   0	  17	    0	 1003	  60	  13	   0	 829
+829	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 829
+ 								0	0	0
+830	 1	Snd1	   0	  18	    1	 1003	  60	  13	   0	 830
+830	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 830
+ 								0	0	0
+831	 1	Snd1	   0	  19	    0	 1002	  60	  13	   0	 831
+831	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 831
+ 								0	0	0
+832	 1	Snd1	   0	  20	    0	 1003	  60	  13	   0	 832
+832	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 832
+ 								0	0	0
+833	 1	Snd1	   0	  21	    1	 1003	  60	  13	   0	 833
+833	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 833
+ 								0	0	0
+834	 1	Snd1	   0	  22	    0	 1003	  60	  13	   0	 834
+834	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 834
+ 								0	0	0
+835	 1	Snd1	   0	  23	    1	 1003	  60	  13	   0	 835
+835	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 835
+ 								0	0	0
+836	 1	Snd1	   0	  24	    1	 1003	  60	  13	   0	 836
+836	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 836
+ 								0	0	0
+837	 1	Snd1	   0	  25	    0	 1003	  60	  13	   0	 837
+837	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 837
+ 								0	0	0
+838	 1	Snd1	   0	  26	    1	 1003	  60	  13	   0	 838
+838	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 838
+ 								0	0	0
+839	 1	Snd1	   0	  27	    1	 1003	  60	  13	   0	 839
+839	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 839
+ 								0	0	0
+840	 1	Snd1	   0	  28	    0	 1003	  60	  13	   0	 840
+840	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 840
+ 								0	0	0
+841	 1	Snd1	   0	  29	    1	 1003	  60	  13	   0	 841
+841	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 841
+ 								0	0	0
+842	 1	Snd1	   0	   1	    0	 1003	  70	  13	   0	 842
+842	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 842
+ 								0	0	0
+843	 1	Snd1	   0	   2	    1	 1003	  70	  13	   0	 843
+843	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 843
+ 								0	0	0
+844	 1	Snd1	   0	   3	    1	 1003	  70	  13	   0	 844
+844	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 844
+ 								0	0	0
+845	 1	Snd1	   0	   4	    0	 1003	  70	  13	   0	 845
+845	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 845
+ 								0	0	0
+846	 1	Snd1	   0	   5	    1	 1003	  70	  13	   0	 846
+846	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 846
+ 								0	0	0
+847	 1	Snd1	   0	   6	    0	 1003	  70	  13	   0	 847
+847	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 847
+ 								0	0	0
+848	 1	Snd1	   0	   7	    1	 1003	  70	  13	   0	 848
+848	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 848
+ 								0	0	0
+849	 1	Snd1	   0	   8	    1	 1003	  70	  13	   0	 849
+849	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 849
+ 								0	0	0
+850	 1	Snd1	   0	   9	    0	 1002	  70	  13	   0	 850
+850	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 850
+ 								0	0	0
+851	 1	Snd1	   0	  10	    1	 1003	  70	  13	   0	 851
+851	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 851
+ 								0	0	0
+852	 1	Snd1	   0	  11	    0	 1003	  70	  13	   0	 852
+852	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 852
+ 								0	0	0
+853	 1	Snd1	   0	  12	    1	 1003	  70	  13	   0	 853
+853	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 853
+ 								0	0	0
+854	 1	Snd1	   0	  13	    0	 1003	  70	  13	   0	 854
+854	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 854
+ 								0	0	0
+855	 1	Snd1	   0	  14	    0	 1002	  70	  13	   0	 855
+855	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 855
+ 								0	0	0
+856	 1	Snd1	   0	  15	    0	 1003	  70	  13	   0	 856
+856	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 856
+ 								0	0	0
+857	 1	Snd1	   0	  16	    1	 1003	  70	  13	   0	 857
+857	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 857
+ 								0	0	0
+858	 1	Snd1	   0	  17	    1	 1003	  70	  13	   0	 858
+858	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 858
+ 								0	0	0
+859	 1	Snd1	   0	  18	    1	 1003	  70	  13	   0	 859
+859	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 859
+ 								0	0	0
+860	 1	Snd1	   0	  19	    1	 1003	  70	  13	   0	 860
+860	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 860
+ 								0	0	0
+861	 1	Snd1	   0	  20	    1	 1003	  70	  13	   0	 861
+861	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 861
+ 								0	0	0
+862	 1	Snd1	   0	  21	    1	 1003	  70	  13	   0	 862
+862	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 862
+ 								0	0	0
+863	 1	Snd1	   0	  22	    0	 1003	  70	  13	   0	 863
+863	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 863
+ 								0	0	0
+864	 1	Snd1	   0	  23	    1	 1003	  70	  13	   0	 864
+864	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 864
+ 								0	0	0
+865	 1	Snd1	   0	  24	    0	 1003	  70	  13	   0	 865
+865	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 865
+ 								0	0	0
+866	 1	Snd1	   0	  25	    1	 1003	  70	  13	   0	 866
+866	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 866
+ 								0	0	0
+867	 1	Snd1	   0	  26	    0	 1003	  70	  13	   0	 867
+867	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 867
+ 								0	0	0
+868	 1	Snd1	   0	  27	    1	 1003	  70	  13	   0	 868
+868	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 868
+ 								0	0	0
+869	 1	Snd1	   0	  28	    1	 1003	  70	  13	   0	 869
+869	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 869
+ 								0	0	0
+870	 1	Snd1	   0	  29	    0	 1003	  70	  13	   0	 870
+870	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 870
+ 								0	0	0
+871	 1	Snd1	   0	   1	    1	 1003	  30	  14	   0	 871
+871	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 871
+ 								0	0	0
+872	 1	Snd1	   0	   2	    1	 1003	  30	  14	   0	 872
+872	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 872
+ 								0	0	0
+873	 1	Snd1	   0	   3	    1	 1003	  30	  14	   0	 873
+873	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 873
+ 								0	0	0
+874	 1	Snd1	   0	   4	    0	 1003	  30	  14	   0	 874
+874	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 874
+ 								0	0	0
+875	 1	Snd1	   0	   5	    1	 1003	  30	  14	   0	 875
+875	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 875
+ 								0	0	0
+876	 1	Snd1	   0	   6	    0	 1002	  30	  14	   0	 876
+876	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 876
+ 								0	0	0
+877	 1	Snd1	   0	   7	    1	 1003	  30	  14	   0	 877
+877	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 877
+ 								0	0	0
+878	 1	Snd1	   0	   8	    1	 1003	  30	  14	   0	 878
+878	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 878
+ 								0	0	0
+879	 1	Snd1	   0	   9	    1	 1003	  30	  14	   0	 879
+879	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 879
+ 								0	0	0
+880	 1	Snd1	   0	  10	    1	 1003	  30	  14	   0	 880
+880	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 880
+ 								0	0	0
+881	 1	Snd1	   0	  11	    1	 1003	  30	  14	   0	 881
+881	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 881
+ 								0	0	0
+882	 1	Snd1	   0	  12	    1	 1003	  30	  14	   0	 882
+882	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 882
+ 								0	0	0
+883	 1	Snd1	   0	  13	    0	 1003	  30	  14	   0	 883
+883	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 883
+ 								0	0	0
+884	 1	Snd1	   0	  14	    1	 1003	  30	  14	   0	 884
+884	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 884
+ 								0	0	0
+885	 1	Snd1	   0	  15	    0	 1003	  30	  14	   0	 885
+885	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 885
+ 								0	0	0
+886	 1	Snd1	   0	  16	    1	 1003	  30	  14	   0	 886
+886	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 886
+ 								0	0	0
+887	 1	Snd1	   0	  17	    1	 1003	  30	  14	   0	 887
+887	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 887
+ 								0	0	0
+888	 1	Snd1	   0	  18	    0	 1003	  30	  14	   0	 888
+888	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 888
+ 								0	0	0
+889	 1	Snd1	   0	  19	    1	 1003	  30	  14	   0	 889
+889	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 889
+ 								0	0	0
+890	 1	Snd1	   0	  20	    1	 1003	  30	  14	   0	 890
+890	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 890
+ 								0	0	0
+891	 1	Snd1	   0	  21	    1	 1003	  30	  14	   0	 891
+891	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 891
+ 								0	0	0
+892	 1	Snd1	   0	  22	    1	 1003	  30	  14	   0	 892
+892	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 892
+ 								0	0	0
+893	 1	Snd1	   0	  23	    0	 1003	  30	  14	   0	 893
+893	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 893
+ 								0	0	0
+894	 1	Snd1	   0	  24	    1	 1003	  30	  14	   0	 894
+894	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 894
+ 								0	0	0
+895	 1	Snd1	   0	  25	    0	 1003	  30	  14	   0	 895
+895	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 895
+ 								0	0	0
+896	 1	Snd1	   0	  26	    1	 1003	  30	  14	   0	 896
+896	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 896
+ 								0	0	0
+897	 1	Snd1	   0	  27	    0	 1002	  30	  14	   0	 897
+897	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 897
+ 								0	0	0
+898	 1	Snd1	   0	  28	    0	 1002	  30	  14	   0	 898
+898	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 898
+ 								0	0	0
+899	 1	Snd1	   0	  29	    0	 1002	  30	  14	   0	 899
+899	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 899
+ 								0	0	0
+900	 1	Snd1	   0	   1	    1	 1003	  40	  14	   0	 900
+900	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 900
+ 								0	0	0
+901	 1	Snd1	   0	   2	    0	 1003	  40	  14	   0	 901
+901	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 901
+ 								0	0	0
+902	 1	Snd1	   0	   3	    1	 1003	  40	  14	   0	 902
+902	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 902
+ 								0	0	0
+903	 1	Snd1	   0	   4	    0	 1002	  40	  14	   0	 903
+903	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 903
+ 								0	0	0
+904	 1	Snd1	   0	   5	    1	 1003	  40	  14	   0	 904
+904	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 904
+ 								0	0	0
+905	 1	Snd1	   0	   6	    1	 1003	  40	  14	   0	 905
+905	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 905
+ 								0	0	0
+906	 1	Snd1	   0	   7	    1	 1003	  40	  14	   0	 906
+906	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 906
+ 								0	0	0
+907	 1	Snd1	   0	   8	    1	 1003	  40	  14	   0	 907
+907	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 907
+ 								0	0	0
+908	 1	Snd1	   0	   9	    1	 1003	  40	  14	   0	 908
+908	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 908
+ 								0	0	0
+909	 1	Snd1	   0	  10	    1	 1003	  40	  14	   0	 909
+909	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 909
+ 								0	0	0
+910	 1	Snd1	   0	  11	    0	 1003	  40	  14	   0	 910
+910	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 910
+ 								0	0	0
+911	 1	Snd1	   0	  12	    1	 1003	  40	  14	   0	 911
+911	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 911
+ 								0	0	0
+912	 1	Snd1	   0	  13	    1	 1003	  40	  14	   0	 912
+912	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 912
+ 								0	0	0
+913	 1	Snd1	   0	  14	    1	 1003	  40	  14	   0	 913
+913	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 913
+ 								0	0	0
+914	 1	Snd1	   0	  15	    0	 1003	  40	  14	   0	 914
+914	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 914
+ 								0	0	0
+915	 1	Snd1	   0	  16	    0	 1002	  40	  14	   0	 915
+915	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 915
+ 								0	0	0
+916	 1	Snd1	   0	  17	    1	 1003	  40	  14	   0	 916
+916	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 916
+ 								0	0	0
+917	 1	Snd1	   0	  18	    0	 1003	  40	  14	   0	 917
+917	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 917
+ 								0	0	0
+918	 1	Snd1	   0	  19	    0	 1003	  40	  14	   0	 918
+918	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 918
+ 								0	0	0
+919	 1	Snd1	   0	  20	    0	 1002	  40	  14	   0	 919
+919	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 919
+ 								0	0	0
+920	 1	Snd1	   0	  21	    1	 1003	  40	  14	   0	 920
+920	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 920
+ 								0	0	0
+921	 1	Snd1	   0	  22	    0	 1002	  40	  14	   0	 921
+921	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 921
+ 								0	0	0
+922	 1	Snd1	   0	  23	    0	 1003	  40	  14	   0	 922
+922	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 922
+ 								0	0	0
+923	 1	Snd1	   0	  24	    1	 1003	  40	  14	   0	 923
+923	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 923
+ 								0	0	0
+924	 1	Snd1	   0	  25	    1	 1003	  40	  14	   0	 924
+924	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 924
+ 								0	0	0
+925	 1	Snd1	   0	  26	    1	 1003	  40	  14	   0	 925
+925	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 925
+ 								0	0	0
+926	 1	Snd1	   0	  27	    1	 1003	  40	  14	   0	 926
+926	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 926
+ 								0	0	0
+927	 1	Snd1	   0	  28	    1	 1003	  40	  14	   0	 927
+927	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 927
+ 								0	0	0
+928	 1	Snd1	   0	  29	    1	 1003	  40	  14	   0	 928
+928	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 928
+ 								0	0	0
+929	 1	Snd1	   0	   1	    1	 1003	  50	  14	   0	 929
+929	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 929
+ 								0	0	0
+930	 1	Snd1	   0	   2	    1	 1003	  50	  14	   0	 930
+930	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 930
+ 								0	0	0
+931	 1	Snd1	   0	   3	    1	 1003	  50	  14	   0	 931
+931	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 931
+ 								0	0	0
+932	 1	Snd1	   0	   4	    0	 1003	  50	  14	   0	 932
+932	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 932
+ 								0	0	0
+933	 1	Snd1	   0	   5	    1	 1003	  50	  14	   0	 933
+933	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 933
+ 								0	0	0
+934	 1	Snd1	   0	   6	    0	 1003	  50	  14	   0	 934
+934	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 934
+ 								0	0	0
+935	 1	Snd1	   0	   7	    0	 1003	  50	  14	   0	 935
+935	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 935
+ 								0	0	0
+936	 1	Snd1	   0	   8	    1	 1003	  50	  14	   0	 936
+936	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 936
+ 								0	0	0
+937	 1	Snd1	   0	   9	    1	 1003	  50	  14	   0	 937
+937	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 937
+ 								0	0	0
+938	 1	Snd1	   0	  10	    0	 1003	  50	  14	   0	 938
+938	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 938
+ 								0	0	0
+939	 1	Snd1	   0	  11	    0	 1003	  50	  14	   0	 939
+939	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 939
+ 								0	0	0
+940	 1	Snd1	   0	  12	    0	 1003	  50	  14	   0	 940
+940	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 940
+ 								0	0	0
+941	 1	Snd1	   0	  13	    1	 1003	  50	  14	   0	 941
+941	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 941
+ 								0	0	0
+942	 1	Snd1	   0	  14	    1	 1003	  50	  14	   0	 942
+942	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 942
+ 								0	0	0
+943	 1	Snd1	   0	  15	    1	 1003	  50	  14	   0	 943
+943	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 943
+ 								0	0	0
+944	 1	Snd1	   0	  16	    0	 1003	  50	  14	   0	 944
+944	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 944
+ 								0	0	0
+945	 1	Snd1	   0	  17	    1	 1003	  50	  14	   0	 945
+945	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 945
+ 								0	0	0
+946	 1	Snd1	   0	  18	    1	 1003	  50	  14	   0	 946
+946	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 946
+ 								0	0	0
+947	 1	Snd1	   0	  19	    0	 1003	  50	  14	   0	 947
+947	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 947
+ 								0	0	0
+948	 1	Snd1	   0	  20	    1	 1003	  50	  14	   0	 948
+948	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 948
+ 								0	0	0
+949	 1	Snd1	   0	  21	    0	 1003	  50	  14	   0	 949
+949	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 949
+ 								0	0	0
+950	 1	Snd1	   0	  22	    1	 1003	  50	  14	   0	 950
+950	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 950
+ 								0	0	0
+951	 1	Snd1	   0	  23	    1	 1003	  50	  14	   0	 951
+951	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 951
+ 								0	0	0
+952	 1	Snd1	   0	  24	    0	 1003	  50	  14	   0	 952
+952	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 952
+ 								0	0	0
+953	 1	Snd1	   0	  25	    1	 1003	  50	  14	   0	 953
+953	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 953
+ 								0	0	0
+954	 1	Snd1	   0	  26	    1	 1003	  50	  14	   0	 954
+954	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 954
+ 								0	0	0
+955	 1	Snd1	   0	  27	    0	 1002	  50	  14	   0	 955
+955	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 955
+ 								0	0	0
+956	 1	Snd1	   0	  28	    1	 1003	  50	  14	   0	 956
+956	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 956
+ 								0	0	0
+957	 1	Snd1	   0	  29	    0	 1003	  50	  14	   0	 957
+957	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 957
+ 								0	0	0
+958	 1	Snd1	   0	   1	    1	 1003	  60	  14	   0	 958
+958	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 958
+ 								0	0	0
+959	 1	Snd1	   0	   2	    1	 1003	  60	  14	   0	 959
+959	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 959
+ 								0	0	0
+960	 1	Snd1	   0	   3	    0	 1003	  60	  14	   0	 960
+960	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 960
+ 								0	0	0
+961	 1	Snd1	   0	   4	    1	 1003	  60	  14	   0	 961
+961	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 961
+ 								0	0	0
+962	 1	Snd1	   0	   5	    0	 1003	  60	  14	   0	 962
+962	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 962
+ 								0	0	0
+963	 1	Snd1	   0	   6	    1	 1003	  60	  14	   0	 963
+963	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 963
+ 								0	0	0
+964	 1	Snd1	   0	   7	    1	 1003	  60	  14	   0	 964
+964	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 964
+ 								0	0	0
+965	 1	Snd1	   0	   8	    0	 1002	  60	  14	   0	 965
+965	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 965
+ 								0	0	0
+966	 1	Snd1	   0	   9	    1	 1003	  60	  14	   0	 966
+966	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 966
+ 								0	0	0
+967	 1	Snd1	   0	  10	    0	 1003	  60	  14	   0	 967
+967	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 967
+ 								0	0	0
+968	 1	Snd1	   0	  11	    0	 1003	  60	  14	   0	 968
+968	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 968
+ 								0	0	0
+969	 1	Snd1	   0	  12	    0	 1003	  60	  14	   0	 969
+969	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 969
+ 								0	0	0
+970	 1	Snd1	   0	  13	    0	 1002	  60	  14	   0	 970
+970	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 970
+ 								0	0	0
+971	 1	Snd1	   0	  14	    1	 1003	  60	  14	   0	 971
+971	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 971
+ 								0	0	0
+972	 1	Snd1	   0	  15	    1	 1003	  60	  14	   0	 972
+972	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 972
+ 								0	0	0
+973	 1	Snd1	   0	  16	    1	 1003	  60	  14	   0	 973
+973	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 973
+ 								0	0	0
+974	 1	Snd1	   0	  17	    1	 1003	  60	  14	   0	 974
+974	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 974
+ 								0	0	0
+975	 1	Snd1	   0	  18	    1	 1003	  60	  14	   0	 975
+975	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 975
+ 								0	0	0
+976	 1	Snd1	   0	  19	    1	 1003	  60	  14	   0	 976
+976	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 976
+ 								0	0	0
+977	 1	Snd1	   0	  20	    1	 1003	  60	  14	   0	 977
+977	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 977
+ 								0	0	0
+978	 1	Snd1	   0	  21	    1	 1003	  60	  14	   0	 978
+978	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 978
+ 								0	0	0
+979	 1	Snd1	   0	  22	    0	 1002	  60	  14	   0	 979
+979	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 979
+ 								0	0	0
+980	 1	Snd1	   0	  23	    1	 1003	  60	  14	   0	 980
+980	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 980
+ 								0	0	0
+981	 1	Snd1	   0	  24	    0	 1002	  60	  14	   0	 981
+981	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 981
+ 								0	0	0
+982	 1	Snd1	   0	  25	    0	 1003	  60	  14	   0	 982
+982	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 982
+ 								0	0	0
+983	 1	Snd1	   0	  26	    1	 1003	  60	  14	   0	 983
+983	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 983
+ 								0	0	0
+984	 1	Snd1	   0	  27	    0	 1002	  60	  14	   0	 984
+984	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 984
+ 								0	0	0
+985	 1	Snd1	   0	  28	    0	 1003	  60	  14	   0	 985
+985	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 985
+ 								0	0	0
+986	 1	Snd1	   0	  29	    1	 1003	  60	  14	   0	 986
+986	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 986
+ 								0	0	0
+987	 1	Snd1	   0	   1	    0	 1003	  70	  14	   0	 987
+987	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 987
+ 								0	0	0
+988	 1	Snd1	   0	   2	    1	 1003	  70	  14	   0	 988
+988	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 988
+ 								0	0	0
+989	 1	Snd1	   0	   3	    0	 1003	  70	  14	   0	 989
+989	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 989
+ 								0	0	0
+990	 1	Snd1	   0	   4	    0	 1003	  70	  14	   0	 990
+990	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 990
+ 								0	0	0
+991	 1	Snd1	   0	   5	    1	 1003	  70	  14	   0	 991
+991	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 991
+ 								0	0	0
+992	 1	Snd1	   0	   6	    1	 1003	  70	  14	   0	 992
+992	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 992
+ 								0	0	0
+993	 1	Snd1	   0	   7	    0	 1003	  70	  14	   0	 993
+993	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 993
+ 								0	0	0
+994	 1	Snd1	   0	   8	    1	 1003	  70	  14	   0	 994
+994	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 994
+ 								0	0	0
+995	 1	Snd1	   0	   9	    1	 1003	  70	  14	   0	 995
+995	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 995
+ 								0	0	0
+996	 1	Snd1	   0	  10	    0	 1003	  70	  14	   0	 996
+996	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 996
+ 								0	0	0
+997	 1	Snd1	   0	  11	    1	 1003	  70	  14	   0	 997
+997	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 997
+ 								0	0	0
+998	 1	Snd1	   0	  12	    0	 1003	  70	  14	   0	 998
+998	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 998
+ 								0	0	0
+999	 1	Snd1	   0	  13	    1	 1003	  70	  14	   0	 999
+999	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	 999
+ 								0	0	0
+1000	 1	Snd1	   0	  14	    1	 1003	  70	  14	   0	1000
+1000	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	1000
+ 								0	0	0
+1001	 1	Snd1	   0	  15	    0	 1003	  70	  14	   0	1001
+1001	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	1001
+ 								0	0	0
+1002	 1	Snd1	   0	  16	    1	 1003	  70	  14	   0	1002
+1002	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	1002
+ 								0	0	0
+1003	 1	Snd1	   0	  17	    0	 1003	  70	  14	   0	1003
+1003	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	1003
+ 								0	0	0
+1004	 1	Snd1	   0	  18	    0	 1003	  70	  14	   0	1004
+1004	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	1004
+ 								0	0	0
+1005	 1	Snd1	   0	  19	    1	 1003	  70	  14	   0	1005
+1005	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	1005
+ 								0	0	0
+1006	 1	Snd1	   0	  20	    0	 1002	  70	  14	   0	1006
+1006	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	1006
+ 								0	0	0
+1007	 1	Snd1	   0	  21	    1	 1003	  70	  14	   0	1007
+1007	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	1007
+ 								0	0	0
+1008	 1	Snd1	   0	  22	    1	 1003	  70	  14	   0	1008
+1008	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	1008
+ 								0	0	0
+1009	 1	Snd1	   0	  23	    0	 1003	  70	  14	   0	1009
+1009	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	1009
+ 								0	0	0
+1010	 1	Snd1	   0	  24	    1	 1003	  70	  14	   0	1010
+1010	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	1010
+ 								0	0	0
+1011	 1	Snd1	   0	  25	    1	 1003	  70	  14	   0	1011
+1011	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	1011
+ 								0	0	0
+1012	 1	Snd1	   0	  26	    1	 1003	  70	  14	   0	1012
+1012	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	1012
+ 								0	0	0
+1013	 1	Snd1	   0	  27	    0	 1003	  70	  14	   0	1013
+1013	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	1013
+ 								0	0	0
+1014	 1	Snd1	   0	  28	    0	 1003	  70	  14	   0	1014
+1014	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	1014
+ 								0	0	0
+1015	 1	Snd1	   0	  29	    0	 1003	  70	  14	   0	1015
+1015	 2	Inp1	 NaN	 NaN	 NaN	48928	 NaN	 NaN	 NaN	1015

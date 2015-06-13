@@ -1,0 +1,101 @@
+ARM COMPILER V2.11,  Config                                                                20/10/09  09:30:17  PAGE 1   
+
+
+ARM COMPILER V2.11, COMPILATION OF MODULE Config
+OBJECT MODULE PLACED IN Config.OBJ
+COMPILER INVOKED BY: C:\Keil\ARM\BIN\CA.exe Config.c THUMB BROWSE TABS(4) 
+
+stmt  level    source
+
+    1          /*************************************************************************
+    2                                  Config.c
+    3          
+    4          Project         Controller      DJH MBFYS UMCN
+    5          --------------------------------------------------------------------------
+    6          Configuration Micro Controller
+    7          
+    8          Versie 1.00     19-05-2005      Dick Heeren
+    9          **************************************************************************/
+   10          
+   11          #include "Config.h"
+   12          #include <lpc21xx.h> 
+   13          
+   14          static T_LPC2119 lpc2119;
+   15          
+   16          void LPCinit(void)
+   17          {
+   18   1          lpc2119.crystal        = 10000000;
+   19   1          lpc2119.PLL_Multiplier = 5;
+   20   1          lpc2119.PLL_Divider    = 2;
+   21   1          lpc2119.UART0_Baudrate = 0;
+   22   1      
+   23   1          VICIntSelect = 0;
+   24   1      }
+   25          
+   26          T_LPC2119 *LPCconfig(void)
+   27          {
+   28   1          return &lpc2119;
+   29   1      }
+   30          
+ARM COMPILER V2.11,  Config                                                                20/10/09  09:30:17  PAGE 2   
+
+ASSEMBLY LISTING OF GENERATED OBJECT CODE
+
+
+
+*** PUBLICS:
+ PUBLIC         LPCinit?T
+ PUBLIC         LPCconfig?T
+
+
+
+*** DATA SEGMENT '?DT0?Config':
+ 00000000          lpc2119:
+ 00000000            DS          12
+
+
+
+*** CODE SEGMENT '?PR?LPCinit?T?Config':
+   18:     lpc2119.crystal        = 10000000;
+ 00000000  4800      LDR         R1,=0x989680
+ 00000002  4800      LDR         R0,=lpc2119 ; lpc2119
+ 00000004  6001      STR         R1,[R0,#0x0] ; lpc2119
+   19:     lpc2119.PLL_Multiplier = 5;
+ 00000006  2105      MOV         R1,#0x5
+ 00000008  4800      LDR         R0,=lpc2119 + 0x4 ; lpc2119+4
+ 0000000A  7001      STRB        R1,[R0,#0x0] ; lpc2119+4
+   20:     lpc2119.PLL_Divider    = 2;
+ 0000000C  2102      MOV         R1,#0x2
+ 0000000E  4800      LDR         R0,=lpc2119 + 0x5 ; lpc2119+5
+ 00000010  7001      STRB        R1,[R0,#0x0] ; lpc2119+5
+   21:     lpc2119.UART0_Baudrate = 0;
+ 00000012  2100      MOV         R1,#0x0
+ 00000014  4800      LDR         R0,=lpc2119 + 0x8 ; lpc2119+8
+ 00000016  6001      STR         R1,[R0,#0x0] ; lpc2119+8
+   23:     VICIntSelect = 0;
+ 00000018  2100      MOV         R1,#0x0
+ 0000001A  4800      LDR         R0,=0xFFFFF00C
+ 0000001C  6001      STR         R1,[R0,#0x0]
+   24: }
+ 0000001E  4770      BX          R14
+ 00000020          ENDP ; 'LPCinit?T'
+
+
+*** CODE SEGMENT '?PR?LPCconfig?T?Config':
+   28:     return &lpc2119;
+ 00000000  4800      LDR         R0,=lpc2119 ; lpc2119
+   29: }
+ 00000002  4770      BX          R14
+ 00000004          ENDP ; 'LPCconfig?T'
+
+
+
+Module Information          Static
+----------------------------------
+  code size            =    ------
+  data size            =        12
+  const size           =    ------
+End of Module Information.
+
+
+ARM COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

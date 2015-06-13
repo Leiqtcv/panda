@@ -1,0 +1,16 @@
+model { 
+	
+	for ( i in 1:Ntotal ) {
+		y[i] ~ dnorm(postMu*P[i],pow(postVar,-1))
+		P[i] ~ dnorm(x[i],pow(sigmaL,-2))
+	}
+
+postMu <- sigmaP^2/o
+postVar <- v/o
+v <- sigmaP^2 * sigmaL^2
+o <- sigmaP^2 + sigmaL^2
+	
+# Priors
+sigmaL ~ dgamma(1,0.1) # standardized y values
+sigmaP ~ dgamma(1,0.1) # standardized y values
+}

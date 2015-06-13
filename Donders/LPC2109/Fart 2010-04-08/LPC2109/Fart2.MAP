@@ -1,0 +1,508 @@
+LA ARM LINKER/LOCATER V2.11                                                             04/28/2010  15:26:53  PAGE 1
+
+
+LA ARM LINKER/LOCATER V2.11, INVOKED BY:
+C:\KEIL\ARM\BIN\LA.EXE Startup.obj, Config.obj, Clock.obj, i2c.obj, serial.obj, Fart.obj TO Fart2 CASE CLASSES (DATA (0X
+>> 40000000-0X40003FFF), CODE (0X0-0X3FFFF), CONST (0X0-0X3FFFF))
+
+
+CPU MODE: LITTLE ENDIAN
+USING FLOATING POINT ARITHMETIC
+
+
+INPUT MODULES INCLUDED:
+  Startup.obj (STARTUP)
+         COMMENT TYPE 0: AA V2.00
+  Config.obj (Config)
+         COMMENT TYPE 0: CA V2.11
+  Clock.obj (Clock)
+         COMMENT TYPE 0: CA V2.11
+  i2c.obj (i2c)
+         COMMENT TYPE 0: CA V2.11
+  serial.obj (serial)
+         COMMENT TYPE 0: CA V2.11
+  Fart.obj (Fart)
+         COMMENT TYPE 0: CA V2.11
+  C:\KEIL\ARM\LIB\CALFP.LIB (SQRT)
+         COMMENT TYPE 0: AA V2.00
+  C:\KEIL\ARM\LIB\CALFP.LIB (pow)
+         COMMENT TYPE 0: CA V2.11
+  C:\KEIL\ARM\LIB\CALFP.LIB (sprintf)
+         COMMENT TYPE 0: CA V2.11
+  C:\KEIL\ARM\LIB\CALFP.LIB (sscanf)
+         COMMENT TYPE 0: CA V2.11
+  C:\KEIL\ARM\LIB\CALFP.LIB (EXP)
+         COMMENT TYPE 0: AA V2.00
+  C:\KEIL\ARM\LIB\CALFP.LIB (LOG)
+         COMMENT TYPE 0: AA V2.00
+  C:\KEIL\ARM\LIB\CALFP.LIB (prnfmt)
+         COMMENT TYPE 0: CA V2.11
+  C:\KEIL\ARM\LIB\CALFP.LIB (scanfp)
+         COMMENT TYPE 0: CA V2.11
+  C:\KEIL\ARM\LIB\CALFP.LIB (FPADD)
+         COMMENT TYPE 0: AA V2.00
+  C:\KEIL\ARM\LIB\CALFP.LIB (FPMUL)
+         COMMENT TYPE 0: AA V2.00
+  C:\KEIL\ARM\LIB\CALFP.LIB (FPDIV)
+         COMMENT TYPE 0: AA V2.00
+  C:\KEIL\ARM\LIB\CALFP.LIB (FCAST)
+         COMMENT TYPE 0: AA V2.00
+  C:\KEIL\ARM\LIB\CALFP.LIB (CASTF)
+         COMMENT TYPE 0: AA V2.00
+  C:\KEIL\ARM\LIB\CALFP.LIB (FPCONV)
+         COMMENT TYPE 0: AA V2.00
+  C:\KEIL\ARM\LIB\CALFP.LIB (FPSERIES)
+         COMMENT TYPE 0: AA V2.00
+  C:\KEIL\ARM\LIB\CALFP.LIB (fpatof)
+         COMMENT TYPE 0: CA V2.11
+  C:\KEIL\ARM\LIB\CALFP.LIB (FTNPWR)
+         COMMENT TYPE 0: AA V2.00
+  C:\KEIL\ARM\LIB\CAL.LIB (UDIV)
+         COMMENT TYPE 0: AA V2.00
+  C:\KEIL\ARM\LIB\CAL.LIB (FIQ)
+         COMMENT TYPE 0: AA V2.00
+  C:\KEIL\ARM\LIB\CAL.LIB (IRQ)
+         COMMENT TYPE 0: AA V2.00
+  C:\KEIL\ARM\LIB\CAL.LIB (DABT)
+         COMMENT TYPE 0: AA V2.00
+  C:\KEIL\ARM\LIB\CAL.LIB (PABT)
+         COMMENT TYPE 0: AA V2.00
+LA ARM LINKER/LOCATER V2.11                                                           04/28/2010  15:26:53  PAGE 2
+
+
+  C:\KEIL\ARM\LIB\CAL.LIB (SWI)
+         COMMENT TYPE 0: AA V2.00
+  C:\KEIL\ARM\LIB\CAL.LIB (UNDEF)
+         COMMENT TYPE 0: AA V2.00
+  C:\KEIL\ARM\LIB\CAL.LIB (strlen)
+         COMMENT TYPE 0: CA V2.11
+  C:\KEIL\ARM\LIB\CAL.LIB (isspace)
+         COMMENT TYPE 0: CA V2.11
+  C:\KEIL\ARM\LIB\CALFP.LIB (FPNEG)
+         COMMENT TYPE 0: AA V2.00
+  C:\KEIL\ARM\LIB\CALFP.LIB (FPCMP)
+         COMMENT TYPE 0: AA V2.00
+  C:\KEIL\ARM\LIB\CALFP.LIB (FCASTU)
+         COMMENT TYPE 0: AA V2.00
+  C:\KEIL\ARM\LIB\CAL.LIB (?C?ICALL)
+         COMMENT TYPE 0: AA V2.00
+  C:\KEIL\ARM\LIB\CAL.LIB (SDIV)
+         COMMENT TYPE 0: AA V2.00
+
+
+ACTIVE MEMORY CLASSES OF MODULE:  Fart2 (STARTUP)
+
+BASE       START      END        USED       MEMORY CLASS
+========================================================
+00000000H  40000000H  40003FFFH  00003014H  DATA
+00000000H  00000000H  0003FFFFH  00005AF0H  CODE
+00000000H  00000000H  0003FFFFH  00000272H  CONST
+
+
+INTERRUPT FUNCTIONS
+
+TYPE  STACK SIZE    FUNCTION NAME
+=================================
+irq                 timer0?A
+irq                 I2C_irq?A
+irq                 UART0_irq?A
+irq                 ADC_irq?A
+
+
+
+
+MEMORY MAP OF MODULE:  Fart2 (STARTUP)
+
+
+START      STOP       LENGTH    ALIGN  RELOC  MEMORY CLASS   SEGMENT NAME
+=========================================================================
+00000000H  00000127H  00000128H     4  AT..   CODE           STARTUPCODE
+*** OVERLAP ***
+*** OVERLAP ***
+*** OVERLAP ***
+*** OVERLAP ***
+*** OVERLAP ***
+*** OVERLAP ***
+*** OVERLAP ***
+*** OVERLAP ***
+00000128H  0000028EH  00000167H     4  UNIT   CONST          ?CON?Fart
+0000028FH  0000028FH  00000001H   ---  ---    **GAP**
+00000290H  00000296H  00000007H     4  UNIT   CONST          ?CON?prnfmt
+00000297H  00000297H  00000001H   ---  ---    **GAP**
+00000298H  000002C7H  00000030H     4  UNIT   CONST          ?C_CLRSEG
+000002C8H  0000039BH  000000D4H     4  UNIT   CONST          ?C_INITSEG
+0000039CH  000003C3H  00000028H     4  UNIT   CODE           ?PR?LPCinit?T?Config
+000003C4H  000003CBH  00000008H     4  UNIT   CODE           ?PR?LPCconfig?T?Config
+000003CCH  00000437H  0000006CH     4  UNIT   CODE           ?PR?Clock_Init?T?Clock
+00000438H  00000443H  0000000CH     4  UNIT   CODE           ?PR?Clock_GetTicks?T?Clock
+LA ARM LINKER/LOCATER V2.11                                                           04/28/2010  15:26:53  PAGE 3
+
+
+00000444H  0000044FH  0000000CH     4  UNIT   CODE           ?PR?Clock_GetSeconds?T?Clock
+00000450H  0000045BH  0000000CH     4  UNIT   CODE           ?PR?Clock_Reset?T?Clock
+0000045CH  00000467H  0000000CH     4  UNIT   CODE           ?PR?Clock_GetCountWait?T?Clock
+00000468H  00000473H  0000000CH     4  UNIT   CODE           ?PR?Clock_ClrCountWait?T?Clock
+00000474H  0000051FH  000000ACH     4  UNIT   CODE           ?PR?timer0?A?Clock
+00000520H  00000597H  00000078H     4  UNIT   CODE           ?PR?I2C_Init?T?i2c
+00000598H  000005C3H  0000002CH     4  UNIT   CODE           ?PR?I2C_SendByte?T?i2c
+000005C4H  000007CFH  0000020CH     4  UNIT   CODE           ?PR?I2C_irq?A?i2c
+000007D0H  00000807H  00000038H     4  UNIT   CODE           ?PR?I2C_SetBitrate?T?i2c
+00000808H  00000827H  00000020H     4  UNIT   CODE           ?PR?I2C_Start?T?i2c
+00000828H  00000963H  0000013CH     4  UNIT   CODE           ?PR?UART0_irq?A?serial
+00000964H  000009FFH  0000009CH     4  UNIT   CODE           ?PR?UART0_Init?T?serial
+00000A00H  00000A5FH  00000060H     4  UNIT   CODE           ?PR?UART0_SetBaud?T?serial
+00000A60H  00000A6FH  00000010H     4  UNIT   CODE           ?PR?UART0_RxNumber?T?serial
+00000A70H  00000AA3H  00000034H     4  UNIT   CODE           ?PR?UART0_Get?T?serial
+00000AA4H  00000AFFH  0000005CH     4  UNIT   CODE           ?PR?UART0_Put?T?serial
+00000B00H  00000B27H  00000028H     4  UNIT   CODE           ?PR?UART0_Str?T?serial
+00000B28H  00000CC3H  0000019CH     4  UNIT   CODE           ?PR?ADC_irq?A?Fart
+00000CC4H  00000CDFH  0000001CH     4  UNIT   CODE           ?PR?AdcNext?T?Fart
+00000CE0H  00000D77H  00000098H     4  UNIT   CODE           ?PR?ADC_Init?T?Fart
+00000D78H  00000FA3H  0000022CH     4  UNIT   CODE           ?PR?InitAll?T?Fart
+00000FA4H  000010F7H  00000154H     4  UNIT   CODE           ?PR?splitInput?T?Fart
+000010F8H  00001223H  0000012CH     4  UNIT   CODE           ?PR?execStim?T?Fart
+00001224H  0000125BH  00000038H     4  UNIT   CODE           ?PR?ClearSky?T?Fart
+0000125CH  00001283H  00000028H     4  UNIT   CODE           ?PR?ClearArc?T?Fart
+00001284H  0000140FH  0000018CH     4  UNIT   CODE           ?PR?LedOnOff?T?Fart
+00001410H  0000156BH  0000015CH     4  UNIT   CODE           ?PR?SkyOnOff?T?Fart
+0000156CH  000015A3H  00000038H     4  UNIT   CODE           ?PR?getPIO?T?Fart
+000015A4H  000015B3H  00000010H     4  UNIT   CODE           ?PR?SetBitsPar?T?Fart
+000015B4H  000015C3H  00000010H     4  UNIT   CODE           ?PR?ClrBitsPar?T?Fart
+000015C4H  000015D3H  00000010H     4  UNIT   CODE           ?PR?ClrAllBitsPar?T?Fart
+000015D4H  000015E3H  00000010H     4  UNIT   CODE           ?PR?GetBitsPar?T?Fart
+000015E4H  00001613H  00000030H     4  UNIT   CODE           ?PR?WaitForEnter?T?Fart
+00001614H  00001653H  00000040H     4  UNIT   CODE           ?PR?execInit?T?Fart
+00001654H  000016CBH  00000078H     4  UNIT   CODE           ?PR?execEvent?T?Fart
+000016CCH  00001843H  00000178H     4  UNIT   CODE           ?PR?execBarFlank?T?Fart
+00001844H  00001967H  00000124H     4  UNIT   CODE           ?PR?execBarLevel?T?Fart
+00001968H  00001A9FH  00000138H     4  UNIT   CODE           ?PR?execBarCheck?T?Fart
+00001AA0H  00001ADFH  00000040H     4  UNIT   CODE           ?PR?execBar?T?Fart
+00001AE0H  00001BC7H  000000E8H     4  UNIT   CODE           ?PR?execSky?T?Fart
+00001BC8H  00001C9FH  000000D8H     4  UNIT   CODE           ?PR?execLed?T?Fart
+00001CA0H  00001DCBH  0000012CH     4  UNIT   CODE           ?PR?execRec?T?Fart
+00001DCCH  00001E9BH  000000D0H     4  UNIT   CODE           ?PR?execRew?T?Fart
+00001E9CH  00001F6BH  000000D0H     4  UNIT   CODE           ?PR?execLas?T?Fart
+00001F6CH  00002087H  0000011CH     4  UNIT   CODE           ?PR?execSnd?T?Fart
+00002088H  0000219BH  00000114H     4  UNIT   CODE           ?PR?execFixWnd?T?Fart
+0000219CH  00002443H  000002A8H     4  UNIT   CODE           ?PR?execSpeed?T?Fart
+00002444H  0000253FH  000000FCH     4  UNIT   CODE           ?PR?calculateSpeed?T?Fart
+00002540H  000025EBH  000000ACH     4  UNIT   CODE           ?PR?execError?T?Fart
+000025ECH  00002617H  0000002CH     4  UNIT   CODE           ?PR?getInfo?T?Fart
+00002618H  00002643H  0000002CH     4  UNIT   CODE           ?PR?getState?T?Fart
+00002644H  00002673H  00000030H     4  UNIT   CODE           ?PR?getStateTrial?T?Fart
+00002674H  0000269FH  0000002CH     4  UNIT   CODE           ?PR?getClock?T?Fart
+000026A0H  000026CBH  0000002CH     4  UNIT   CODE           ?PR?getTime?T?Fart
+000026CCH  000026E3H  00000018H     4  UNIT   CODE           ?PR?clrTime?T?Fart
+000026E4H  00002713H  00000030H     4  UNIT   CODE           ?PR?execReset?T?Fart
+00002714H  00002753H  00000040H     4  UNIT   CODE           ?PR?execAbort?T?Fart
+00002754H  00002793H  00000040H     4  UNIT   CODE           ?PR?execNextTrial?T?Fart
+00002794H  000027EBH  00000058H     4  UNIT   CODE           ?PR?execStartTrial?T?Fart
+000027ECH  0000288BH  000000A0H     4  UNIT   CODE           ?PR?execSaveTrial?T?Fart
+0000288CH  000028B7H  0000002CH     4  UNIT   CODE           ?PR?getBarState?T?Fart
+000028B8H  00002927H  00000070H     4  UNIT   CODE           ?PR?getADC?T?Fart
+00002928H  00002993H  0000006CH     4  UNIT   CODE           ?PR?getSpeed?T?Fart
+00002994H  000029BFH  0000002CH     4  UNIT   CODE           ?PR?selectADC?T?Fart
+000029C0H  000029F3H  00000034H     4  UNIT   CODE           ?PR?softReset?T?Fart
+LA ARM LINKER/LOCATER V2.11                                                           04/28/2010  15:26:53  PAGE 4
+
+
+000029F4H  00002BABH  000001B8H     4  UNIT   CODE           ?PR?setSpeaker?T?Fart
+00002BACH  00002EBBH  00000310H     4  UNIT   CODE           ?PR?loadNNMod?T?Fart
+00002EBCH  00002EF7H  0000003CH     4  UNIT   CODE           ?PR?tansig?T?Fart
+00002EF8H  0000319FH  000002A8H     4  UNIT   CODE           ?PR?simulateNN?T?Fart
+000031A0H  0000322FH  00000090H     4  UNIT   CODE           ?PR?setFixWindow?T?Fart
+00003230H  00003423H  000001F4H     4  UNIT   CODE           ?PR?testFixWnd?T?Fart
+00003424H  000041C3H  00000DA0H     4  UNIT   CODE           ?PR?main?Fart
+000041C4H  000042BBH  000000F8H     4  UNIT   CODE           ?PR?sqrtf
+000042BCH  00004343H  00000088H     4  UNIT   CODE           ?PR?pow?T?pow
+00004344H  00004353H  00000010H     4  UNIT   CODE           ?PR?out?T?sprintf
+00004354H  0000438BH  00000038H     4  UNIT   CODE           ?PR?sprintf?T?sprintf
+0000438CH  000043AFH  00000024H     4  UNIT   CODE           ?PR?in?T?sscanf
+000043B0H  000043DFH  00000030H     4  UNIT   CODE           ?PR?sscanf?T?sscanf
+000043E0H  000044C3H  000000E4H     4  UNIT   CODE           ?PR?expf
+000044C4H  0000464BH  00000188H     4  UNIT   CODE           ?PR?logf
+0000464CH  00004673H  00000028H     4  UNIT   CODE           ?PR?charout?T?prnfmt
+00004674H  000046A3H  00000030H     4  UNIT   CODE           ?PR?numout?T?prnfmt
+000046A4H  00004747H  000000A4H     4  UNIT   CODE           ?PR?signout?T?prnfmt
+00004748H  00004767H  00000020H     4  UNIT   CODE           ?PR?punktout?T?prnfmt
+00004768H  00004D9BH  00000634H     4  UNIT   CODE           ?PR?__prnfmt?T?prnfmt
+00004D9CH  00004DBBH  00000020H     4  UNIT   CODE           ?PR?ungetcx?T?scanfp
+00004DBCH  00004DDFH  00000024H     4  UNIT   CODE           ?PR?getc?T?scanfp
+00004DE0H  00004E03H  00000024H     4  UNIT   CODE           ?PR?getarg?T?scanfp
+00004E04H  00004E2BH  00000028H     4  UNIT   CODE           ?PR?SkipSpace?T?scanfp
+00004E2CH  00005343H  00000518H     4  UNIT   CODE           ?PR?__scanfp?T?scanfp
+00005344H  00005497H  00000154H     4  UNIT   CODE           ?PR?C?FPADD
+00005498H  000055FFH  00000168H     4  UNIT   CODE           ?PR?C?FPMUL
+00005600H  0000578BH  0000018CH     4  UNIT   CODE           ?PR?C?FPDIV
+0000578CH  000057E7H  0000005CH     4  UNIT   CODE           ?PR?C?FCAST
+000057E8H  00005823H  0000003CH     4  UNIT   CODE           ?PR?C?CASTF
+00005824H  000059B3H  00000190H     4  UNIT   CODE           ?PR?C?FPCONV
+000059B4H  000059EFH  0000003CH     4  UNIT   CODE           ?PR?C?FPSERIES
+000059F0H  00005B63H  00000174H     4  UNIT   CODE           ?PR?__fpatof?T?fpatof
+00005B64H  00005BB7H  00000054H     4  UNIT   CODE           ?PR?C?FTNPWR
+00005BB8H  00005BFFH  00000048H     4  UNIT   CODE           ?PR?C?UDIV
+00005C00H  00005C03H  00000004H     4  UNIT   CODE           ?C?FIQ
+00005C04H  00005C07H  00000004H     4  UNIT   CODE           ?C?IRQ
+00005C08H  00005C0BH  00000004H     4  UNIT   CODE           ?C?DABT
+00005C0CH  00005C0FH  00000004H     4  UNIT   CODE           ?C?PABT
+00005C10H  00005C17H  00000008H     4  UNIT   CODE           ?C?UNDEF
+00005C18H  00005C37H  00000020H     4  UNIT   CODE           ?PR?strlen?T?strlen
+00005C38H  00005C57H  00000020H     4  UNIT   CODE           ?PR?isspace?T?isspace
+00005C58H  00005C73H  0000001CH     4  UNIT   CODE           ?PR?C?FPNEG
+00005C74H  00005C9FH  0000002CH     4  UNIT   CODE           ?PR?FPCMP
+00005CA0H  00005CF3H  00000054H     4  UNIT   CODE           ?PR?C?FCASTU
+00005CF4H  00005D03H  00000010H     4  UNIT   CODE           ?PR?C?ICALL
+00005D04H  00005D63H  00000060H     4  UNIT   CODE           ?PR?C?SDIV
+00005D64H  3FFFFFFFH  3FFFA29CH   ---  ---    **GAP**
+40000000H  4000088FH  00000890H     4  UNIT   DATA           STACK
+40000890H  4000089BH  0000000CH     4  UNIT   DATA           ?DT0?Config
+4000089CH  400008ABH  00000010H     4  UNIT   DATA           ?DT0?Clock
+400008ACH  400008B8H  0000000DH     4  UNIT   DATA           ?DT0?i2c
+400008B9H  400008BBH  00000003H   ---  ---    **GAP**
+400008BCH  400010D3H  00000818H     4  UNIT   DATA           ?DT0?serial
+400010D4H  40003016H  00001F43H     4  UNIT   DATA           ?DT0?Fart
+
+
+
+PUBLIC SYMBOLS OF MODULE:  Fart2 (STARTUP)
+
+
+      VALUE      CLASS    TYPE      PUBLIC SYMBOL NAME
+      ================================================
+      000057ECH  CODE     ---       ?C?CASTF?A
+      000057E8H  CODE     ---       ?C?CASTF?T
+LA ARM LINKER/LOCATER V2.11                                                           04/28/2010  15:26:53  PAGE 5
+
+
+      00000298H  ---      ---       ?C?CLRTAB
+      00005790H  CODE     ---       ?C?FCAST?A
+      0000578CH  CODE     ---       ?C?FCAST?T
+      00005CA4H  CODE     ---       ?C?FCASTU?A
+      00005CA0H  CODE     ---       ?C?FCASTU?T
+      000059B4H  CODE     ---       ?C?FP2SERIES?A
+      00005348H  CODE     ---       ?C?FPADD?A
+      00005344H  CODE     ---       ?C?FPADD?T
+      00005C78H  CODE     ---       ?C?FPCMP?A
+      00005C74H  CODE     ---       ?C?FPCMP?T
+      00005604H  CODE     ---       ?C?FPDIV?A
+      00005600H  CODE     ---       ?C?FPDIV?T
+      0000549CH  CODE     ---       ?C?FPMUL?A
+      00005498H  CODE     ---       ?C?FPMUL?T
+      00005C5CH  CODE     ---       ?C?FPNEG?A
+      00005C58H  CODE     ---       ?C?FPNEG?T
+      000059C4H  CODE     ---       ?C?FPSERIES?A
+      000053D8H  CODE     ---       ?C?FPSUB?A
+      000053D4H  CODE     ---       ?C?FPSUB?T
+      00005B68H  CODE     ---       ?C?FTNPWR?A
+      00005CF4H  CODE     ---       ?C?ICALL0?T
+      00005CF6H  CODE     ---       ?C?ICALL1?T
+      00005CF8H  CODE     ---       ?C?ICALL2?T
+      00005CFAH  CODE     ---       ?C?ICALL3?T
+      00005CFCH  CODE     ---       ?C?ICALL4?T
+      00005CFEH  CODE     ---       ?C?ICALL5?T
+      00005D00H  CODE     ---       ?C?ICALL6?T
+      00005D02H  CODE     ---       ?C?ICALL7?T
+      00003424H  ---      ---       ?C?INIT
+      000002C8H  ---      ---       ?C?INITTAB
+      00005D08H  CODE     ---       ?C?SDIV?A
+      00005D04H  CODE     ---       ?C?SDIV?T
+      00005BBCH  CODE     ---       ?C?UDIV?A
+      00005BB8H  CODE     ---       ?C?UDIV?T
+      00000CE0H  CODE     ---       ADC_Init?T
+      00000B28H  CODE     ---       ADC_irq?A
+      40001254H  DATA     ---       AdcActive
+      400010D4H  DATA     ---       AdcBuffer
+      00000CC4H  CODE     ---       AdcNext?A
+      00000CD0H  CODE     ---       AdcNext?T
+      0000125CH  CODE     ---       ClearArc?T
+      00001224H  CODE     ---       ClearSky?T
+      00000468H  CODE     ---       Clock_ClrCountWait?T
+      0000045CH  CODE     ---       Clock_GetCountWait?T
+      00000444H  CODE     ---       Clock_GetSeconds?T
+      00000438H  CODE     ---       Clock_GetTicks?T
+      000003CCH  CODE     ---       Clock_Init?T
+      00000450H  CODE     ---       Clock_Reset?T
+      000015C4H  CODE     ---       ClrAllBitsPar?T
+      000015B4H  CODE     ---       ClrBitsPar?T
+      400008A4H  DATA     ---       Count
+      00005C08H  CODE     ---       DAbt_Handler?A
+      00000000H  CODE     ---       Delay?T
+      00005C00H  CODE     ---       FIQ_Handler?A
+      000015D4H  CODE     ---       GetBitsPar?T
+      00000520H  CODE     ---       I2C_Init?T
+      00000598H  CODE     ---       I2C_SendByte?T
+      000007D0H  CODE     ---       I2C_SetBitrate?T
+      00000808H  CODE     ---       I2C_Start?T
+      000005C4H  CODE     ---       I2C_irq?A
+      00005C04H  CODE     ---       IRQ_Handler?A
+      40001330H  DATA     ---       ITI
+      00000D78H  CODE     ---       InitAll?T
+      000003C4H  CODE     ---       LPCconfig?T
+      0000039CH  CODE     ---       LPCinit?T
+LA ARM LINKER/LOCATER V2.11                                                           04/28/2010  15:26:53  PAGE 6
+
+
+      00001284H  CODE     ---       LedOnOff?T
+      40002BE4H  DATA     ---       Leds
+      40002BE0H  DATA     ---       MCS
+      40001F20H  DATA     ---       NNs
+      40002AB0H  DATA     ---       NetNum
+      00005C0CH  CODE     ---       PAbt_Handler?A
+      400008B8H  DATA     BYTE      ReadWrite
+      00005C10H  CODE     ---       SWI_Handler?A
+      400008A0H  DATA     ---       Seconds
+      000015A4H  CODE     ---       SetBitsPar?T
+      40002CA4H  DATA     ---       Sky
+      00001410H  CODE     ---       SkyOnOff?T
+      40002E3CH  DATA     ---       T_ITI
+      40002E44H  DATA     ---       T_done
+      40002E40H  DATA     ---       T_start
+      40002E38H  DATA     ---       T_trial
+      4000089CH  DATA     ---       Ticks
+      00000000H  CODE     ---       TstBitPar?T
+      400010D0H  DATA     DWORD     UART0_Baudrate
+      00000A70H  CODE     ---       UART0_Get?T
+      00000964H  CODE     ---       UART0_Init?T
+      00000AA4H  CODE     ---       UART0_Put?T
+      00000A60H  CODE     ---       UART0_RxNumber?T
+      00000A00H  CODE     ---       UART0_SetBaud?T
+      00000000H  CODE     ---       UART0_Stop?T
+      00000B00H  CODE     ---       UART0_Str?T
+      00000000H  CODE     ---       UART0_TxEmpty?T
+      00000828H  CODE     ---       UART0_irq?A
+      00005C14H  CODE     ---       Undef_Handler?A
+      000015E4H  CODE     ---       WaitForEnter?T
+      40002E48H  DATA     ---       X
+      40002E5CH  DATA     ---       Y
+      000059F0H  CODE     ---       __fpatof?A
+      000059FCH  CODE     ---       __fpatof?T
+      0000582CH  CODE     ---       __fpconvert?A
+      00005824H  CODE     ---       __fpconvert?T
+      00005940H  CODE     ---       __fpround?A
+      0000593CH  CODE     ---       __fpround?T
+      00005B68H  CODE     ---       __ftnpwr?A
+      00005B64H  CODE     ---       __ftnpwr?T
+      00004768H  CODE     ---       __prnfmt?A
+      00004774H  CODE     ---       __prnfmt?T
+      00004E2CH  CODE     ---       __scanfp?A
+      00004E38H  CODE     ---       __scanfp?T
+      00000000H  CODE     ---       __startup
+      40002D40H  DATA     ---       boards
+      00002444H  CODE     ---       calculateSpeed?T
+      000026CCH  CODE     ---       clrTime?T
+      400008A8H  DATA     ---       countWait
+      4000132CH  DATA     ---       curTime
+      400008B0H  DATA     ---       dataBuffer
+      400008B6H  DATA     BYTE      dataIn
+      400008B5H  DATA     BYTE      deviceAddress
+      40001334H  DATA     ---       errFlag
+      40001338H  DATA     ---       errTime
+      00002714H  CODE     ---       execAbort?T
+      00001AA0H  CODE     ---       execBar?T
+      00001968H  CODE     ---       execBarCheck?T
+      000016CCH  CODE     ---       execBarFlank?T
+      00001844H  CODE     ---       execBarLevel?T
+      00002540H  CODE     ---       execError?T
+      00001654H  CODE     ---       execEvent?T
+      00002088H  CODE     ---       execFixWnd?T
+      00001614H  CODE     ---       execInit?T
+      00001E9CH  CODE     ---       execLas?T
+LA ARM LINKER/LOCATER V2.11                                                           04/28/2010  15:26:53  PAGE 7
+
+
+      00001BC8H  CODE     ---       execLed?T
+      00002754H  CODE     ---       execNextTrial?T
+      00001CA0H  CODE     ---       execRec?T
+      000026E4H  CODE     ---       execReset?T
+      00000000H  CODE     ---       execResults?T
+      00001DCCH  CODE     ---       execRew?T
+      000027ECH  CODE     ---       execSaveTrial?T
+      00001AE0H  CODE     ---       execSky?T
+      00001F6CH  CODE     ---       execSnd?T
+      0000219CH  CODE     ---       execSpeed?T
+      00002794H  CODE     ---       execStartTrial?T
+      000010F8H  CODE     ---       execStim?T
+      00000000H  CODE     ---       execTime?T
+      00000100H  CODE     ---       exit?A
+      00000104H  CODE     ---       exit?T
+      000043E4H  CODE     ---       exp?A
+      000043E0H  CODE     ---       exp?T
+      000043E4H  CODE     ---       expf?A
+      000043E0H  CODE     ---       expf?T
+      40002AB4H  DATA     ---       fixWindows
+      40002D80H  DATA     ---       gain1
+      40002DA0H  DATA     ---       gain2
+      000028B8H  CODE     ---       getADC?T
+      0000288CH  CODE     ---       getBarState?T
+      00002674H  CODE     ---       getClock?T
+      000025ECH  CODE     ---       getInfo?T
+      0000156CH  CODE     ---       getPIO?T
+      00002928H  CODE     ---       getSpeed?T
+      00002618H  CODE     ---       getState?T
+      00002644H  CODE     ---       getStateTrial?T
+      000026A0H  CODE     ---       getTime?T
+      00000000H  CODE     ---       getVal?T
+      00000000H  CODE     ---       getWord?T
+      40002EBDH  DATA     ---       inBuf
+      400008ACH  DATA     ---       index
+      40001258H  DATA     ---       inpPnt
+      00005C38H  CODE     ---       isspace?A
+      00005C44H  CODE     ---       isspace?T
+      40002E34H  DATA     ---       lasBit
+      00002BACH  CODE     ---       loadNNMod?T
+      000044C8H  CODE     ---       log?A
+      000044C4H  CODE     ---       log?T
+      000044C8H  CODE     ---       logf?A
+      000044C4H  CODE     ---       logf?T
+      00003458H  CODE     ---       main
+      40001260H  DATA     ---       nBuffer
+      40001F1CH  DATA     ---       nStim
+      400008B4H  DATA     BYTE      numBytes
+      40002F3DH  DATA     ---       outBuf
+      4000125CH  DATA     ---       outPnt
+      40002E20H  DATA     ---       parInp
+      40002E24H  DATA     ---       parOutp
+      40002BD4H  DATA     ---       pntNN
+      000042BCH  CODE     ---       pow?A
+      000042C8H  CODE     ---       pow?T
+      400012C4H  DATA     ---       rBuffer
+      40002E70H  DATA     ---       range
+      40002E28H  DATA     ---       recBit
+      40002E2CH  DATA     ---       rewBit
+      40002BD8H  DATA     ---       seconds
+      00002994H  CODE     ---       selectADC?T
+      000031A0H  CODE     ---       setFixWindow?T
+      000029F4H  CODE     ---       setSpeaker?T
+      00002EF8H  CODE     ---       simulateNN?T
+      40002E30H  DATA     ---       sndBit
+LA ARM LINKER/LOCATER V2.11                                                           04/28/2010  15:26:53  PAGE 8
+
+
+      000029C0H  CODE     ---       softReset?T
+      40002D60H  DATA     ---       speakers
+      40002BCCH  DATA     ---       speed
+      00000FA4H  CODE     ---       splitInput?T
+      00004354H  CODE     ---       sprintf?A
+      00004360H  CODE     ---       sprintf?T
+      000041C8H  CODE     ---       sqrt?A
+      000041C4H  CODE     ---       sqrt?T
+      000041C8H  CODE     ---       sqrtf?A
+      000041C4H  CODE     ---       sqrtf?T
+      000043B0H  CODE     ---       sscanf?A
+      000043BCH  CODE     ---       sscanf?T
+      40001328H  DATA     ---       startTime
+      40002FC7H  DATA     ---       state
+      400008B7H  DATA     BYTE      status
+      40002DC0H  DATA     ---       statusBoards
+      4000133CH  DATA     ---       stim
+      00005C18H  CODE     ---       strlen?A
+      00005C24H  CODE     ---       strlen?T
+      00002EBCH  CODE     ---       tansig?T
+      00003230H  CODE     ---       testFixWnd?T
+      40002BDCH  DATA     ---       ticks
+      00000474H  CODE     ---       timer0?A
+      40002E9CH  DATA     ---       version
+      40002FBDH  DATA     ---       wrd
+
+Program Size: data=12308 const=626 code=23280
+LA RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

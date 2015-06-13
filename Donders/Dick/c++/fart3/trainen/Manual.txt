@@ -1,0 +1,31 @@
+De ledsky is verdeeld in 6 ringen en 12 spaken. 
+De ringen zijn van binnen naar buiten genummerd van 0..6, 
+de spaken zijn genummerd als de uren van een klok.
+De middelste ring heeft geen spaken, meestal is dit de fixatie led
+
+Gebruikt worden 2-kleuren leds, groen=0 en rood=1.
+De intensiteit wordt in 2 stappen ingesteld:
+1/ maximale intensiteit 0..255 (shopper -> voeding)
+2/ led driver IC in 7 stappen 0..7
+
+255
+253
+...
+140----------     7
+...         |     6
+.2.         |---> .
+.1.         |     1
+ 0 ----------     0
+ 
+ Led Info
+ Per spaak wordt in een integer de intensiteit per ring opgeslagen,
+ per ring worden 3 bits(0..7) gebruikt.
+ bit 2..0 ring 0
+ bit 5..3 ring 1 etc
+ 
+ Bij het tekenen is ring = ring -1.
+ 
+ pos[0] = ring  // 0,1..5
+ pos[1] = spoke // 1..12
+ 
+ 

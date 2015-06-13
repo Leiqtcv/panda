@@ -1,0 +1,188 @@
+LA ARM LINKER/LOCATER V2.11                                                             06/08/2011  15:08:38  PAGE 1
+
+
+LA ARM LINKER/LOCATER V2.11, INVOKED BY:
+C:\KEIL\ARM\BIN\LA.EXE Config.obj, Startup.obj, serial.obj, i2c.obj, i2cFart.obj TO i2cFart CASE CLASSES (DATA (0X400000
+>> 00-0X40003FFF), CODE (0X0-0X1FFFF), CONST (0X0-0X1FFFF))
+
+
+CPU MODE: LITTLE ENDIAN
+
+
+INPUT MODULES INCLUDED:
+  Config.obj (Config)
+         COMMENT TYPE 0: CA V2.11
+  Startup.obj (STARTUP)
+         COMMENT TYPE 0: AA V2.00
+  serial.obj (serial)
+         COMMENT TYPE 0: CA V2.11
+  i2c.obj (i2c)
+         COMMENT TYPE 0: CA V2.11
+  i2cFart.obj (i2cFart)
+         COMMENT TYPE 0: CA V2.11
+  C:\KEIL\ARM\LIB\CAL.LIB (FIQ)
+         COMMENT TYPE 0: AA V2.00
+  C:\KEIL\ARM\LIB\CAL.LIB (IRQ)
+         COMMENT TYPE 0: AA V2.00
+  C:\KEIL\ARM\LIB\CAL.LIB (DABT)
+         COMMENT TYPE 0: AA V2.00
+  C:\KEIL\ARM\LIB\CAL.LIB (PABT)
+         COMMENT TYPE 0: AA V2.00
+  C:\KEIL\ARM\LIB\CAL.LIB (SWI)
+         COMMENT TYPE 0: AA V2.00
+  C:\KEIL\ARM\LIB\CAL.LIB (UNDEF)
+         COMMENT TYPE 0: AA V2.00
+  C:\KEIL\ARM\LIB\CAL.LIB (sscanf)
+         COMMENT TYPE 0: CA V2.11
+  C:\KEIL\ARM\LIB\CAL.LIB (scanfp)
+         COMMENT TYPE 0: CA V2.11
+  C:\KEIL\ARM\LIB\CAL.LIB (isspace)
+         COMMENT TYPE 0: CA V2.11
+  C:\KEIL\ARM\LIB\CAL.LIB (?C?ICALL)
+         COMMENT TYPE 0: AA V2.00
+  C:\KEIL\ARM\LIB\CAL.LIB (UDIV)
+         COMMENT TYPE 0: AA V2.00
+
+
+ACTIVE MEMORY CLASSES OF MODULE:  i2cFart (Config)
+
+BASE       START      END        USED       MEMORY CLASS
+========================================================
+00000000H  40000000H  40003FFFH  000006C1H  DATA
+00000000H  00000000H  0001FFFFH  00000E84H  CODE
+00000000H  00000000H  0001FFFFH  00000046H  CONST
+
+
+INTERRUPT FUNCTIONS
+
+TYPE  STACK SIZE    FUNCTION NAME
+=================================
+irq                 UART0_irq?A
+irq                 I2C_irq?A
+
+
+
+
+MEMORY MAP OF MODULE:  i2cFart (Config)
+
+
+START      STOP       LENGTH    ALIGN  RELOC  MEMORY CLASS   SEGMENT NAME
+LA ARM LINKER/LOCATER V2.11                                                           06/08/2011  15:08:38  PAGE 2
+
+
+=========================================================================
+00000000H  0000011FH  00000120H     4  AT..   CODE           STARTUPCODE
+*** OVERLAP ***
+*** OVERLAP ***
+00000120H  00000131H  00000012H     4  UNIT   CONST          ?CON?i2cFart
+00000132H  00000133H  00000002H   ---  ---    **GAP**
+00000134H  00000153H  00000020H     4  UNIT   CONST          ?C_CLRSEG
+00000154H  00000167H  00000014H     4  UNIT   CONST          ?C_INITSEG
+00000168H  0000018FH  00000028H     4  UNIT   CODE           ?PR?LPCinit?T?Config
+00000190H  00000197H  00000008H     4  UNIT   CODE           ?PR?LPCconfig?T?Config
+00000198H  000002C3H  0000012CH     4  UNIT   CODE           ?PR?UART0_irq?A?serial
+000002C4H  0000035FH  0000009CH     4  UNIT   CODE           ?PR?UART0_Init?T?serial
+00000360H  000003BFH  00000060H     4  UNIT   CODE           ?PR?UART0_SetBaud?T?serial
+000003C0H  000003CFH  00000010H     4  UNIT   CODE           ?PR?UART0_RxNumber?T?serial
+000003D0H  000003FFH  00000030H     4  UNIT   CODE           ?PR?UART0_Get?T?serial
+00000400H  00000457H  00000058H     4  UNIT   CODE           ?PR?UART0_Put?T?serial
+00000458H  0000047FH  00000028H     4  UNIT   CODE           ?PR?UART0_Str?T?serial
+00000480H  000004F7H  00000078H     4  UNIT   CODE           ?PR?I2C_Init?T?i2c
+000004F8H  00000527H  00000030H     4  UNIT   CODE           ?PR?I2C_SendByte?T?i2c
+00000528H  00000733H  0000020CH     4  UNIT   CODE           ?PR?I2C_irq?A?i2c
+00000734H  0000076BH  00000038H     4  UNIT   CODE           ?PR?I2C_SetBitrate?T?i2c
+0000076CH  0000078BH  00000020H     4  UNIT   CODE           ?PR?I2C_Start?T?i2c
+0000078CH  000007BBH  00000030H     4  UNIT   CODE           ?PR?InitAll?T?i2cFart
+000007BCH  000007CBH  00000010H     4  UNIT   CODE           ?PR?ClrBitsPar?T?i2cFart
+000007CCH  000007DBH  00000010H     4  UNIT   CODE           ?PR?SetBitsPar?T?i2cFart
+000007DCH  000008C7H  000000ECH     4  UNIT   CODE           ?PR?main?i2cFart
+000008C8H  000008CBH  00000004H     4  UNIT   CODE           ?C?FIQ
+000008CCH  000008CFH  00000004H     4  UNIT   CODE           ?C?IRQ
+000008D0H  000008D3H  00000004H     4  UNIT   CODE           ?C?DABT
+000008D4H  000008D7H  00000004H     4  UNIT   CODE           ?C?PABT
+000008D8H  000008DFH  00000008H     4  UNIT   CODE           ?C?UNDEF
+000008E0H  00000903H  00000024H     4  UNIT   CODE           ?PR?in?T?sscanf
+00000904H  00000933H  00000030H     4  UNIT   CODE           ?PR?sscanf?T?sscanf
+00000934H  00000953H  00000020H     4  UNIT   CODE           ?PR?ungetcx?T?scanfp
+00000954H  00000977H  00000024H     4  UNIT   CODE           ?PR?getc?T?scanfp
+00000978H  0000099BH  00000024H     4  UNIT   CODE           ?PR?getarg?T?scanfp
+0000099CH  000009C3H  00000028H     4  UNIT   CODE           ?PR?SkipSpace?T?scanfp
+000009C4H  00000E53H  00000490H     4  UNIT   CODE           ?PR?__scanfp?T?scanfp
+00000E54H  00000E73H  00000020H     4  UNIT   CODE           ?PR?isspace?T?isspace
+00000E74H  00000E83H  00000010H     4  UNIT   CODE           ?PR?C?ICALL
+00000E84H  00000ECBH  00000048H     4  UNIT   CODE           ?PR?C?UDIV
+00000ECCH  3FFFFFFFH  3FFFF134H   ---  ---    **GAP**
+40000000H  4000000BH  0000000CH     4  UNIT   DATA           ?DT0?Config
+4000000CH  4000049BH  00000490H     4  UNIT   DATA           STACK
+4000049CH  400006B3H  00000218H     4  UNIT   DATA           ?DT0?serial
+400006B4H  400006C0H  0000000DH     4  UNIT   DATA           ?DT0?i2c
+
+
+
+PUBLIC SYMBOLS OF MODULE:  i2cFart (Config)
+
+
+      VALUE      CLASS    TYPE      PUBLIC SYMBOL NAME
+      ================================================
+      00000134H  ---      ---       ?C?CLRTAB
+      00000E74H  CODE     ---       ?C?ICALL0?T
+      00000E76H  CODE     ---       ?C?ICALL1?T
+      00000E78H  CODE     ---       ?C?ICALL2?T
+      00000E7AH  CODE     ---       ?C?ICALL3?T
+      00000E7CH  CODE     ---       ?C?ICALL4?T
+      00000E7EH  CODE     ---       ?C?ICALL5?T
+      00000E80H  CODE     ---       ?C?ICALL6?T
+      00000E82H  CODE     ---       ?C?ICALL7?T
+      000007DCH  ---      ---       ?C?INIT
+      00000154H  ---      ---       ?C?INITTAB
+LA ARM LINKER/LOCATER V2.11                                                           06/08/2011  15:08:38  PAGE 3
+
+
+      00000E88H  CODE     ---       ?C?UDIV?A
+      00000E84H  CODE     ---       ?C?UDIV?T
+      000007BCH  CODE     ---       ClrBitsPar?T
+      000008D0H  CODE     ---       DAbt_Handler?A
+      000008C8H  CODE     ---       FIQ_Handler?A
+      00000480H  CODE     ---       I2C_Init?T
+      000004F8H  CODE     ---       I2C_SendByte?T
+      00000734H  CODE     ---       I2C_SetBitrate?T
+      0000076CH  CODE     ---       I2C_Start?T
+      00000528H  CODE     ---       I2C_irq?A
+      000008CCH  CODE     ---       IRQ_Handler?A
+      0000078CH  CODE     ---       InitAll?T
+      00000190H  CODE     ---       LPCconfig?T
+      00000168H  CODE     ---       LPCinit?T
+      000008D4H  CODE     ---       PAbt_Handler?A
+      400006C0H  DATA     BYTE      ReadWrite
+      000008D8H  CODE     ---       SWI_Handler?A
+      000007CCH  CODE     ---       SetBitsPar?T
+      400006B0H  DATA     DWORD     UART0_Baudrate
+      000003D0H  CODE     ---       UART0_Get?T
+      000002C4H  CODE     ---       UART0_Init?T
+      00000400H  CODE     ---       UART0_Put?T
+      000003C0H  CODE     ---       UART0_RxNumber?T
+      00000360H  CODE     ---       UART0_SetBaud?T
+      00000000H  CODE     ---       UART0_Stop?T
+      00000458H  CODE     ---       UART0_Str?T
+      00000000H  CODE     ---       UART0_TxEmpty?T
+      00000198H  CODE     ---       UART0_irq?A
+      000008DCH  CODE     ---       Undef_Handler?A
+      000009C4H  CODE     ---       __scanfp?A
+      000009D0H  CODE     ---       __scanfp?T
+      00000000H  CODE     ---       __startup
+      400006B8H  DATA     ---       dataBuffer
+      400006BEH  DATA     BYTE      dataIn
+      400006BDH  DATA     BYTE      deviceAddress
+      000000FCH  CODE     ---       exit?A
+      00000100H  CODE     ---       exit?T
+      400006B4H  DATA     ---       index
+      00000E54H  CODE     ---       isspace?A
+      00000E60H  CODE     ---       isspace?T
+      00000810H  CODE     ---       main
+      400006BCH  DATA     BYTE      numBytes
+      00000904H  CODE     ---       sscanf?A
+      00000910H  CODE     ---       sscanf?T
+      400006BFH  DATA     BYTE      status
+
+Program Size: data=1729 const=70 code=3716
+LA RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

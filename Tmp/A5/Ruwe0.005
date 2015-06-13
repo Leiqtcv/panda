@@ -1,0 +1,96 @@
+        close all
+        clear all
+        
+        pa_datadir JR-RG-2012-02-22
+        load JR-RG-2012-02-22-0001
+        SupSac = pa_supersac(Sac,Stim,2,1);
+        pa_plotloc(SupSac);
+        
+%         figure(1) %(Stim-Resp Plot, alles)
+%         pa_datadir JR-RG2-2012-02-22
+%         load JR-RG2-2012-02-22-0001
+%         SupSac = pa_supersac(Sac,Stim,2,1);
+%         pa_plotloc(SupSac);
+%           hier anderes x selecteren
+        
+        
+        figure(2)%Ueberlagern 1-50, 51-100 usw
+%         x= 1:400;
+%         sel= x>50 & x<101;
+%         x(sel)=1:50;
+%         
+%         sel= x>100 & x<151;
+%         x(sel)=1:50;
+%         sel= x>150 & x<201;
+%         x(sel)=1:50;
+%         
+%         sel= x>200 & x<251;
+%         x(sel)=1:50;
+%         
+%         sel= x>250 & x<301;
+%         x(sel)=1:50;
+%         sel= x>300 & x<351;
+%         x(sel)=1:50;
+%         sel= x>350 & x<401;
+%         x(sel)=1:50;
+%         plot(x)
+        
+        x= SupSac(:,1)';
+        
+        sel= x>50 & x<101;
+        x(sel)=1:50;
+        
+        sel= x>100 & x<151;
+        x(sel)=1:50;
+        
+        sel= x>150 & x<201;
+        x(sel)=1:50;
+        
+        sel= x>200 & x<251;
+        x(sel)=1:50;
+%         
+        sel= x>250 & x<301;
+        x(sel)=1:50;
+        
+        sel= x>300 & x<351;
+        x(sel)=1:50;
+        sel= x>350 & x<401;
+        x(sel)=1:50;
+        plot(x)
+
+        figure(3) %Results 1-25
+        SupSac(:,1)=x;
+        SS=SupSac;
+        sel = abs(SS(:,1))<26;
+%         sel = SupSac(:,1)<26;
+%         SS=SupSac(sel,1);
+        First       = SS(sel,:);
+        pa_plotloc(First);
+        
+        
+        figure(4)% Results 26-50
+        SupSac(:,1)=x;
+        SS=SupSac;
+        sel = abs(SS(:,1))>25;
+%         sel = SupSac(:,1)<26;
+%         SS=SupSac(sel,1);
+        Second       = SS(sel,:);
+        pa_plotloc(Second);
+        
+        figure(5)% Selectioon for first and second half on 10 degree targets
+        subplot(221)
+        kel=abs(First(:,24))<=20 & abs(First(:,23))<=20;
+        pa_loc(First(kel,24),First(kel,9));
+        subplot(222)
+        kel=abs(Second(:,24))<=20 & abs(Second(:,23))<=20;
+        pa_loc(Second(kel,24),Second(kel,9));
+        
+        subplot(223)
+        kel=abs(First(:,24))<=20 & abs(First(:,23))<=20;
+        pa_loc(First(kel,23),First(kel,8));
+        subplot(224)
+        kel=abs(Second(:,24))<=20 & abs(Second(:,23))<=20;
+        pa_loc(Second(kel,23),Second(kel,8));
+%                 sel = abs(SupSac(:,24))<=12;
+%         pa_loc(SupSac(sel,24),SupSac(sel,9));
+        

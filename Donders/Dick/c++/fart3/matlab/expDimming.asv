@@ -1,0 +1,25 @@
+exp.timing(1,:) = [0   0   0   0 1];
+exp.timing(2,:) = [1   0   1 400 2];
+exp.timing(3,:) = [2   0   2 400 3];
+exp.timing(4,:) = [3   0   3 400 0];
+exp.timing(5,:) = [1   0   3 100 0];
+exp.timing(6,:) = [3 100   3 400 4];
+exp.timing(7,:) = [4   0   4 100 0];
+exp.timing(8,:) = [1   0   1  50 0];
+exp.param(1,:)  = [1   1 1 0];           % bit edge up
+exp.param(2,:)  = [0   0 1 7];           % fix x y red intensity
+exp.param(3,:)  = [3   3 1 7];           % tar
+exp.param(4,:)  = [3   3 1 5];           % dim
+exp.param(5,:)  = [1   0 1 0];           % bit level high
+exp.param(6,:)  = [1   1 0 0];           % bit edge down
+exp.param(7,:)  = [2 100 0 0];           % bit time, reward for release 
+exp.param(8,:)  = [2  50 0 0];           % bit time, reward for press
+exp.names(1,:)  = {'barDown' 'stimBar'};
+exp.names(2,:)  = {'fix'     'stimLed'};
+exp.names(3,:)  = {'tar'     'stimLed'};
+exp.names(4,:)  = {'dim'     'stimLed'};
+exp.names(5,:)  = {'barHigh' 'stimbar'};
+exp.names(6,:)  = {'stimbar'};
+exp.names(7,:)  = {'stimRew'     'rewCorrect'};
+exp.names(8,:)  = {'stimRew'     'rewPressed'};
+

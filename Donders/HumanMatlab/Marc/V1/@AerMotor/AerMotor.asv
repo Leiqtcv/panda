@@ -1,0 +1,12 @@
+%
+% constructor of class AerMotor
+%
+function A = AerMotor()
+    motor_globals;
+    A.handle =    -1; %handle
+    A.speed = 10000; %speed
+    A.position =     0; %target       
+    A.target =     0; %position   
+    A.properties(5) =     0; %error   
+    A = class(A, 'AerMotor');
+end

@@ -1,0 +1,69 @@
+1) head signal offsets
+
+Run [scope.m] 
+- adjust ch5 (Hor) offset (not gain!) untill 0 (zero)
+- adjust ch6 (Ver) offset untill 0
+- Make sure ch7 (Front) is not >+10V or <-10V.
+Press [stop] when ready
+Close figure
+
+Default Gain settings
+H: 300
+V: 400
+F: 600
+
+Default offset settings
+H: around 500
+V: around 500
+F: 500
+
+
+
+2) Head Calibration
+
+open [HumanMain_calibration.m]
+- make sure experiment is set to "headcoilcalibration" (line 17)
+- Run
+- Set data file to:
+
+
+tg-tg-2010-mm-dd-x000
+
+where
+[mm]: month (eg. [03])
+[dd]: day (eg. [30])
+[x] : Nth calibration, start at 0
+      results in
+         tg-tg-2010-mmm-dd-0000
+      next calibration should read
+         tg-tg-2010-mmm-dd-1000
+
+
+- give, [CR] and close door
+
+
+
+3) Experiment
+
+open [HumanMain_S1S_S2S_D2S.m]
+- You might want to change the experiment type (line 13-15)
+  Start with "dynamic 2 step"
+- Run
+- Set data file to:
+
+tg-tg-2010-mm-dd-x00n
+
+where
+[mm]: month (eg. [03])
+[dd]: day (eg. [30])
+[x] : Nth calibration, start at 0
+[n] : Nth experiment, start at 1
+      results in
+         tg-tg-2010-mmm-dd-0001
+      next block should read
+         tg-tg-2010-mmm-dd-0002
+      if experiment is preceded by new calibration file is called:
+         tg-tg-2010-mmm-dd-1002
+
+
+- give, [CR] and close door

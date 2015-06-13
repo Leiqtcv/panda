@@ -1,0 +1,893 @@
+Model {
+  Name			  "scudder"
+  Version		  2.09
+  SimParamPage		  Solver
+  SampleTimeColors	  off
+  InvariantConstants	  off
+  WideVectorLines	  on
+  ShowLineWidths	  off
+  PaperOrientation	  landscape
+  PaperType		  usletter
+  PaperUnits		  inches
+  StartTime		  "0.0"
+  StopTime		  "0.4"
+  Solver		  ode45
+  RelTol		  "1e-5"
+  AbsTol		  "1e-8"
+  Refine		  "1"
+  MaxStep		  "auto"
+  InitialStep		  "auto"
+  FixedStep		  "auto"
+  MaxOrder		  5
+  OutputOption		  RefineOutputTimes
+  OutputTimes		  "[]"
+  LoadExternalInput	  off
+  ExternalInput		  "[t, u]"
+  SaveTime		  on
+  TimeSaveName		  "tout"
+  SaveState		  off
+  StateSaveName		  "xout"
+  SaveOutput		  on
+  OutputSaveName	  "yout"
+  LoadInitialState	  off
+  InitialState		  "xInitial"
+  SaveFinalState	  off
+  FinalStateName	  "xFinal"
+  LimitMaxRows		  off
+  MaxRows		  "1000"
+  Decimation		  "1"
+  AlgebraicLoopMsg	  warning
+  MinStepSizeMsg	  warning
+  UnconnectedInputMsg	  warning
+  UnconnectedOutputMsg	  warning
+  UnconnectedLineMsg	  warning
+  ConsistencyChecking	  off
+  ZeroCross		  on
+  SimulationMode	  normal
+  RTWSystemTargetFile	  "grt.tlc"
+  RTWInlineParameters	  off
+  RTWRetainRTWFile	  off
+  RTWTemplateMakefile	  "grt_default_tmf"
+  RTWMakeCommand	  "make_rtw"
+  RTWGenerateCodeOnly	  off
+  ExtModeMexFile	  "ext_comm"
+  ExtModeBatchMode	  off
+  BlockDefaults {
+    Orientation		    right
+    ForegroundColor	    black
+    BackgroundColor	    white
+    DropShadow		    off
+    NamePlacement	    normal
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    normal
+    FontAngle		    normal
+    ShowName		    on
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    center
+    VerticalAlignment	    middle
+    ForegroundColor	    black
+    BackgroundColor	    white
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    normal
+    FontAngle		    normal
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    normal
+    FontAngle		    normal
+  }
+  System {
+    Name		    "scudder"
+    Location		    [9, 321, 960, 717]
+    Open		    on
+    ScreenColor		    white
+    Block {
+      BlockType		      Derivative
+      Name		      "Derivative"
+      Position		      [865, 210, 895, 240]
+      Orientation	      down
+      NamePlacement	      alternate
+    }
+    Block {
+      BlockType		      Fcn
+      Name		      "Excitatory \nBurst Neurons"
+      Position		      [450, 152, 510, 218]
+      BackgroundColor	      green
+      Expr		      "Bmax * tanh(u / Ao)"
+      MaskType		      "Burstcell Nonlinearity"
+      MaskDescription	      "Function:\n       B = Bmax * tanh (me / Ao)\n\n "
+			      "   Parameters:  Bmax (deg/s)\n                  "
+			      "        Ao (deg)"
+      MaskHelp		      "Bmax is the maximal firing frequency of the "
+			      "burst cells (expressed in deg/sec)\n          "
+			      "It corresponds to the asymptote of the main "
+			      "sequence.\n\nAo     is the `angular constant' "
+			      "(in deg), which is a measure of the steepness "
+			      "of              the main  sequence curve "
+			      "for saccades."
+      MaskPromptString	      "Asymptote (Bmax): deg/s|Angular Constant "
+			      "(Ao): deg"
+      MaskStyleString	      "edit,edit"
+      MaskVariables	      "Bmax=@1;Ao=@2;"
+      MaskDisplay	      "plot([0 1],[.5 .5]) plot([.5 .5],[0 1])\nplot([0"
+			      " .1 .2 .3 .4 .5 .6 .7 .8 .9 1],[ 0 0 .07 "
+			      ".17 .32 .5 .68 .83 .93 1 1])\ntext(.4,.8,'B') "
+			      "text(.8,.3,'me')"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      none
+      MaskIconUnits	      normalized
+      MaskValueString	      "700|7"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Eye Position"
+      Ports		      [1, 0, 0, 0, 0]
+      Position		      [900, 85, 930, 115]
+      Floating		      off
+      Location		      [466, 29, 736, 270]
+      Open		      on
+      Grid		      on
+      TickLabels	      on
+      ZoomMode		      on
+      TimeRange		      "auto"
+      YMin		      "-10"
+      YMax		      "50"
+      SaveToWorkspace	      off
+      SaveName		      "ScopeData"
+      LimitMaxRows	      on
+      MaxRows		      "5000"
+      Decimation	      "1"
+      SampleInput	      off
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Eye Velocity"
+      Ports		      [1, 0, 0, 0, 0]
+      Position		      [900, 270, 930, 300]
+      Orientation	      down
+      NamePlacement	      alternate
+      Floating		      off
+      Location		      [744, 29, 1018, 269]
+      Open		      on
+      Grid		      on
+      TickLabels	      on
+      ZoomMode		      on
+      TimeRange		      "auto"
+      YMin		      "-50"
+      YMax		      "700"
+      SaveToWorkspace	      off
+      SaveName		      "ScopeData"
+      LimitMaxRows	      on
+      MaxRows		      "5000"
+      Decimation	      "1"
+      SampleInput	      off
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "Feedback Gain\n"
+      Position		      [285, 25, 315, 55]
+      Orientation	      left
+      BackgroundColor	      gray
+      Gain		      "1.0"
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "Forward Gain"
+      Position		      [610, 170, 640, 200]
+      BackgroundColor	      magenta
+      Gain		      "0.15"
+    }
+    Block {
+      BlockType		      Product
+      Name		      "GATE"
+      Ports		      [2, 1, 0, 0, 0]
+      Position		      [375, 167, 405, 198]
+      Inputs		      "2"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "LLBN output"
+      Ports		      [1, 0, 0, 0, 0]
+      Position		      [395, 80, 425, 110]
+      Floating		      off
+      Location		      [4, 28, 219, 273]
+      Open		      on
+      Grid		      on
+      TickLabels	      on
+      ZoomMode		      on
+      TimeRange		      "auto"
+      YMin		      "-5"
+      YMax		      "20"
+      SaveToWorkspace	      off
+      SaveName		      "ScopeData"
+      LimitMaxRows	      on
+      MaxRows		      "5000"
+      Decimation	      "1"
+      SampleInput	      off
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Long-Lead \nBurst Neurons"
+      Ports		      [2, 1, 0, 0, 0]
+      Position		      [235, 145, 300, 200]
+      ShowPortLabels	      on
+      MaskType		      "Long-Lead Burst Neurons"
+      MaskDescription	      "Comparator that integrates the difference "
+			      "between a desired eye velocity signal  from "
+			      "the Superior Colliculus, and the current "
+			      "eye velocity from the Short-Lead Burst Neurons. "
+      MaskDisplay	      "text(0.5,0.5,'LLBN')\ntext(0.05,0.8,'- slbn')\nt"
+			      "ext(0.05,0.2,'+ SC')"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      none
+      MaskIconUnits	      normalized
+      System {
+	Name			"Long-Lead \nBurst Neurons"
+	Location		[262, 290, 560, 502]
+	Open			off
+	ScreenColor		white
+	Block {
+	  BlockType		  Inport
+	  Name			  "SLBN"
+	  Position		  [25, 13, 55, 27]
+	  Port			  "1"
+	  PortWidth		  "-1"
+	  SampleTime		  "-1"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "SC"
+	  Position		  [25, 78, 55, 92]
+	  Port			  "2"
+	  PortWidth		  "-1"
+	  SampleTime		  "-1"
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Compare "
+	  Ports			  [2, 1, 0, 0, 0]
+	  Position		  [110, 27, 140, 58]
+	  Inputs		  "-+"
+	}
+	Block {
+	  BlockType		  Integrator
+	  Name			  "Integrate"
+	  Ports			  [1, 1, 0, 0, 0]
+	  Position		  [165, 30, 195, 60]
+	  ExternalReset		  none
+	  InitialConditionSource  internal
+	  InitialCondition	  "0"
+	  LimitOutput		  off
+	  UpperSaturationLimit	  "inf"
+	  LowerSaturationLimit	  "-inf"
+	  ShowSaturationPort	  off
+	  ShowStatePort		  off
+	  AbsoluteTolerance	  "auto"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "LLBN"
+	  Position		  [235, 38, 265, 52]
+	  Port			  "1"
+	  OutputWhenDisabled	  held
+	  InitialOutput		  "0"
+	}
+	Line {
+	  SrcBlock		  "SC"
+	  SrcPort		  1
+	  Points		  [0, -35]
+	  DstBlock		  "Compare "
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Integrate"
+	  SrcPort		  1
+	  DstBlock		  "LLBN"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "SLBN"
+	  SrcPort		  1
+	  Points		  [0, 15]
+	  DstBlock		  "Compare "
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Compare "
+	  SrcPort		  1
+	  DstBlock		  "Integrate"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      Sum
+      Name		      "Motor Neurons"
+      Ports		      [2, 1, 0, 0, 0]
+      Position		      [715, 127, 745, 158]
+      Inputs		      "++"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "MotorNeurons"
+      Ports		      [1, 0, 0, 0, 0]
+      Position		      [900, 15, 930, 45]
+      Floating		      off
+      Location		      [227, 28, 458, 270]
+      Open		      on
+      Grid		      on
+      TickLabels	      on
+      ZoomMode		      on
+      TimeRange		      "auto"
+      YMin		      "-10"
+      YMax		      "150"
+      SaveToWorkspace	      off
+      SaveName		      "ScopeData"
+      LimitMaxRows	      on
+      MaxRows		      "5000"
+      Decimation	      "1"
+      SampleInput	      off
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "OPNs "
+      Ports		      [2, 1, 0, 0, 0]
+      Position		      [225, 250, 305, 345]
+      BackgroundColor	      yellow
+      ShowPortLabels	      on
+      MaskType		      "OPNs"
+      MaskDescription	      "Pause system that triggers eye by an attenuated "
+			      "SC input burst, and inhibits the burst generator"
+			      " during fixations with intensity Bias.\nDuring "
+			      "the saccade, the burst generator inhibits "
+			      "the pause cells."
+      MaskHelp		      "User controls:\n        Bias level (in Hz)   "
+			      "(defines the Pause neuron activity level "
+			      "during fixation)\n        SC burst, of which "
+			      "the Gain can be set.\n         Trigger delay "
+			      "(in ms), which determines saccade onset (and "
+			      "kinematics!)\nInputs:\n        SC burst, "
+			      "attenuated by OPN inhibition gain, and delayed. "
+			      "\n        Horizontal eye velocity (5ms latch "
+			      "delay)\nOutputs:\n         either 0 or 1 "
+      MaskPromptString	      "Trigger Delay (ms)|SC Gain|BIAS  (Hz)"
+      MaskStyleString	      "edit,edit,edit"
+      MaskVariables	      "DEL=@1;G=@2;bias=@3;"
+      MaskDisplay	      "plot([.1 .3],[.4 .4])\nplot([.3 .5],[.4 .6])\npl"
+			      "ot([.5 .65],[.4 .4])\ntext(.65,.65,'0')\ntext(.5"
+			      "7,.40,'me')\n\nplot([.1 .7],[.3 .3])  plot([.1 "
+			      ".1],[.3 .7])  \nplot([.1 .7],[.7 .7])  plot([.7 "
+			      ".7],[.3 .7])"
+      MaskIconFrame	      on
+      MaskIconOpaque	      off
+      MaskIconRotate	      none
+      MaskIconUnits	      normalized
+      MaskValueString	      "15|0.2|80"
+      System {
+	Name			"OPNs "
+	Location		[233, 51, 806, 384]
+	Open			off
+	ScreenColor		white
+	Block {
+	  BlockType		  Inport
+	  Name			  "SC Inh."
+	  Position		  [25, 103, 55, 117]
+	  Port			  "1"
+	  PortWidth		  "-1"
+	  SampleTime		  "-1"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "EBN Inh."
+	  Position		  [25, 183, 55, 197]
+	  Port			  "2"
+	  PortWidth		  "-1"
+	  SampleTime		  "-1"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "0"
+	  Position		  [265, 55, 285, 75]
+	  Value			  "0"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "1"
+	  Position		  [265, 140, 285, 160]
+	  Value			  "1"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "BIAS"
+	  Position		  [20, 21, 45, 49]
+	  Value			  "bias"
+	}
+	Block {
+	  BlockType		  TransportDelay
+	  Name			  "Latch"
+	  Position		  [85, 175, 115, 205]
+	  DelayTime		  "0.005"
+	  InitialInput		  "0"
+	  BufferSize		  "1024"
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "SC gain"
+	  Position		  [135, 95, 165, 125]
+	  Gain			  "G"
+	}
+	Block {
+	  BlockType		  Switch
+	  Name			  "SWITCH"
+	  Position		  [400, 95, 430, 125]
+	  Threshold		  "0.1"
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum10"
+	  Ports			  [3, 1, 0, 0, 0]
+	  Position		  [255, 93, 285, 127]
+	  ShowName		  off
+	  Inputs		  "+--"
+	}
+	Block {
+	  BlockType		  TransportDelay
+	  Name			  "Trigger\nDelay"
+	  Position		  [85, 95, 115, 125]
+	  DelayTime		  "0.001*DEL"
+	  InitialInput		  "0"
+	  BufferSize		  "1024"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "OUT"
+	  Position		  [480, 103, 510, 117]
+	  Port			  "1"
+	  OutputWhenDisabled	  held
+	  InitialOutput		  "0"
+	}
+	Line {
+	  SrcBlock		  "EBN Inh."
+	  SrcPort		  1
+	  DstBlock		  "Latch"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Latch"
+	  SrcPort		  1
+	  Points		  [80, 0; 0, -70]
+	  DstBlock		  "Sum10"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "Trigger\nDelay"
+	  SrcPort		  1
+	  DstBlock		  "SC gain"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "SC Inh."
+	  SrcPort		  1
+	  DstBlock		  "Trigger\nDelay"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "SC gain"
+	  SrcPort		  1
+	  DstBlock		  "Sum10"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Sum10"
+	  SrcPort		  1
+	  DstBlock		  "SWITCH"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "1"
+	  SrcPort		  1
+	  Points		  [55, 0; 0, -30]
+	  DstBlock		  "SWITCH"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "0"
+	  SrcPort		  1
+	  Points		  [55, 0; 0, 35]
+	  DstBlock		  "SWITCH"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "SWITCH"
+	  SrcPort		  1
+	  DstBlock		  "OUT"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "BIAS"
+	  SrcPort		  1
+	  Points		  [150, 0; 0, 65]
+	  DstBlock		  "Sum10"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Oculomotor\nPlant"
+      Ports		      [1, 1, 0, 0, 0]
+      Position		      [785, 119, 855, 171]
+      BackgroundColor	      cyan
+      ShowPortLabels	      on
+      MaskType		      "Oculomotor Plant"
+      MaskDescription	      "Second order model of the oculomotor plant "
+			      "\nas proposed by Robinson and colleagues.\n\n "
+			      "Model equation in Laplace notation:\n\n         "
+			      "               1\n H(s) = ---------------\n     "
+			      "       (1 + s.T1) . (1 + s.T2)\n     "
+      MaskHelp		      "T1 is the `high' time constant (muscle twitch "
+			      "relaxation time) \n      default value: 0.15 "
+			      "sec\n T2 is the `low' time constant (muscle "
+			      "twitch contraction time)\n      default value: "
+			      "0.012 sec \n"
+      MaskPromptString	      "High Time Constant (T1)|Low Time Constant (T2)"
+      MaskStyleString	      "edit,edit"
+      MaskVariables	      "T1=@1;T2=@2;"
+      MaskDisplay	      "plot([0 0.1 0.15 0.2 0.25 0.3 0.5 0.7 0.9 "
+			      "1], [0 0.1 0.4 0.65 0.66 0.55 0.35 0.15 0.05 "
+			      "0])\ntext(0.04,0.5,'T2') text(0.55,0.5, 'T1')"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      none
+      MaskIconUnits	      normalized
+      MaskValueString	      "0.15|0.020"
+      System {
+	Name			"Oculomotor\nPlant"
+	Location		[417, 242, 778, 448]
+	Open			off
+	ScreenColor		white
+	Block {
+	  BlockType		  Inport
+	  Name			  "In\n"
+	  Position		  [25, 38, 55, 52]
+	  Port			  "1"
+	  PortWidth		  "-1"
+	  SampleTime		  "-1"
+	}
+	Block {
+	  BlockType		  TransferFcn
+	  Name			  "Time Constant 1"
+	  Position		  [105, 27, 160, 63]
+	  Numerator		  "[1]"
+	  Denominator		  "[T1 1]"
+	}
+	Block {
+	  BlockType		  TransferFcn
+	  Name			  "Time Constant 2"
+	  Position		  [205, 27, 260, 63]
+	  Numerator		  "[1]"
+	  Denominator		  "[T2 1]"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out"
+	  Position		  [310, 38, 340, 52]
+	  Port			  "1"
+	  OutputWhenDisabled	  held
+	  InitialOutput		  "0"
+	}
+	Line {
+	  SrcBlock		  "Time Constant 2"
+	  SrcPort		  1
+	  DstBlock		  "Out"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "In\n"
+	  SrcPort		  1
+	  DstBlock		  "Time Constant 1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Time Constant 1"
+	  SrcPort		  1
+	  DstBlock		  "Time Constant 2"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Position Integrator"
+      Ports		      [1, 1, 0, 0, 0]
+      Position		      [595, 64, 645, 116]
+      BackgroundColor	      lightBlue
+      ShowPortLabels	      on
+      MaskType		      "Eye Position Integrator"
+      MaskPromptString	      "Integrator Gain"
+      MaskStyleString	      "edit"
+      MaskVariables	      "G=@1;"
+      MaskDisplay	      "text(.35,.5,'INT')\n"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      none
+      MaskIconUnits	      normalized
+      MaskValueString	      "1.0"
+      System {
+	Name			"Position Integrator"
+	Location		[135, 367, 548, 518]
+	Open			off
+	ScreenColor		white
+	Block {
+	  BlockType		  Inport
+	  Name			  "In1"
+	  Position		  [25, 33, 55, 47]
+	  Port			  "1"
+	  PortWidth		  "-1"
+	  SampleTime		  "-1"
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "Integrator Gain"
+	  Position		  [125, 25, 155, 55]
+	  Gain			  "G"
+	}
+	Block {
+	  BlockType		  Integrator
+	  Name			  "Position Integrator"
+	  Ports			  [1, 1, 0, 0, 0]
+	  Position		  [235, 25, 265, 55]
+	  ExternalReset		  none
+	  InitialConditionSource  internal
+	  InitialCondition	  "0"
+	  LimitOutput		  off
+	  UpperSaturationLimit	  "inf"
+	  LowerSaturationLimit	  "-inf"
+	  ShowSaturationPort	  off
+	  ShowStatePort		  off
+	  AbsoluteTolerance	  "auto"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out1"
+	  Position		  [310, 33, 340, 47]
+	  Port			  "1"
+	  OutputWhenDisabled	  held
+	  InitialOutput		  "0"
+	}
+	Line {
+	  SrcBlock		  "Integrator Gain"
+	  SrcPort		  1
+	  DstBlock		  "Position Integrator"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Position Integrator"
+	  SrcPort		  1
+	  DstBlock		  "Out1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "In1"
+	  SrcPort		  1
+	  DstBlock		  "Integrator Gain"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "SC "
+      Ports		      [0, 1, 0, 0, 0]
+      Position		      [25, 159, 90, 211]
+      BackgroundColor	      red
+      ShowPortLabels	      on
+      MaskDescription	      "The Superior Colliculus issues a burst of "
+			      "spikes of height FR (Hz) and duration D (in "
+			      "sec).\n"
+      MaskPromptString	      "Firing Rate (FR, in Hz)|Burst Duration (D,  "
+			      "in msec)"
+      MaskStyleString	      "edit,edit"
+      MaskVariables	      "FR=@1;D=@2;"
+      MaskDisplay	      "text(.2,.85,'SC BURST') \nplot([.2 .35,.36,.65,."
+			      "66,.8],[.05,.05,.5,.5,.05,.05])\ntext(.15,.5,'FR"
+			      "')\ntext(.5,.05,'D')"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      none
+      MaskIconUnits	      normalized
+      MaskValueString	      "800|50"
+      System {
+	Name			"SC "
+	Location		[472, 431, 701, 529]
+	Open			off
+	ScreenColor		white
+	Block {
+	  BlockType		  Reference
+	  Name			  "Pulse\nGenerator"
+	  Ports			  [0, 1, 0, 0, 0]
+	  Position		  [30, 25, 60, 55]
+	  SourceBlock		  "simulink/Sources/Pulse\nGenerator"
+	  SourceType		  "Pulse Generator"
+	  period		  "1"
+	  duty			  "D * 0.1"
+	  amplitude		  "FR"
+	  start			  "0.05"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out1"
+	  Position		  [145, 33, 175, 47]
+	  Port			  "1"
+	  OutputWhenDisabled	  held
+	  InitialOutput		  "0"
+	}
+	Line {
+	  SrcBlock		  "Pulse\nGenerator"
+	  SrcPort		  1
+	  DstBlock		  "Out1"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "Synaptic\nGain"
+      Position		      [155, 170, 185, 200]
+      BackgroundColor	      orange
+      NamePlacement	      alternate
+      Gain		      "0.5"
+    }
+    Line {
+      SrcBlock		      "SC "
+      SrcPort		      1
+      Points		      [10, 0]
+      Branch {
+	Points			[0, 90]
+	DstBlock		"OPNs "
+	DstPort			1
+      }
+      Branch {
+	DstBlock		"Synaptic\nGain"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "Derivative"
+      SrcPort		      1
+      Points		      [0, 10]
+      DstBlock		      "Eye Velocity"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Oculomotor\nPlant"
+      SrcPort		      1
+      Points		      [10, 0]
+      Branch {
+	Points			[10, 0]
+	DstBlock		"Derivative"
+	DstPort			1
+      }
+      Branch {
+	Points			[10, 0; 0, -45]
+	DstBlock		"Eye Position"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "Long-Lead \nBurst Neurons"
+      SrcPort		      1
+      Points		      [30, 0]
+      Branch {
+	Points			[0, -80]
+	DstBlock		"LLBN output"
+	DstPort			1
+      }
+      Branch {
+	DstBlock		"GATE"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "GATE"
+      SrcPort		      1
+      DstBlock		      "Excitatory \nBurst Neurons"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Feedback Gain\n"
+      SrcPort		      1
+      Points		      [-80, 0; 0, 120]
+      DstBlock		      "Long-Lead \nBurst Neurons"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "OPNs "
+      SrcPort		      1
+      Points		      [15, 0; 0, -110]
+      DstBlock		      "GATE"
+      DstPort		      2
+    }
+    Line {
+      Name		      "eye velocity"
+      SrcBlock		      "Excitatory \nBurst Neurons"
+      SrcPort		      1
+      Points		      [15, 0]
+      Branch {
+	Points			[0, -145]
+	DstBlock		"Feedback Gain\n"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, 185; -350, 0; 0, -50]
+	DstBlock		"OPNs "
+	DstPort			2
+      }
+      Branch {
+	Points			[30, 0]
+	Branch {
+	  Points		  [0, -95]
+	  DstBlock		  "Position Integrator"
+	  DstPort		  1
+	}
+	Branch {
+	  DstBlock		  "Forward Gain"
+	  DstPort		  1
+	}
+      }
+    }
+    Line {
+      SrcBlock		      "Synaptic\nGain"
+      SrcPort		      1
+      DstBlock		      "Long-Lead \nBurst Neurons"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Position Integrator"
+      SrcPort		      1
+      Points		      [25, 0; 0, 45]
+      DstBlock		      "Motor Neurons"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Forward Gain"
+      SrcPort		      1
+      Points		      [30, 0; 0, -35]
+      DstBlock		      "Motor Neurons"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Motor Neurons"
+      SrcPort		      1
+      Points		      [15, 0]
+      Branch {
+	Points			[0, -115]
+	DstBlock		"MotorNeurons"
+	DstPort			1
+      }
+      Branch {
+	DstBlock		"Oculomotor\nPlant"
+	DstPort			1
+      }
+    }
+    Annotation {
+      Position		      [460, 47]
+      Text		      "current eye velocity"
+    }
+    Annotation {
+      Position		      [422, 198]
+      Text		      "me/0"
+    }
+  }
+}

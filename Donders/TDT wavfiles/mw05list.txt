@@ -1,0 +1,11 @@
+10
+bliksem.tdt
+crow.tdt
+cricket.tdt
+elephant.tdt
+woohoo.tdt
+doh.tdt
+fiets1wha.tdt
+fiets1spa.tdt
+fiets1sha.tdt
+car.tdt

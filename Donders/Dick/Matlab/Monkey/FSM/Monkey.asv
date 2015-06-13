@@ -1,0 +1,110 @@
+------------------------------------------------------------------------
+verschil tussen stimulus en command
+start-stop-pos
+event en stat (2-1-0)
+------------------------------------------------------------------------
+stimLed
+    Visuele stimulus. 
+    pos, level, index (0-green)
+
+------------------------------------------------------------------------
+stimBar
+    Test de toestand van een bit. Mode en level geven de conditie waarop
+    getest moet worden aan, index het te testen bit (7..0)
+        mode   level
+          0      0/1    test op flank: 0=h->l, 1=l->h
+          1      0/1    testen of het niveau van start->stop voldoet aan:
+                        0->constant laag, 1->constant hoog
+          2      0/1    testen of het niveau tussen start en stop voldoet
+                        aan: 0->laag, 1->hoog
+    Bij testen op flank, bv l->h, moet de verandering tussen start en
+    stop zijn opgetreden.
+    Bij testen op niveau, bv h, wordt niet getest of deze voor het
+    hoog worden laag was.
+
+------------------------------------------------------------------------
+stimBit
+------------------------------------------------------------------------
+         stim   start   stop   pos   mode   level   index   event   stat
+stimLed    x      x       x     x      -      x       x       x       x 
+stimBar    x      x       x     -      x      x       x       x       x
+stimBit    x      x       x     -      -      x       x       x       x
+
+------------------------------------------------------------------------
+Volgende trial
+------------------------------------------------------------------------
+cmdNextTrial
+    values(1) = 4;              number of parameters              
+    values(2) = cmdNextTrial;        
+    values(3) = ITI;            Inter Trial Interval
+    values(4) = nStim;          number of simuli
+    values(5) = maxIntensir
+
+------------------------------------------------------------------------
+De leds van de ledsky worden een voor een aan/uit gezet.
+In:  kleur van de led (0 of 1) en de aan tijd.
+Out: verbruikte tijd.
+------------------------------------------------------------------------
+cmdSkyTest
+    values(1) = 4;              number of parameters              
+    values(2) = cmdTestLeds;        
+    values(3) = color;          color: 0-rood, 1-green
+    values(4) = Ton;            Time led is switched on (mSec)
+
+    results(1) = 2;
+    results(2) = Time;          Time consumed (mSec)
+
+------------------------------------------------------------------------
+Schakel een led aan of uit.
+In:  positie van de led in de sky (ring and spoke) en de kleur.
+Out: verbruikte tijd.
+------------------------------------------------------------------------
+cmdLedOn / cmdLedOff
+    values(1) = 5;
+    values(2) = cmdLedOn;       or cmdLedOff
+    values(3) = ring;           0..5
+    values(4) = spoke;          1..12
+    values(5) = color;          color: 0-rood, 1-green
+
+    results(1) = 2;
+    results(2) = Time;          Time consumed (mSec)
+
+------------------------------------------------------------------------
+Zet een of meer output-bits van de parallelle (printer) poort (or functie).
+In:  byte (0x00..0xFF).
+Out: verbruikte tijd.
+------------------------------------------------------------------------
+cmdSetPIO
+    values(1) = 3;
+    values(2) = cmdSetPIO;
+    values(3) = value;          0..255
+
+    results(1) = 2;
+    results(2) = Time;          Time consumed (mSec)
+
+------------------------------------------------------------------------
+Input byte van de parallelle poort.
+In:  
+Out: byte (0xFF),
+     verbruikte tijd.
+------------------------------------------------------------------------
+cmdGetPIO
+    values(1) = 2;
+    values(2) = cmdGetPIO;
+
+    results(1) = 2;
+    results(2) = Value;         0..255
+
+------------------------------------------------------------------------
+Test in- en output via parallelle poort.
+------------------------------------------------------------------------
+cmdTstPIO
+    values(1) = 3;
+    values(2) = cmdTstPIO;
+    values(3) = Trun;           time PIO is tested (sec)
+
+    results(1) = 2;
+    results(2) = Time;          Time consumed (mSec)
+
+------------------------------------------------------------------------
+

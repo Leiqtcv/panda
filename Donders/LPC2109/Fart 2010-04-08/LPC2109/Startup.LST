@@ -1,0 +1,515 @@
+AA MACRO ASSEMBLER  STARTUP                                                                 08/04/10 15:33:00 PAGE     1
+
+
+MACRO ASSEMBLER AA V2.00
+OBJECT MODULE PLACED IN Startup.OBJ
+ASSEMBLER INVOKED BY: C:\Keil\ARM\BIN\AA.exe Startup.s EP
+
+LOC      OBJ             LINE     SOURCE
+
+                          1     
+                          2     
+                          3     
+                          4     
+                          5     
+                          6     
+                          7     
+                          8     
+                          9     
+                         10     
+                         11     
+                         12     
+                         13     
+                         14     
+                         15     
+                         16     
+                         17     
+                         18     
+                         19     
+                         20     
+ 0010                    21             Mode_USR  EQU      0x10
+ 0011                    22             Mode_FIQ  EQU      0x11
+ 0012                    23             Mode_IRQ  EQU      0x12
+ 0013                    24             Mode_SVC  EQU      0x13
+ 0017                    25             Mode_ABT  EQU      0x17
+ 001B                    26             Mode_UND  EQU      0x1B
+ 001F                    27             Mode_SYS  EQU      0x1F
+                         28     
+ 0080                    29             I_Bit     EQU      0x80     
+ 0040                    30             F_Bit     EQU      0x40     
+                         31     
+                         32     
+                         33     
+                         34     
+                         35     
+                         36     
+                         37     
+                         38     
+                         39     
+                         40     
+                         41     
+                         42     
+ 0004                    43             UND_Stack_Size  EQU     0x00000004
+ 0004                    44             SVC_Stack_Size  EQU     0x00000004
+ 0004                    45             ABT_Stack_Size  EQU     0x00000004
+ 0004                    46             FIQ_Stack_Size  EQU     0x00000004
+ 0080                    47             IRQ_Stack_Size  EQU     0x00000080
+ 0800                    48             USR_Stack_Size  EQU     0x00000800
+                         49     
+00000000                 50     AREA   STACK, DATA, READWRITE, ALIGN=2
+00000000                 51             DS   (USR_Stack_Size+3)&~3  ; Stack for User/System Mode 
+00000800                 52             DS   (SVC_Stack_Size+3)&~3  ; Stack for Supervisor Mode
+00000804                 53             DS   (IRQ_Stack_Size+3)&~3  ; Stack for Interrupt Mode
+00000884                 54             DS   (FIQ_Stack_Size+3)&~3  ; Stack for Fast Interrupt Mode 
+00000888                 55             DS   (ABT_Stack_Size+3)&~3  ; Stack for Abort Mode
+0000088C                 56             DS   (UND_Stack_Size+3)&~3  ; Stack for Undefined Mode
+00000890                 57     Top_Stack:
+                         58     
+AA MACRO ASSEMBLER  STARTUP                                                                 08/04/10 15:33:00 PAGE     2
+
+                         59     
+                         60     
+ E01FC100                61             VPBDIV          EQU     0xE01FC100   
+                         62     
+                         63     
+                         64     
+                         65     
+                         66     
+                         67     
+                         68     
+                         69     
+                         70     
+                         71     
+                         72     
+                         73     
+                         74     
+                         75     
+ 0001                    76             VPBDIV_SETUP    EQU     1
+ 0011                    77             VPBDIV_Val      EQU     0x00000011
+                         78     
+                         79     
+                         80     
+ E01FC080                81             PLL_BASE        EQU     0xE01FC080   
+ 0000                    82             PLLCON_OFS      EQU     0x00         
+ 0004                    83             PLLCFG_OFS      EQU     0x04         
+ 0008                    84             PLLSTAT_OFS     EQU     0x08         
+ 000C                    85             PLLFEED_OFS     EQU     0x0C         
+ 0001                    86             PLLCON_PLLE     EQU     (1<<0)       
+ 0002                    87             PLLCON_PLLC     EQU     (1<<1)       
+ 001F                    88             PLLCFG_MSEL     EQU     (0x1F<<0)    
+ 0060                    89             PLLCFG_PSEL     EQU     (0x03<<5)    
+ 0400                    90             PLLSTAT_PLOCK   EQU     (1<<10)      
+                         91     
+                         92     
+                         93     
+                         94     
+                         95     
+                         96     
+                         97     
+                         98     
+                         99     
+                        100     
+                        101     
+                        102     
+ 0001                   103             PLL_SETUP       EQU     1
+ 0024                   104             PLLCFG_Val      EQU     0x00000024
+                        105     
+                        106     
+                        107     
+ E01FC000               108             MAM_BASE        EQU     0xE01FC000   
+ 0000                   109             MAMCR_OFS       EQU     0x00         
+ 0004                   110             MAMTIM_OFS      EQU     0x04         
+                        111     
+                        112     
+                        113     
+                        114     
+                        115     
+                        116     
+                        117     
+                        118     
+                        119     
+                        120     
+                        121     
+                        122     
+                        123     
+                        124     
+AA MACRO ASSEMBLER  STARTUP                                                                 08/04/10 15:33:00 PAGE     3
+
+                        125     
+ 0001                   126             MAM_SETUP       EQU     1
+ 0002                   127             MAMCR_Val       EQU     0x00000002
+ 0004                   128             MAMTIM_Val      EQU     0x00000004
+                        129     
+                        130     
+                        131     
+ FFE00000               132             EMC_BASE        EQU     0xFFE00000   
+ 0000                   133             BCFG0_OFS       EQU     0x00         
+ 0004                   134             BCFG1_OFS       EQU     0x04         
+ 0008                   135             BCFG2_OFS       EQU     0x08         
+ 000C                   136             BCFG3_OFS       EQU     0x0C         
+                        137     
+                        138     
+                        139     
+                        140     
+ 0001                   141             EMC_SETUP       EQU     1
+                        142     
+                        143     
+                        144     
+                        145     
+                        146     
+                        147     
+                        148     
+                        149     
+                        150     
+                        151     
+                        152     
+                        153     
+                        154     
+ 0000                   155             BCFG0_SETUP EQU         0
+ FBEF                   156             BCFG0_Val   EQU         0x0000FBEF
+                        157     
+                        158     
+                        159     
+                        160     
+                        161     
+                        162     
+                        163     
+                        164     
+                        165     
+                        166     
+                        167     
+                        168     
+                        169     
+ 0000                   170             BCFG1_SETUP EQU         0
+ FBEF                   171             BCFG1_Val   EQU         0x0000FBEF
+                        172     
+                        173     
+                        174     
+                        175     
+                        176     
+                        177     
+                        178     
+                        179     
+                        180     
+                        181     
+                        182     
+                        183     
+                        184     
+ 0000                   185             BCFG2_SETUP EQU         0
+ FBEF                   186             BCFG2_Val   EQU         0x0000FBEF
+                        187     
+                        188     
+                        189     
+                        190     
+AA MACRO ASSEMBLER  STARTUP                                                                 08/04/10 15:33:00 PAGE     4
+
+                        191     
+                        192     
+                        193     
+                        194     
+                        195     
+                        196     
+                        197     
+                        198     
+                        199     
+ 0000                   200             BCFG3_SETUP EQU         0
+ FBEF                   201             BCFG3_Val   EQU         0x0000FBEF
+                        202     
+                        203     
+                        204     
+                        205     
+                        206     
+                        207     
+                        208     
+ E002C014               209             PINSEL2         EQU     0xE002C014   
+ 0E6149E4               210             PINSEL2_Val     EQU     0x0E6149E4   
+                        211     
+                        212     
+                        213     
+                        214     
+                        215     
+                        216     $if  (EXTERNAL_MODE)
+                                        CODE_BASE       EQU     0x80000000
+                                $else 
+ 0000                   219             CODE_BASE       EQU     0x00000000
+                        220     $endif 
+                        221     
+00000000                222     AREA   STARTUPCODE, CODE, AT CODE_BASE    
+                        223            PUBLIC  __startup
+                        224     
+                        225            EXTERN  CODE32 (?C?INIT)
+                        226     
+                        227     __startup       PROC    CODE32
+                        228     
+                        229     
+                        230     
+                        231     EXTERN CODE32 (Undef_Handler?A)
+                        232     EXTERN CODE32 (SWI_Handler?A)
+                        233     EXTERN CODE32 (PAbt_Handler?A)
+                        234     EXTERN CODE32 (DAbt_Handler?A)
+                        235     EXTERN CODE32 (IRQ_Handler?A)
+                        236     EXTERN CODE32 (FIQ_Handler?A)
+                        237     
+                        238     
+                        239     
+                        240     
+                        241     
+00000000 E59FF020       242     Vectors:        LDR     PC,Reset_Addr         
+00000004 E59FF024       243                     LDR     PC,Undef_Addr
+00000008 E59FF028       244                     LDR     PC,SWI_Addr
+0000000C E59FF02C       245                     LDR     PC,PAbt_Addr
+00000010 E59FF030       246                     LDR     PC,DAbt_Addr
+00000014 E1A00000       247                     NOP                             
+                        248     ;               LDR     PC,IRQ_Addr
+00000018 E51FFFF0       249                     LDR     PC,[PC, #-0x0FF0]       
+0000001C E59FF03C       250                     LDR     PC,FIQ_Addr
+                        251     
+00000020 00000040 R     252     Reset_Addr:     DD      Reset_Handler
+00000024 00000000 E     253     Undef_Addr:     DD      Undef_Handler?A
+00000028 00000000 E     254     SWI_Addr:       DD      SWI_Handler?A
+0000002C 00000000 E     255     PAbt_Addr:      DD      PAbt_Handler?A
+00000030 00000000 E     256     DAbt_Addr:      DD      DAbt_Handler?A
+AA MACRO ASSEMBLER  STARTUP                                                                 08/04/10 15:33:00 PAGE     5
+
+00000034 00000000       257                     DD      0                       
+00000038 00000000 E     258     IRQ_Addr:       DD      IRQ_Handler?A
+0000003C 00000000 E     259     FIQ_Addr:       DD      FIQ_Handler?A
+                        260     
+                        261     
+                        262     
+                        263     
+00000040                264     Reset_Handler:  
+                        265     
+                        266     
+                        267     $if  (EXTERNAL_MODE)
+                                                LDR     R0, =PINSEL2
+                                                LDR     R1, =PINSEL2_Val
+                                                STR     R1, [R0]
+                                $endif 
+                        272     
+                        273     
+                        274     IF (EMC_SETUP != 0)
+00000040 E59F0034       275                     LDR     R0, =EMC_BASE
+                        276     
+                        277     IF (BCFG0_SETUP != 0)
+                                                LDR     R1, =BCFG0_Val
+                                                STR     R1, [R0, #BCFG0_OFS]
+                                ENDIF
+                        281     
+                        282     IF (BCFG1_SETUP != 0)
+                                                LDR     R1, =BCFG1_Val
+                                                STR     R1, [R0, #BCFG1_OFS]
+                                ENDIF
+                        286     
+                        287     IF (BCFG2_SETUP != 0)
+                                                LDR     R1, =BCFG2_Val
+                                                STR     R1, [R0, #BCFG2_OFS]
+                                ENDIF
+                        291     
+                        292     IF (BCFG3_SETUP != 0)
+                                                LDR     R1, =BCFG3_Val
+                                                STR     R1, [R0, #BCFG3_OFS]
+                                ENDIF
+                        296     
+                        297     ENDIF
+                        298     
+                        299     
+                        300     IF (VPBDIV_SETUP != 0)
+00000044 E59F0034       301                     LDR     R0, =VPBDIV
+00000048 E3A01011       302                     LDR     R1, =VPBDIV_Val
+0000004C E5801000       303                     STR     R1, [R0]
+                        304     ENDIF
+                        305     
+                        306     
+                        307     IF (PLL_SETUP != 0)
+00000050 E59F0034       308                     LDR     R0, =PLL_BASE
+00000054 E3A010AA       309                     MOV     R1, #0xAA
+00000058 E3A02055       310                     MOV     R2, #0x55
+                        311     
+                        312     
+0000005C E3A03024       313                     MOV     R3, #PLLCFG_Val
+00000060 E5803004       314                     STR     R3, [R0, #PLLCFG_OFS] 
+00000064 E3A03001       315                     MOV     R3, #PLLCON_PLLE
+00000068 E5803000       316                     STR     R3, [R0, #PLLCON_OFS]
+0000006C E580100C       317                     STR     R1, [R0, #PLLFEED_OFS]
+00000070 E580200C       318                     STR     R2, [R0, #PLLFEED_OFS]
+                        319     
+                        320     
+00000074 E5903008       321     PLL_Loop:       LDR     R3, [R0, #PLLSTAT_OFS]
+00000078 E2133B01       322                     ANDS    R3, R3, #PLLSTAT_PLOCK
+AA MACRO ASSEMBLER  STARTUP                                                                 08/04/10 15:33:00 PAGE     6
+
+0000007C 0AFFFFFC       323                     BEQ     PLL_Loop
+                        324     
+                        325     
+00000080 E3A03003       326                     MOV     R3, #(PLLCON_PLLE | PLLCON_PLLC)
+00000084 E5803000       327                     STR     R3, [R0, #PLLCON_OFS]
+00000088 E580100C       328                     STR     R1, [R0, #PLLFEED_OFS]
+0000008C E580200C       329                     STR     R2, [R0, #PLLFEED_OFS]
+                        330     ENDIF
+                        331     
+                        332     
+                        333     IF (MAM_SETUP != 0)
+00000090 E59F0034       334                     LDR     R0, =MAM_BASE
+00000094 E3A01004       335                     MOV     R1, #MAMTIM_Val
+00000098 E5801004       336                     STR     R1, [R0, #MAMTIM_OFS] 
+0000009C E3A01002       337                     MOV     R1, #MAMCR_Val
+000000A0 E5801000       338                     STR     R1, [R0, #MAMCR_OFS] 
+                        339     ENDIF
+                        340     
+                        341     
+                        342     
+ E01FC040               343                     MEMMAP  EQU  0xE01FC040   
+                        344     
+                        345     $if  (RAM_INTVEC)
+                                                LDR     R0, =MEMMAP
+                                                MOV     R1, #2
+                                                STR     R1, [R0]
+                                $endif 
+                        350     
+                        351     
+                        352     
+000000A4 E59F0034       353                     LDR     R0, =Top_Stack
+                        354     
+                        355     
+000000A8 E321F0DB       356                     MSR     CPSR_c, #Mode_UND|I_Bit|F_Bit
+000000AC E1A0D000       357                     MOV     SP, R0
+000000B0 E2400004       358                     SUB     R0, R0, #UND_Stack_Size
+                        359     
+                        360     
+000000B4 E321F0D7       361                     MSR     CPSR_c, #Mode_ABT|I_Bit|F_Bit
+000000B8 E1A0D000       362                     MOV     SP, R0
+000000BC E2400004       363                     SUB     R0, R0, #ABT_Stack_Size
+                        364     
+                        365     
+000000C0 E321F0D1       366                     MSR     CPSR_c, #Mode_FIQ|I_Bit|F_Bit
+000000C4 E1A0D000       367                     MOV     SP, R0
+000000C8 E2400004       368                     SUB     R0, R0, #FIQ_Stack_Size
+                        369     
+                        370     
+000000CC E321F0D2       371                     MSR     CPSR_c, #Mode_IRQ|I_Bit|F_Bit
+000000D0 E1A0D000       372                     MOV     SP, R0
+000000D4 E2400080       373                     SUB     R0, R0, #IRQ_Stack_Size
+                        374     
+                        375     
+000000D8 E321F0D3       376                     MSR     CPSR_c, #Mode_SVC|I_Bit|F_Bit
+000000DC E1A0D000       377                     MOV     SP, R0
+000000E0 E2400004       378                     SUB     R0, R0, #SVC_Stack_Size
+                        379     
+                        380     
+000000E4 E321F010       381                     MSR     CPSR_c, #Mode_USR
+000000E8 E1A0D000       382                     MOV     SP, R0
+                        383     
+                        384     
+000000EC E59F0034       385                     LDR     R0,=?C?INIT
+000000F0 E3100001       386                     TST     R0,#1       ; Bit-0 set: INIT is Thumb
+000000F4 E3A0EC01       387                     LDREQ   LR,=exit?A  ; ARM Mode
+000000F8 E3A0EF41       388                     LDRNE   LR,=exit?T  ; Thumb Mode
+AA MACRO ASSEMBLER  STARTUP                                                                 08/04/10 15:33:00 PAGE     7
+
+000000FC E12FFF10       389                     BX      R0
+                        390                     ENDP
+                        391     
+                        392     PUBLIC exit?A
+                        393     exit?A          PROC    CODE32
+00000100 EAFFFFFE       394                     B       exit?A
+                        395                     ENDP
+                        396     
+                        397     PUBLIC exit?T
+                        398     exit?T          PROC    CODE16
+00000104 E7FE           399     exit:           B       exit?T
+                        400                     ENDP
+                        401     
+                        402     
+                        403                     END
+AA MACRO ASSEMBLER  STARTUP                                                                 08/04/10 15:33:00 PAGE     8
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E     ATTRIBUTES
+
+?C?INIT. . . . . .  C  ADDR  -------       EXT
+ABT_Stack_Size . .  -- ----  0004H     A   
+BCFG0_OFS. . . . .  -- ----  0000H     A   
+BCFG0_SETUP. . . .  -- ----  0000H     A   
+BCFG0_Val. . . . .  -- ----  FBEFH     A   
+BCFG1_OFS. . . . .  -- ----  0004H     A   
+BCFG1_SETUP. . . .  -- ----  0000H     A   
+BCFG1_Val. . . . .  -- ----  FBEFH     A   
+BCFG2_OFS. . . . .  -- ----  0008H     A   
+BCFG2_SETUP. . . .  -- ----  0000H     A   
+BCFG2_Val. . . . .  -- ----  FBEFH     A   
+BCFG3_OFS. . . . .  -- ----  000CH     A   
+BCFG3_SETUP. . . .  -- ----  0000H     A   
+BCFG3_Val. . . . .  -- ----  FBEFH     A   
+CODE_BASE. . . . .  -- ----  0000H     A   
+DAbt_Addr. . . . .  C  ADDR  0030H     R   SEG=STARTUPCODE
+DAbt_Handler?A . .  C  ADDR  -------       EXT
+EMC_BASE . . . . .  -- ----  FFE00000H A   
+EMC_SETUP. . . . .  -- ----  0001H     A   
+FIQ_Addr . . . . .  C  ADDR  003CH     R   SEG=STARTUPCODE
+FIQ_Handler?A. . .  C  ADDR  -------       EXT
+FIQ_Stack_Size . .  -- ----  0004H     A   
+F_Bit. . . . . . .  -- ----  0040H     A   
+IRQ_Addr . . . . .  C  ADDR  0038H     R   SEG=STARTUPCODE
+IRQ_Handler?A. . .  C  ADDR  -------       EXT
+IRQ_Stack_Size . .  -- ----  0080H     A   
+I_Bit. . . . . . .  -- ----  0080H     A   
+MAMCR_OFS. . . . .  -- ----  0000H     A   
+MAMCR_Val. . . . .  -- ----  0002H     A   
+MAMTIM_OFS . . . .  -- ----  0004H     A   
+MAMTIM_Val . . . .  -- ----  0004H     A   
+MAM_BASE . . . . .  -- ----  E01FC000H A   
+MAM_SETUP. . . . .  -- ----  0001H     A   
+MEMMAP . . . . . .  -- ----  E01FC040H A   
+Mode_ABT . . . . .  -- ----  0017H     A   
+Mode_FIQ . . . . .  -- ----  0011H     A   
+Mode_IRQ . . . . .  -- ----  0012H     A   
+Mode_SVC . . . . .  -- ----  0013H     A   
+Mode_SYS . . . . .  -- ----  001FH     A   
+Mode_UND . . . . .  -- ----  001BH     A   
+Mode_USR . . . . .  -- ----  0010H     A   
+PAbt_Addr. . . . .  C  ADDR  002CH     R   SEG=STARTUPCODE
+PAbt_Handler?A . .  C  ADDR  -------       EXT
+PINSEL2. . . . . .  -- ----  E002C014H A   
+PINSEL2_Val. . . .  -- ----  0E6149E4H A   
+PLLCFG_MSEL. . . .  -- ----  001FH     A   
+PLLCFG_OFS . . . .  -- ----  0004H     A   
+PLLCFG_PSEL. . . .  -- ----  0060H     A   
+PLLCFG_Val . . . .  -- ----  0024H     A   
+PLLCON_OFS . . . .  -- ----  0000H     A   
+PLLCON_PLLC. . . .  -- ----  0002H     A   
+PLLCON_PLLE. . . .  -- ----  0001H     A   
+PLLFEED_OFS. . . .  -- ----  000CH     A   
+PLLSTAT_OFS. . . .  -- ----  0008H     A   
+PLLSTAT_PLOCK. . .  -- ----  0400H     A   
+PLL_BASE . . . . .  -- ----  E01FC080H A   
+PLL_Loop . . . . .  C  ADDR  0074H     R   SEG=STARTUPCODE
+PLL_SETUP. . . . .  -- ----  0001H     A   
+Reset_Addr . . . .  C  ADDR  0020H     R   SEG=STARTUPCODE
+Reset_Handler. . .  C  ADDR  0040H     R   SEG=STARTUPCODE
+AA MACRO ASSEMBLER  STARTUP                                                                 08/04/10 15:33:00 PAGE     9
+
+STACK. . . . . . .  D  SEG   0890H         REL=UNIT, ALN=BYTE
+STARTUPCODE. . . .  C  SEG   0106H         REL=ABS, ALN=BYTE
+SVC_Stack_Size . .  -- ----  0004H     A   
+SWI_Addr . . . . .  C  ADDR  0028H     R   SEG=STARTUPCODE
+SWI_Handler?A. . .  C  ADDR  -------       EXT
+Top_Stack. . . . .  D  ADDR  0890H     R   SEG=STACK
+UND_Stack_Size . .  -- ----  0004H     A   
+USR_Stack_Size . .  -- ----  0800H     A   
+Undef_Addr . . . .  C  ADDR  0024H     R   SEG=STARTUPCODE
+Undef_Handler?A. .  C  ADDR  -------       EXT
+VPBDIV . . . . . .  -- ----  E01FC100H A   
+VPBDIV_SETUP . . .  -- ----  0001H     A   
+VPBDIV_Val . . . .  -- ----  0011H     A   
+Vectors. . . . . .  C  ADDR  0000H     R   SEG=STARTUPCODE
+__startup. . . . .  C  ADDR  0000H     R   SEG=STARTUPCODE
+exit . . . . . . .  C  ADDR  0104H     R   SEG=STARTUPCODE
+exit?A . . . . . .  C  ADDR  0100H     R   SEG=STARTUPCODE
+exit?T . . . . . .  C  ADDR  0104H     R   SEG=STARTUPCODE
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S).

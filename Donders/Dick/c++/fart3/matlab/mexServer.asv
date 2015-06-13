@@ -1,0 +1,195 @@
+//
+//      Dick Heeren 04-01-2011 version 1.0
+//                  22-03-2011 version 2.0
+//#define test
+//#define fart3
+#include "mexServer.h"
+
+short _stdcall Inp32(short PortAddress);
+void _stdcall Out32(short PortAddress, short data);
+//
+char outBuf[81];                //
+double start, stop, elapsed;    //
+double dataRecord[20];          //
+
+LARGE_INTEGER clockStart;
+LARGE_INTEGER clockStop;
+LARGE_INTEGER clockFreq;
+LARGE_INTEGER clockElapsed;
+//**********************************************************************//
+//	RS232 - I2C
+//**********************************************************************//
+HANDLE serial;
+
+bool AFM_openSerial(int baud)
+{
+	bool bRet = false;
+	DCB dcb;
+	COMMTIMEOUTS CommTimeouts;
+	CommTimeouts.ReadIntervalTimeout = 1;
+	CommTimeouts.ReadTotalTimeoutMultiplier = 0;
+	CommTimeouts.ReadTotalTimeoutConstant = 10;
+	serial = CreateFile(TEXT("COM1"),
+					   GENERIC_READ | GENERIC_WRITE,
+					   0, NULL,
+					   OPEN_EXISTING,
+					   FILE_ATTRIBUTE_NORMAL,
+					   NULL);
+    if (serial != INVALID_HANDLE_VALUE)
+	{
+		dcb.DCBlength = sizeof(DCB);
+		if (GetCommState(serial,&dcb))
+		{
+			dcb.BaudRate = baud;
+			dcb.ByteSize = 8;
+			dcb.Parity   = 0;
+			dcb.StopBits = 0;
+			dcb.fDtrControl = 0;
+			dcb.fBinary = true;
+			bRet = SetCommState(serial,&dcb);
+		}
+	}
+	return bRet;
+}
+void AFM_close()
+{
+	CloseHandle(serial);
+}
+#ifdef fart3
+bool AFM_slaveWrite(char *outBuf,int number)
+{
+	char inChar;
+	DWORD bytesRead, bytesWritten;
+	bool bRet;
+	outBuf[number]  = 13;
+	bool ok = false;
+	bRet = WriteFile(serial,outBuf,number+1,&bytesWritten,NULL);
+	do
+	{
+		bRet = ReadFile(serial,&inChar,1,&bytesRead,NULL);
+		if (inChar == '*') ok = true;
+	}while (inChar != 13); 
+	return ok;
+}
+#endif
+#ifndef fart3
+bool AFM_slaveWrite(char *outBuf,int number)
+{
+	return true;
+}
+#endif
+//**********************************************************************//
+void setClock(void)
+{
+	QueryPerformanceCounter(&clockStart);
+}
+double getClock(void)
+{
+	QueryPerformanceFrequency(&clockFreq);
+	QueryPerformanceCounter(&clockStop);
+	clockElapsed.QuadPart = 1000*(clockStop.QuadPart - clockStart.QuadPart);
+	return ((double)clockElapsed.QuadPart /(double)clockFreq.QuadPart);
+}
+//**********************************************************************//
+int readLPT1(short port)
+{
+	int inp = Inp32(port);
+	
+	return inp;
+}
+void writeLPT1(short port, short val)
+{
+	Out32(port, val);
+}
+//**********************************************************************//
+void mexFunction(int nlhs, mxArray *plhs[], int nrhs, mxArray *prhs[])
+{
+// 	Declarations
+    double *outArray;
+    int baud;
+    int command;
+    int num;
+    double error;
+    
+    mxArray *xinpBuf;
+    double *inpBuf;
+    xinpBuf = prhs[0];
+    inpBuf = mxGetPr(xinpBuf);
+
+    for (int n=0; n<inpBuf[0]; n++)
+    {
+        dataRecord[n] = inpBuf[n];
+#ifdef test
+        printf("%2d %5.2f\n",n,inpBuf[n]);
+#endif
+    }
+
+    command = (int) dataRecord[1];
+    error   = command; // no error
+        switch (command)
+        {
+            case cmdOpenSerial:
+                 baud = (int) dataRecord[4];
+                 AFM_openSerial(baud);
+                 plhs[0] = mxCreateDoubleMatrix(1,1,mxREAL);
+                 outArray = mxGetPr(plhs[0]);
+                 outArray[0] = cmdOpenSerial;
+                break;
+            case cmdCloseSerial:
+                 AFM_close();
+                 plhs[0] = mxCreateDoubleMatrix(1,1,mxREAL);
+                 outArray = mxGetPr(plhs[0]);
+                 outArray[0] = cmdCloseSerial;
+                break;
+            case cmdGetStatus:
+                 {
+                    num = dataRecord[0]; 
+                    plhs[0] = mxCreateDoubleMatrix(num,1,mxREAL);
+                    outArray = mxGetPr(plhs[0]);
+                    for (int n=0; n<num; n++)
+                    {
+                        outArray[n] = dataRecord[n];
+                    }
+                 }
+                 break;
+            case cmdSetClock:
+                 clockStart.QuadPart = 0;
+                 setClock();
+                 plhs[0] = mxCreateDoubleMatrix(1,1,mxREAL);
+                 outArray = mxGetPr(plhs[0]);
+                 outArray[0] = cmdSetClock;
+                 break;
+            case cmdGetClock:
+                 {
+                     num = dataRecord[0]; 
+                     plhs[0] = mxCreateDoubleMatrix(num,1,mxREAL);
+                     outArray = mxGetPr(plhs[0]);
+                     for (int n=0; n<num; n++)
+                     {
+                         outArray[n] = dataRecord[n];
+                     }
+                 }
+                 break;
+            case cmdNextTrial:
+                 {
+                     num = dataRecord[0]; 
+                     plhs[0] = mxCreateDoubleMatrix(num,1,mxREAL);
+                     outArray = mxGetPr(plhs[0]);
+                     for (int n=0; n<num; n++)
+                     {
+                         outArray[n] = dataRecord[n];
+                     }
+                 }
+                 break;
+		case cmdTestLeds:
+  		     _strtime_s(outBuf, 81);
+			 printf("-> %s Test leds: \n",outBuf);
+             double tim = getClock() + 50;
+             while (getClock() < tim);
+             printf("Time Span = %.4f\n", getClock());
+             plhs[0] = mxCreateDoubleMatrix(1,1,mxREAL);
+             outArray = mxGetPr(plhs[0]);
+             outArray[0] = cmdTestLeds;
+             break;
+    }
+}

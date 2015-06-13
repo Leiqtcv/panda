@@ -1,0 +1,13 @@
+model {
+	for( i in 1 : Ndata ) {
+#		y[i] ~ dnorm( mu[i] , tau )
+		y[i] ~ dt(mu[i],tau,tdf)
+		mu[i] <- beta0 + beta1 * x[i]
+	}
+	beta0 ~ dnorm( 0 , 1.0e-12)
+	beta1 ~ dnorm( 0 , 1.0e-12)
+	tau ~ dgamma( 0.001 , 0.001 )
+	udf ~ dunif(0,1)
+	tdf <- 1-tdfGain*log(1-udf)
+#	tau ~ dchisq(1)
+}

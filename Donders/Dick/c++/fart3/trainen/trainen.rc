@@ -1,0 +1,959 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\trainen.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxprint.rc""       // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\trainen.ico"
+IDR_trainenTYPE         ICON                    "res\\trainenDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU 
+BEGIN
+    POPUP "Parameter setting"
+    BEGIN
+        MENUITEM "Timing",                      ID_PARAMETERSETTING_TIMING
+        MENUITEM "Leds",                        ID_PARAMETERSETTING_LEDS
+        MENUITEM "Recording",                   ID_PARAMETERSETTING_RECORDING
+        MENUITEM "Plot",                        ID_PARAMETERSETTING_PLOT
+        MENUITEM "Rewards",                     ID_PARAMETERSETTING_REWARDS
+    END
+    POPUP "Acoustic stimuli"
+    BEGIN
+        MENUITEM "Stimulus type",               ID_ACOUSTICSTIMULI_STIMULUSTYPE
+        MENUITEM SEPARATOR
+        MENUITEM "Ripple",                      ID_ACOUSTICSTIMULI_MAINPARAMETERS
+        MENUITEM "Noise",                       ID_ACOUSTICSTIMULI_NOISE
+        MENUITEM "Tone",                        ID_ACOUSTICSTIMULI_TONE
+        MENUITEM SEPARATOR
+        MENUITEM "Secondary",                   ID_ACOUSTICSTIMULI_SECONDARY
+    END
+    POPUP "Options"
+    BEGIN
+        MENUITEM "Testing",                     ID_OPTIONS_TESTING
+    END
+    POPUP "Mode"
+    BEGIN
+        MENUITEM "Active",                      ID_MODE_ACTIVE
+        MENUITEM "Passive",                     ID_MODE_PASSIVE
+    END
+    POPUP "Trainen"
+    BEGIN
+        MENUITEM "Start",                       ID_TRAINEN_START
+        MENUITEM "Stop",                        ID_TRAINEN_STOP
+    END
+    POPUP "Help"
+    BEGIN
+        MENUITEM "About trainen...",            ID_APP_ABOUT
+    END
+    MENUITEM "Exit",                        ID_APP_EXIT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 159, 47
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION
+CAPTION "About Trainen"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    CTEXT           "Version 2.0 14-jun-2011",IDC_VERSION,7,14,116,8,SS_NOPREFIX
+    CTEXT           "Copyright (C) MBFYS -  2011",IDC_STATIC,7,29,116,8
+    DEFPUSHBUTTON   "OK",IDOK,125,7,27,33,WS_GROUP
+END
+
+IDD_OPTIONS_TESTING DIALOGEX 0, 0, 186, 225
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Options => Testing"
+FONT 8, "Microsoft Sans Serif", 400, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "Close",IDOK,129,204,50,14
+    CTEXT           "Leds",IDC_STATIC,80,61,28,8
+    RTEXT           "Maximum Led intensity ",IDC_STATIC,35,17,75,8
+    CONTROL         "",IDC_SPIN1,"msctls_updown32",UDS_ARROWKEYS,137,14,11,14
+    EDITTEXT        IDC_EDIT1,115,14,21,14,ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY
+    CTEXT           "_____________",IDC_STATIC,15,58,53,8
+    CONTROL         "Red",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON,37,78,29,10
+    CONTROL         "Green",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,37,89,35,10
+    RTEXT           "Intensity",IDC_STATIC,75,78,38,8
+    CONTROL         "",IDC_SPIN2,"msctls_updown32",UDS_ARROWKEYS,139,76,11,14
+    EDITTEXT        IDC_EDIT2,117,76,21,14,ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY
+    RTEXT           "Ontime",IDC_STATIC,73,91,38,8
+    CONTROL         "",IDC_SPIN3,"msctls_updown32",UDS_ARROWKEYS,139,89,11,14
+    EDITTEXT        IDC_EDIT3,117,89,21,14,ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "Test",IDC_BUTTON1,83,104,50,14
+    CTEXT           "Printer port",IDC_STATIC,75,135,41,8
+    CHECKBOX        "",IDC_CHECK1,50,151,8,10,BS_VCENTER
+    CHECKBOX        "",IDC_CHECK2,64,151,8,10,BS_VCENTER
+    CHECKBOX        "",IDC_CHECK3,78,151,8,10,BS_VCENTER
+    CHECKBOX        "",IDC_CHECK4,93,151,8,10,BS_VCENTER
+    CHECKBOX        "",IDC_CHECK5,107,151,8,10,BS_VCENTER
+    CHECKBOX        "",IDC_CHECK6,121,151,8,10,BS_VCENTER
+    CHECKBOX        "",IDC_CHECK7,134,151,8,10,BS_VCENTER
+    CHECKBOX        "",IDC_CHECK8,147,151,8,10,BS_VCENTER
+    CONTROL         "",IDC_CHECK9,"Button",BS_AUTOCHECKBOX | BS_VCENTER | WS_TABSTOP,49,169,8,10
+    CONTROL         "",IDC_CHECK10,"Button",BS_AUTOCHECKBOX | BS_VCENTER | WS_TABSTOP,63,169,8,10
+    CONTROL         "",IDC_CHECK11,"Button",BS_AUTOCHECKBOX | BS_VCENTER | WS_TABSTOP,77,169,8,10
+    CONTROL         "",IDC_CHECK12,"Button",BS_AUTOCHECKBOX | BS_VCENTER | WS_TABSTOP,93,169,8,10
+    CONTROL         "",IDC_CHECK13,"Button",BS_AUTOCHECKBOX | BS_VCENTER | WS_TABSTOP,107,169,8,10
+    CONTROL         "",IDC_CHECK14,"Button",BS_AUTOCHECKBOX | BS_VCENTER | WS_TABSTOP,121,169,8,10
+    CONTROL         "",IDC_CHECK15,"Button",BS_AUTOCHECKBOX | BS_VCENTER | WS_TABSTOP,133,169,8,10
+    CONTROL         "",IDC_CHECK16,"Button",BS_AUTOCHECKBOX | BS_VCENTER | WS_TABSTOP,147,169,8,10
+    LTEXT           "7     6     5     4     3     2     1    0",IDC_STATIC,52,161,107,8
+    LTEXT           "IN",IDC_STATIC,30,150,8,8
+    LTEXT           "OUT",IDC_STATIC,27,169,16,8
+    PUSHBUTTON      "Apply",IDC_BUTTON2,82,30,50,14
+    CTEXT           "_____________",IDC_STATIC,119,59,53,8
+    CTEXT           "_____________",IDC_STATIC,21,132,53,8
+    CTEXT           "_____________",IDC_STATIC,118,132,53,8
+    GROUPBOX        "",IDC_STATIC,7,7,172,41
+    GROUPBOX        "",IDC_STATIC,7,53,172,67
+    GROUPBOX        "",IDC_STATIC,7,127,172,58
+END
+
+IDD_PARAMETERS_TIMING DIALOGEX 0, 0, 174, 191
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION
+CAPTION "Parameters => Timing"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Hide",IDOK,117,170,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,7,170,50,14
+    RTEXT           "Fixation (mSec)",IDC_STATIC,39,16,54,8
+    EDITTEXT        IDC_EDIT1,97,14,40,14,ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_SPIN1,"msctls_updown32",UDS_ARROWKEYS,137,14,11,14
+    RTEXT           "Target Fixed (mSec)",IDC_STATIC,17,35,75,8
+    RTEXT           "Target Random (mSec)",IDC_STATIC,15,54,77,8
+    RTEXT           "Target Changed (mSec)",IDC_STATIC,15,74,77,8
+    RTEXT           "Random Target (mSec)",IDC_STATIC,18,102,75,8,NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT4,97,33,40,14,ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT3,97,52,40,14,ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT5,97,72,40,14,ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT6,97,100,40,14,ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY | NOT WS_VISIBLE
+    CONTROL         "",IDC_SPIN4,"msctls_updown32",UDS_ARROWKEYS,137,33,11,14
+    CONTROL         "",IDC_SPIN5,"msctls_updown32",UDS_ARROWKEYS,137,52,11,14
+    CONTROL         "",IDC_SPIN6,"msctls_updown32",UDS_ARROWKEYS,137,72,11,14
+    PUSHBUTTON      "Apply",IDC_BUTTON2,63,170,50,14
+    EDITTEXT        IDC_EDIT7,19,145,40,14,ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_SPIN9,"msctls_updown32",UDS_ARROWKEYS,59,145,11,14
+    EDITTEXT        IDC_EDIT9,99,145,40,14,ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_SPIN10,"msctls_updown32",UDS_ARROWKEYS,139,145,11,14
+    LTEXT           "==>",IDC_STATIC,75,148,17,8
+    LTEXT           "Range valid reaction times",IDC_STATIC,41,134,85,8
+END
+
+IDD_PARAMETERS_LEDS DIALOGEX 0, 0, 206, 230
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION
+CAPTION "Parameters => Leds"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Hide",IDOK,149,209,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,7,209,50,14
+    LTEXT           "Led Ring (0..5)",IDC_STATIC,80,7,49,8
+    EDITTEXT        IDC_EDIT2,65,23,13,14,ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_SPIN1,"msctls_updown32",UDS_ARROWKEYS,79,23,11,14
+    EDITTEXT        IDC_EDIT4,140,24,13,14,ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_SPIN7,"msctls_updown32",UDS_ARROWKEYS,154,24,11,14
+    LTEXT           "Minimum",IDC_STATIC,36,26,28,8
+    LTEXT           "Maximum",IDC_STATIC,109,25,30,8
+    CONTROL         "position fix = position target",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,52,50,107,10
+    GROUPBOX        "Color Fixation Led",IDC_STATIC,41,66,118,29
+    CONTROL         "Red",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON,49,78,29,10
+    CONTROL         "Green",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,113,79,35,10
+    GROUPBOX        "Color Target Led",IDC_STATIC,42,101,118,29
+    CONTROL         "Red",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON | WS_GROUP,50,113,29,10
+    CONTROL         "Green",IDC_RADIO4,"Button",BS_AUTORADIOBUTTON,114,114,35,10
+    RTEXT           "Percentage Changed (0..100)",IDC_STATIC,23,191,97,8
+    EDITTEXT        IDC_EDIT5,124,189,23,14,ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_SPIN4,"msctls_updown32",UDS_ARROWKEYS,148,189,11,14
+    RTEXT           "Target Changed Intensity (0..7)",IDC_STATIC,16,173,104,8
+    EDITTEXT        IDC_EDIT7,124,170,23,14,ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_SPIN5,"msctls_updown32",UDS_ARROWKEYS,148,170,11,14
+    RTEXT           "Target Intensity (0..7)",IDC_STATIC,46,156,74,8
+    EDITTEXT        IDC_EDIT8,124,154,23,14,ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_SPIN9,"msctls_updown32",UDS_ARROWKEYS,148,154,11,14
+    RTEXT           "Fixation Intensity (0..7)",IDC_STATIC,42,140,78,8
+    EDITTEXT        IDC_EDIT9,124,138,23,14,ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_SPIN10,"msctls_updown32",UDS_ARROWKEYS,148,138,11,14
+    CONTROL         "no Led",IDC_CHECK9,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,162,193,37,10
+    PUSHBUTTON      "Apply",IDC_BUTTON2,78,209,50,14
+END
+
+IDD_PARAMETERS_REWARDS DIALOGEX 0, 0, 186, 199
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION
+CAPTION "Parameters => Rewards"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Hide",IDOK,129,178,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,7,178,50,14
+    CONTROL         "  Press Bar",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,72,30,50,10
+    CONTROL         "  Release Bar",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,72,41,58,10
+    EDITTEXT        IDC_EDIT1,43,57,28,14,ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT2,42,146,28,14,ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_SPIN1,"msctls_updown32",UDS_ARROWKEYS,71,57,11,14
+    CONTROL         "",IDC_SPIN2,"msctls_updown32",UDS_ARROWKEYS,70,146,11,14
+    LTEXT           "Reward during the following actions",IDC_STATIC,34,15,115,8
+    LTEXT           "Extra delay when released too early",IDC_STATIC,32,133,117,8
+    LTEXT           "* 0.1 Sec",IDC_STATIC,86,149,31,8
+    LTEXT           "Release/press factor",IDC_STATIC,87,59,68,8
+    LTEXT           "_______________________________________",IDC_STATIC,15,119,157,8
+    PUSHBUTTON      "Apply",IDC_BUTTON1,68,178,50,14
+    EDITTEXT        IDC_EDIT4,43,79,28,14,ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_SPIN12,"msctls_updown32",UDS_ARROWKEYS,71,79,11,14
+    LTEXT           "mSec per unit",IDC_STATIC,87,81,44,8
+    EDITTEXT        IDC_EDIT32,43,99,28,14,ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_SPIN22,"msctls_updown32",UDS_ARROWKEYS,71,99,11,14
+    LTEXT           "Latency after press bar",IDC_STATIC,87,102,76,8
+END
+
+IDD_ACOUSTIC_MAIN DIALOGEX 0, 0, 269, 233
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION
+CAPTION "Parameters Acousti"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Hide",IDOK,212,211,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,7,211,50,14
+    GROUPBOX        "",IDC_STATIC,7,98,255,107
+    RTEXT           "Modulation Depth (%)",IDC_STATIC,36,79,72,8
+    EDITTEXT        IDC_EDIT1,121,76,28,14,ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_SPIN1,"msctls_updown32",UDS_ARROWKEYS,149,76,11,14
+    EDITTEXT        IDC_EDIT2,165,76,28,14,ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_SPIN2,"msctls_updown32",UDS_ARROWKEYS,193,76,11,14
+    CONTROL         "",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,211,79,16,10
+    RTEXT           "Carrier Frequency (Hz)",IDC_STATIC,34,30,74,8
+    RTEXT           "Attenuation (dB)",IDC_STATIC,54,47,54,8
+    RTEXT           "Modulation Frequency (Hz)",IDC_STATIC,21,62,87,8
+    EDITTEXT        IDC_EDIT10,121,28,28,14,ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_SPIN11,"msctls_updown32",UDS_ARROWKEYS,149,28,11,14
+    EDITTEXT        IDC_EDIT4,165,28,28,14,ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_SPIN12,"msctls_updown32",UDS_ARROWKEYS,193,28,11,14
+    CONTROL         "",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,211,31,16,10
+    EDITTEXT        IDC_EDIT5,121,44,28,14,ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_SPIN4,"msctls_updown32",UDS_ARROWKEYS,149,44,11,14
+    EDITTEXT        IDC_EDIT11,165,44,28,14,ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_SPIN6,"msctls_updown32",UDS_ARROWKEYS,193,44,11,14
+    CONTROL         "",IDC_CHECK6,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,211,47,16,10
+    EDITTEXT        IDC_EDIT9,121,60,28,14,ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_SPIN10,"msctls_updown32",UDS_ARROWKEYS,149,60,11,14
+    EDITTEXT        IDC_EDIT12,165,60,28,14,ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_SPIN13,"msctls_updown32",UDS_ARROWKEYS,193,60,11,14
+    CONTROL         "",IDC_CHECK11,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,211,63,16,10
+    CONTROL         "Zero",IDC_CHECK12,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,229,63,31,10
+    LTEXT           "Mean",IDC_STATIC,126,15,18,8
+    LTEXT           "+/-",IDC_STATIC,174,16,12,8
+    LTEXT           "Vary",IDC_STATIC,207,18,16,8
+    RTEXT           "Ripple Phase at F0",IDC_STATIC,48,169,60,8
+    EDITTEXT        IDC_EDIT13,123,167,28,14,ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_SPIN14,"msctls_updown32",UDS_ARROWKEYS,151,167,11,14
+    EDITTEXT        IDC_EDIT14,165,167,28,14,ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_SPIN15,"msctls_updown32",UDS_ARROWKEYS,193,167,11,14
+    CONTROL         "",IDC_CHECK17,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,213,170,16,10
+    RTEXT           "Density (cyc/oct)",IDC_STATIC,24,121,84,8
+    RTEXT           "Spectral width (semitones)",IDC_STATIC,23,137,86,8
+    RTEXT           "Number of Components",IDC_STATIC,32,153,76,8
+    EDITTEXT        IDC_EDIT15,123,119,28,14,ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_SPIN16,"msctls_updown32",UDS_ARROWKEYS,151,119,11,14
+    EDITTEXT        IDC_EDIT16,165,119,28,14,ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_SPIN17,"msctls_updown32",UDS_ARROWKEYS,193,119,11,14
+    CONTROL         "",IDC_CHECK18,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,213,122,16,10
+    EDITTEXT        IDC_EDIT17,123,135,28,14,ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_SPIN18,"msctls_updown32",UDS_ARROWKEYS,151,135,11,14
+    EDITTEXT        IDC_EDIT18,165,135,28,14,ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_SPIN19,"msctls_updown32",UDS_ARROWKEYS,193,135,11,14
+    EDITTEXT        IDC_EDIT19,123,151,28,14,ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_SPIN20,"msctls_updown32",UDS_ARROWKEYS,151,151,11,14
+    EDITTEXT        IDC_EDIT20,165,151,28,14,ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_SPIN21,"msctls_updown32",UDS_ARROWKEYS,193,151,11,14
+    LTEXT           "Mean",IDC_STATIC,128,105,18,8
+    LTEXT           "+/-",IDC_STATIC,176,107,12,8
+    LTEXT           "Vary",IDC_STATIC,209,108,16,8
+    PUSHBUTTON      "Test Ripple",IDC_BUTTON3,77,185,119,14
+    PUSHBUTTON      "Apply",IDC_BUTTON4,109,211,50,14
+    GROUPBOX        "",IDC_STATIC,7,7,255,88
+END
+
+IDD_SUMMARY DIALOGEX 0, 0, 186, 228
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Trial Summary"
+FONT 8, "Microsoft Sans Serif", 400, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "Hide",IDOK,129,207,50,14
+    PUSHBUTTON      "Start",IDC_BUTTON1,7,207,45,14
+    PUSHBUTTON      "Stop",IDC_BUTTON5,7,207,45,14,NOT WS_VISIBLE
+    GROUPBOX        "",IDC_STATIC,7,7,172,101
+END
+
+IDD_SKY DIALOGEX 0, 0, 188, 164
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION
+CAPTION "Led Sky"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+IDD_BAR DIALOGEX 100, 100, 742, 49
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_SPIN2,"msctls_updown32",UDS_ARROWKEYS,13,18,10,14
+END
+
+IDD_HISTO DIALOGEX 0, 0, 303, 151
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION
+CAPTION "Reaction times"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "Visual",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | WS_TABSTOP,7,7,38,12
+    CONTROL         "Auditorial",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | WS_TABSTOP,49,7,38,12
+END
+
+IDD_INFO DIALOGEX 0, 0, 163, 284
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Information"
+FONT 8, "Courier New", 400, 0, 0x0
+BEGIN
+    PUSHBUTTON      "",IDC_BUTTON1,7,258,149,19,0,WS_EX_STATICEDGE
+    GROUPBOX        "Parameters",IDC_STATIC,7,7,145,84
+    EDITTEXT        IDC_EDIT1,16,19,127,14,ES_AUTOHSCROLL | ES_READONLY,WS_EX_CLIENTEDGE
+    EDITTEXT        IDC_EDIT10,16,55,127,14,ES_AUTOHSCROLL | ES_READONLY,WS_EX_CLIENTEDGE
+    EDITTEXT        IDC_EDIT21,16,37,127,14,ES_AUTOHSCROLL | ES_READONLY,WS_EX_CLIENTEDGE
+    EDITTEXT        IDC_EDIT22,89,72,54,14,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY,WS_EX_CLIENTEDGE
+    EDITTEXT        IDC_EDIT23,16,72,54,14,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY,WS_EX_CLIENTEDGE
+    GROUPBOX        "Score",IDC_STATIC,7,97,146,138
+    EDITTEXT        IDC_EDIT24,17,178,127,14,ES_AUTOHSCROLL | ES_READONLY,WS_EX_CLIENTEDGE
+    EDITTEXT        IDC_EDIT12,17,161,127,14,ES_AUTOHSCROLL | ES_READONLY,WS_EX_CLIENTEDGE
+    EDITTEXT        IDC_EDIT25,17,142,127,14,ES_AUTOHSCROLL | ES_READONLY,WS_EX_CLIENTEDGE
+    EDITTEXT        IDC_EDIT26,17,106,127,14,ES_AUTOHSCROLL | ES_READONLY,WS_EX_CLIENTEDGE
+    EDITTEXT        IDC_EDIT27,17,125,127,14,ES_AUTOHSCROLL | ES_READONLY,WS_EX_CLIENTEDGE
+    EDITTEXT        IDC_EDIT28,89,214,54,14,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY,WS_EX_CLIENTEDGE
+    EDITTEXT        IDC_EDIT29,17,214,54,14,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY,WS_EX_CLIENTEDGE
+    EDITTEXT        IDC_EDIT30,17,238,127,14,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY,WS_EX_CLIENTEDGE
+    LTEXT           "Reward1 (mSec)",IDC_STATIC,17,199,56,8
+    LTEXT           "Reward2(mSec)",IDC_STATIC,89,199,52,8
+END
+
+IDD_CUMULATIVE DIALOGEX 0, 0, 399, 164
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION
+CAPTION "Running average percentage correct trials (n = 32)"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+IDD_TDT3 DIALOGEX 0, 0, 202, 58
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION
+CAPTION "TDT3"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "ZBus",IDC_STATIC,7,7,60,24
+    GROUPBOX        "RP2_1",IDC_STATIC,70,7,60,45
+    CHECKBOX        "Connected",IDC_CHECK1,15,17,50,10
+    CHECKBOX        "Connected",IDC_CHECK2,79,17,47,10
+    CHECKBOX        "Loaded",IDC_CHECK3,79,29,39,10
+    CHECKBOX        "Running",IDC_CHECK4,79,41,42,10
+    CONTROL         "",IDC_X1,"{79734A6C-8E6E-4998-B834-3E4E481232B0}",NOT WS_VISIBLE | WS_TABSTOP,49,17,60,25
+    CONTROL         "",IDC_X2,"{D323A625-1D13-11D4-8858-444553540000}",NOT WS_VISIBLE | WS_TABSTOP,7,26,60,25
+    GROUPBOX        "PA5_1",IDC_STATIC,135,7,60,45
+    CHECKBOX        "Connected",IDC_CHECK8,143,17,47,10
+    CONTROL         "",IDC_X5,"{EC05FCDE-300D-4CE3-9774-A4C377507BD7}",NOT WS_VISIBLE | WS_TABSTOP,21,7,60,25
+    CONTROL         "",IDC_X3,"{D323A625-1D13-11D4-8858-444553540000}",WS_TABSTOP,132,26,60,25
+END
+
+IDD_ACOUSTIC_TYPE DIALOGEX 0, 0, 185, 162
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION
+CAPTION "Acoustic stimulus type"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Hide",IDOK,128,141,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,7,141,50,14
+    PUSHBUTTON      "Apply",IDC_BUTTON1,70,141,50,14
+    CONTROL         "Tone",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON | WS_GROUP,23,15,32,10
+    CONTROL         "Noise",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,23,27,33,10
+    CONTROL         "Ripple",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON,23,39,35,10
+    CONTROL         "No sound",IDC_RADIO5,"Button",BS_AUTORADIOBUTTON,23,51,46,10
+    CONTROL         "Static + Dynamic",IDC_RADIO4,"Button",BS_AUTORADIOBUTTON | WS_GROUP,91,15,70,10
+    CONTROL         "Dynamic + Static",IDC_RADIO6,"Button",BS_AUTORADIOBUTTON,91,27,70,10
+    LTEXT           "__________________________________________",IDC_STATIC,7,63,171,8
+    LTEXT           "After releasing the bar",IDC_STATIC,57,81,74,8
+    CONTROL         "finish the stimulus",IDC_RADIO7,"Button",BS_AUTORADIOBUTTON | WS_GROUP,57,92,73,10
+    CONTROL         "abort the stimulus",IDC_RADIO8,"Button",BS_AUTORADIOBUTTON,57,105,73,10
+END
+
+IDD_YesNo DIALOGEX 0, 0, 145, 52
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Exit Trainen"
+FONT 8, "Microsoft Sans Serif", 400, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "Yes",IDOK,109,31,29,14
+    PUSHBUTTON      "No",IDCANCEL,7,30,29,14
+    LTEXT           "Are You Sure ?",IDC_STATIC,48,17,49,8
+END
+
+IDD_WELCOME DIALOGEX 0, 0, 186, 124
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Welcome"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Go",IDOK,129,103,50,14
+    PUSHBUTTON      "Exit",IDCANCEL,7,103,50,14
+    EDITTEXT        IDC_EDIT1,45,7,134,14,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Date",IDC_STATIC,7,10,16,8
+    EDITTEXT        IDC_EDIT10,45,25,134,14,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Time",IDC_STATIC,7,28,16,8
+    EDITTEXT        IDC_EDIT21,45,58,134,14,ES_CENTER | ES_AUTOHSCROLL
+    LTEXT           "Map",IDC_STATIC,7,60,14,8
+    EDITTEXT        IDC_EDIT31,45,76,134,14,ES_CENTER | ES_AUTOHSCROLL
+    LTEXT           "File name",IDC_STATIC,7,79,31,8
+    LTEXT           "______________________________________________________________",IDC_STATIC,7,42,172,8
+END
+
+IDD_ACOUSTIC_NOISE DIALOGEX 0, 0, 269, 106
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION
+CAPTION "Parameters Noise"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Hide",IDOK,211,86,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,7,84,50,14
+    RTEXT           "Modulation Depth (%)",IDC_STATIC,36,63,72,8
+    EDITTEXT        IDC_EDIT1,121,60,28,14,ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_SPIN1,"msctls_updown32",UDS_ARROWKEYS,149,60,11,14
+    EDITTEXT        IDC_EDIT2,165,60,28,14,ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_SPIN2,"msctls_updown32",UDS_ARROWKEYS,193,60,11,14
+    CONTROL         "",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,211,63,16,10
+    RTEXT           "Attenuation (dB)",IDC_STATIC,54,31,54,8
+    RTEXT           "Modulation Frequency (Hz)",IDC_STATIC,21,46,87,8
+    EDITTEXT        IDC_EDIT5,121,28,28,14,ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_SPIN4,"msctls_updown32",UDS_ARROWKEYS,149,28,11,14
+    EDITTEXT        IDC_EDIT11,165,28,28,14,ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_SPIN6,"msctls_updown32",UDS_ARROWKEYS,193,28,11,14
+    CONTROL         "",IDC_CHECK6,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,211,31,16,10
+    EDITTEXT        IDC_EDIT9,121,44,28,14,ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_SPIN10,"msctls_updown32",UDS_ARROWKEYS,149,44,11,14
+    EDITTEXT        IDC_EDIT12,165,44,28,14,ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_SPIN13,"msctls_updown32",UDS_ARROWKEYS,193,44,11,14
+    CONTROL         "",IDC_CHECK11,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,211,47,16,10
+    CONTROL         "Zero",IDC_CHECK12,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,229,47,26,10
+    LTEXT           "Mean",IDC_STATIC,126,15,18,8
+    LTEXT           "+/-",IDC_STATIC,174,16,12,8
+    LTEXT           "Vary",IDC_STATIC,207,18,16,8
+    GROUPBOX        "",IDC_STATIC,7,7,255,75
+    PUSHBUTTON      "Apply",IDC_BUTTON2,107,84,50,14
+END
+
+IDD_ACOUSTIC_TONE DIALOGEX 0, 0, 270, 126
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION
+CAPTION "Parameters Tone"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Hide",IDOK,212,104,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,7,103,50,14
+    RTEXT           "Modulation Depth (%)",IDC_STATIC,36,79,72,8
+    EDITTEXT        IDC_EDIT1,121,76,28,14,ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_SPIN1,"msctls_updown32",UDS_ARROWKEYS,149,76,11,14
+    EDITTEXT        IDC_EDIT2,165,76,28,14,ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_SPIN2,"msctls_updown32",UDS_ARROWKEYS,193,76,11,14
+    CONTROL         "",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,211,79,16,10
+    RTEXT           "Carrier Frequency (Hz)",IDC_STATIC,34,30,74,8
+    RTEXT           "Attenuation (dB)",IDC_STATIC,54,47,54,8
+    RTEXT           "Modulation Frequency (Hz)",IDC_STATIC,21,62,87,8
+    EDITTEXT        IDC_EDIT10,121,28,28,14,ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_SPIN11,"msctls_updown32",UDS_ARROWKEYS,149,28,11,14
+    EDITTEXT        IDC_EDIT4,165,28,28,14,ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_SPIN12,"msctls_updown32",UDS_ARROWKEYS,193,28,11,14
+    CONTROL         "",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,211,31,16,10
+    EDITTEXT        IDC_EDIT5,121,44,28,14,ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_SPIN4,"msctls_updown32",UDS_ARROWKEYS,149,44,11,14
+    EDITTEXT        IDC_EDIT11,165,44,28,14,ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_SPIN6,"msctls_updown32",UDS_ARROWKEYS,193,44,11,14
+    CONTROL         "",IDC_CHECK6,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,211,47,16,10
+    EDITTEXT        IDC_EDIT9,121,60,28,14,ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_SPIN10,"msctls_updown32",UDS_ARROWKEYS,149,60,11,14
+    EDITTEXT        IDC_EDIT12,165,60,28,14,ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_SPIN13,"msctls_updown32",UDS_ARROWKEYS,193,60,11,14
+    CONTROL         "",IDC_CHECK11,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,211,63,16,10
+    CONTROL         "Zero",IDC_CHECK12,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,229,63,31,10
+    LTEXT           "Mean",IDC_STATIC,126,15,18,8
+    LTEXT           "+/-",IDC_STATIC,174,16,12,8
+    LTEXT           "Vary",IDC_STATIC,207,18,16,8
+    GROUPBOX        "",IDC_STATIC,7,7,255,88
+    PUSHBUTTON      "Apply",IDC_BUTTON2,110,103,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "TODO: <Company name>"
+            VALUE "FileDescription", "TODO: <File description>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "trainen.exe"
+            VALUE "LegalCopyright", "TODO: (c) <Company name>.  All rights reserved."
+            VALUE "OriginalFilename", "trainen.exe"
+            VALUE "ProductName", "TODO: <Product name>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 152
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 40
+    END
+
+    IDD_OPTIONS_TESTING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 218
+    END
+
+    IDD_PARAMETERS_TIMING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 167
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 184
+    END
+
+    IDD_PARAMETERS_LEDS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 199
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 223
+    END
+
+    IDD_PARAMETERS_REWARDS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 192
+    END
+
+    IDD_ACOUSTIC_MAIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 262
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 226
+    END
+
+    IDD_SUMMARY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 221
+    END
+
+    IDD_SKY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 181
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 157
+    END
+
+    IDD_BAR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 735
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 42
+    END
+
+    IDD_HISTO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 296
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 144
+    END
+
+    IDD_INFO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 156
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 277
+    END
+
+    IDD_CUMULATIVE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 392
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 157
+    END
+
+    IDD_TDT3, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 195
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 51
+    END
+
+    IDD_ACOUSTIC_TYPE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 178
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 155
+    END
+
+    IDD_YesNo, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 138
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 45
+    END
+
+    IDD_WELCOME, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 117
+    END
+
+    IDD_ACOUSTIC_NOISE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 262
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 99
+    END
+
+    IDD_ACOUSTIC_TONE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 262
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 119
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_TDT3 DLGINIT
+BEGIN
+    IDC_X1, 0x376, 20, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x094d, 0x0000, 0x043d, 0x0000, 0x0000, 
+0x0000, 
+    IDC_X2, 0x376, 20, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x094d, 0x0000, 0x043d, 0x0000, 0x0000, 
+0x0000, 
+    IDC_X5, 0x376, 20, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x094d, 0x0000, 0x043d, 0x0000, 0x0000, 
+0x0000, 
+    IDC_X3, 0x376, 20, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x094d, 0x0000, 0x043d, 0x0000, 0x0000, 
+0x0000, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "trainen\n\ntrainen\n\n\ntrainen.Document\ntrainen.Document"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "trainen"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+    ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Close print preview mode\nCancel Preview"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\trainen.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxprint.rc"       // printing/print preview resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

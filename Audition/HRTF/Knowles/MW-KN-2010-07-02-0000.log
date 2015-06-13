@@ -1,0 +1,1319 @@
+ 	File: D:\HumanV1\Marc\DAT\MW-KN-2010-07-02-0000.log
+ ---------------------------------------------------------------
+	Max.Trl	Rpts	Dif.Trl	ITI--Range		Rnd	#
+ 0	240		3	58		100	100		0	4
+ ---------------------------------------------------------------
+	channr	LP	rate	#	name
+ 0	0		250	1017	1000	Eye H
+ 0	1		250	1017	1000	Eye V
+ 0	2		250	1017	1000	Eye F
+ 0	3		250	1017	1000	Button
+ ===============================================================
+							ITI->	set	real	span
+ Trl	Stm	Type	X	Y	On	Off	Int	Attr	Bit	Flnk
+ ===============================================================
+ 								100	100	0
+  1	 1	 Led	   0	  12	   -2	  998	 255	   1	 NaN	   1
+  1	 2	Snd1	   0	   1	   -1	  942	  55	 399	   0	   1
+  1	 3	Snd2	   0	  12	   -1	  943	  55	 300	   0	   1
+  1	 4	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	   1
+  1	 5	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	   1
+  1	 6	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	   1
+ 								100	100	0
+  2	 1	 Led	   0	  12	   -2	  998	 255	   1	 NaN	   2
+  2	 2	Snd1	   0	   2	   -1	  942	  55	 399	   0	   2
+  2	 3	Snd2	   0	  12	   -1	  943	  55	 300	   0	   2
+  2	 4	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	   2
+  2	 5	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	   2
+  2	 6	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	   2
+ 								100	100	0
+  3	 1	 Led	   0	  12	   -2	  998	 255	   1	 NaN	   3
+  3	 2	Snd1	   0	   3	   -1	  943	  55	 399	   0	   3
+  3	 3	Snd2	   0	  12	   -1	  942	  55	 300	   0	   3
+  3	 4	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	   3
+  3	 5	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	   3
+  3	 6	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	   3
+ 								100	100	0
+  4	 1	 Led	   0	  12	   -2	  998	 255	   1	 NaN	   4
+  4	 2	Snd1	   0	   4	   -1	  942	  55	 399	   0	   4
+  4	 3	Snd2	   0	  12	   -1	  943	  55	 300	   0	   4
+  4	 4	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	   4
+  4	 5	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	   4
+  4	 6	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	   4
+ 								100	100	0
+  5	 1	 Led	   0	  12	   -2	  998	 255	   1	 NaN	   5
+  5	 2	Snd1	   0	   5	   -1	  942	  55	 399	   0	   5
+  5	 3	Snd2	   0	  12	   -1	  943	  55	 300	   0	   5
+  5	 4	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	   5
+  5	 5	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	   5
+  5	 6	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	   5
+ 								100	100	0
+  6	 1	 Led	   0	  12	   -2	  998	 255	   1	 NaN	   6
+  6	 2	Snd1	   0	   6	   -1	  942	  55	 399	   0	   6
+  6	 3	Snd2	   0	  12	   -1	  943	  55	 300	   0	   6
+  6	 4	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	   6
+  6	 5	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	   6
+  6	 6	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	   6
+ 								100	100	0
+  7	 1	 Led	   0	  12	   -2	  998	 255	   1	 NaN	   7
+  7	 2	Snd1	   0	   7	   -1	  943	  55	 399	   0	   7
+  7	 3	Snd2	   0	  12	   -1	  942	  55	 300	   0	   7
+  7	 4	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	   7
+  7	 5	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	   7
+  7	 6	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	   7
+ 								100	100	0
+  8	 1	 Led	   0	  12	   -2	  998	 255	   1	 NaN	   8
+  8	 2	Snd1	   0	   8	   -1	  943	  55	 399	   0	   8
+  8	 3	Snd2	   0	  12	   -1	  942	  55	 300	   0	   8
+  8	 4	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	   8
+  8	 5	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	   8
+  8	 6	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	   8
+ 								100	100	0
+  9	 1	 Led	   0	  12	   -2	  998	 255	   1	 NaN	   9
+  9	 2	Snd1	   0	   9	   -1	  942	  55	 399	   0	   9
+  9	 3	Snd2	   0	  12	   -1	  943	  55	 300	   0	   9
+  9	 4	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	   9
+  9	 5	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	   9
+  9	 6	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	   9
+ 								100	100	0
+ 10	 1	 Led	   0	  12	   -2	  998	 255	   1	 NaN	  10
+ 10	 2	Snd1	   0	  10	   -1	  942	  55	 399	   0	  10
+ 10	 3	Snd2	   0	  12	   -1	  943	  55	 300	   0	  10
+ 10	 4	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  10
+ 10	 5	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  10
+ 10	 6	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  10
+ 								100	100	0
+ 11	 1	 Led	   0	  12	   -2	  998	 255	   1	 NaN	  11
+ 11	 2	Snd1	   0	  11	   -1	  942	  55	 399	   0	  11
+ 11	 3	Snd2	   0	  12	   -1	  943	  55	 300	   0	  11
+ 11	 4	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  11
+ 11	 5	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  11
+ 11	 6	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  11
+ 								100	100	0
+ 12	 1	 Led	   0	  12	   -2	  998	 255	   1	 NaN	  12
+ 12	 2	Snd1	   0	  12	   -1	  943	  55	 399	   0	  12
+ 12	 3	Snd2	   0	  13	   -1	  942	  55	 300	   0	  12
+ 12	 4	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  12
+ 12	 5	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  12
+ 12	 6	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  12
+ 								100	100	0
+ 13	 1	 Led	   0	  12	   -2	  998	 255	   1	 NaN	  13
+ 13	 2	Snd1	   0	  13	   -1	  943	  55	 399	   0	  13
+ 13	 3	Snd2	   0	  12	   -1	  942	  55	 300	   0	  13
+ 13	 4	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  13
+ 13	 5	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  13
+ 13	 6	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  13
+ 								100	100	0
+ 14	 1	 Led	   0	  12	   -2	  998	 255	   1	 NaN	  14
+ 14	 2	Snd1	   0	  14	   -1	  942	  55	 399	   0	  14
+ 14	 3	Snd2	   0	  12	   -1	  943	  55	 300	   0	  14
+ 14	 4	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  14
+ 14	 5	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  14
+ 14	 6	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  14
+ 								100	100	0
+ 15	 1	 Led	   0	  12	   -2	  998	 255	   1	 NaN	  15
+ 15	 2	Snd1	   0	  15	   -1	  942	  55	 399	   0	  15
+ 15	 3	Snd2	   0	  12	   -1	  943	  55	 300	   0	  15
+ 15	 4	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  15
+ 15	 5	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  15
+ 15	 6	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  15
+ 								100	100	0
+ 16	 1	 Led	   0	  12	   -2	  998	 255	   1	 NaN	  16
+ 16	 2	Snd1	   0	  16	   -1	  942	  55	 399	   0	  16
+ 16	 3	Snd2	   0	  12	   -1	  943	  55	 300	   0	  16
+ 16	 4	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  16
+ 16	 5	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  16
+ 16	 6	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  16
+ 								100	100	0
+ 17	 1	 Led	   0	  12	   -2	  998	 255	   1	 NaN	  17
+ 17	 2	Snd1	   0	  17	   -1	  942	  55	 399	   0	  17
+ 17	 3	Snd2	   0	  12	   -1	  943	  55	 300	   0	  17
+ 17	 4	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  17
+ 17	 5	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  17
+ 17	 6	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  17
+ 								100	100	0
+ 18	 1	 Led	   0	  12	   -2	  998	 255	   1	 NaN	  18
+ 18	 2	Snd1	   0	  18	   -1	  943	  55	 399	   0	  18
+ 18	 3	Snd2	   0	  12	   -1	  942	  55	 300	   0	  18
+ 18	 4	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  18
+ 18	 5	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  18
+ 18	 6	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  18
+ 								100	100	0
+ 19	 1	 Led	   0	  12	   -2	  998	 255	   1	 NaN	  19
+ 19	 2	Snd1	   0	  19	   -1	  942	  55	 399	   0	  19
+ 19	 3	Snd2	   0	  12	   -1	  943	  55	 300	   0	  19
+ 19	 4	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  19
+ 19	 5	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  19
+ 19	 6	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  19
+ 								100	100	0
+ 20	 1	 Led	   0	  12	   -2	  998	 255	   1	 NaN	  20
+ 20	 2	Snd1	   0	  20	   -1	  942	  55	 399	   0	  20
+ 20	 3	Snd2	   0	  12	   -1	  943	  55	 300	   0	  20
+ 20	 4	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  20
+ 20	 5	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  20
+ 20	 6	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  20
+ 								100	100	0
+ 21	 1	 Led	   0	  12	   -2	  998	 255	   1	 NaN	  21
+ 21	 2	Snd1	   0	  21	   -1	  942	  55	 399	   0	  21
+ 21	 3	Snd2	   0	  12	   -1	  943	  55	 300	   0	  21
+ 21	 4	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  21
+ 21	 5	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  21
+ 21	 6	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  21
+ 								100	100	0
+ 22	 1	 Led	   0	  12	   -2	  998	 255	   1	 NaN	  22
+ 22	 2	Snd1	   0	  22	   -1	  942	  55	 399	   0	  22
+ 22	 3	Snd2	   0	  12	   -1	  943	  55	 300	   0	  22
+ 22	 4	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  22
+ 22	 5	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  22
+ 22	 6	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  22
+ 								100	100	0
+ 23	 1	 Led	   0	  12	   -2	  998	 255	   1	 NaN	  23
+ 23	 2	Snd1	   0	  23	   -1	  942	  55	 399	   0	  23
+ 23	 3	Snd2	   0	  12	   -1	  943	  55	 300	   0	  23
+ 23	 4	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  23
+ 23	 5	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  23
+ 23	 6	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  23
+ 								100	100	0
+ 24	 1	 Led	   0	  12	   -2	  998	 255	   1	 NaN	  24
+ 24	 2	Snd1	   0	  24	   -1	  942	  55	 399	   0	  24
+ 24	 3	Snd2	   0	  12	   -1	  943	  55	 300	   0	  24
+ 24	 4	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  24
+ 24	 5	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  24
+ 24	 6	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  24
+ 								100	100	0
+ 25	 1	 Led	   0	  12	   -2	  998	 255	   1	 NaN	  25
+ 25	 2	Snd1	   0	  25	   -1	  942	  55	 399	   0	  25
+ 25	 3	Snd2	   0	  12	   -1	  943	  55	 300	   0	  25
+ 25	 4	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  25
+ 25	 5	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  25
+ 25	 6	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  25
+ 								100	100	0
+ 26	 1	 Led	   0	  12	   -2	  998	 255	   1	 NaN	  26
+ 26	 2	Snd1	   0	  26	   -1	  942	  55	 399	   0	  26
+ 26	 3	Snd2	   0	  12	   -1	  943	  55	 300	   0	  26
+ 26	 4	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  26
+ 26	 5	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  26
+ 26	 6	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  26
+ 								100	100	0
+ 27	 1	 Led	   0	  12	   -2	  998	 255	   1	 NaN	  27
+ 27	 2	Snd1	   0	  27	   -1	  942	  55	 399	   0	  27
+ 27	 3	Snd2	   0	  12	   -1	  943	  55	 300	   0	  27
+ 27	 4	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  27
+ 27	 5	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  27
+ 27	 6	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  27
+ 								100	100	0
+ 28	 1	 Led	   0	  12	   -2	  998	 255	   1	 NaN	  28
+ 28	 2	Snd1	   0	  28	   -1	  942	  55	 399	   0	  28
+ 28	 3	Snd2	   0	  12	   -1	  943	  55	 300	   0	  28
+ 28	 4	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  28
+ 28	 5	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  28
+ 28	 6	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  28
+ 								100	100	0
+ 29	 1	 Led	   0	  12	   -2	  998	 255	   1	 NaN	  29
+ 29	 2	Snd1	   0	  29	   -1	  942	  55	 399	   0	  29
+ 29	 3	Snd2	   0	  12	   -1	  943	  55	 300	   0	  29
+ 29	 4	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  29
+ 29	 5	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  29
+ 29	 6	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  29
+ 								100	100	0
+ 30	 1	 Led	 180	 112	   -4	  996	 255	   1	 NaN	  30
+ 30	 2	 Led	 180	 113	   -3	  997	 255	   1	 NaN	  30
+ 30	 3	Snd1	 180	 101	   -2	  942	  55	 399	   0	  30
+ 30	 4	Snd2	 180	  12	   -2	  942	  55	 300	   0	  30
+ 30	 5	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  30
+ 30	 6	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  30
+ 30	 7	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  30
+ 								100	100	0
+ 31	 1	 Led	 180	 112	   -4	  996	 255	   1	 NaN	  31
+ 31	 2	 Led	 180	 113	   -3	  997	 255	   1	 NaN	  31
+ 31	 3	Snd1	 180	 102	   -2	  942	  55	 399	   0	  31
+ 31	 4	Snd2	 180	  12	   -2	  942	  55	 300	   0	  31
+ 31	 5	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  31
+ 31	 6	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  31
+ 31	 7	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  31
+ 								100	100	0
+ 32	 1	 Led	 180	 112	   -4	  996	 255	   1	 NaN	  32
+ 32	 2	 Led	 180	 113	   -3	  997	 255	   1	 NaN	  32
+ 32	 3	Snd1	 180	 103	   -2	  942	  55	 399	   0	  32
+ 32	 4	Snd2	 180	  12	   -2	  942	  55	 300	   0	  32
+ 32	 5	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  32
+ 32	 6	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  32
+ 32	 7	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  32
+ 								100	100	0
+ 33	 1	 Led	 180	 112	   -4	  996	 255	   1	 NaN	  33
+ 33	 2	 Led	 180	 113	   -3	  997	 255	   1	 NaN	  33
+ 33	 3	Snd1	 180	 104	   -2	  942	  55	 399	   0	  33
+ 33	 4	Snd2	 180	  12	   -2	  942	  55	 300	   0	  33
+ 33	 5	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  33
+ 33	 6	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  33
+ 33	 7	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  33
+ 								100	100	0
+ 34	 1	 Led	 180	 112	   -4	  996	 255	   1	 NaN	  34
+ 34	 2	 Led	 180	 113	   -3	  997	 255	   1	 NaN	  34
+ 34	 3	Snd1	 180	 105	   -2	  942	  55	 399	   0	  34
+ 34	 4	Snd2	 180	  12	   -2	  942	  55	 300	   0	  34
+ 34	 5	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  34
+ 34	 6	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  34
+ 34	 7	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  34
+ 								100	100	0
+ 35	 1	 Led	 180	 112	   -4	  996	 255	   1	 NaN	  35
+ 35	 2	 Led	 180	 113	   -3	  997	 255	   1	 NaN	  35
+ 35	 3	Snd1	 180	 106	   -2	  942	  55	 399	   0	  35
+ 35	 4	Snd2	 180	  12	   -2	  942	  55	 300	   0	  35
+ 35	 5	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  35
+ 35	 6	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  35
+ 35	 7	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  35
+ 								100	100	0
+ 36	 1	 Led	 180	 112	   -4	  996	 255	   1	 NaN	  36
+ 36	 2	 Led	 180	 113	   -3	  997	 255	   1	 NaN	  36
+ 36	 3	Snd1	 180	 107	   -2	  942	  55	 399	   0	  36
+ 36	 4	Snd2	 180	  12	   -2	  942	  55	 300	   0	  36
+ 36	 5	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  36
+ 36	 6	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  36
+ 36	 7	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  36
+ 								100	100	0
+ 37	 1	 Led	 180	 112	   -4	  997	 255	   1	 NaN	  37
+ 37	 2	 Led	 180	 113	   -3	  996	 255	   1	 NaN	  37
+ 37	 3	Snd1	 180	 108	   -2	  942	  55	 399	   0	  37
+ 37	 4	Snd2	 180	  12	   -2	  942	  55	 300	   0	  37
+ 37	 5	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  37
+ 37	 6	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  37
+ 37	 7	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  37
+ 								100	100	0
+ 38	 1	 Led	 180	 112	   -4	  996	 255	   1	 NaN	  38
+ 38	 2	 Led	 180	 113	   -3	  997	 255	   1	 NaN	  38
+ 38	 3	Snd1	 180	 109	   -2	  942	  55	 399	   0	  38
+ 38	 4	Snd2	 180	  12	   -2	  942	  55	 300	   0	  38
+ 38	 5	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  38
+ 38	 6	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  38
+ 38	 7	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  38
+ 								100	100	0
+ 39	 1	 Led	 180	 112	   -4	  996	 255	   1	 NaN	  39
+ 39	 2	 Led	 180	 113	   -3	  997	 255	   1	 NaN	  39
+ 39	 3	Snd1	 180	 110	   -2	  942	  55	 399	   0	  39
+ 39	 4	Snd2	 180	  12	   -2	  942	  55	 300	   0	  39
+ 39	 5	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  39
+ 39	 6	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  39
+ 39	 7	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  39
+ 								100	100	0
+ 40	 1	 Led	 180	 112	   -4	  996	 255	   1	 NaN	  40
+ 40	 2	 Led	 180	 113	   -3	  997	 255	   1	 NaN	  40
+ 40	 3	Snd1	 180	 111	   -2	  942	  55	 399	   0	  40
+ 40	 4	Snd2	 180	  12	   -2	  942	  55	 300	   0	  40
+ 40	 5	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  40
+ 40	 6	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  40
+ 40	 7	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  40
+ 								100	100	0
+ 41	 1	 Led	 180	 112	   -4	  997	 255	   1	 NaN	  41
+ 41	 2	 Led	 180	 113	   -3	  996	 255	   1	 NaN	  41
+ 41	 3	Snd1	 180	 112	   -2	  942	  55	 399	   0	  41
+ 41	 4	Snd2	 180	  13	   -2	  942	  55	 300	   0	  41
+ 41	 5	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  41
+ 41	 6	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  41
+ 41	 7	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  41
+ 								100	100	0
+ 42	 1	 Led	 180	 112	   -4	  996	 255	   1	 NaN	  42
+ 42	 2	 Led	 180	 113	   -3	  997	 255	   1	 NaN	  42
+ 42	 3	Snd1	 180	 113	   -2	  942	  55	 399	   0	  42
+ 42	 4	Snd2	 180	  12	   -2	  942	  55	 300	   0	  42
+ 42	 5	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  42
+ 42	 6	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  42
+ 42	 7	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  42
+ 								100	100	0
+ 43	 1	 Led	 180	 112	   -4	  996	 255	   1	 NaN	  43
+ 43	 2	 Led	 180	 113	   -3	  997	 255	   1	 NaN	  43
+ 43	 3	Snd1	 180	 114	   -2	  942	  55	 399	   0	  43
+ 43	 4	Snd2	 180	  12	   -2	  942	  55	 300	   0	  43
+ 43	 5	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  43
+ 43	 6	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  43
+ 43	 7	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  43
+ 								100	100	0
+ 44	 1	 Led	 180	 112	   -4	  996	 255	   1	 NaN	  44
+ 44	 2	 Led	 180	 113	   -3	  997	 255	   1	 NaN	  44
+ 44	 3	Snd1	 180	 115	   -2	  942	  55	 399	   0	  44
+ 44	 4	Snd2	 180	  12	   -2	  942	  55	 300	   0	  44
+ 44	 5	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  44
+ 44	 6	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  44
+ 44	 7	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  44
+ 								100	100	0
+ 45	 1	 Led	 180	 112	   -4	  997	 255	   1	 NaN	  45
+ 45	 2	 Led	 180	 113	   -3	  996	 255	   1	 NaN	  45
+ 45	 3	Snd1	 180	 116	   -2	  942	  55	 399	   0	  45
+ 45	 4	Snd2	 180	  12	   -2	  942	  55	 300	   0	  45
+ 45	 5	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  45
+ 45	 6	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  45
+ 45	 7	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  45
+ 								100	100	0
+ 46	 1	 Led	 180	 112	   -4	  996	 255	   1	 NaN	  46
+ 46	 2	 Led	 180	 113	   -3	  997	 255	   1	 NaN	  46
+ 46	 3	Snd1	 180	 117	   -2	  942	  55	 399	   0	  46
+ 46	 4	Snd2	 180	  12	   -2	  942	  55	 300	   0	  46
+ 46	 5	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  46
+ 46	 6	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  46
+ 46	 7	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  46
+ 								100	100	0
+ 47	 1	 Led	 180	 112	   -4	  996	 255	   1	 NaN	  47
+ 47	 2	 Led	 180	 113	   -3	  997	 255	   1	 NaN	  47
+ 47	 3	Snd1	 180	 118	   -2	  942	  55	 399	   0	  47
+ 47	 4	Snd2	 180	  12	   -2	  942	  55	 300	   0	  47
+ 47	 5	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  47
+ 47	 6	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  47
+ 47	 7	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  47
+ 								100	100	0
+ 48	 1	 Led	 180	 112	   -4	  996	 255	   1	 NaN	  48
+ 48	 2	 Led	 180	 113	   -3	  997	 255	   1	 NaN	  48
+ 48	 3	Snd1	 180	 119	   -2	  942	  55	 399	   0	  48
+ 48	 4	Snd2	 180	  12	   -2	  942	  55	 300	   0	  48
+ 48	 5	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  48
+ 48	 6	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  48
+ 48	 7	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  48
+ 								100	100	0
+ 49	 1	 Led	 180	 112	   -4	  996	 255	   1	 NaN	  49
+ 49	 2	 Led	 180	 113	   -3	  997	 255	   1	 NaN	  49
+ 49	 3	Snd1	 180	 120	   -2	  942	  55	 399	   0	  49
+ 49	 4	Snd2	 180	  12	   -2	  942	  55	 300	   0	  49
+ 49	 5	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  49
+ 49	 6	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  49
+ 49	 7	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  49
+ 								100	100	0
+ 50	 1	 Led	 180	 112	   -4	  996	 255	   1	 NaN	  50
+ 50	 2	 Led	 180	 113	   -3	  997	 255	   1	 NaN	  50
+ 50	 3	Snd1	 180	 121	   -2	  942	  55	 399	   0	  50
+ 50	 4	Snd2	 180	  12	   -2	  942	  55	 300	   0	  50
+ 50	 5	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  50
+ 50	 6	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  50
+ 50	 7	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  50
+ 								100	100	0
+ 51	 1	 Led	 180	 112	   -4	  997	 255	   1	 NaN	  51
+ 51	 2	 Led	 180	 113	   -3	  996	 255	   1	 NaN	  51
+ 51	 3	Snd1	 180	 122	   -2	  942	  55	 399	   0	  51
+ 51	 4	Snd2	 180	  12	   -2	  942	  55	 300	   0	  51
+ 51	 5	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  51
+ 51	 6	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  51
+ 51	 7	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  51
+ 								100	100	0
+ 52	 1	 Led	 180	 112	   -4	  996	 255	   1	 NaN	  52
+ 52	 2	 Led	 180	 113	   -3	  997	 255	   1	 NaN	  52
+ 52	 3	Snd1	 180	 123	   -2	  942	  55	 399	   0	  52
+ 52	 4	Snd2	 180	  12	   -2	  942	  55	 300	   0	  52
+ 52	 5	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  52
+ 52	 6	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  52
+ 52	 7	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  52
+ 								100	100	0
+ 53	 1	 Led	 180	 112	   -4	  996	 255	   1	 NaN	  53
+ 53	 2	 Led	 180	 113	   -3	  997	 255	   1	 NaN	  53
+ 53	 3	Snd1	 180	 124	   -2	  942	  55	 399	   0	  53
+ 53	 4	Snd2	 180	  12	   -2	  942	  55	 300	   0	  53
+ 53	 5	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  53
+ 53	 6	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  53
+ 53	 7	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  53
+ 								100	100	0
+ 54	 1	 Led	 180	 112	   -4	  996	 255	   1	 NaN	  54
+ 54	 2	 Led	 180	 113	   -3	  997	 255	   1	 NaN	  54
+ 54	 3	Snd1	 180	 125	   -2	  942	  55	 399	   0	  54
+ 54	 4	Snd2	 180	  12	   -2	  942	  55	 300	   0	  54
+ 54	 5	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  54
+ 54	 6	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  54
+ 54	 7	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  54
+ 								100	100	0
+ 55	 1	 Led	 180	 112	   -4	  996	 255	   1	 NaN	  55
+ 55	 2	 Led	 180	 113	   -3	  997	 255	   1	 NaN	  55
+ 55	 3	Snd1	 180	 126	   -2	  942	  55	 399	   0	  55
+ 55	 4	Snd2	 180	  12	   -2	  942	  55	 300	   0	  55
+ 55	 5	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  55
+ 55	 6	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  55
+ 55	 7	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  55
+ 								100	100	0
+ 56	 1	 Led	 180	 112	   -4	  997	 255	   1	 NaN	  56
+ 56	 2	 Led	 180	 113	   -3	  996	 255	   1	 NaN	  56
+ 56	 3	Snd1	 180	 127	   -2	  942	  55	 399	   0	  56
+ 56	 4	Snd2	 180	  12	   -2	  942	  55	 300	   0	  56
+ 56	 5	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  56
+ 56	 6	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  56
+ 56	 7	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  56
+ 								100	100	0
+ 57	 1	 Led	 180	 112	   -4	  996	 255	   1	 NaN	  57
+ 57	 2	 Led	 180	 113	   -3	    2	 255	   1	 NaN	  57
+ 57	 3	Snd1	 180	 128	   -2	  942	  55	 399	   0	  57
+ 57	 4	Snd2	 180	  12	   -2	  942	  55	 300	   0	  57
+ 57	 5	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  57
+ 57	 6	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  57
+ 57	 7	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  57
+ 								100	100	0
+ 58	 1	 Led	 180	 112	   -4	  996	 255	   1	 NaN	  58
+ 58	 2	 Led	 180	 113	   -3	  997	 255	   1	 NaN	  58
+ 58	 3	Snd1	 180	 129	   -2	  942	  55	 399	   0	  58
+ 58	 4	Snd2	 180	  12	   -2	  942	  55	 300	   0	  58
+ 58	 5	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  58
+ 58	 6	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  58
+ 58	 7	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  58
+ 								100	100	0
+ 59	 1	 Led	   0	  12	   -2	  998	 255	   1	 NaN	   1
+ 59	 2	Snd1	   0	   1	   -1	  942	  55	 399	   0	   1
+ 59	 3	Snd2	   0	  12	   -1	  943	  55	 300	   0	   1
+ 59	 4	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	   1
+ 59	 5	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	   1
+ 59	 6	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	   1
+ 								100	100	0
+ 60	 1	 Led	   0	  12	   -2	  998	 255	   1	 NaN	   2
+ 60	 2	Snd1	   0	   2	   -1	  942	  55	 399	   0	   2
+ 60	 3	Snd2	   0	  12	   -1	  943	  55	 300	   0	   2
+ 60	 4	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	   2
+ 60	 5	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	   2
+ 60	 6	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	   2
+ 								100	100	0
+ 61	 1	 Led	   0	  12	   -2	  998	 255	   1	 NaN	   3
+ 61	 2	Snd1	   0	   3	   -1	  942	  55	 399	   0	   3
+ 61	 3	Snd2	   0	  12	   -1	  943	  55	 300	   0	   3
+ 61	 4	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	   3
+ 61	 5	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	   3
+ 61	 6	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	   3
+ 								100	100	0
+ 62	 1	 Led	   0	  12	   -2	  998	 255	   1	 NaN	   4
+ 62	 2	Snd1	   0	   4	   -1	  942	  55	 399	   0	   4
+ 62	 3	Snd2	   0	  12	   -1	  943	  55	 300	   0	   4
+ 62	 4	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	   4
+ 62	 5	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	   4
+ 62	 6	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	   4
+ 								100	100	0
+ 63	 1	 Led	   0	  12	   -2	  998	 255	   1	 NaN	   5
+ 63	 2	Snd1	   0	   5	   -1	  942	  55	 399	   0	   5
+ 63	 3	Snd2	   0	  12	   -1	  943	  55	 300	   0	   5
+ 63	 4	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	   5
+ 63	 5	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	   5
+ 63	 6	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	   5
+ 								100	100	0
+ 64	 1	 Led	   0	  12	   -2	  998	 255	   1	 NaN	   6
+ 64	 2	Snd1	   0	   6	   -1	  942	  55	 399	   0	   6
+ 64	 3	Snd2	   0	  12	   -1	  943	  55	 300	   0	   6
+ 64	 4	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	   6
+ 64	 5	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	   6
+ 64	 6	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	   6
+ 								100	100	0
+ 65	 1	 Led	   0	  12	   -2	  998	 255	   1	 NaN	   7
+ 65	 2	Snd1	   0	   7	   -1	  943	  55	 399	   0	   7
+ 65	 3	Snd2	   0	  12	   -1	  942	  55	 300	   0	   7
+ 65	 4	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	   7
+ 65	 5	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	   7
+ 65	 6	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	   7
+ 								100	100	0
+ 66	 1	 Led	   0	  12	   -2	  998	 255	   1	 NaN	   8
+ 66	 2	Snd1	   0	   8	   -1	  942	  55	 399	   0	   8
+ 66	 3	Snd2	   0	  12	   -1	  943	  55	 300	   0	   8
+ 66	 4	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	   8
+ 66	 5	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	   8
+ 66	 6	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	   8
+ 								100	100	0
+ 67	 1	 Led	   0	  12	   -2	  998	 255	   1	 NaN	   9
+ 67	 2	Snd1	   0	   9	   -1	  942	  55	 399	   0	   9
+ 67	 3	Snd2	   0	  12	   -1	  943	  55	 300	   0	   9
+ 67	 4	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	   9
+ 67	 5	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	   9
+ 67	 6	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	   9
+ 								100	100	0
+ 68	 1	 Led	   0	  12	   -2	  998	 255	   1	 NaN	  10
+ 68	 2	Snd1	   0	  10	   -1	  943	  55	 399	   0	  10
+ 68	 3	Snd2	   0	  12	   -1	  942	  55	 300	   0	  10
+ 68	 4	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  10
+ 68	 5	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  10
+ 68	 6	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  10
+ 								100	100	0
+ 69	 1	 Led	   0	  12	   -2	  998	 255	   1	 NaN	  11
+ 69	 2	Snd1	   0	  11	   -1	  943	  55	 399	   0	  11
+ 69	 3	Snd2	   0	  12	   -1	  942	  55	 300	   0	  11
+ 69	 4	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  11
+ 69	 5	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  11
+ 69	 6	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  11
+ 								100	100	0
+ 70	 1	 Led	   0	  12	   -2	  998	 255	   1	 NaN	  12
+ 70	 2	Snd1	   0	  12	   -1	  942	  55	 399	   0	  12
+ 70	 3	Snd2	   0	  13	   -1	  943	  55	 300	   0	  12
+ 70	 4	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  12
+ 70	 5	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  12
+ 70	 6	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  12
+ 								100	100	0
+ 71	 1	 Led	   0	  12	   -2	  998	 255	   1	 NaN	  13
+ 71	 2	Snd1	   0	  13	   -1	  943	  55	 399	   0	  13
+ 71	 3	Snd2	   0	  12	   -1	  942	  55	 300	   0	  13
+ 71	 4	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  13
+ 71	 5	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  13
+ 71	 6	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  13
+ 								100	100	0
+ 72	 1	 Led	   0	  12	   -2	  998	 255	   1	 NaN	  14
+ 72	 2	Snd1	   0	  14	   -1	  942	  55	 399	   0	  14
+ 72	 3	Snd2	   0	  12	   -1	  943	  55	 300	   0	  14
+ 72	 4	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  14
+ 72	 5	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  14
+ 72	 6	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  14
+ 								100	100	0
+ 73	 1	 Led	   0	  12	   -2	  998	 255	   1	 NaN	  15
+ 73	 2	Snd1	   0	  15	   -1	  943	  55	 399	   0	  15
+ 73	 3	Snd2	   0	  12	   -1	  942	  55	 300	   0	  15
+ 73	 4	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  15
+ 73	 5	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  15
+ 73	 6	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  15
+ 								100	100	0
+ 74	 1	 Led	   0	  12	   -2	  998	 255	   1	 NaN	  16
+ 74	 2	Snd1	   0	  16	   -1	  942	  55	 399	   0	  16
+ 74	 3	Snd2	   0	  12	   -1	  943	  55	 300	   0	  16
+ 74	 4	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  16
+ 74	 5	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  16
+ 74	 6	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  16
+ 								100	100	0
+ 75	 1	 Led	   0	  12	   -2	  998	 255	   1	 NaN	  17
+ 75	 2	Snd1	   0	  17	   -1	  943	  55	 399	   0	  17
+ 75	 3	Snd2	   0	  12	   -1	  942	  55	 300	   0	  17
+ 75	 4	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  17
+ 75	 5	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  17
+ 75	 6	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  17
+ 								100	100	0
+ 76	 1	 Led	   0	  12	   -2	  998	 255	   1	 NaN	  18
+ 76	 2	Snd1	   0	  18	   -1	  942	  55	 399	   0	  18
+ 76	 3	Snd2	   0	  12	   -1	  943	  55	 300	   0	  18
+ 76	 4	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  18
+ 76	 5	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  18
+ 76	 6	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  18
+ 								100	100	0
+ 77	 1	 Led	   0	  12	   -2	  998	 255	   1	 NaN	  19
+ 77	 2	Snd1	   0	  19	   -1	  942	  55	 399	   0	  19
+ 77	 3	Snd2	   0	  12	   -1	  943	  55	 300	   0	  19
+ 77	 4	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  19
+ 77	 5	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  19
+ 77	 6	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  19
+ 								100	100	0
+ 78	 1	 Led	   0	  12	   -2	  998	 255	   1	 NaN	  20
+ 78	 2	Snd1	   0	  20	   -1	  943	  55	 399	   0	  20
+ 78	 3	Snd2	   0	  12	   -1	  942	  55	 300	   0	  20
+ 78	 4	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  20
+ 78	 5	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  20
+ 78	 6	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  20
+ 								100	100	0
+ 79	 1	 Led	   0	  12	   -2	  998	 255	   1	 NaN	  21
+ 79	 2	Snd1	   0	  21	   -1	  942	  55	 399	   0	  21
+ 79	 3	Snd2	   0	  12	   -1	  943	  55	 300	   0	  21
+ 79	 4	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  21
+ 79	 5	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  21
+ 79	 6	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  21
+ 								100	100	0
+ 80	 1	 Led	   0	  12	   -2	  998	 255	   1	 NaN	  22
+ 80	 2	Snd1	   0	  22	   -1	  942	  55	 399	   0	  22
+ 80	 3	Snd2	   0	  12	   -1	  943	  55	 300	   0	  22
+ 80	 4	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  22
+ 80	 5	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  22
+ 80	 6	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  22
+ 								100	100	0
+ 81	 1	 Led	   0	  12	   -2	  998	 255	   1	 NaN	  23
+ 81	 2	Snd1	   0	  23	   -1	  942	  55	 399	   0	  23
+ 81	 3	Snd2	   0	  12	   -1	  943	  55	 300	   0	  23
+ 81	 4	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  23
+ 81	 5	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  23
+ 81	 6	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  23
+ 								100	100	0
+ 82	 1	 Led	   0	  12	   -2	  998	 255	   1	 NaN	  24
+ 82	 2	Snd1	   0	  24	   -1	  943	  55	 399	   0	  24
+ 82	 3	Snd2	   0	  12	   -1	  942	  55	 300	   0	  24
+ 82	 4	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  24
+ 82	 5	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  24
+ 82	 6	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  24
+ 								100	100	0
+ 83	 1	 Led	   0	  12	   -2	  998	 255	   1	 NaN	  25
+ 83	 2	Snd1	   0	  25	   -1	  942	  55	 399	   0	  25
+ 83	 3	Snd2	   0	  12	   -1	  943	  55	 300	   0	  25
+ 83	 4	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  25
+ 83	 5	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  25
+ 83	 6	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  25
+ 								100	100	0
+ 84	 1	 Led	   0	  12	   -2	  998	 255	   1	 NaN	  26
+ 84	 2	Snd1	   0	  26	   -1	  942	  55	 399	   0	  26
+ 84	 3	Snd2	   0	  12	   -1	  943	  55	 300	   0	  26
+ 84	 4	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  26
+ 84	 5	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  26
+ 84	 6	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  26
+ 								100	100	0
+ 85	 1	 Led	   0	  12	   -2	  998	 255	   1	 NaN	  27
+ 85	 2	Snd1	   0	  27	   -1	  942	  55	 399	   0	  27
+ 85	 3	Snd2	   0	  12	   -1	  943	  55	 300	   0	  27
+ 85	 4	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  27
+ 85	 5	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  27
+ 85	 6	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  27
+ 								100	100	0
+ 86	 1	 Led	   0	  12	   -2	  998	 255	   1	 NaN	  28
+ 86	 2	Snd1	   0	  28	   -1	  942	  55	 399	   0	  28
+ 86	 3	Snd2	   0	  12	   -1	  943	  55	 300	   0	  28
+ 86	 4	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  28
+ 86	 5	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  28
+ 86	 6	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  28
+ 								100	100	0
+ 87	 1	 Led	   0	  12	   -2	  998	 255	   1	 NaN	  29
+ 87	 2	Snd1	   0	  29	   -1	  942	  55	 399	   0	  29
+ 87	 3	Snd2	   0	  12	   -1	  943	  55	 300	   0	  29
+ 87	 4	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  29
+ 87	 5	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  29
+ 87	 6	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  29
+ 								100	100	0
+ 88	 1	 Led	 180	 112	   -4	  996	 255	   1	 NaN	  30
+ 88	 2	 Led	 180	 113	   -3	  997	 255	   1	 NaN	  30
+ 88	 3	Snd1	 180	 101	   -2	  942	  55	 399	   0	  30
+ 88	 4	Snd2	 180	  12	   -2	  942	  55	 300	   0	  30
+ 88	 5	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  30
+ 88	 6	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  30
+ 88	 7	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  30
+ 								100	100	0
+ 89	 1	 Led	 180	 112	   -4	  996	 255	   1	 NaN	  31
+ 89	 2	 Led	 180	 113	   -3	  997	 255	   1	 NaN	  31
+ 89	 3	Snd1	 180	 102	   -2	  942	  55	 399	   0	  31
+ 89	 4	Snd2	 180	  12	   -2	  942	  55	 300	   0	  31
+ 89	 5	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  31
+ 89	 6	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  31
+ 89	 7	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  31
+ 								100	100	0
+ 90	 1	 Led	 180	 112	   -4	  997	 255	   1	 NaN	  32
+ 90	 2	 Led	 180	 113	   -3	  996	 255	   1	 NaN	  32
+ 90	 3	Snd1	 180	 103	   -2	  942	  55	 399	   0	  32
+ 90	 4	Snd2	 180	  12	   -2	  942	  55	 300	   0	  32
+ 90	 5	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  32
+ 90	 6	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  32
+ 90	 7	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  32
+ 								100	100	0
+ 91	 1	 Led	 180	 112	   -4	  996	 255	   1	 NaN	  33
+ 91	 2	 Led	 180	 113	   -3	  997	 255	   1	 NaN	  33
+ 91	 3	Snd1	 180	 104	   -2	  942	  55	 399	   0	  33
+ 91	 4	Snd2	 180	  12	   -2	  942	  55	 300	   0	  33
+ 91	 5	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  33
+ 91	 6	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  33
+ 91	 7	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  33
+ 								100	100	0
+ 92	 1	 Led	 180	 112	   -4	  996	 255	   1	 NaN	  34
+ 92	 2	 Led	 180	 113	   -3	  997	 255	   1	 NaN	  34
+ 92	 3	Snd1	 180	 105	   -2	  942	  55	 399	   0	  34
+ 92	 4	Snd2	 180	  12	   -2	  942	  55	 300	   0	  34
+ 92	 5	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  34
+ 92	 6	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  34
+ 92	 7	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  34
+ 								100	100	0
+ 93	 1	 Led	 180	 112	   -4	  996	 255	   1	 NaN	  35
+ 93	 2	 Led	 180	 113	   -3	  997	 255	   1	 NaN	  35
+ 93	 3	Snd1	 180	 106	   -2	  942	  55	 399	   0	  35
+ 93	 4	Snd2	 180	  12	   -2	  942	  55	 300	   0	  35
+ 93	 5	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  35
+ 93	 6	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  35
+ 93	 7	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  35
+ 								100	100	0
+ 94	 1	 Led	 180	 112	   -4	  996	 255	   1	 NaN	  36
+ 94	 2	 Led	 180	 113	   -3	  997	 255	   1	 NaN	  36
+ 94	 3	Snd1	 180	 107	   -2	  942	  55	 399	   0	  36
+ 94	 4	Snd2	 180	  12	   -2	  942	  55	 300	   0	  36
+ 94	 5	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  36
+ 94	 6	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  36
+ 94	 7	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  36
+ 								100	100	0
+ 95	 1	 Led	 180	 112	   -4	  996	 255	   1	 NaN	  37
+ 95	 2	 Led	 180	 113	   -3	  997	 255	   1	 NaN	  37
+ 95	 3	Snd1	 180	 108	   -2	  942	  55	 399	   0	  37
+ 95	 4	Snd2	 180	  12	   -2	  942	  55	 300	   0	  37
+ 95	 5	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  37
+ 95	 6	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  37
+ 95	 7	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  37
+ 								100	100	0
+ 96	 1	 Led	 180	 112	   -4	  996	 255	   1	 NaN	  38
+ 96	 2	 Led	 180	 113	   -3	  997	 255	   1	 NaN	  38
+ 96	 3	Snd1	 180	 109	   -2	  942	  55	 399	   0	  38
+ 96	 4	Snd2	 180	  12	   -2	  942	  55	 300	   0	  38
+ 96	 5	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  38
+ 96	 6	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  38
+ 96	 7	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  38
+ 								100	100	0
+ 97	 1	 Led	 180	 112	   -4	  996	 255	   1	 NaN	  39
+ 97	 2	 Led	 180	 113	   -3	  997	 255	   1	 NaN	  39
+ 97	 3	Snd1	 180	 110	   -2	  942	  55	 399	   0	  39
+ 97	 4	Snd2	 180	  12	   -2	  942	  55	 300	   0	  39
+ 97	 5	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  39
+ 97	 6	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  39
+ 97	 7	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  39
+ 								100	100	0
+ 98	 1	 Led	 180	 112	   -4	  997	 255	   1	 NaN	  40
+ 98	 2	 Led	 180	 113	   -3	  996	 255	   1	 NaN	  40
+ 98	 3	Snd1	 180	 111	   -2	  942	  55	 399	   0	  40
+ 98	 4	Snd2	 180	  12	   -2	  942	  55	 300	   0	  40
+ 98	 5	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  40
+ 98	 6	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  40
+ 98	 7	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  40
+ 								100	100	0
+ 99	 1	 Led	 180	 112	   -4	  996	 255	   1	 NaN	  41
+ 99	 2	 Led	 180	 113	   -3	  997	 255	   1	 NaN	  41
+ 99	 3	Snd1	 180	 112	   -2	  942	  55	 399	   0	  41
+ 99	 4	Snd2	 180	  13	   -2	  942	  55	 300	   0	  41
+ 99	 5	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  41
+ 99	 6	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  41
+ 99	 7	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  41
+ 								100	100	0
+100	 1	 Led	 180	 112	   -4	  996	 255	   1	 NaN	  42
+100	 2	 Led	 180	 113	   -3	  997	 255	   1	 NaN	  42
+100	 3	Snd1	 180	 113	   -2	  942	  55	 399	   0	  42
+100	 4	Snd2	 180	  12	   -2	  942	  55	 300	   0	  42
+100	 5	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  42
+100	 6	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  42
+100	 7	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  42
+ 								100	100	0
+101	 1	 Led	 180	 112	   -4	  996	 255	   1	 NaN	  43
+101	 2	 Led	 180	 113	   -3	  997	 255	   1	 NaN	  43
+101	 3	Snd1	 180	 114	   -2	  942	  55	 399	   0	  43
+101	 4	Snd2	 180	  12	   -2	  942	  55	 300	   0	  43
+101	 5	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  43
+101	 6	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  43
+101	 7	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  43
+ 								100	100	0
+102	 1	 Led	 180	 112	   -4	  996	 255	   1	 NaN	  44
+102	 2	 Led	 180	 113	   -3	  997	 255	   1	 NaN	  44
+102	 3	Snd1	 180	 115	   -2	  942	  55	 399	   0	  44
+102	 4	Snd2	 180	  12	   -2	  942	  55	 300	   0	  44
+102	 5	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  44
+102	 6	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  44
+102	 7	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  44
+ 								100	100	0
+103	 1	 Led	 180	 112	   -4	  996	 255	   1	 NaN	  45
+103	 2	 Led	 180	 113	   -3	  997	 255	   1	 NaN	  45
+103	 3	Snd1	 180	 116	   -2	  942	  55	 399	   0	  45
+103	 4	Snd2	 180	  12	   -2	  942	  55	 300	   0	  45
+103	 5	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  45
+103	 6	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  45
+103	 7	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  45
+ 								100	100	0
+104	 1	 Led	 180	 112	   -4	  997	 255	   1	 NaN	  46
+104	 2	 Led	 180	 113	   -3	  996	 255	   1	 NaN	  46
+104	 3	Snd1	 180	 117	   -2	  942	  55	 399	   0	  46
+104	 4	Snd2	 180	  12	   -2	  942	  55	 300	   0	  46
+104	 5	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  46
+104	 6	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  46
+104	 7	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  46
+ 								100	100	0
+105	 1	 Led	 180	 112	   -4	  996	 255	   1	 NaN	  47
+105	 2	 Led	 180	 113	   -3	  997	 255	   1	 NaN	  47
+105	 3	Snd1	 180	 118	   -2	  942	  55	 399	   0	  47
+105	 4	Snd2	 180	  12	   -2	  942	  55	 300	   0	  47
+105	 5	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  47
+105	 6	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  47
+105	 7	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  47
+ 								100	100	0
+106	 1	 Led	 180	 112	   -4	  996	 255	   1	 NaN	  48
+106	 2	 Led	 180	 113	   -3	  997	 255	   1	 NaN	  48
+106	 3	Snd1	 180	 119	   -2	  942	  55	 399	   0	  48
+106	 4	Snd2	 180	  12	   -2	  942	  55	 300	   0	  48
+106	 5	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  48
+106	 6	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  48
+106	 7	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  48
+ 								100	100	0
+107	 1	 Led	 180	 112	   -4	  996	 255	   1	 NaN	  49
+107	 2	 Led	 180	 113	   -3	  997	 255	   1	 NaN	  49
+107	 3	Snd1	 180	 120	   -2	  942	  55	 399	   0	  49
+107	 4	Snd2	 180	  12	   -2	  942	  55	 300	   0	  49
+107	 5	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  49
+107	 6	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  49
+107	 7	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  49
+ 								100	100	0
+108	 1	 Led	 180	 112	   -4	  996	 255	   1	 NaN	  50
+108	 2	 Led	 180	 113	   -3	  997	 255	   1	 NaN	  50
+108	 3	Snd1	 180	 121	   -2	  942	  55	 399	   0	  50
+108	 4	Snd2	 180	  12	   -2	  942	  55	 300	   0	  50
+108	 5	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  50
+108	 6	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  50
+108	 7	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  50
+ 								100	100	0
+109	 1	 Led	 180	 112	   -4	  996	 255	   1	 NaN	  51
+109	 2	 Led	 180	 113	   -3	  997	 255	   1	 NaN	  51
+109	 3	Snd1	 180	 122	   -2	  942	  55	 399	   0	  51
+109	 4	Snd2	 180	  12	   -2	  942	  55	 300	   0	  51
+109	 5	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  51
+109	 6	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  51
+109	 7	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  51
+ 								100	100	0
+110	 1	 Led	 180	 112	   -4	  996	 255	   1	 NaN	  52
+110	 2	 Led	 180	 113	   -3	  997	 255	   1	 NaN	  52
+110	 3	Snd1	 180	 123	   -2	  942	  55	 399	   0	  52
+110	 4	Snd2	 180	  12	   -2	  942	  55	 300	   0	  52
+110	 5	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  52
+110	 6	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  52
+110	 7	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  52
+ 								100	100	0
+111	 1	 Led	 180	 112	   -4	  996	 255	   1	 NaN	  53
+111	 2	 Led	 180	 113	   -3	  997	 255	   1	 NaN	  53
+111	 3	Snd1	 180	 124	   -2	  942	  55	 399	   0	  53
+111	 4	Snd2	 180	  12	   -2	  942	  55	 300	   0	  53
+111	 5	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  53
+111	 6	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  53
+111	 7	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  53
+ 								100	100	0
+112	 1	 Led	 180	 112	   -4	  996	 255	   1	 NaN	  54
+112	 2	 Led	 180	 113	   -3	  997	 255	   1	 NaN	  54
+112	 3	Snd1	 180	 125	   -2	  942	  55	 399	   0	  54
+112	 4	Snd2	 180	  12	   -2	  942	  55	 300	   0	  54
+112	 5	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  54
+112	 6	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  54
+112	 7	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  54
+ 								100	100	0
+113	 1	 Led	 180	 112	   -4	  996	 255	   1	 NaN	  55
+113	 2	 Led	 180	 113	   -3	  997	 255	   1	 NaN	  55
+113	 3	Snd1	 180	 126	   -2	  942	  55	 399	   0	  55
+113	 4	Snd2	 180	  12	   -2	  942	  55	 300	   0	  55
+113	 5	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  55
+113	 6	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  55
+113	 7	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  55
+ 								100	100	0
+114	 1	 Led	 180	 112	   -4	  996	 255	   1	 NaN	  56
+114	 2	 Led	 180	 113	   -3	  997	 255	   1	 NaN	  56
+114	 3	Snd1	 180	 127	   -2	  942	  55	 399	   0	  56
+114	 4	Snd2	 180	  12	   -2	  942	  55	 300	   0	  56
+114	 5	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  56
+114	 6	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  56
+114	 7	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  56
+ 								100	100	0
+115	 1	 Led	 180	 112	   -4	  996	 255	   1	 NaN	  57
+115	 2	 Led	 180	 113	   -3	    2	 255	   1	 NaN	  57
+115	 3	Snd1	 180	 128	   -2	  942	  55	 399	   0	  57
+115	 4	Snd2	 180	  12	   -2	  942	  55	 300	   0	  57
+115	 5	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  57
+115	 6	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  57
+115	 7	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  57
+ 								100	100	0
+116	 1	 Led	 180	 112	   -4	  996	 255	   1	 NaN	  58
+116	 2	 Led	 180	 113	   -3	  997	 255	   1	 NaN	  58
+116	 3	Snd1	 180	 129	   -2	  942	  55	 399	   0	  58
+116	 4	Snd2	 180	  12	   -2	  942	  55	 300	   0	  58
+116	 5	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  58
+116	 6	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  58
+116	 7	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  58
+ 								100	100	0
+117	 1	 Led	   0	  12	   -2	  998	 255	   1	 NaN	   1
+117	 2	Snd1	   0	   1	   -1	  942	  55	 399	   0	   1
+117	 3	Snd2	   0	  12	   -1	  943	  55	 300	   0	   1
+117	 4	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	   1
+117	 5	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	   1
+117	 6	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	   1
+ 								100	100	0
+118	 1	 Led	   0	  12	   -2	  998	 255	   1	 NaN	   2
+118	 2	Snd1	   0	   2	   -1	  942	  55	 399	   0	   2
+118	 3	Snd2	   0	  12	   -1	  943	  55	 300	   0	   2
+118	 4	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	   2
+118	 5	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	   2
+118	 6	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	   2
+ 								100	100	0
+119	 1	 Led	   0	  12	   -2	  998	 255	   1	 NaN	   3
+119	 2	Snd1	   0	   3	   -1	  942	  55	 399	   0	   3
+119	 3	Snd2	   0	  12	   -1	  943	  55	 300	   0	   3
+119	 4	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	   3
+119	 5	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	   3
+119	 6	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	   3
+ 								100	100	0
+120	 1	 Led	   0	  12	   -2	  998	 255	   1	 NaN	   4
+120	 2	Snd1	   0	   4	   -1	  942	  55	 399	   0	   4
+120	 3	Snd2	   0	  12	   -1	  943	  55	 300	   0	   4
+120	 4	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	   4
+120	 5	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	   4
+120	 6	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	   4
+ 								100	100	0
+121	 1	 Led	   0	  12	   -2	  998	 255	   1	 NaN	   5
+121	 2	Snd1	   0	   5	   -1	  943	  55	 399	   0	   5
+121	 3	Snd2	   0	  12	   -1	  942	  55	 300	   0	   5
+121	 4	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	   5
+121	 5	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	   5
+121	 6	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	   5
+ 								100	100	0
+122	 1	 Led	   0	  12	   -2	  998	 255	   1	 NaN	   6
+122	 2	Snd1	   0	   6	   -1	  942	  55	 399	   0	   6
+122	 3	Snd2	   0	  12	   -1	  943	  55	 300	   0	   6
+122	 4	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	   6
+122	 5	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	   6
+122	 6	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	   6
+ 								100	100	0
+123	 1	 Led	   0	  12	   -2	  998	 255	   1	 NaN	   7
+123	 2	Snd1	   0	   7	   -1	  942	  55	 399	   0	   7
+123	 3	Snd2	   0	  12	   -1	  943	  55	 300	   0	   7
+123	 4	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	   7
+123	 5	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	   7
+123	 6	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	   7
+ 								100	100	0
+124	 1	 Led	   0	  12	   -2	  998	 255	   1	 NaN	   8
+124	 2	Snd1	   0	   8	   -1	  942	  55	 399	   0	   8
+124	 3	Snd2	   0	  12	   -1	  943	  55	 300	   0	   8
+124	 4	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	   8
+124	 5	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	   8
+124	 6	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	   8
+ 								100	100	0
+125	 1	 Led	   0	  12	   -2	  998	 255	   1	 NaN	   9
+125	 2	Snd1	   0	   9	   -1	  942	  55	 399	   0	   9
+125	 3	Snd2	   0	  12	   -1	  943	  55	 300	   0	   9
+125	 4	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	   9
+125	 5	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	   9
+125	 6	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	   9
+ 								100	100	0
+126	 1	 Led	   0	  12	   -2	  998	 255	   1	 NaN	  10
+126	 2	Snd1	   0	  10	   -1	  942	  55	 399	   0	  10
+126	 3	Snd2	   0	  12	   -1	  943	  55	 300	   0	  10
+126	 4	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  10
+126	 5	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  10
+126	 6	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  10
+ 								100	100	0
+127	 1	 Led	   0	  12	   -2	  998	 255	   1	 NaN	  11
+127	 2	Snd1	   0	  11	   -1	  942	  55	 399	   0	  11
+127	 3	Snd2	   0	  12	   -1	  943	  55	 300	   0	  11
+127	 4	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  11
+127	 5	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  11
+127	 6	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  11
+ 								100	100	0
+128	 1	 Led	   0	  12	   -2	  998	 255	   1	 NaN	  12
+128	 2	Snd1	   0	  12	   -1	  942	  55	 399	   0	  12
+128	 3	Snd2	   0	  13	   -1	  943	  55	 300	   0	  12
+128	 4	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  12
+128	 5	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  12
+128	 6	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  12
+ 								100	100	0
+129	 1	 Led	   0	  12	   -2	  998	 255	   1	 NaN	  13
+129	 2	Snd1	   0	  13	   -1	  942	  55	 399	   0	  13
+129	 3	Snd2	   0	  12	   -1	  943	  55	 300	   0	  13
+129	 4	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  13
+129	 5	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  13
+129	 6	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  13
+ 								100	100	0
+130	 1	 Led	   0	  12	   -2	  998	 255	   1	 NaN	  14
+130	 2	Snd1	   0	  14	   -1	  942	  55	 399	   0	  14
+130	 3	Snd2	   0	  12	   -1	  943	  55	 300	   0	  14
+130	 4	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  14
+130	 5	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  14
+130	 6	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  14
+ 								100	100	0
+131	 1	 Led	   0	  12	   -2	  998	 255	   1	 NaN	  15
+131	 2	Snd1	   0	  15	   -1	  943	  55	 399	   0	  15
+131	 3	Snd2	   0	  12	   -1	  942	  55	 300	   0	  15
+131	 4	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  15
+131	 5	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  15
+131	 6	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  15
+ 								100	100	0
+132	 1	 Led	   0	  12	   -2	  998	 255	   1	 NaN	  16
+132	 2	Snd1	   0	  16	   -1	  942	  55	 399	   0	  16
+132	 3	Snd2	   0	  12	   -1	  943	  55	 300	   0	  16
+132	 4	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  16
+132	 5	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  16
+132	 6	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  16
+ 								100	100	0
+133	 1	 Led	   0	  12	   -2	  998	 255	   1	 NaN	  17
+133	 2	Snd1	   0	  17	   -1	  942	  55	 399	   0	  17
+133	 3	Snd2	   0	  12	   -1	  943	  55	 300	   0	  17
+133	 4	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  17
+133	 5	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  17
+133	 6	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  17
+ 								100	100	0
+134	 1	 Led	   0	  12	   -2	  998	 255	   1	 NaN	  18
+134	 2	Snd1	   0	  18	   -1	  942	  55	 399	   0	  18
+134	 3	Snd2	   0	  12	   -1	  943	  55	 300	   0	  18
+134	 4	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  18
+134	 5	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  18
+134	 6	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  18
+ 								100	100	0
+135	 1	 Led	   0	  12	   -2	  998	 255	   1	 NaN	  19
+135	 2	Snd1	   0	  19	   -1	  942	  55	 399	   0	  19
+135	 3	Snd2	   0	  12	   -1	  943	  55	 300	   0	  19
+135	 4	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  19
+135	 5	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  19
+135	 6	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  19
+ 								100	100	0
+136	 1	 Led	   0	  12	   -2	  998	 255	   1	 NaN	  20
+136	 2	Snd1	   0	  20	   -1	  942	  55	 399	   0	  20
+136	 3	Snd2	   0	  12	   -1	  943	  55	 300	   0	  20
+136	 4	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  20
+136	 5	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  20
+136	 6	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  20
+ 								100	100	0
+137	 1	 Led	   0	  12	   -2	  998	 255	   1	 NaN	  21
+137	 2	Snd1	   0	  21	   -1	  942	  55	 399	   0	  21
+137	 3	Snd2	   0	  12	   -1	  943	  55	 300	   0	  21
+137	 4	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  21
+137	 5	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  21
+137	 6	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  21
+ 								100	100	0
+138	 1	 Led	   0	  12	   -2	  998	 255	   1	 NaN	  22
+138	 2	Snd1	   0	  22	   -1	  942	  55	 399	   0	  22
+138	 3	Snd2	   0	  12	   -1	  943	  55	 300	   0	  22
+138	 4	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  22
+138	 5	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  22
+138	 6	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  22
+ 								100	100	0
+139	 1	 Led	   0	  12	   -2	  998	 255	   1	 NaN	  23
+139	 2	Snd1	   0	  23	   -1	  943	  55	 399	   0	  23
+139	 3	Snd2	   0	  12	   -1	  942	  55	 300	   0	  23
+139	 4	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  23
+139	 5	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  23
+139	 6	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  23
+ 								100	100	0
+140	 1	 Led	   0	  12	   -2	  998	 255	   1	 NaN	  24
+140	 2	Snd1	   0	  24	   -1	  942	  55	 399	   0	  24
+140	 3	Snd2	   0	  12	   -1	  943	  55	 300	   0	  24
+140	 4	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  24
+140	 5	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  24
+140	 6	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  24
+ 								100	100	0
+141	 1	 Led	   0	  12	   -2	  998	 255	   1	 NaN	  25
+141	 2	Snd1	   0	  25	   -1	  942	  55	 399	   0	  25
+141	 3	Snd2	   0	  12	   -1	  943	  55	 300	   0	  25
+141	 4	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  25
+141	 5	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  25
+141	 6	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  25
+ 								100	100	0
+142	 1	 Led	   0	  12	   -2	  998	 255	   1	 NaN	  26
+142	 2	Snd1	   0	  26	   -1	  942	  55	 399	   0	  26
+142	 3	Snd2	   0	  12	   -1	  943	  55	 300	   0	  26
+142	 4	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  26
+142	 5	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  26
+142	 6	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  26
+ 								100	100	0
+143	 1	 Led	   0	  12	   -2	  998	 255	   1	 NaN	  27
+143	 2	Snd1	   0	  27	   -1	  942	  55	 399	   0	  27
+143	 3	Snd2	   0	  12	   -1	  943	  55	 300	   0	  27
+143	 4	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  27
+143	 5	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  27
+143	 6	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  27
+ 								100	100	0
+144	 1	 Led	   0	  12	   -2	  998	 255	   1	 NaN	  28
+144	 2	Snd1	   0	  28	   -1	  943	  55	 399	   0	  28
+144	 3	Snd2	   0	  12	   -1	  942	  55	 300	   0	  28
+144	 4	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  28
+144	 5	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  28
+144	 6	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  28
+ 								100	100	0
+145	 1	 Led	   0	  12	   -2	  998	 255	   1	 NaN	  29
+145	 2	Snd1	   0	  29	   -1	  943	  55	 399	   0	  29
+145	 3	Snd2	   0	  12	   -1	  942	  55	 300	   0	  29
+145	 4	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  29
+145	 5	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  29
+145	 6	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  29
+ 								100	100	0
+146	 1	 Led	 180	 112	   -4	  996	 255	   1	 NaN	  30
+146	 2	 Led	 180	 113	   -3	  997	 255	   1	 NaN	  30
+146	 3	Snd1	 180	 101	   -2	  942	  55	 399	   0	  30
+146	 4	Snd2	 180	  12	   -2	  942	  55	 300	   0	  30
+146	 5	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  30
+146	 6	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  30
+146	 7	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  30
+ 								100	100	0
+147	 1	 Led	 180	 112	   -4	  997	 255	   1	 NaN	  31
+147	 2	 Led	 180	 113	   -3	  996	 255	   1	 NaN	  31
+147	 3	Snd1	 180	 102	   -2	  942	  55	 399	   0	  31
+147	 4	Snd2	 180	  12	   -2	  942	  55	 300	   0	  31
+147	 5	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  31
+147	 6	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  31
+147	 7	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  31
+ 								100	100	0
+148	 1	 Led	 180	 112	   -4	  996	 255	   1	 NaN	  32
+148	 2	 Led	 180	 113	   -3	  997	 255	   1	 NaN	  32
+148	 3	Snd1	 180	 103	   -2	  942	  55	 399	   0	  32
+148	 4	Snd2	 180	  12	   -2	  942	  55	 300	   0	  32
+148	 5	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  32
+148	 6	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  32
+148	 7	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  32
+ 								100	100	0
+149	 1	 Led	 180	 112	   -4	  996	 255	   1	 NaN	  33
+149	 2	 Led	 180	 113	   -3	  997	 255	   1	 NaN	  33
+149	 3	Snd1	 180	 104	   -2	  942	  55	 399	   0	  33
+149	 4	Snd2	 180	  12	   -2	  942	  55	 300	   0	  33
+149	 5	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  33
+149	 6	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  33
+149	 7	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  33
+ 								100	100	0
+150	 1	 Led	 180	 112	   -4	  996	 255	   1	 NaN	  34
+150	 2	 Led	 180	 113	   -3	  997	 255	   1	 NaN	  34
+150	 3	Snd1	 180	 105	   -2	  942	  55	 399	   0	  34
+150	 4	Snd2	 180	  12	   -2	  942	  55	 300	   0	  34
+150	 5	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  34
+150	 6	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  34
+150	 7	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  34
+ 								100	100	0
+151	 1	 Led	 180	 112	   -4	  996	 255	   1	 NaN	  35
+151	 2	 Led	 180	 113	   -3	  997	 255	   1	 NaN	  35
+151	 3	Snd1	 180	 106	   -2	  942	  55	 399	   0	  35
+151	 4	Snd2	 180	  12	   -2	  942	  55	 300	   0	  35
+151	 5	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  35
+151	 6	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  35
+151	 7	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  35
+ 								100	100	0
+152	 1	 Led	 180	 112	   -4	  996	 255	   1	 NaN	  36
+152	 2	 Led	 180	 113	   -3	  997	 255	   1	 NaN	  36
+152	 3	Snd1	 180	 107	   -2	  942	  55	 399	   0	  36
+152	 4	Snd2	 180	  12	   -2	  942	  55	 300	   0	  36
+152	 5	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  36
+152	 6	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  36
+152	 7	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  36
+ 								100	100	0
+153	 1	 Led	 180	 112	   -4	  996	 255	   1	 NaN	  37
+153	 2	 Led	 180	 113	   -3	  997	 255	   1	 NaN	  37
+153	 3	Snd1	 180	 108	   -2	  942	  55	 399	   0	  37
+153	 4	Snd2	 180	  12	   -2	  942	  55	 300	   0	  37
+153	 5	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  37
+153	 6	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  37
+153	 7	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  37
+ 								100	100	0
+154	 1	 Led	 180	 112	   -4	  996	 255	   1	 NaN	  38
+154	 2	 Led	 180	 113	   -3	  997	 255	   1	 NaN	  38
+154	 3	Snd1	 180	 109	   -2	  942	  55	 399	   0	  38
+154	 4	Snd2	 180	  12	   -2	  942	  55	 300	   0	  38
+154	 5	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  38
+154	 6	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  38
+154	 7	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  38
+ 								100	100	0
+155	 1	 Led	 180	 112	   -4	  996	 255	   1	 NaN	  39
+155	 2	 Led	 180	 113	   -3	  997	 255	   1	 NaN	  39
+155	 3	Snd1	 180	 110	   -2	  942	  55	 399	   0	  39
+155	 4	Snd2	 180	  12	   -2	  942	  55	 300	   0	  39
+155	 5	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  39
+155	 6	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  39
+155	 7	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  39
+ 								100	100	0
+156	 1	 Led	 180	 112	   -4	  996	 255	   1	 NaN	  40
+156	 2	 Led	 180	 113	   -3	  997	 255	   1	 NaN	  40
+156	 3	Snd1	 180	 111	   -2	  942	  55	 399	   0	  40
+156	 4	Snd2	 180	  12	   -2	  942	  55	 300	   0	  40
+156	 5	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  40
+156	 6	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  40
+156	 7	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  40
+ 								100	100	0
+157	 1	 Led	 180	 112	   -4	  996	 255	   1	 NaN	  41
+157	 2	 Led	 180	 113	   -3	  997	 255	   1	 NaN	  41
+157	 3	Snd1	 180	 112	   -2	  942	  55	 399	   0	  41
+157	 4	Snd2	 180	  13	   -2	  942	  55	 300	   0	  41
+157	 5	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  41
+157	 6	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  41
+157	 7	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  41
+ 								100	100	0
+158	 1	 Led	 180	 112	   -4	  997	 255	   1	 NaN	  42
+158	 2	 Led	 180	 113	   -3	  996	 255	   1	 NaN	  42
+158	 3	Snd1	 180	 113	   -2	  942	  55	 399	   0	  42
+158	 4	Snd2	 180	  12	   -2	  942	  55	 300	   0	  42
+158	 5	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  42
+158	 6	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  42
+158	 7	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  42
+ 								100	100	0
+159	 1	 Led	 180	 112	   -4	  996	 255	   1	 NaN	  43
+159	 2	 Led	 180	 113	   -3	  997	 255	   1	 NaN	  43
+159	 3	Snd1	 180	 114	   -2	  942	  55	 399	   0	  43
+159	 4	Snd2	 180	  12	   -2	  942	  55	 300	   0	  43
+159	 5	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  43
+159	 6	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  43
+159	 7	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  43
+ 								100	100	0
+160	 1	 Led	 180	 112	   -4	  996	 255	   1	 NaN	  44
+160	 2	 Led	 180	 113	   -3	  997	 255	   1	 NaN	  44
+160	 3	Snd1	 180	 115	   -2	  942	  55	 399	   0	  44
+160	 4	Snd2	 180	  12	   -2	  942	  55	 300	   0	  44
+160	 5	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  44
+160	 6	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  44
+160	 7	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  44
+ 								100	100	0
+161	 1	 Led	 180	 112	   -4	  996	 255	   1	 NaN	  45
+161	 2	 Led	 180	 113	   -3	  997	 255	   1	 NaN	  45
+161	 3	Snd1	 180	 116	   -2	  942	  55	 399	   0	  45
+161	 4	Snd2	 180	  12	   -2	  942	  55	 300	   0	  45
+161	 5	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  45
+161	 6	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  45
+161	 7	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  45
+ 								100	100	0
+162	 1	 Led	 180	 112	   -4	  996	 255	   1	 NaN	  46
+162	 2	 Led	 180	 113	   -3	  997	 255	   1	 NaN	  46
+162	 3	Snd1	 180	 117	   -2	  942	  55	 399	   0	  46
+162	 4	Snd2	 180	  12	   -2	  942	  55	 300	   0	  46
+162	 5	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  46
+162	 6	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  46
+162	 7	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  46
+ 								100	100	0
+163	 1	 Led	 180	 112	   -4	  996	 255	   1	 NaN	  47
+163	 2	 Led	 180	 113	   -3	  997	 255	   1	 NaN	  47
+163	 3	Snd1	 180	 118	   -2	  942	  55	 399	   0	  47
+163	 4	Snd2	 180	  12	   -2	  942	  55	 300	   0	  47
+163	 5	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  47
+163	 6	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  47
+163	 7	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  47
+ 								100	100	0
+164	 1	 Led	 180	 112	   -4	  996	 255	   1	 NaN	  48
+164	 2	 Led	 180	 113	   -3	  997	 255	   1	 NaN	  48
+164	 3	Snd1	 180	 119	   -2	  942	  55	 399	   0	  48
+164	 4	Snd2	 180	  12	   -2	  942	  55	 300	   0	  48
+164	 5	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  48
+164	 6	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  48
+164	 7	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  48
+ 								100	100	0
+165	 1	 Led	 180	 112	   -4	  996	 255	   1	 NaN	  49
+165	 2	 Led	 180	 113	   -3	  997	 255	   1	 NaN	  49
+165	 3	Snd1	 180	 120	   -2	  942	  55	 399	   0	  49
+165	 4	Snd2	 180	  12	   -2	  942	  55	 300	   0	  49
+165	 5	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  49
+165	 6	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  49
+165	 7	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  49
+ 								100	100	0
+166	 1	 Led	 180	 112	   -4	  996	 255	   1	 NaN	  50
+166	 2	 Led	 180	 113	   -3	  997	 255	   1	 NaN	  50
+166	 3	Snd1	 180	 121	   -2	  942	  55	 399	   0	  50
+166	 4	Snd2	 180	  12	   -2	  942	  55	 300	   0	  50
+166	 5	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  50
+166	 6	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  50
+166	 7	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  50
+ 								100	100	0
+167	 1	 Led	 180	 112	   -4	  996	 255	   1	 NaN	  51
+167	 2	 Led	 180	 113	   -3	  997	 255	   1	 NaN	  51
+167	 3	Snd1	 180	 122	   -2	  942	  55	 399	   0	  51
+167	 4	Snd2	 180	  12	   -2	  942	  55	 300	   0	  51
+167	 5	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  51
+167	 6	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  51
+167	 7	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  51
+ 								100	100	0
+168	 1	 Led	 180	 112	   -4	  996	 255	   1	 NaN	  52
+168	 2	 Led	 180	 113	   -3	  997	 255	   1	 NaN	  52
+168	 3	Snd1	 180	 123	   -2	  942	  55	 399	   0	  52
+168	 4	Snd2	 180	  12	   -2	  942	  55	 300	   0	  52
+168	 5	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  52
+168	 6	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  52
+168	 7	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  52
+ 								100	100	0
+169	 1	 Led	 180	 112	   -4	  996	 255	   1	 NaN	  53
+169	 2	 Led	 180	 113	   -3	  997	 255	   1	 NaN	  53
+169	 3	Snd1	 180	 124	   -2	  942	  55	 399	   0	  53
+169	 4	Snd2	 180	  12	   -2	  942	  55	 300	   0	  53
+169	 5	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  53
+169	 6	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  53
+169	 7	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  53
+ 								100	100	0
+170	 1	 Led	 180	 112	   -4	  996	 255	   1	 NaN	  54
+170	 2	 Led	 180	 113	   -3	  997	 255	   1	 NaN	  54
+170	 3	Snd1	 180	 125	   -2	  942	  55	 399	   0	  54
+170	 4	Snd2	 180	  12	   -2	  942	  55	 300	   0	  54
+170	 5	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  54
+170	 6	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  54
+170	 7	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  54
+ 								100	100	0
+171	 1	 Led	 180	 112	   -4	  996	 255	   1	 NaN	  55
+171	 2	 Led	 180	 113	   -3	  997	 255	   1	 NaN	  55
+171	 3	Snd1	 180	 126	   -2	  942	  55	 399	   0	  55
+171	 4	Snd2	 180	  12	   -2	  942	  55	 300	   0	  55
+171	 5	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  55
+171	 6	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  55
+171	 7	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  55
+ 								100	100	0
+172	 1	 Led	 180	 112	   -4	  996	 255	   1	 NaN	  56
+172	 2	 Led	 180	 113	   -3	  997	 255	   1	 NaN	  56
+172	 3	Snd1	 180	 127	   -2	  942	  55	 399	   0	  56
+172	 4	Snd2	 180	  12	   -2	  942	  55	 300	   0	  56
+172	 5	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  56
+172	 6	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  56
+172	 7	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  56
+ 								100	100	0
+173	 1	 Led	 180	 112	   -4	  996	 255	   1	 NaN	  57
+173	 2	 Led	 180	 113	   -3	    2	 255	   1	 NaN	  57
+173	 3	Snd1	 180	 128	   -2	  942	  55	 399	   0	  57
+173	 4	Snd2	 180	  12	   -2	  942	  55	 300	   0	  57
+173	 5	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  57
+173	 6	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  57
+173	 7	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  57
+ 								100	100	0
+174	 1	 Led	 180	 112	   -4	  997	 255	   1	 NaN	  58
+174	 2	 Led	 180	 113	   -3	  996	 255	   1	 NaN	  58
+174	 3	Snd1	 180	 129	   -2	  942	  55	 399	   0	  58
+174	 4	Snd2	 180	  12	   -2	  942	  55	 300	   0	  58
+174	 5	 Acq	 NaN	 NaN	    0	 4000	 NaN	 NaN	1017	  58
+174	 6	Inp1	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  58
+174	 7	Inp2	 NaN	 NaN	 NaN	46060	 NaN	 NaN	 NaN	  58

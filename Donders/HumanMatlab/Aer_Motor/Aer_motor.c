@@ -1,0 +1,226 @@
+#include "windows.h"
+#include "stdio.h"
+#include "mex.h"
+#include "math.h"
+#include "time.h"
+#include "AerSys.h"
+/*
+ *  Aer_Info[0] -   Handle
+ *  Aer_Info[1] -   Speed
+ *  Aer_Info[2] -   Position
+ *  Aer_Info[3] -   Target
+ *  Aer_Info[4] -   Error
+ *  Aer_Info[5] -   wait
+ *  Aer_Info[6] -   busy
+ *
+ */
+//      comand                          error code  (= -command)
+#define cAerNoError       0       //      
+#define cAerInit          1       //        -1
+#define cAerMoveHome      2       //        -2
+#define cAerMoveAbs       3
+#define cAerMoveEnable    4
+#define cAerMoveDisable   5 
+#define cAerMoveWaitDone  6
+#define cAerMoveTestDone  7
+#define cAerGetPosition   8
+#define cAerShowInfo      9
+
+HAERCTRL	hAerCtrl;
+AERERR_CODE eRc;
+double      Aer_Info[7];
+long        timeOnEnter;
+
+bool Aer_GetPosition() 
+{
+    double xPos;
+    Aer_Info[4] = cAerNoError;
+    eRc = AerParmGetValue(hAerCtrl, AER_PARMTYPE_AXIS, AXISINDEX_1, AXISPARM_PositionCnts, 0, &xPos);
+    if (eRc == AERERR_NOERR) {
+        xPos = xPos/((4000.0*125.0)/360.0);
+        Aer_Info[2] = xPos;
+        return true;
+    } else {
+        Aer_Info[4] = -cAerGetPosition;
+        return false;
+    }
+}
+
+bool Aer_MoveWaitDone() {
+    Aer_Info[4] = cAerNoError;
+    // h, axis, timeout(unit = 10 mSec), flag 1- wait for in-position, 
+    //                                        0- wait for done bit
+    eRc = AerMoveWaitDone(hAerCtrl, AXISINDEX_1, 1, 1); //AERMOVEWAIT_CHECK_ONCE, 1);
+    if (eRc == AERERR_NOERR) {
+        return true;
+    } else {
+        Aer_Info[4] = -cAerMoveWaitDone;
+        return false;
+    }
+}
+
+bool Aer_MoveEnable() {
+    Aer_Info[4] = cAerNoError;
+    eRc = AerMoveEnable(hAerCtrl, AXISINDEX_1);
+    if (Aer_MoveWaitDone()) {
+        return true;
+    } else {
+        Aer_Info[4] = -cAerMoveEnable;
+        return false;
+    }
+}
+
+bool Aer_MoveDisable() {
+    Aer_Info[4] = cAerMoveDisable;
+    eRc = AerMoveDisable(hAerCtrl, AXISINDEX_1);
+    if (Aer_MoveWaitDone()) {
+        return true;
+    } else {
+        Aer_Info[4] = -cAerMoveDisable;
+        return false;
+    }
+}
+
+/*
+bool Aer_MoveTestDone() {
+    int status;
+    long start;
+    Aer_Info[4] = cAerMoveTestDone;
+    start = clock();
+    while (Aer_Info[4] == cAerMoveTestDone) {
+        eRc = AerStatusGetStatusWord(hAerCtrl, AXISINDEX_1, AER_STATUS_AXIS, &status);
+        status = status & MAXS_STATUS_MOVEDONE;
+        if (eRc == AERERR_NOERR) {
+            if ((status &= MAXS_STATUS_MOVEDONE) != 0) {
+                Aer_Info[4] = cAerMoveTestDone;
+            }
+        } else {
+            Aer_Info[4] = -cAerMoveTestDone;
+            return false;
+        }
+    }
+    return Aer_MoveDisable();
+}
+*/
+
+void Aer_MoveTestDone() 
+{
+    int status;
+    Aer_Info[4] = cAerMoveTestDone;
+    Aer_Info[6] = 1;
+    eRc = AerStatusGetStatusWord(hAerCtrl, AXISINDEX_1, AER_STATUS_AXIS, &status);
+    status = status & MAXS_STATUS_MOVEDONE;
+    if (status != 0)
+    {
+        Aer_Info[6] = 0;
+        Aer_MoveDisable();
+    }
+    Aer_GetPosition();
+}
+
+bool Aer_MoveAbs() 
+{
+    double d = Aer_Info[3]*((4000.0*125.0/360.0));
+    if (Aer_MoveEnable()) 
+    {
+        eRc = AerMoveAbsolute(hAerCtrl, AXISINDEX_1, (int) d, Aer_Info[1]);
+        Aer_Info[4] = cAerMoveAbs;
+        return true;
+    } 
+    else 
+    {
+        Aer_Info[4] = -cAerMoveAbs;
+        return false;
+    }
+}
+
+bool Aer_MoveHome() 
+{
+    Aer_Info[6] = 0;
+    if (Aer_MoveEnable()) 
+    {
+        eRc = AerMoveHome(hAerCtrl, AXISINDEX_1);
+        if (eRc == AERERR_NOERR) 
+        {
+            Aer_Info[4] = cAerMoveHome;
+            Aer_Info[6] = 1;
+            return true;
+        } 
+        else 
+        {
+            Aer_Info[4] = -cAerMoveHome;
+            return false;
+        }
+    } 
+    else
+    {
+        return false;
+    }
+}
+                    
+bool Aer_Init(void) 
+{
+    hAerCtrl = NULL;
+    eRc = AerSysInitialize(0, NULL, 1, &hAerCtrl,
+            NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
+	if (eRc == AERERR_NOERR) 
+    {
+        Aer_Info[4] = cAerInit;
+        return true;
+    } 
+    else 
+    {
+        Aer_Info[4] = -cAerInit;
+        return false;
+    }
+}
+
+void mexFunction(int nLeft, mxArray *pLeft[],
+        int nRight, const mxArray *pRight[]) {
+    
+    mxArray *xArg;
+    int     mode, n, len, colLen, rowLen;
+    double  *pR, *pL;
+    double  *xValues, *msg;
+ 
+    timeOnEnter = clock();
+
+    if (nRight == 2) 
+    {
+        pR = mxGetPr(pRight[0]);     	// pointer to first input arg: mode
+        mode = (int) *pR;
+        xArg = pRight[1];               // pointer to second input arg: arg
+        xValues = mxGetPr(xArg);
+        rowLen  = mxGetN(xArg);         // 2D array of numbers
+        if (rowLen > 7) rowLen = 7;
+		for (n=0;n < rowLen; n++) 
+			Aer_Info[n] = xValues[n];	// get info record
+		hAerCtrl = (int) Aer_Info[0];   // cast handle
+        switch (mode) 
+        {
+        case cAerInit:          Aer_Init();         break;
+        case cAerMoveHome:      Aer_MoveHome();     break;
+        case cAerMoveAbs:       Aer_MoveAbs();      break;
+        case cAerMoveEnable:    Aer_MoveEnable();   break;
+        case cAerMoveDisable:   Aer_MoveDisable();  break;
+        case cAerGetPosition:   Aer_GetPosition();  break;
+//        case cAerWaitMoveDone:	Aer_WaitMoveDone();
+//				break;
+        case cAerMoveTestDone:  Aer_MoveTestDone(); break;
+//        case  cAerMoveTestDone:  Aer_MoveWaitDone(); break;
+        }
+		// return Info record
+		Aer_Info[0] = (int) hAerCtrl; // cast handle
+
+        pLeft[0] = mxCreateDoubleMatrix(1,rowLen,mxREAL);
+        pL = mxGetPr(pLeft[0]);
+	    for (n=0; n<rowLen; n++) 
+        {
+			pL[n] = Aer_Info[n];
+		}
+        pLeft[1] = mxCreateDoubleMatrix(1, 2, mxREAL);
+        msg      = mxGetPr(pLeft[1]);
+        msg[0]   = Aer_Info[4];
+        msg[1]   = (1000*(clock()-timeOnEnter))/CLOCKS_PER_SEC;
+	}
+}

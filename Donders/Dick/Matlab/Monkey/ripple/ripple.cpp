@@ -1,0 +1,303 @@
+////////////////////////////////////////////////////////////////////
+//                            RIPPLE
+////////////////////////////////////////////////////////////////////
+#ifndef WIN32_LEAN_AND_MEAN
+#define WIN32_LEAN_AND_MEAN
+#endif
+
+#include "mex.h"
+#include <windows.h>
+#include "..\include\globals.h"
+#include <process.h>            // used for thread
+#include <matrix.h>
+#include <math.h>
+#include <time.h>
+
+//static	int velocity;	// modulation frequency
+//static	float density;	// Ripple frequency (cyc/oct)
+//static	int modulation;	// modulation depth
+//static	int durStat;	// Duration static, target fixed+random
+//static	int durRipple;	// Duration ripple, target changed
+//static	int F0;			// Carrier frequency
+//static	int nTones;		// frequencies
+//static	int nOct;		// octaves
+//static	float PhiF0;	// Ripple phase at F0
+//static	float rate;		// Sample rate
+//static  bool dynStat;
+//static  bool freeze;
+
+void   myThread(LPVOID pVoid);
+
+static int   nTot;
+static float phi[200];			// for freeze phases
+static float snd[400000];
+/*       according to depireaux (2001),
+                      marc van wanrooij
+	-----------------------------------------------------------------------
+	sample rate TDT3 = 48828.125
+	maximum duration wav = 400000/rate = 8 seconds
+	maximum number of components (tones*octaves) = 200
+	ie. number of tones = 20, max. number of octaves = 10
+	highest frequency = F0=10Hz, oct=10 -> Fmax = 10*2^10 = 10240
+						F0=100Hz, oct=7 -> Fmax = 100*2^7 = 12800
+						F0=250Hz, oct=7 -> Fmax = 250*2^7 = 32000 ( > rate/2 )
+
+	Allocate and free memory (new+delete)
+		nTot = 100K,  63 mSec
+		nTot = 200K, 140 mSec
+		nTot = 400K, 266 mSec
+	-----------------------------------------------------------------------
+*/
+double *param;
+//====================================================================//
+void mexFunction(int nlhs, mxArray *plhs[],
+                 int nrhs, const mxArray *prhs[])
+{
+  int threadNr;
+  (void) plhs;          // unused parameters
+  (void) prhs;
+  
+  _beginthread(myThread, 0, &threadNr);
+}
+
+void CreateRipple(
+
+		int   modFreq,	// (Hz.)	 modulation frequency, velocity
+		int   modDepth,	// (%)		 modulation depth 
+		float density,	// (cyc/oct) ripple frequency ,omega
+		int   durStat,	// (mSec)	 duration static, target fixed+random
+		int   durRip,	// (mSec)	 duration ripple, target changed
+		int   F0,		// (Hz.)	 lowest frequency component
+		int   nTones,	// (#)	     number of tones per octave
+		int   nOct,		// (#)		 number of octaves
+		float PhiF0,	//    		 ripple phase at F0
+		bool  statDyn,	//			 true: stat->dyn, 
+						//			 false: dyn->stat
+		bool  freeze,	//			 true: use previous phases, 
+						//			 false: get new random phases
+		float rate)		// (Hz.)	 sample rate
+{
+	int pnt, n, t;
+
+	float ftmp;
+	int	nStat = (int) ((float)durStat)/1000.0*rate;
+	density = 1.0;
+	int nRip  = (int) ((float)durRip)/1000.0*rate;
+		nTot  = nStat+nRip;
+	int nComp = nTones*nOct;
+	float mod = modDepth/100.0;
+
+	int   *freq  = new int[nComp];
+	float *oct   = new float[nComp];
+	float *Times = new float[nTot];
+	float *raw   = new float[nTot*nComp];
+	float *carr  = new float[nTot*nComp];
+
+	for (n = 0; n < nComp; n++)
+	{
+		ftmp    = (float)n / (float) nTones;
+		freq[n] = (float) F0*pow((float)2.0,ftmp);
+		oct[n]  = ftmp;
+	}
+ 
+	if (!freeze)
+	{
+		for (n = 0; n < nComp; n++)
+		{
+			ftmp = (float) rand();
+			ftmp = ftmp / (float) RAND_MAX;
+			phi[n] = 3.14 - 2.0*3.14*ftmp;
+		}
+	}
+
+	for (t = 0; t < nTot; t++)
+		Times[t] = (float) t/rate;
+
+	if (statDyn) // static followed by dynamic
+	{
+		for (n = 0; n < nComp; n++)
+		{
+			for (t = 0; t < nStat; t++)		// static
+			{
+				pnt = n*nTot+t;
+				raw[pnt] = 1;
+			}
+			for (t = nStat; t < nTot; t++)	// dynamic
+			{
+				pnt = n*nTot+t;
+				raw[pnt] = 1.0 + mod*sin(2*3.14*modFreq*Times[t]+2*3.14*density*oct[n]);
+			}
+        }
+	}
+	else
+	{
+		for (n = 0; n < nComp; n++)
+		{
+			for (t = 0; t < nStat; t++)		// dynamic
+			{
+				pnt = n*nTot+t;
+				raw[pnt] = 1.0 + mod*sin(2*3.14*modFreq*Times[t]+2*3.14*density*oct[n]);
+			}
+			for (t = nStat; t < nTot; t++)	// static
+			{
+				pnt = n*nTot+t;
+				raw[pnt] = 1;
+			}
+		}
+    }
+
+	for (n = 0; n < nComp; n++)
+	{
+		for (t = 0; t < nTot; t++)
+		{
+			pnt = n*nTot+t;
+			carr[pnt] = sin(2*3.14*freq[n]*Times[t]+phi[n]);
+		}
+	}
+	
+	delete Times;
+	delete freq;
+	delete oct;
+
+	for (n = 0; n < nComp; n++)
+	{
+		for (t = 0; t < nTot; t++)
+		{
+			pnt = n*nTot+t;
+			raw[pnt] = raw[pnt]*carr[pnt];
+		}
+	}
+	
+	delete carr;
+
+	for (t = 0; t < nTot; t++)
+	{
+		snd[t] = 0;
+		for (n = 0; n < nComp; n++)
+		{
+			pnt = n*nTot+t;
+			snd[t] = snd[t] + raw[pnt];
+		}
+	}
+	delete raw;
+
+	float rmsStat = 0;
+	float rmsRip  = 0;
+	float ratio;
+	float max = -9;
+	float min = +9;
+	for (t = 0; t < nTot; t++)
+	{
+		if (snd[t] > max) max = snd[t];
+		if (snd[t] < min) min = snd[t];
+	}
+	if (max < abs(min)) max = abs(min);
+	for (t = 0; t < nTot; t++)
+		snd[t] = 0.95*snd[t]/max;
+
+	if (statDyn) // static followed by dynamic
+	{
+		if (nRip > 0)
+		{
+			for (t = 0; t < nStat; t++)
+				rmsStat = rmsStat + snd[t]*snd[t];
+			for (t = nStat; t < nTot; t++)
+				rmsRip = rmsRip + snd[t]*snd[t];
+			rmsStat = sqrt(rmsStat)/sqrt((float) nStat);
+			rmsRip  = sqrt(rmsRip)/sqrt((float) nRip);
+			ratio = rmsStat/rmsRip;
+			for (t = 0; t < nStat; t++)
+				snd[t] = ratio*snd[t];
+		}
+	}
+	else
+	{
+		if (nStat > 0)
+		{
+			for (t = nStat; t < nTot; t++)
+				rmsStat = rmsStat + snd[t]*snd[t];
+			for (t = 0; t < nStat; t++)
+				rmsRip = rmsRip + snd[t]*snd[t];
+			rmsStat = sqrt(rmsStat)/sqrt((float) nStat);
+			rmsRip  = sqrt(rmsRip)/sqrt((float) nRip);
+			ratio = rmsStat/rmsRip;
+			for (t = nStat; t < nTot; t++)
+				snd[t] = ratio*snd[t];
+		}
+	}
+}
+void myThread(LPVOID pVoid)
+{
+    const mxArray *myBusy;
+    const mxArray *myRipple;
+    const mxArray *myParams;
+    const mxArray *mySound;
+    
+    myBusy   = mexGetVariablePtr("base","rippleBusy");
+    myRipple = mexGetVariablePtr("base","rippleNew");
+    myParams = mexGetVariablePtr("base","rippleParams");
+    mySound  = mexGetVariablePtr("base","rippleSound");
+    
+    double *busyPtr;
+    double *ripplePtr;
+    double *paramsPtr;
+    double *soundPtr;
+    
+    busyPtr   = mxGetPr(myBusy);
+    ripplePtr = mxGetPr(myRipple);
+    paramsPtr = mxGetPr(myParams);
+    soundPtr  = mxGetPr(mySound);
+
+   	int   velocity;
+	int   modulation;
+	float density;
+	int   durStat;
+	int   durRipple;
+	int   F0;
+	int	  nTones;
+	int   nOct;
+	float PhiF0;
+	bool  statDyn;
+	bool  freeze;
+	float rate;
+    clock_t start, finish;
+    double duration;
+    while (*ripplePtr > -1)
+    {
+        if (*ripplePtr == 1)
+        {
+            start = clock();
+            *busyPtr = 1.0;
+            ///////////////////////////////////////////////////////////////
+            velocity   = (int)    *(paramsPtr+0);
+            modulation = (int)    *(paramsPtr+1);
+            density    = (float)  *(paramsPtr+2);
+            durStat    = (int)    *(paramsPtr+3);
+            durRipple  = (int)    *(paramsPtr+4);
+            F0         = (int)    *(paramsPtr+5);
+            nTones     = (int)    *(paramsPtr+6);
+            nOct       = (int)    *(paramsPtr+7);
+            PhiF0      = (float)  *(paramsPtr+8);
+            statDyn    =   (*(paramsPtr+ 9) > 0);
+            freeze     =   (*(paramsPtr+10) > 0);
+            rate       = (float) *(paramsPtr+11);
+            CreateRipple(velocity, modulation, density, durStat, durRipple,
+                         F0, nTones, nOct, PhiF0, statDyn, freeze, rate);
+            ///////////////////////////////////////////////////////////////
+            *soundPtr = (double) nTot;
+            for (int n = 1; n < nTot; n++)
+            {
+                *(soundPtr+n) = (double) snd[n-1];
+            }
+            *busyPtr = 0.0;
+            *ripplePtr = 0;
+            finish = clock();
+            duration = (double)1000.0*(finish - start) / CLOCKS_PER_SEC;
+            printf( "Ripple created in %0.f mSec\n", duration );
+        }
+        else
+            Sleep(1);
+    }
+    
+    _endthread();
+}

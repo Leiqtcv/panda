@@ -1,0 +1,11 @@
+6
+hallospa.tdt
+hallosha.tdt
+hallowha.tdt
+snellerspa.tdt
+snellersha.tdt
+snellerwha.tdt
+car.tdt
+no.tdt
+walk.tdt
+lear2.tdt

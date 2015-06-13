@@ -1,0 +1,10161 @@
+%
+%% Experiment: C:\Human\DAT
+%
+ITI		0	0
+Trials	2030
+Repeats	1
+Random	0	% 0=no, 1=per set, 2=all trials
+Motor		n
+
+% MOD	X	Y	ID	INT	On	On	Off	Off	Event
+%			edg	bit	Event	Time	Event	Time
+
+% Trial: 1
+==>
+SND1	0	1	1	30.0	0	0
+INP1
+
+% Trial: 2
+==>
+SND1	0	2	1	30.0	0	0
+INP1
+
+% Trial: 3
+==>
+SND1	0	3	1	30.0	0	0
+INP1
+
+% Trial: 4
+==>
+SND1	0	4	1	30.0	0	0
+INP1
+
+% Trial: 5
+==>
+SND1	0	5	1	30.0	0	0
+INP1
+
+% Trial: 6
+==>
+SND1	0	6	1	30.0	0	0
+INP1
+
+% Trial: 7
+==>
+SND1	0	7	1	30.0	0	0
+INP1
+
+% Trial: 8
+==>
+SND1	0	8	1	30.0	0	0
+INP1
+
+% Trial: 9
+==>
+SND1	0	9	1	30.0	0	0
+INP1
+
+% Trial: 10
+==>
+SND1	0	10	1	30.0	0	0
+INP1
+
+% Trial: 11
+==>
+SND1	0	11	1	30.0	0	0
+INP1
+
+% Trial: 12
+==>
+SND1	0	12	1	30.0	0	0
+INP1
+
+% Trial: 13
+==>
+SND1	0	13	1	30.0	0	0
+INP1
+
+% Trial: 14
+==>
+SND1	0	14	1	30.0	0	0
+INP1
+
+% Trial: 15
+==>
+SND1	0	15	1	30.0	0	0
+INP1
+
+% Trial: 16
+==>
+SND1	0	16	1	30.0	0	0
+INP1
+
+% Trial: 17
+==>
+SND1	0	17	1	30.0	0	0
+INP1
+
+% Trial: 18
+==>
+SND1	0	18	1	30.0	0	0
+INP1
+
+% Trial: 19
+==>
+SND1	0	19	1	30.0	0	0
+INP1
+
+% Trial: 20
+==>
+SND1	0	20	1	30.0	0	0
+INP1
+
+% Trial: 21
+==>
+SND1	0	21	1	30.0	0	0
+INP1
+
+% Trial: 22
+==>
+SND1	0	22	1	30.0	0	0
+INP1
+
+% Trial: 23
+==>
+SND1	0	23	1	30.0	0	0
+INP1
+
+% Trial: 24
+==>
+SND1	0	24	1	30.0	0	0
+INP1
+
+% Trial: 25
+==>
+SND1	0	25	1	30.0	0	0
+INP1
+
+% Trial: 26
+==>
+SND1	0	26	1	30.0	0	0
+INP1
+
+% Trial: 27
+==>
+SND1	0	27	1	30.0	0	0
+INP1
+
+% Trial: 28
+==>
+SND1	0	28	1	30.0	0	0
+INP1
+
+% Trial: 29
+==>
+SND1	0	29	1	30.0	0	0
+INP1
+
+% Trial: 30
+==>
+SND1	0	1	1	40.0	0	0
+INP1
+
+% Trial: 31
+==>
+SND1	0	2	1	40.0	0	0
+INP1
+
+% Trial: 32
+==>
+SND1	0	3	1	40.0	0	0
+INP1
+
+% Trial: 33
+==>
+SND1	0	4	1	40.0	0	0
+INP1
+
+% Trial: 34
+==>
+SND1	0	5	1	40.0	0	0
+INP1
+
+% Trial: 35
+==>
+SND1	0	6	1	40.0	0	0
+INP1
+
+% Trial: 36
+==>
+SND1	0	7	1	40.0	0	0
+INP1
+
+% Trial: 37
+==>
+SND1	0	8	1	40.0	0	0
+INP1
+
+% Trial: 38
+==>
+SND1	0	9	1	40.0	0	0
+INP1
+
+% Trial: 39
+==>
+SND1	0	10	1	40.0	0	0
+INP1
+
+% Trial: 40
+==>
+SND1	0	11	1	40.0	0	0
+INP1
+
+% Trial: 41
+==>
+SND1	0	12	1	40.0	0	0
+INP1
+
+% Trial: 42
+==>
+SND1	0	13	1	40.0	0	0
+INP1
+
+% Trial: 43
+==>
+SND1	0	14	1	40.0	0	0
+INP1
+
+% Trial: 44
+==>
+SND1	0	15	1	40.0	0	0
+INP1
+
+% Trial: 45
+==>
+SND1	0	16	1	40.0	0	0
+INP1
+
+% Trial: 46
+==>
+SND1	0	17	1	40.0	0	0
+INP1
+
+% Trial: 47
+==>
+SND1	0	18	1	40.0	0	0
+INP1
+
+% Trial: 48
+==>
+SND1	0	19	1	40.0	0	0
+INP1
+
+% Trial: 49
+==>
+SND1	0	20	1	40.0	0	0
+INP1
+
+% Trial: 50
+==>
+SND1	0	21	1	40.0	0	0
+INP1
+
+% Trial: 51
+==>
+SND1	0	22	1	40.0	0	0
+INP1
+
+% Trial: 52
+==>
+SND1	0	23	1	40.0	0	0
+INP1
+
+% Trial: 53
+==>
+SND1	0	24	1	40.0	0	0
+INP1
+
+% Trial: 54
+==>
+SND1	0	25	1	40.0	0	0
+INP1
+
+% Trial: 55
+==>
+SND1	0	26	1	40.0	0	0
+INP1
+
+% Trial: 56
+==>
+SND1	0	27	1	40.0	0	0
+INP1
+
+% Trial: 57
+==>
+SND1	0	28	1	40.0	0	0
+INP1
+
+% Trial: 58
+==>
+SND1	0	29	1	40.0	0	0
+INP1
+
+% Trial: 59
+==>
+SND1	0	1	1	50.0	0	0
+INP1
+
+% Trial: 60
+==>
+SND1	0	2	1	50.0	0	0
+INP1
+
+% Trial: 61
+==>
+SND1	0	3	1	50.0	0	0
+INP1
+
+% Trial: 62
+==>
+SND1	0	4	1	50.0	0	0
+INP1
+
+% Trial: 63
+==>
+SND1	0	5	1	50.0	0	0
+INP1
+
+% Trial: 64
+==>
+SND1	0	6	1	50.0	0	0
+INP1
+
+% Trial: 65
+==>
+SND1	0	7	1	50.0	0	0
+INP1
+
+% Trial: 66
+==>
+SND1	0	8	1	50.0	0	0
+INP1
+
+% Trial: 67
+==>
+SND1	0	9	1	50.0	0	0
+INP1
+
+% Trial: 68
+==>
+SND1	0	10	1	50.0	0	0
+INP1
+
+% Trial: 69
+==>
+SND1	0	11	1	50.0	0	0
+INP1
+
+% Trial: 70
+==>
+SND1	0	12	1	50.0	0	0
+INP1
+
+% Trial: 71
+==>
+SND1	0	13	1	50.0	0	0
+INP1
+
+% Trial: 72
+==>
+SND1	0	14	1	50.0	0	0
+INP1
+
+% Trial: 73
+==>
+SND1	0	15	1	50.0	0	0
+INP1
+
+% Trial: 74
+==>
+SND1	0	16	1	50.0	0	0
+INP1
+
+% Trial: 75
+==>
+SND1	0	17	1	50.0	0	0
+INP1
+
+% Trial: 76
+==>
+SND1	0	18	1	50.0	0	0
+INP1
+
+% Trial: 77
+==>
+SND1	0	19	1	50.0	0	0
+INP1
+
+% Trial: 78
+==>
+SND1	0	20	1	50.0	0	0
+INP1
+
+% Trial: 79
+==>
+SND1	0	21	1	50.0	0	0
+INP1
+
+% Trial: 80
+==>
+SND1	0	22	1	50.0	0	0
+INP1
+
+% Trial: 81
+==>
+SND1	0	23	1	50.0	0	0
+INP1
+
+% Trial: 82
+==>
+SND1	0	24	1	50.0	0	0
+INP1
+
+% Trial: 83
+==>
+SND1	0	25	1	50.0	0	0
+INP1
+
+% Trial: 84
+==>
+SND1	0	26	1	50.0	0	0
+INP1
+
+% Trial: 85
+==>
+SND1	0	27	1	50.0	0	0
+INP1
+
+% Trial: 86
+==>
+SND1	0	28	1	50.0	0	0
+INP1
+
+% Trial: 87
+==>
+SND1	0	29	1	50.0	0	0
+INP1
+
+% Trial: 88
+==>
+SND1	0	1	1	60.0	0	0
+INP1
+
+% Trial: 89
+==>
+SND1	0	2	1	60.0	0	0
+INP1
+
+% Trial: 90
+==>
+SND1	0	3	1	60.0	0	0
+INP1
+
+% Trial: 91
+==>
+SND1	0	4	1	60.0	0	0
+INP1
+
+% Trial: 92
+==>
+SND1	0	5	1	60.0	0	0
+INP1
+
+% Trial: 93
+==>
+SND1	0	6	1	60.0	0	0
+INP1
+
+% Trial: 94
+==>
+SND1	0	7	1	60.0	0	0
+INP1
+
+% Trial: 95
+==>
+SND1	0	8	1	60.0	0	0
+INP1
+
+% Trial: 96
+==>
+SND1	0	9	1	60.0	0	0
+INP1
+
+% Trial: 97
+==>
+SND1	0	10	1	60.0	0	0
+INP1
+
+% Trial: 98
+==>
+SND1	0	11	1	60.0	0	0
+INP1
+
+% Trial: 99
+==>
+SND1	0	12	1	60.0	0	0
+INP1
+
+% Trial: 100
+==>
+SND1	0	13	1	60.0	0	0
+INP1
+
+% Trial: 101
+==>
+SND1	0	14	1	60.0	0	0
+INP1
+
+% Trial: 102
+==>
+SND1	0	15	1	60.0	0	0
+INP1
+
+% Trial: 103
+==>
+SND1	0	16	1	60.0	0	0
+INP1
+
+% Trial: 104
+==>
+SND1	0	17	1	60.0	0	0
+INP1
+
+% Trial: 105
+==>
+SND1	0	18	1	60.0	0	0
+INP1
+
+% Trial: 106
+==>
+SND1	0	19	1	60.0	0	0
+INP1
+
+% Trial: 107
+==>
+SND1	0	20	1	60.0	0	0
+INP1
+
+% Trial: 108
+==>
+SND1	0	21	1	60.0	0	0
+INP1
+
+% Trial: 109
+==>
+SND1	0	22	1	60.0	0	0
+INP1
+
+% Trial: 110
+==>
+SND1	0	23	1	60.0	0	0
+INP1
+
+% Trial: 111
+==>
+SND1	0	24	1	60.0	0	0
+INP1
+
+% Trial: 112
+==>
+SND1	0	25	1	60.0	0	0
+INP1
+
+% Trial: 113
+==>
+SND1	0	26	1	60.0	0	0
+INP1
+
+% Trial: 114
+==>
+SND1	0	27	1	60.0	0	0
+INP1
+
+% Trial: 115
+==>
+SND1	0	28	1	60.0	0	0
+INP1
+
+% Trial: 116
+==>
+SND1	0	29	1	60.0	0	0
+INP1
+
+% Trial: 117
+==>
+SND1	0	1	1	70.0	0	0
+INP1
+
+% Trial: 118
+==>
+SND1	0	2	1	70.0	0	0
+INP1
+
+% Trial: 119
+==>
+SND1	0	3	1	70.0	0	0
+INP1
+
+% Trial: 120
+==>
+SND1	0	4	1	70.0	0	0
+INP1
+
+% Trial: 121
+==>
+SND1	0	5	1	70.0	0	0
+INP1
+
+% Trial: 122
+==>
+SND1	0	6	1	70.0	0	0
+INP1
+
+% Trial: 123
+==>
+SND1	0	7	1	70.0	0	0
+INP1
+
+% Trial: 124
+==>
+SND1	0	8	1	70.0	0	0
+INP1
+
+% Trial: 125
+==>
+SND1	0	9	1	70.0	0	0
+INP1
+
+% Trial: 126
+==>
+SND1	0	10	1	70.0	0	0
+INP1
+
+% Trial: 127
+==>
+SND1	0	11	1	70.0	0	0
+INP1
+
+% Trial: 128
+==>
+SND1	0	12	1	70.0	0	0
+INP1
+
+% Trial: 129
+==>
+SND1	0	13	1	70.0	0	0
+INP1
+
+% Trial: 130
+==>
+SND1	0	14	1	70.0	0	0
+INP1
+
+% Trial: 131
+==>
+SND1	0	15	1	70.0	0	0
+INP1
+
+% Trial: 132
+==>
+SND1	0	16	1	70.0	0	0
+INP1
+
+% Trial: 133
+==>
+SND1	0	17	1	70.0	0	0
+INP1
+
+% Trial: 134
+==>
+SND1	0	18	1	70.0	0	0
+INP1
+
+% Trial: 135
+==>
+SND1	0	19	1	70.0	0	0
+INP1
+
+% Trial: 136
+==>
+SND1	0	20	1	70.0	0	0
+INP1
+
+% Trial: 137
+==>
+SND1	0	21	1	70.0	0	0
+INP1
+
+% Trial: 138
+==>
+SND1	0	22	1	70.0	0	0
+INP1
+
+% Trial: 139
+==>
+SND1	0	23	1	70.0	0	0
+INP1
+
+% Trial: 140
+==>
+SND1	0	24	1	70.0	0	0
+INP1
+
+% Trial: 141
+==>
+SND1	0	25	1	70.0	0	0
+INP1
+
+% Trial: 142
+==>
+SND1	0	26	1	70.0	0	0
+INP1
+
+% Trial: 143
+==>
+SND1	0	27	1	70.0	0	0
+INP1
+
+% Trial: 144
+==>
+SND1	0	28	1	70.0	0	0
+INP1
+
+% Trial: 145
+==>
+SND1	0	29	1	70.0	0	0
+INP1
+
+% Trial: 146
+==>
+SND1	0	1	2	30.0	0	0
+INP1
+
+% Trial: 147
+==>
+SND1	0	2	2	30.0	0	0
+INP1
+
+% Trial: 148
+==>
+SND1	0	3	2	30.0	0	0
+INP1
+
+% Trial: 149
+==>
+SND1	0	4	2	30.0	0	0
+INP1
+
+% Trial: 150
+==>
+SND1	0	5	2	30.0	0	0
+INP1
+
+% Trial: 151
+==>
+SND1	0	6	2	30.0	0	0
+INP1
+
+% Trial: 152
+==>
+SND1	0	7	2	30.0	0	0
+INP1
+
+% Trial: 153
+==>
+SND1	0	8	2	30.0	0	0
+INP1
+
+% Trial: 154
+==>
+SND1	0	9	2	30.0	0	0
+INP1
+
+% Trial: 155
+==>
+SND1	0	10	2	30.0	0	0
+INP1
+
+% Trial: 156
+==>
+SND1	0	11	2	30.0	0	0
+INP1
+
+% Trial: 157
+==>
+SND1	0	12	2	30.0	0	0
+INP1
+
+% Trial: 158
+==>
+SND1	0	13	2	30.0	0	0
+INP1
+
+% Trial: 159
+==>
+SND1	0	14	2	30.0	0	0
+INP1
+
+% Trial: 160
+==>
+SND1	0	15	2	30.0	0	0
+INP1
+
+% Trial: 161
+==>
+SND1	0	16	2	30.0	0	0
+INP1
+
+% Trial: 162
+==>
+SND1	0	17	2	30.0	0	0
+INP1
+
+% Trial: 163
+==>
+SND1	0	18	2	30.0	0	0
+INP1
+
+% Trial: 164
+==>
+SND1	0	19	2	30.0	0	0
+INP1
+
+% Trial: 165
+==>
+SND1	0	20	2	30.0	0	0
+INP1
+
+% Trial: 166
+==>
+SND1	0	21	2	30.0	0	0
+INP1
+
+% Trial: 167
+==>
+SND1	0	22	2	30.0	0	0
+INP1
+
+% Trial: 168
+==>
+SND1	0	23	2	30.0	0	0
+INP1
+
+% Trial: 169
+==>
+SND1	0	24	2	30.0	0	0
+INP1
+
+% Trial: 170
+==>
+SND1	0	25	2	30.0	0	0
+INP1
+
+% Trial: 171
+==>
+SND1	0	26	2	30.0	0	0
+INP1
+
+% Trial: 172
+==>
+SND1	0	27	2	30.0	0	0
+INP1
+
+% Trial: 173
+==>
+SND1	0	28	2	30.0	0	0
+INP1
+
+% Trial: 174
+==>
+SND1	0	29	2	30.0	0	0
+INP1
+
+% Trial: 175
+==>
+SND1	0	1	2	40.0	0	0
+INP1
+
+% Trial: 176
+==>
+SND1	0	2	2	40.0	0	0
+INP1
+
+% Trial: 177
+==>
+SND1	0	3	2	40.0	0	0
+INP1
+
+% Trial: 178
+==>
+SND1	0	4	2	40.0	0	0
+INP1
+
+% Trial: 179
+==>
+SND1	0	5	2	40.0	0	0
+INP1
+
+% Trial: 180
+==>
+SND1	0	6	2	40.0	0	0
+INP1
+
+% Trial: 181
+==>
+SND1	0	7	2	40.0	0	0
+INP1
+
+% Trial: 182
+==>
+SND1	0	8	2	40.0	0	0
+INP1
+
+% Trial: 183
+==>
+SND1	0	9	2	40.0	0	0
+INP1
+
+% Trial: 184
+==>
+SND1	0	10	2	40.0	0	0
+INP1
+
+% Trial: 185
+==>
+SND1	0	11	2	40.0	0	0
+INP1
+
+% Trial: 186
+==>
+SND1	0	12	2	40.0	0	0
+INP1
+
+% Trial: 187
+==>
+SND1	0	13	2	40.0	0	0
+INP1
+
+% Trial: 188
+==>
+SND1	0	14	2	40.0	0	0
+INP1
+
+% Trial: 189
+==>
+SND1	0	15	2	40.0	0	0
+INP1
+
+% Trial: 190
+==>
+SND1	0	16	2	40.0	0	0
+INP1
+
+% Trial: 191
+==>
+SND1	0	17	2	40.0	0	0
+INP1
+
+% Trial: 192
+==>
+SND1	0	18	2	40.0	0	0
+INP1
+
+% Trial: 193
+==>
+SND1	0	19	2	40.0	0	0
+INP1
+
+% Trial: 194
+==>
+SND1	0	20	2	40.0	0	0
+INP1
+
+% Trial: 195
+==>
+SND1	0	21	2	40.0	0	0
+INP1
+
+% Trial: 196
+==>
+SND1	0	22	2	40.0	0	0
+INP1
+
+% Trial: 197
+==>
+SND1	0	23	2	40.0	0	0
+INP1
+
+% Trial: 198
+==>
+SND1	0	24	2	40.0	0	0
+INP1
+
+% Trial: 199
+==>
+SND1	0	25	2	40.0	0	0
+INP1
+
+% Trial: 200
+==>
+SND1	0	26	2	40.0	0	0
+INP1
+
+% Trial: 201
+==>
+SND1	0	27	2	40.0	0	0
+INP1
+
+% Trial: 202
+==>
+SND1	0	28	2	40.0	0	0
+INP1
+
+% Trial: 203
+==>
+SND1	0	29	2	40.0	0	0
+INP1
+
+% Trial: 204
+==>
+SND1	0	1	2	50.0	0	0
+INP1
+
+% Trial: 205
+==>
+SND1	0	2	2	50.0	0	0
+INP1
+
+% Trial: 206
+==>
+SND1	0	3	2	50.0	0	0
+INP1
+
+% Trial: 207
+==>
+SND1	0	4	2	50.0	0	0
+INP1
+
+% Trial: 208
+==>
+SND1	0	5	2	50.0	0	0
+INP1
+
+% Trial: 209
+==>
+SND1	0	6	2	50.0	0	0
+INP1
+
+% Trial: 210
+==>
+SND1	0	7	2	50.0	0	0
+INP1
+
+% Trial: 211
+==>
+SND1	0	8	2	50.0	0	0
+INP1
+
+% Trial: 212
+==>
+SND1	0	9	2	50.0	0	0
+INP1
+
+% Trial: 213
+==>
+SND1	0	10	2	50.0	0	0
+INP1
+
+% Trial: 214
+==>
+SND1	0	11	2	50.0	0	0
+INP1
+
+% Trial: 215
+==>
+SND1	0	12	2	50.0	0	0
+INP1
+
+% Trial: 216
+==>
+SND1	0	13	2	50.0	0	0
+INP1
+
+% Trial: 217
+==>
+SND1	0	14	2	50.0	0	0
+INP1
+
+% Trial: 218
+==>
+SND1	0	15	2	50.0	0	0
+INP1
+
+% Trial: 219
+==>
+SND1	0	16	2	50.0	0	0
+INP1
+
+% Trial: 220
+==>
+SND1	0	17	2	50.0	0	0
+INP1
+
+% Trial: 221
+==>
+SND1	0	18	2	50.0	0	0
+INP1
+
+% Trial: 222
+==>
+SND1	0	19	2	50.0	0	0
+INP1
+
+% Trial: 223
+==>
+SND1	0	20	2	50.0	0	0
+INP1
+
+% Trial: 224
+==>
+SND1	0	21	2	50.0	0	0
+INP1
+
+% Trial: 225
+==>
+SND1	0	22	2	50.0	0	0
+INP1
+
+% Trial: 226
+==>
+SND1	0	23	2	50.0	0	0
+INP1
+
+% Trial: 227
+==>
+SND1	0	24	2	50.0	0	0
+INP1
+
+% Trial: 228
+==>
+SND1	0	25	2	50.0	0	0
+INP1
+
+% Trial: 229
+==>
+SND1	0	26	2	50.0	0	0
+INP1
+
+% Trial: 230
+==>
+SND1	0	27	2	50.0	0	0
+INP1
+
+% Trial: 231
+==>
+SND1	0	28	2	50.0	0	0
+INP1
+
+% Trial: 232
+==>
+SND1	0	29	2	50.0	0	0
+INP1
+
+% Trial: 233
+==>
+SND1	0	1	2	60.0	0	0
+INP1
+
+% Trial: 234
+==>
+SND1	0	2	2	60.0	0	0
+INP1
+
+% Trial: 235
+==>
+SND1	0	3	2	60.0	0	0
+INP1
+
+% Trial: 236
+==>
+SND1	0	4	2	60.0	0	0
+INP1
+
+% Trial: 237
+==>
+SND1	0	5	2	60.0	0	0
+INP1
+
+% Trial: 238
+==>
+SND1	0	6	2	60.0	0	0
+INP1
+
+% Trial: 239
+==>
+SND1	0	7	2	60.0	0	0
+INP1
+
+% Trial: 240
+==>
+SND1	0	8	2	60.0	0	0
+INP1
+
+% Trial: 241
+==>
+SND1	0	9	2	60.0	0	0
+INP1
+
+% Trial: 242
+==>
+SND1	0	10	2	60.0	0	0
+INP1
+
+% Trial: 243
+==>
+SND1	0	11	2	60.0	0	0
+INP1
+
+% Trial: 244
+==>
+SND1	0	12	2	60.0	0	0
+INP1
+
+% Trial: 245
+==>
+SND1	0	13	2	60.0	0	0
+INP1
+
+% Trial: 246
+==>
+SND1	0	14	2	60.0	0	0
+INP1
+
+% Trial: 247
+==>
+SND1	0	15	2	60.0	0	0
+INP1
+
+% Trial: 248
+==>
+SND1	0	16	2	60.0	0	0
+INP1
+
+% Trial: 249
+==>
+SND1	0	17	2	60.0	0	0
+INP1
+
+% Trial: 250
+==>
+SND1	0	18	2	60.0	0	0
+INP1
+
+% Trial: 251
+==>
+SND1	0	19	2	60.0	0	0
+INP1
+
+% Trial: 252
+==>
+SND1	0	20	2	60.0	0	0
+INP1
+
+% Trial: 253
+==>
+SND1	0	21	2	60.0	0	0
+INP1
+
+% Trial: 254
+==>
+SND1	0	22	2	60.0	0	0
+INP1
+
+% Trial: 255
+==>
+SND1	0	23	2	60.0	0	0
+INP1
+
+% Trial: 256
+==>
+SND1	0	24	2	60.0	0	0
+INP1
+
+% Trial: 257
+==>
+SND1	0	25	2	60.0	0	0
+INP1
+
+% Trial: 258
+==>
+SND1	0	26	2	60.0	0	0
+INP1
+
+% Trial: 259
+==>
+SND1	0	27	2	60.0	0	0
+INP1
+
+% Trial: 260
+==>
+SND1	0	28	2	60.0	0	0
+INP1
+
+% Trial: 261
+==>
+SND1	0	29	2	60.0	0	0
+INP1
+
+% Trial: 262
+==>
+SND1	0	1	2	70.0	0	0
+INP1
+
+% Trial: 263
+==>
+SND1	0	2	2	70.0	0	0
+INP1
+
+% Trial: 264
+==>
+SND1	0	3	2	70.0	0	0
+INP1
+
+% Trial: 265
+==>
+SND1	0	4	2	70.0	0	0
+INP1
+
+% Trial: 266
+==>
+SND1	0	5	2	70.0	0	0
+INP1
+
+% Trial: 267
+==>
+SND1	0	6	2	70.0	0	0
+INP1
+
+% Trial: 268
+==>
+SND1	0	7	2	70.0	0	0
+INP1
+
+% Trial: 269
+==>
+SND1	0	8	2	70.0	0	0
+INP1
+
+% Trial: 270
+==>
+SND1	0	9	2	70.0	0	0
+INP1
+
+% Trial: 271
+==>
+SND1	0	10	2	70.0	0	0
+INP1
+
+% Trial: 272
+==>
+SND1	0	11	2	70.0	0	0
+INP1
+
+% Trial: 273
+==>
+SND1	0	12	2	70.0	0	0
+INP1
+
+% Trial: 274
+==>
+SND1	0	13	2	70.0	0	0
+INP1
+
+% Trial: 275
+==>
+SND1	0	14	2	70.0	0	0
+INP1
+
+% Trial: 276
+==>
+SND1	0	15	2	70.0	0	0
+INP1
+
+% Trial: 277
+==>
+SND1	0	16	2	70.0	0	0
+INP1
+
+% Trial: 278
+==>
+SND1	0	17	2	70.0	0	0
+INP1
+
+% Trial: 279
+==>
+SND1	0	18	2	70.0	0	0
+INP1
+
+% Trial: 280
+==>
+SND1	0	19	2	70.0	0	0
+INP1
+
+% Trial: 281
+==>
+SND1	0	20	2	70.0	0	0
+INP1
+
+% Trial: 282
+==>
+SND1	0	21	2	70.0	0	0
+INP1
+
+% Trial: 283
+==>
+SND1	0	22	2	70.0	0	0
+INP1
+
+% Trial: 284
+==>
+SND1	0	23	2	70.0	0	0
+INP1
+
+% Trial: 285
+==>
+SND1	0	24	2	70.0	0	0
+INP1
+
+% Trial: 286
+==>
+SND1	0	25	2	70.0	0	0
+INP1
+
+% Trial: 287
+==>
+SND1	0	26	2	70.0	0	0
+INP1
+
+% Trial: 288
+==>
+SND1	0	27	2	70.0	0	0
+INP1
+
+% Trial: 289
+==>
+SND1	0	28	2	70.0	0	0
+INP1
+
+% Trial: 290
+==>
+SND1	0	29	2	70.0	0	0
+INP1
+
+% Trial: 291
+==>
+SND1	0	1	3	30.0	0	0
+INP1
+
+% Trial: 292
+==>
+SND1	0	2	3	30.0	0	0
+INP1
+
+% Trial: 293
+==>
+SND1	0	3	3	30.0	0	0
+INP1
+
+% Trial: 294
+==>
+SND1	0	4	3	30.0	0	0
+INP1
+
+% Trial: 295
+==>
+SND1	0	5	3	30.0	0	0
+INP1
+
+% Trial: 296
+==>
+SND1	0	6	3	30.0	0	0
+INP1
+
+% Trial: 297
+==>
+SND1	0	7	3	30.0	0	0
+INP1
+
+% Trial: 298
+==>
+SND1	0	8	3	30.0	0	0
+INP1
+
+% Trial: 299
+==>
+SND1	0	9	3	30.0	0	0
+INP1
+
+% Trial: 300
+==>
+SND1	0	10	3	30.0	0	0
+INP1
+
+% Trial: 301
+==>
+SND1	0	11	3	30.0	0	0
+INP1
+
+% Trial: 302
+==>
+SND1	0	12	3	30.0	0	0
+INP1
+
+% Trial: 303
+==>
+SND1	0	13	3	30.0	0	0
+INP1
+
+% Trial: 304
+==>
+SND1	0	14	3	30.0	0	0
+INP1
+
+% Trial: 305
+==>
+SND1	0	15	3	30.0	0	0
+INP1
+
+% Trial: 306
+==>
+SND1	0	16	3	30.0	0	0
+INP1
+
+% Trial: 307
+==>
+SND1	0	17	3	30.0	0	0
+INP1
+
+% Trial: 308
+==>
+SND1	0	18	3	30.0	0	0
+INP1
+
+% Trial: 309
+==>
+SND1	0	19	3	30.0	0	0
+INP1
+
+% Trial: 310
+==>
+SND1	0	20	3	30.0	0	0
+INP1
+
+% Trial: 311
+==>
+SND1	0	21	3	30.0	0	0
+INP1
+
+% Trial: 312
+==>
+SND1	0	22	3	30.0	0	0
+INP1
+
+% Trial: 313
+==>
+SND1	0	23	3	30.0	0	0
+INP1
+
+% Trial: 314
+==>
+SND1	0	24	3	30.0	0	0
+INP1
+
+% Trial: 315
+==>
+SND1	0	25	3	30.0	0	0
+INP1
+
+% Trial: 316
+==>
+SND1	0	26	3	30.0	0	0
+INP1
+
+% Trial: 317
+==>
+SND1	0	27	3	30.0	0	0
+INP1
+
+% Trial: 318
+==>
+SND1	0	28	3	30.0	0	0
+INP1
+
+% Trial: 319
+==>
+SND1	0	29	3	30.0	0	0
+INP1
+
+% Trial: 320
+==>
+SND1	0	1	3	40.0	0	0
+INP1
+
+% Trial: 321
+==>
+SND1	0	2	3	40.0	0	0
+INP1
+
+% Trial: 322
+==>
+SND1	0	3	3	40.0	0	0
+INP1
+
+% Trial: 323
+==>
+SND1	0	4	3	40.0	0	0
+INP1
+
+% Trial: 324
+==>
+SND1	0	5	3	40.0	0	0
+INP1
+
+% Trial: 325
+==>
+SND1	0	6	3	40.0	0	0
+INP1
+
+% Trial: 326
+==>
+SND1	0	7	3	40.0	0	0
+INP1
+
+% Trial: 327
+==>
+SND1	0	8	3	40.0	0	0
+INP1
+
+% Trial: 328
+==>
+SND1	0	9	3	40.0	0	0
+INP1
+
+% Trial: 329
+==>
+SND1	0	10	3	40.0	0	0
+INP1
+
+% Trial: 330
+==>
+SND1	0	11	3	40.0	0	0
+INP1
+
+% Trial: 331
+==>
+SND1	0	12	3	40.0	0	0
+INP1
+
+% Trial: 332
+==>
+SND1	0	13	3	40.0	0	0
+INP1
+
+% Trial: 333
+==>
+SND1	0	14	3	40.0	0	0
+INP1
+
+% Trial: 334
+==>
+SND1	0	15	3	40.0	0	0
+INP1
+
+% Trial: 335
+==>
+SND1	0	16	3	40.0	0	0
+INP1
+
+% Trial: 336
+==>
+SND1	0	17	3	40.0	0	0
+INP1
+
+% Trial: 337
+==>
+SND1	0	18	3	40.0	0	0
+INP1
+
+% Trial: 338
+==>
+SND1	0	19	3	40.0	0	0
+INP1
+
+% Trial: 339
+==>
+SND1	0	20	3	40.0	0	0
+INP1
+
+% Trial: 340
+==>
+SND1	0	21	3	40.0	0	0
+INP1
+
+% Trial: 341
+==>
+SND1	0	22	3	40.0	0	0
+INP1
+
+% Trial: 342
+==>
+SND1	0	23	3	40.0	0	0
+INP1
+
+% Trial: 343
+==>
+SND1	0	24	3	40.0	0	0
+INP1
+
+% Trial: 344
+==>
+SND1	0	25	3	40.0	0	0
+INP1
+
+% Trial: 345
+==>
+SND1	0	26	3	40.0	0	0
+INP1
+
+% Trial: 346
+==>
+SND1	0	27	3	40.0	0	0
+INP1
+
+% Trial: 347
+==>
+SND1	0	28	3	40.0	0	0
+INP1
+
+% Trial: 348
+==>
+SND1	0	29	3	40.0	0	0
+INP1
+
+% Trial: 349
+==>
+SND1	0	1	3	50.0	0	0
+INP1
+
+% Trial: 350
+==>
+SND1	0	2	3	50.0	0	0
+INP1
+
+% Trial: 351
+==>
+SND1	0	3	3	50.0	0	0
+INP1
+
+% Trial: 352
+==>
+SND1	0	4	3	50.0	0	0
+INP1
+
+% Trial: 353
+==>
+SND1	0	5	3	50.0	0	0
+INP1
+
+% Trial: 354
+==>
+SND1	0	6	3	50.0	0	0
+INP1
+
+% Trial: 355
+==>
+SND1	0	7	3	50.0	0	0
+INP1
+
+% Trial: 356
+==>
+SND1	0	8	3	50.0	0	0
+INP1
+
+% Trial: 357
+==>
+SND1	0	9	3	50.0	0	0
+INP1
+
+% Trial: 358
+==>
+SND1	0	10	3	50.0	0	0
+INP1
+
+% Trial: 359
+==>
+SND1	0	11	3	50.0	0	0
+INP1
+
+% Trial: 360
+==>
+SND1	0	12	3	50.0	0	0
+INP1
+
+% Trial: 361
+==>
+SND1	0	13	3	50.0	0	0
+INP1
+
+% Trial: 362
+==>
+SND1	0	14	3	50.0	0	0
+INP1
+
+% Trial: 363
+==>
+SND1	0	15	3	50.0	0	0
+INP1
+
+% Trial: 364
+==>
+SND1	0	16	3	50.0	0	0
+INP1
+
+% Trial: 365
+==>
+SND1	0	17	3	50.0	0	0
+INP1
+
+% Trial: 366
+==>
+SND1	0	18	3	50.0	0	0
+INP1
+
+% Trial: 367
+==>
+SND1	0	19	3	50.0	0	0
+INP1
+
+% Trial: 368
+==>
+SND1	0	20	3	50.0	0	0
+INP1
+
+% Trial: 369
+==>
+SND1	0	21	3	50.0	0	0
+INP1
+
+% Trial: 370
+==>
+SND1	0	22	3	50.0	0	0
+INP1
+
+% Trial: 371
+==>
+SND1	0	23	3	50.0	0	0
+INP1
+
+% Trial: 372
+==>
+SND1	0	24	3	50.0	0	0
+INP1
+
+% Trial: 373
+==>
+SND1	0	25	3	50.0	0	0
+INP1
+
+% Trial: 374
+==>
+SND1	0	26	3	50.0	0	0
+INP1
+
+% Trial: 375
+==>
+SND1	0	27	3	50.0	0	0
+INP1
+
+% Trial: 376
+==>
+SND1	0	28	3	50.0	0	0
+INP1
+
+% Trial: 377
+==>
+SND1	0	29	3	50.0	0	0
+INP1
+
+% Trial: 378
+==>
+SND1	0	1	3	60.0	0	0
+INP1
+
+% Trial: 379
+==>
+SND1	0	2	3	60.0	0	0
+INP1
+
+% Trial: 380
+==>
+SND1	0	3	3	60.0	0	0
+INP1
+
+% Trial: 381
+==>
+SND1	0	4	3	60.0	0	0
+INP1
+
+% Trial: 382
+==>
+SND1	0	5	3	60.0	0	0
+INP1
+
+% Trial: 383
+==>
+SND1	0	6	3	60.0	0	0
+INP1
+
+% Trial: 384
+==>
+SND1	0	7	3	60.0	0	0
+INP1
+
+% Trial: 385
+==>
+SND1	0	8	3	60.0	0	0
+INP1
+
+% Trial: 386
+==>
+SND1	0	9	3	60.0	0	0
+INP1
+
+% Trial: 387
+==>
+SND1	0	10	3	60.0	0	0
+INP1
+
+% Trial: 388
+==>
+SND1	0	11	3	60.0	0	0
+INP1
+
+% Trial: 389
+==>
+SND1	0	12	3	60.0	0	0
+INP1
+
+% Trial: 390
+==>
+SND1	0	13	3	60.0	0	0
+INP1
+
+% Trial: 391
+==>
+SND1	0	14	3	60.0	0	0
+INP1
+
+% Trial: 392
+==>
+SND1	0	15	3	60.0	0	0
+INP1
+
+% Trial: 393
+==>
+SND1	0	16	3	60.0	0	0
+INP1
+
+% Trial: 394
+==>
+SND1	0	17	3	60.0	0	0
+INP1
+
+% Trial: 395
+==>
+SND1	0	18	3	60.0	0	0
+INP1
+
+% Trial: 396
+==>
+SND1	0	19	3	60.0	0	0
+INP1
+
+% Trial: 397
+==>
+SND1	0	20	3	60.0	0	0
+INP1
+
+% Trial: 398
+==>
+SND1	0	21	3	60.0	0	0
+INP1
+
+% Trial: 399
+==>
+SND1	0	22	3	60.0	0	0
+INP1
+
+% Trial: 400
+==>
+SND1	0	23	3	60.0	0	0
+INP1
+
+% Trial: 401
+==>
+SND1	0	24	3	60.0	0	0
+INP1
+
+% Trial: 402
+==>
+SND1	0	25	3	60.0	0	0
+INP1
+
+% Trial: 403
+==>
+SND1	0	26	3	60.0	0	0
+INP1
+
+% Trial: 404
+==>
+SND1	0	27	3	60.0	0	0
+INP1
+
+% Trial: 405
+==>
+SND1	0	28	3	60.0	0	0
+INP1
+
+% Trial: 406
+==>
+SND1	0	29	3	60.0	0	0
+INP1
+
+% Trial: 407
+==>
+SND1	0	1	3	70.0	0	0
+INP1
+
+% Trial: 408
+==>
+SND1	0	2	3	70.0	0	0
+INP1
+
+% Trial: 409
+==>
+SND1	0	3	3	70.0	0	0
+INP1
+
+% Trial: 410
+==>
+SND1	0	4	3	70.0	0	0
+INP1
+
+% Trial: 411
+==>
+SND1	0	5	3	70.0	0	0
+INP1
+
+% Trial: 412
+==>
+SND1	0	6	3	70.0	0	0
+INP1
+
+% Trial: 413
+==>
+SND1	0	7	3	70.0	0	0
+INP1
+
+% Trial: 414
+==>
+SND1	0	8	3	70.0	0	0
+INP1
+
+% Trial: 415
+==>
+SND1	0	9	3	70.0	0	0
+INP1
+
+% Trial: 416
+==>
+SND1	0	10	3	70.0	0	0
+INP1
+
+% Trial: 417
+==>
+SND1	0	11	3	70.0	0	0
+INP1
+
+% Trial: 418
+==>
+SND1	0	12	3	70.0	0	0
+INP1
+
+% Trial: 419
+==>
+SND1	0	13	3	70.0	0	0
+INP1
+
+% Trial: 420
+==>
+SND1	0	14	3	70.0	0	0
+INP1
+
+% Trial: 421
+==>
+SND1	0	15	3	70.0	0	0
+INP1
+
+% Trial: 422
+==>
+SND1	0	16	3	70.0	0	0
+INP1
+
+% Trial: 423
+==>
+SND1	0	17	3	70.0	0	0
+INP1
+
+% Trial: 424
+==>
+SND1	0	18	3	70.0	0	0
+INP1
+
+% Trial: 425
+==>
+SND1	0	19	3	70.0	0	0
+INP1
+
+% Trial: 426
+==>
+SND1	0	20	3	70.0	0	0
+INP1
+
+% Trial: 427
+==>
+SND1	0	21	3	70.0	0	0
+INP1
+
+% Trial: 428
+==>
+SND1	0	22	3	70.0	0	0
+INP1
+
+% Trial: 429
+==>
+SND1	0	23	3	70.0	0	0
+INP1
+
+% Trial: 430
+==>
+SND1	0	24	3	70.0	0	0
+INP1
+
+% Trial: 431
+==>
+SND1	0	25	3	70.0	0	0
+INP1
+
+% Trial: 432
+==>
+SND1	0	26	3	70.0	0	0
+INP1
+
+% Trial: 433
+==>
+SND1	0	27	3	70.0	0	0
+INP1
+
+% Trial: 434
+==>
+SND1	0	28	3	70.0	0	0
+INP1
+
+% Trial: 435
+==>
+SND1	0	29	3	70.0	0	0
+INP1
+
+% Trial: 436
+==>
+SND1	0	1	4	30.0	0	0
+INP1
+
+% Trial: 437
+==>
+SND1	0	2	4	30.0	0	0
+INP1
+
+% Trial: 438
+==>
+SND1	0	3	4	30.0	0	0
+INP1
+
+% Trial: 439
+==>
+SND1	0	4	4	30.0	0	0
+INP1
+
+% Trial: 440
+==>
+SND1	0	5	4	30.0	0	0
+INP1
+
+% Trial: 441
+==>
+SND1	0	6	4	30.0	0	0
+INP1
+
+% Trial: 442
+==>
+SND1	0	7	4	30.0	0	0
+INP1
+
+% Trial: 443
+==>
+SND1	0	8	4	30.0	0	0
+INP1
+
+% Trial: 444
+==>
+SND1	0	9	4	30.0	0	0
+INP1
+
+% Trial: 445
+==>
+SND1	0	10	4	30.0	0	0
+INP1
+
+% Trial: 446
+==>
+SND1	0	11	4	30.0	0	0
+INP1
+
+% Trial: 447
+==>
+SND1	0	12	4	30.0	0	0
+INP1
+
+% Trial: 448
+==>
+SND1	0	13	4	30.0	0	0
+INP1
+
+% Trial: 449
+==>
+SND1	0	14	4	30.0	0	0
+INP1
+
+% Trial: 450
+==>
+SND1	0	15	4	30.0	0	0
+INP1
+
+% Trial: 451
+==>
+SND1	0	16	4	30.0	0	0
+INP1
+
+% Trial: 452
+==>
+SND1	0	17	4	30.0	0	0
+INP1
+
+% Trial: 453
+==>
+SND1	0	18	4	30.0	0	0
+INP1
+
+% Trial: 454
+==>
+SND1	0	19	4	30.0	0	0
+INP1
+
+% Trial: 455
+==>
+SND1	0	20	4	30.0	0	0
+INP1
+
+% Trial: 456
+==>
+SND1	0	21	4	30.0	0	0
+INP1
+
+% Trial: 457
+==>
+SND1	0	22	4	30.0	0	0
+INP1
+
+% Trial: 458
+==>
+SND1	0	23	4	30.0	0	0
+INP1
+
+% Trial: 459
+==>
+SND1	0	24	4	30.0	0	0
+INP1
+
+% Trial: 460
+==>
+SND1	0	25	4	30.0	0	0
+INP1
+
+% Trial: 461
+==>
+SND1	0	26	4	30.0	0	0
+INP1
+
+% Trial: 462
+==>
+SND1	0	27	4	30.0	0	0
+INP1
+
+% Trial: 463
+==>
+SND1	0	28	4	30.0	0	0
+INP1
+
+% Trial: 464
+==>
+SND1	0	29	4	30.0	0	0
+INP1
+
+% Trial: 465
+==>
+SND1	0	1	4	40.0	0	0
+INP1
+
+% Trial: 466
+==>
+SND1	0	2	4	40.0	0	0
+INP1
+
+% Trial: 467
+==>
+SND1	0	3	4	40.0	0	0
+INP1
+
+% Trial: 468
+==>
+SND1	0	4	4	40.0	0	0
+INP1
+
+% Trial: 469
+==>
+SND1	0	5	4	40.0	0	0
+INP1
+
+% Trial: 470
+==>
+SND1	0	6	4	40.0	0	0
+INP1
+
+% Trial: 471
+==>
+SND1	0	7	4	40.0	0	0
+INP1
+
+% Trial: 472
+==>
+SND1	0	8	4	40.0	0	0
+INP1
+
+% Trial: 473
+==>
+SND1	0	9	4	40.0	0	0
+INP1
+
+% Trial: 474
+==>
+SND1	0	10	4	40.0	0	0
+INP1
+
+% Trial: 475
+==>
+SND1	0	11	4	40.0	0	0
+INP1
+
+% Trial: 476
+==>
+SND1	0	12	4	40.0	0	0
+INP1
+
+% Trial: 477
+==>
+SND1	0	13	4	40.0	0	0
+INP1
+
+% Trial: 478
+==>
+SND1	0	14	4	40.0	0	0
+INP1
+
+% Trial: 479
+==>
+SND1	0	15	4	40.0	0	0
+INP1
+
+% Trial: 480
+==>
+SND1	0	16	4	40.0	0	0
+INP1
+
+% Trial: 481
+==>
+SND1	0	17	4	40.0	0	0
+INP1
+
+% Trial: 482
+==>
+SND1	0	18	4	40.0	0	0
+INP1
+
+% Trial: 483
+==>
+SND1	0	19	4	40.0	0	0
+INP1
+
+% Trial: 484
+==>
+SND1	0	20	4	40.0	0	0
+INP1
+
+% Trial: 485
+==>
+SND1	0	21	4	40.0	0	0
+INP1
+
+% Trial: 486
+==>
+SND1	0	22	4	40.0	0	0
+INP1
+
+% Trial: 487
+==>
+SND1	0	23	4	40.0	0	0
+INP1
+
+% Trial: 488
+==>
+SND1	0	24	4	40.0	0	0
+INP1
+
+% Trial: 489
+==>
+SND1	0	25	4	40.0	0	0
+INP1
+
+% Trial: 490
+==>
+SND1	0	26	4	40.0	0	0
+INP1
+
+% Trial: 491
+==>
+SND1	0	27	4	40.0	0	0
+INP1
+
+% Trial: 492
+==>
+SND1	0	28	4	40.0	0	0
+INP1
+
+% Trial: 493
+==>
+SND1	0	29	4	40.0	0	0
+INP1
+
+% Trial: 494
+==>
+SND1	0	1	4	50.0	0	0
+INP1
+
+% Trial: 495
+==>
+SND1	0	2	4	50.0	0	0
+INP1
+
+% Trial: 496
+==>
+SND1	0	3	4	50.0	0	0
+INP1
+
+% Trial: 497
+==>
+SND1	0	4	4	50.0	0	0
+INP1
+
+% Trial: 498
+==>
+SND1	0	5	4	50.0	0	0
+INP1
+
+% Trial: 499
+==>
+SND1	0	6	4	50.0	0	0
+INP1
+
+% Trial: 500
+==>
+SND1	0	7	4	50.0	0	0
+INP1
+
+% Trial: 501
+==>
+SND1	0	8	4	50.0	0	0
+INP1
+
+% Trial: 502
+==>
+SND1	0	9	4	50.0	0	0
+INP1
+
+% Trial: 503
+==>
+SND1	0	10	4	50.0	0	0
+INP1
+
+% Trial: 504
+==>
+SND1	0	11	4	50.0	0	0
+INP1
+
+% Trial: 505
+==>
+SND1	0	12	4	50.0	0	0
+INP1
+
+% Trial: 506
+==>
+SND1	0	13	4	50.0	0	0
+INP1
+
+% Trial: 507
+==>
+SND1	0	14	4	50.0	0	0
+INP1
+
+% Trial: 508
+==>
+SND1	0	15	4	50.0	0	0
+INP1
+
+% Trial: 509
+==>
+SND1	0	16	4	50.0	0	0
+INP1
+
+% Trial: 510
+==>
+SND1	0	17	4	50.0	0	0
+INP1
+
+% Trial: 511
+==>
+SND1	0	18	4	50.0	0	0
+INP1
+
+% Trial: 512
+==>
+SND1	0	19	4	50.0	0	0
+INP1
+
+% Trial: 513
+==>
+SND1	0	20	4	50.0	0	0
+INP1
+
+% Trial: 514
+==>
+SND1	0	21	4	50.0	0	0
+INP1
+
+% Trial: 515
+==>
+SND1	0	22	4	50.0	0	0
+INP1
+
+% Trial: 516
+==>
+SND1	0	23	4	50.0	0	0
+INP1
+
+% Trial: 517
+==>
+SND1	0	24	4	50.0	0	0
+INP1
+
+% Trial: 518
+==>
+SND1	0	25	4	50.0	0	0
+INP1
+
+% Trial: 519
+==>
+SND1	0	26	4	50.0	0	0
+INP1
+
+% Trial: 520
+==>
+SND1	0	27	4	50.0	0	0
+INP1
+
+% Trial: 521
+==>
+SND1	0	28	4	50.0	0	0
+INP1
+
+% Trial: 522
+==>
+SND1	0	29	4	50.0	0	0
+INP1
+
+% Trial: 523
+==>
+SND1	0	1	4	60.0	0	0
+INP1
+
+% Trial: 524
+==>
+SND1	0	2	4	60.0	0	0
+INP1
+
+% Trial: 525
+==>
+SND1	0	3	4	60.0	0	0
+INP1
+
+% Trial: 526
+==>
+SND1	0	4	4	60.0	0	0
+INP1
+
+% Trial: 527
+==>
+SND1	0	5	4	60.0	0	0
+INP1
+
+% Trial: 528
+==>
+SND1	0	6	4	60.0	0	0
+INP1
+
+% Trial: 529
+==>
+SND1	0	7	4	60.0	0	0
+INP1
+
+% Trial: 530
+==>
+SND1	0	8	4	60.0	0	0
+INP1
+
+% Trial: 531
+==>
+SND1	0	9	4	60.0	0	0
+INP1
+
+% Trial: 532
+==>
+SND1	0	10	4	60.0	0	0
+INP1
+
+% Trial: 533
+==>
+SND1	0	11	4	60.0	0	0
+INP1
+
+% Trial: 534
+==>
+SND1	0	12	4	60.0	0	0
+INP1
+
+% Trial: 535
+==>
+SND1	0	13	4	60.0	0	0
+INP1
+
+% Trial: 536
+==>
+SND1	0	14	4	60.0	0	0
+INP1
+
+% Trial: 537
+==>
+SND1	0	15	4	60.0	0	0
+INP1
+
+% Trial: 538
+==>
+SND1	0	16	4	60.0	0	0
+INP1
+
+% Trial: 539
+==>
+SND1	0	17	4	60.0	0	0
+INP1
+
+% Trial: 540
+==>
+SND1	0	18	4	60.0	0	0
+INP1
+
+% Trial: 541
+==>
+SND1	0	19	4	60.0	0	0
+INP1
+
+% Trial: 542
+==>
+SND1	0	20	4	60.0	0	0
+INP1
+
+% Trial: 543
+==>
+SND1	0	21	4	60.0	0	0
+INP1
+
+% Trial: 544
+==>
+SND1	0	22	4	60.0	0	0
+INP1
+
+% Trial: 545
+==>
+SND1	0	23	4	60.0	0	0
+INP1
+
+% Trial: 546
+==>
+SND1	0	24	4	60.0	0	0
+INP1
+
+% Trial: 547
+==>
+SND1	0	25	4	60.0	0	0
+INP1
+
+% Trial: 548
+==>
+SND1	0	26	4	60.0	0	0
+INP1
+
+% Trial: 549
+==>
+SND1	0	27	4	60.0	0	0
+INP1
+
+% Trial: 550
+==>
+SND1	0	28	4	60.0	0	0
+INP1
+
+% Trial: 551
+==>
+SND1	0	29	4	60.0	0	0
+INP1
+
+% Trial: 552
+==>
+SND1	0	1	4	70.0	0	0
+INP1
+
+% Trial: 553
+==>
+SND1	0	2	4	70.0	0	0
+INP1
+
+% Trial: 554
+==>
+SND1	0	3	4	70.0	0	0
+INP1
+
+% Trial: 555
+==>
+SND1	0	4	4	70.0	0	0
+INP1
+
+% Trial: 556
+==>
+SND1	0	5	4	70.0	0	0
+INP1
+
+% Trial: 557
+==>
+SND1	0	6	4	70.0	0	0
+INP1
+
+% Trial: 558
+==>
+SND1	0	7	4	70.0	0	0
+INP1
+
+% Trial: 559
+==>
+SND1	0	8	4	70.0	0	0
+INP1
+
+% Trial: 560
+==>
+SND1	0	9	4	70.0	0	0
+INP1
+
+% Trial: 561
+==>
+SND1	0	10	4	70.0	0	0
+INP1
+
+% Trial: 562
+==>
+SND1	0	11	4	70.0	0	0
+INP1
+
+% Trial: 563
+==>
+SND1	0	12	4	70.0	0	0
+INP1
+
+% Trial: 564
+==>
+SND1	0	13	4	70.0	0	0
+INP1
+
+% Trial: 565
+==>
+SND1	0	14	4	70.0	0	0
+INP1
+
+% Trial: 566
+==>
+SND1	0	15	4	70.0	0	0
+INP1
+
+% Trial: 567
+==>
+SND1	0	16	4	70.0	0	0
+INP1
+
+% Trial: 568
+==>
+SND1	0	17	4	70.0	0	0
+INP1
+
+% Trial: 569
+==>
+SND1	0	18	4	70.0	0	0
+INP1
+
+% Trial: 570
+==>
+SND1	0	19	4	70.0	0	0
+INP1
+
+% Trial: 571
+==>
+SND1	0	20	4	70.0	0	0
+INP1
+
+% Trial: 572
+==>
+SND1	0	21	4	70.0	0	0
+INP1
+
+% Trial: 573
+==>
+SND1	0	22	4	70.0	0	0
+INP1
+
+% Trial: 574
+==>
+SND1	0	23	4	70.0	0	0
+INP1
+
+% Trial: 575
+==>
+SND1	0	24	4	70.0	0	0
+INP1
+
+% Trial: 576
+==>
+SND1	0	25	4	70.0	0	0
+INP1
+
+% Trial: 577
+==>
+SND1	0	26	4	70.0	0	0
+INP1
+
+% Trial: 578
+==>
+SND1	0	27	4	70.0	0	0
+INP1
+
+% Trial: 579
+==>
+SND1	0	28	4	70.0	0	0
+INP1
+
+% Trial: 580
+==>
+SND1	0	29	4	70.0	0	0
+INP1
+
+% Trial: 581
+==>
+SND1	0	1	5	30.0	0	0
+INP1
+
+% Trial: 582
+==>
+SND1	0	2	5	30.0	0	0
+INP1
+
+% Trial: 583
+==>
+SND1	0	3	5	30.0	0	0
+INP1
+
+% Trial: 584
+==>
+SND1	0	4	5	30.0	0	0
+INP1
+
+% Trial: 585
+==>
+SND1	0	5	5	30.0	0	0
+INP1
+
+% Trial: 586
+==>
+SND1	0	6	5	30.0	0	0
+INP1
+
+% Trial: 587
+==>
+SND1	0	7	5	30.0	0	0
+INP1
+
+% Trial: 588
+==>
+SND1	0	8	5	30.0	0	0
+INP1
+
+% Trial: 589
+==>
+SND1	0	9	5	30.0	0	0
+INP1
+
+% Trial: 590
+==>
+SND1	0	10	5	30.0	0	0
+INP1
+
+% Trial: 591
+==>
+SND1	0	11	5	30.0	0	0
+INP1
+
+% Trial: 592
+==>
+SND1	0	12	5	30.0	0	0
+INP1
+
+% Trial: 593
+==>
+SND1	0	13	5	30.0	0	0
+INP1
+
+% Trial: 594
+==>
+SND1	0	14	5	30.0	0	0
+INP1
+
+% Trial: 595
+==>
+SND1	0	15	5	30.0	0	0
+INP1
+
+% Trial: 596
+==>
+SND1	0	16	5	30.0	0	0
+INP1
+
+% Trial: 597
+==>
+SND1	0	17	5	30.0	0	0
+INP1
+
+% Trial: 598
+==>
+SND1	0	18	5	30.0	0	0
+INP1
+
+% Trial: 599
+==>
+SND1	0	19	5	30.0	0	0
+INP1
+
+% Trial: 600
+==>
+SND1	0	20	5	30.0	0	0
+INP1
+
+% Trial: 601
+==>
+SND1	0	21	5	30.0	0	0
+INP1
+
+% Trial: 602
+==>
+SND1	0	22	5	30.0	0	0
+INP1
+
+% Trial: 603
+==>
+SND1	0	23	5	30.0	0	0
+INP1
+
+% Trial: 604
+==>
+SND1	0	24	5	30.0	0	0
+INP1
+
+% Trial: 605
+==>
+SND1	0	25	5	30.0	0	0
+INP1
+
+% Trial: 606
+==>
+SND1	0	26	5	30.0	0	0
+INP1
+
+% Trial: 607
+==>
+SND1	0	27	5	30.0	0	0
+INP1
+
+% Trial: 608
+==>
+SND1	0	28	5	30.0	0	0
+INP1
+
+% Trial: 609
+==>
+SND1	0	29	5	30.0	0	0
+INP1
+
+% Trial: 610
+==>
+SND1	0	1	5	40.0	0	0
+INP1
+
+% Trial: 611
+==>
+SND1	0	2	5	40.0	0	0
+INP1
+
+% Trial: 612
+==>
+SND1	0	3	5	40.0	0	0
+INP1
+
+% Trial: 613
+==>
+SND1	0	4	5	40.0	0	0
+INP1
+
+% Trial: 614
+==>
+SND1	0	5	5	40.0	0	0
+INP1
+
+% Trial: 615
+==>
+SND1	0	6	5	40.0	0	0
+INP1
+
+% Trial: 616
+==>
+SND1	0	7	5	40.0	0	0
+INP1
+
+% Trial: 617
+==>
+SND1	0	8	5	40.0	0	0
+INP1
+
+% Trial: 618
+==>
+SND1	0	9	5	40.0	0	0
+INP1
+
+% Trial: 619
+==>
+SND1	0	10	5	40.0	0	0
+INP1
+
+% Trial: 620
+==>
+SND1	0	11	5	40.0	0	0
+INP1
+
+% Trial: 621
+==>
+SND1	0	12	5	40.0	0	0
+INP1
+
+% Trial: 622
+==>
+SND1	0	13	5	40.0	0	0
+INP1
+
+% Trial: 623
+==>
+SND1	0	14	5	40.0	0	0
+INP1
+
+% Trial: 624
+==>
+SND1	0	15	5	40.0	0	0
+INP1
+
+% Trial: 625
+==>
+SND1	0	16	5	40.0	0	0
+INP1
+
+% Trial: 626
+==>
+SND1	0	17	5	40.0	0	0
+INP1
+
+% Trial: 627
+==>
+SND1	0	18	5	40.0	0	0
+INP1
+
+% Trial: 628
+==>
+SND1	0	19	5	40.0	0	0
+INP1
+
+% Trial: 629
+==>
+SND1	0	20	5	40.0	0	0
+INP1
+
+% Trial: 630
+==>
+SND1	0	21	5	40.0	0	0
+INP1
+
+% Trial: 631
+==>
+SND1	0	22	5	40.0	0	0
+INP1
+
+% Trial: 632
+==>
+SND1	0	23	5	40.0	0	0
+INP1
+
+% Trial: 633
+==>
+SND1	0	24	5	40.0	0	0
+INP1
+
+% Trial: 634
+==>
+SND1	0	25	5	40.0	0	0
+INP1
+
+% Trial: 635
+==>
+SND1	0	26	5	40.0	0	0
+INP1
+
+% Trial: 636
+==>
+SND1	0	27	5	40.0	0	0
+INP1
+
+% Trial: 637
+==>
+SND1	0	28	5	40.0	0	0
+INP1
+
+% Trial: 638
+==>
+SND1	0	29	5	40.0	0	0
+INP1
+
+% Trial: 639
+==>
+SND1	0	1	5	50.0	0	0
+INP1
+
+% Trial: 640
+==>
+SND1	0	2	5	50.0	0	0
+INP1
+
+% Trial: 641
+==>
+SND1	0	3	5	50.0	0	0
+INP1
+
+% Trial: 642
+==>
+SND1	0	4	5	50.0	0	0
+INP1
+
+% Trial: 643
+==>
+SND1	0	5	5	50.0	0	0
+INP1
+
+% Trial: 644
+==>
+SND1	0	6	5	50.0	0	0
+INP1
+
+% Trial: 645
+==>
+SND1	0	7	5	50.0	0	0
+INP1
+
+% Trial: 646
+==>
+SND1	0	8	5	50.0	0	0
+INP1
+
+% Trial: 647
+==>
+SND1	0	9	5	50.0	0	0
+INP1
+
+% Trial: 648
+==>
+SND1	0	10	5	50.0	0	0
+INP1
+
+% Trial: 649
+==>
+SND1	0	11	5	50.0	0	0
+INP1
+
+% Trial: 650
+==>
+SND1	0	12	5	50.0	0	0
+INP1
+
+% Trial: 651
+==>
+SND1	0	13	5	50.0	0	0
+INP1
+
+% Trial: 652
+==>
+SND1	0	14	5	50.0	0	0
+INP1
+
+% Trial: 653
+==>
+SND1	0	15	5	50.0	0	0
+INP1
+
+% Trial: 654
+==>
+SND1	0	16	5	50.0	0	0
+INP1
+
+% Trial: 655
+==>
+SND1	0	17	5	50.0	0	0
+INP1
+
+% Trial: 656
+==>
+SND1	0	18	5	50.0	0	0
+INP1
+
+% Trial: 657
+==>
+SND1	0	19	5	50.0	0	0
+INP1
+
+% Trial: 658
+==>
+SND1	0	20	5	50.0	0	0
+INP1
+
+% Trial: 659
+==>
+SND1	0	21	5	50.0	0	0
+INP1
+
+% Trial: 660
+==>
+SND1	0	22	5	50.0	0	0
+INP1
+
+% Trial: 661
+==>
+SND1	0	23	5	50.0	0	0
+INP1
+
+% Trial: 662
+==>
+SND1	0	24	5	50.0	0	0
+INP1
+
+% Trial: 663
+==>
+SND1	0	25	5	50.0	0	0
+INP1
+
+% Trial: 664
+==>
+SND1	0	26	5	50.0	0	0
+INP1
+
+% Trial: 665
+==>
+SND1	0	27	5	50.0	0	0
+INP1
+
+% Trial: 666
+==>
+SND1	0	28	5	50.0	0	0
+INP1
+
+% Trial: 667
+==>
+SND1	0	29	5	50.0	0	0
+INP1
+
+% Trial: 668
+==>
+SND1	0	1	5	60.0	0	0
+INP1
+
+% Trial: 669
+==>
+SND1	0	2	5	60.0	0	0
+INP1
+
+% Trial: 670
+==>
+SND1	0	3	5	60.0	0	0
+INP1
+
+% Trial: 671
+==>
+SND1	0	4	5	60.0	0	0
+INP1
+
+% Trial: 672
+==>
+SND1	0	5	5	60.0	0	0
+INP1
+
+% Trial: 673
+==>
+SND1	0	6	5	60.0	0	0
+INP1
+
+% Trial: 674
+==>
+SND1	0	7	5	60.0	0	0
+INP1
+
+% Trial: 675
+==>
+SND1	0	8	5	60.0	0	0
+INP1
+
+% Trial: 676
+==>
+SND1	0	9	5	60.0	0	0
+INP1
+
+% Trial: 677
+==>
+SND1	0	10	5	60.0	0	0
+INP1
+
+% Trial: 678
+==>
+SND1	0	11	5	60.0	0	0
+INP1
+
+% Trial: 679
+==>
+SND1	0	12	5	60.0	0	0
+INP1
+
+% Trial: 680
+==>
+SND1	0	13	5	60.0	0	0
+INP1
+
+% Trial: 681
+==>
+SND1	0	14	5	60.0	0	0
+INP1
+
+% Trial: 682
+==>
+SND1	0	15	5	60.0	0	0
+INP1
+
+% Trial: 683
+==>
+SND1	0	16	5	60.0	0	0
+INP1
+
+% Trial: 684
+==>
+SND1	0	17	5	60.0	0	0
+INP1
+
+% Trial: 685
+==>
+SND1	0	18	5	60.0	0	0
+INP1
+
+% Trial: 686
+==>
+SND1	0	19	5	60.0	0	0
+INP1
+
+% Trial: 687
+==>
+SND1	0	20	5	60.0	0	0
+INP1
+
+% Trial: 688
+==>
+SND1	0	21	5	60.0	0	0
+INP1
+
+% Trial: 689
+==>
+SND1	0	22	5	60.0	0	0
+INP1
+
+% Trial: 690
+==>
+SND1	0	23	5	60.0	0	0
+INP1
+
+% Trial: 691
+==>
+SND1	0	24	5	60.0	0	0
+INP1
+
+% Trial: 692
+==>
+SND1	0	25	5	60.0	0	0
+INP1
+
+% Trial: 693
+==>
+SND1	0	26	5	60.0	0	0
+INP1
+
+% Trial: 694
+==>
+SND1	0	27	5	60.0	0	0
+INP1
+
+% Trial: 695
+==>
+SND1	0	28	5	60.0	0	0
+INP1
+
+% Trial: 696
+==>
+SND1	0	29	5	60.0	0	0
+INP1
+
+% Trial: 697
+==>
+SND1	0	1	5	70.0	0	0
+INP1
+
+% Trial: 698
+==>
+SND1	0	2	5	70.0	0	0
+INP1
+
+% Trial: 699
+==>
+SND1	0	3	5	70.0	0	0
+INP1
+
+% Trial: 700
+==>
+SND1	0	4	5	70.0	0	0
+INP1
+
+% Trial: 701
+==>
+SND1	0	5	5	70.0	0	0
+INP1
+
+% Trial: 702
+==>
+SND1	0	6	5	70.0	0	0
+INP1
+
+% Trial: 703
+==>
+SND1	0	7	5	70.0	0	0
+INP1
+
+% Trial: 704
+==>
+SND1	0	8	5	70.0	0	0
+INP1
+
+% Trial: 705
+==>
+SND1	0	9	5	70.0	0	0
+INP1
+
+% Trial: 706
+==>
+SND1	0	10	5	70.0	0	0
+INP1
+
+% Trial: 707
+==>
+SND1	0	11	5	70.0	0	0
+INP1
+
+% Trial: 708
+==>
+SND1	0	12	5	70.0	0	0
+INP1
+
+% Trial: 709
+==>
+SND1	0	13	5	70.0	0	0
+INP1
+
+% Trial: 710
+==>
+SND1	0	14	5	70.0	0	0
+INP1
+
+% Trial: 711
+==>
+SND1	0	15	5	70.0	0	0
+INP1
+
+% Trial: 712
+==>
+SND1	0	16	5	70.0	0	0
+INP1
+
+% Trial: 713
+==>
+SND1	0	17	5	70.0	0	0
+INP1
+
+% Trial: 714
+==>
+SND1	0	18	5	70.0	0	0
+INP1
+
+% Trial: 715
+==>
+SND1	0	19	5	70.0	0	0
+INP1
+
+% Trial: 716
+==>
+SND1	0	20	5	70.0	0	0
+INP1
+
+% Trial: 717
+==>
+SND1	0	21	5	70.0	0	0
+INP1
+
+% Trial: 718
+==>
+SND1	0	22	5	70.0	0	0
+INP1
+
+% Trial: 719
+==>
+SND1	0	23	5	70.0	0	0
+INP1
+
+% Trial: 720
+==>
+SND1	0	24	5	70.0	0	0
+INP1
+
+% Trial: 721
+==>
+SND1	0	25	5	70.0	0	0
+INP1
+
+% Trial: 722
+==>
+SND1	0	26	5	70.0	0	0
+INP1
+
+% Trial: 723
+==>
+SND1	0	27	5	70.0	0	0
+INP1
+
+% Trial: 724
+==>
+SND1	0	28	5	70.0	0	0
+INP1
+
+% Trial: 725
+==>
+SND1	0	29	5	70.0	0	0
+INP1
+
+% Trial: 726
+==>
+SND1	0	1	6	30.0	0	0
+INP1
+
+% Trial: 727
+==>
+SND1	0	2	6	30.0	0	0
+INP1
+
+% Trial: 728
+==>
+SND1	0	3	6	30.0	0	0
+INP1
+
+% Trial: 729
+==>
+SND1	0	4	6	30.0	0	0
+INP1
+
+% Trial: 730
+==>
+SND1	0	5	6	30.0	0	0
+INP1
+
+% Trial: 731
+==>
+SND1	0	6	6	30.0	0	0
+INP1
+
+% Trial: 732
+==>
+SND1	0	7	6	30.0	0	0
+INP1
+
+% Trial: 733
+==>
+SND1	0	8	6	30.0	0	0
+INP1
+
+% Trial: 734
+==>
+SND1	0	9	6	30.0	0	0
+INP1
+
+% Trial: 735
+==>
+SND1	0	10	6	30.0	0	0
+INP1
+
+% Trial: 736
+==>
+SND1	0	11	6	30.0	0	0
+INP1
+
+% Trial: 737
+==>
+SND1	0	12	6	30.0	0	0
+INP1
+
+% Trial: 738
+==>
+SND1	0	13	6	30.0	0	0
+INP1
+
+% Trial: 739
+==>
+SND1	0	14	6	30.0	0	0
+INP1
+
+% Trial: 740
+==>
+SND1	0	15	6	30.0	0	0
+INP1
+
+% Trial: 741
+==>
+SND1	0	16	6	30.0	0	0
+INP1
+
+% Trial: 742
+==>
+SND1	0	17	6	30.0	0	0
+INP1
+
+% Trial: 743
+==>
+SND1	0	18	6	30.0	0	0
+INP1
+
+% Trial: 744
+==>
+SND1	0	19	6	30.0	0	0
+INP1
+
+% Trial: 745
+==>
+SND1	0	20	6	30.0	0	0
+INP1
+
+% Trial: 746
+==>
+SND1	0	21	6	30.0	0	0
+INP1
+
+% Trial: 747
+==>
+SND1	0	22	6	30.0	0	0
+INP1
+
+% Trial: 748
+==>
+SND1	0	23	6	30.0	0	0
+INP1
+
+% Trial: 749
+==>
+SND1	0	24	6	30.0	0	0
+INP1
+
+% Trial: 750
+==>
+SND1	0	25	6	30.0	0	0
+INP1
+
+% Trial: 751
+==>
+SND1	0	26	6	30.0	0	0
+INP1
+
+% Trial: 752
+==>
+SND1	0	27	6	30.0	0	0
+INP1
+
+% Trial: 753
+==>
+SND1	0	28	6	30.0	0	0
+INP1
+
+% Trial: 754
+==>
+SND1	0	29	6	30.0	0	0
+INP1
+
+% Trial: 755
+==>
+SND1	0	1	6	40.0	0	0
+INP1
+
+% Trial: 756
+==>
+SND1	0	2	6	40.0	0	0
+INP1
+
+% Trial: 757
+==>
+SND1	0	3	6	40.0	0	0
+INP1
+
+% Trial: 758
+==>
+SND1	0	4	6	40.0	0	0
+INP1
+
+% Trial: 759
+==>
+SND1	0	5	6	40.0	0	0
+INP1
+
+% Trial: 760
+==>
+SND1	0	6	6	40.0	0	0
+INP1
+
+% Trial: 761
+==>
+SND1	0	7	6	40.0	0	0
+INP1
+
+% Trial: 762
+==>
+SND1	0	8	6	40.0	0	0
+INP1
+
+% Trial: 763
+==>
+SND1	0	9	6	40.0	0	0
+INP1
+
+% Trial: 764
+==>
+SND1	0	10	6	40.0	0	0
+INP1
+
+% Trial: 765
+==>
+SND1	0	11	6	40.0	0	0
+INP1
+
+% Trial: 766
+==>
+SND1	0	12	6	40.0	0	0
+INP1
+
+% Trial: 767
+==>
+SND1	0	13	6	40.0	0	0
+INP1
+
+% Trial: 768
+==>
+SND1	0	14	6	40.0	0	0
+INP1
+
+% Trial: 769
+==>
+SND1	0	15	6	40.0	0	0
+INP1
+
+% Trial: 770
+==>
+SND1	0	16	6	40.0	0	0
+INP1
+
+% Trial: 771
+==>
+SND1	0	17	6	40.0	0	0
+INP1
+
+% Trial: 772
+==>
+SND1	0	18	6	40.0	0	0
+INP1
+
+% Trial: 773
+==>
+SND1	0	19	6	40.0	0	0
+INP1
+
+% Trial: 774
+==>
+SND1	0	20	6	40.0	0	0
+INP1
+
+% Trial: 775
+==>
+SND1	0	21	6	40.0	0	0
+INP1
+
+% Trial: 776
+==>
+SND1	0	22	6	40.0	0	0
+INP1
+
+% Trial: 777
+==>
+SND1	0	23	6	40.0	0	0
+INP1
+
+% Trial: 778
+==>
+SND1	0	24	6	40.0	0	0
+INP1
+
+% Trial: 779
+==>
+SND1	0	25	6	40.0	0	0
+INP1
+
+% Trial: 780
+==>
+SND1	0	26	6	40.0	0	0
+INP1
+
+% Trial: 781
+==>
+SND1	0	27	6	40.0	0	0
+INP1
+
+% Trial: 782
+==>
+SND1	0	28	6	40.0	0	0
+INP1
+
+% Trial: 783
+==>
+SND1	0	29	6	40.0	0	0
+INP1
+
+% Trial: 784
+==>
+SND1	0	1	6	50.0	0	0
+INP1
+
+% Trial: 785
+==>
+SND1	0	2	6	50.0	0	0
+INP1
+
+% Trial: 786
+==>
+SND1	0	3	6	50.0	0	0
+INP1
+
+% Trial: 787
+==>
+SND1	0	4	6	50.0	0	0
+INP1
+
+% Trial: 788
+==>
+SND1	0	5	6	50.0	0	0
+INP1
+
+% Trial: 789
+==>
+SND1	0	6	6	50.0	0	0
+INP1
+
+% Trial: 790
+==>
+SND1	0	7	6	50.0	0	0
+INP1
+
+% Trial: 791
+==>
+SND1	0	8	6	50.0	0	0
+INP1
+
+% Trial: 792
+==>
+SND1	0	9	6	50.0	0	0
+INP1
+
+% Trial: 793
+==>
+SND1	0	10	6	50.0	0	0
+INP1
+
+% Trial: 794
+==>
+SND1	0	11	6	50.0	0	0
+INP1
+
+% Trial: 795
+==>
+SND1	0	12	6	50.0	0	0
+INP1
+
+% Trial: 796
+==>
+SND1	0	13	6	50.0	0	0
+INP1
+
+% Trial: 797
+==>
+SND1	0	14	6	50.0	0	0
+INP1
+
+% Trial: 798
+==>
+SND1	0	15	6	50.0	0	0
+INP1
+
+% Trial: 799
+==>
+SND1	0	16	6	50.0	0	0
+INP1
+
+% Trial: 800
+==>
+SND1	0	17	6	50.0	0	0
+INP1
+
+% Trial: 801
+==>
+SND1	0	18	6	50.0	0	0
+INP1
+
+% Trial: 802
+==>
+SND1	0	19	6	50.0	0	0
+INP1
+
+% Trial: 803
+==>
+SND1	0	20	6	50.0	0	0
+INP1
+
+% Trial: 804
+==>
+SND1	0	21	6	50.0	0	0
+INP1
+
+% Trial: 805
+==>
+SND1	0	22	6	50.0	0	0
+INP1
+
+% Trial: 806
+==>
+SND1	0	23	6	50.0	0	0
+INP1
+
+% Trial: 807
+==>
+SND1	0	24	6	50.0	0	0
+INP1
+
+% Trial: 808
+==>
+SND1	0	25	6	50.0	0	0
+INP1
+
+% Trial: 809
+==>
+SND1	0	26	6	50.0	0	0
+INP1
+
+% Trial: 810
+==>
+SND1	0	27	6	50.0	0	0
+INP1
+
+% Trial: 811
+==>
+SND1	0	28	6	50.0	0	0
+INP1
+
+% Trial: 812
+==>
+SND1	0	29	6	50.0	0	0
+INP1
+
+% Trial: 813
+==>
+SND1	0	1	6	60.0	0	0
+INP1
+
+% Trial: 814
+==>
+SND1	0	2	6	60.0	0	0
+INP1
+
+% Trial: 815
+==>
+SND1	0	3	6	60.0	0	0
+INP1
+
+% Trial: 816
+==>
+SND1	0	4	6	60.0	0	0
+INP1
+
+% Trial: 817
+==>
+SND1	0	5	6	60.0	0	0
+INP1
+
+% Trial: 818
+==>
+SND1	0	6	6	60.0	0	0
+INP1
+
+% Trial: 819
+==>
+SND1	0	7	6	60.0	0	0
+INP1
+
+% Trial: 820
+==>
+SND1	0	8	6	60.0	0	0
+INP1
+
+% Trial: 821
+==>
+SND1	0	9	6	60.0	0	0
+INP1
+
+% Trial: 822
+==>
+SND1	0	10	6	60.0	0	0
+INP1
+
+% Trial: 823
+==>
+SND1	0	11	6	60.0	0	0
+INP1
+
+% Trial: 824
+==>
+SND1	0	12	6	60.0	0	0
+INP1
+
+% Trial: 825
+==>
+SND1	0	13	6	60.0	0	0
+INP1
+
+% Trial: 826
+==>
+SND1	0	14	6	60.0	0	0
+INP1
+
+% Trial: 827
+==>
+SND1	0	15	6	60.0	0	0
+INP1
+
+% Trial: 828
+==>
+SND1	0	16	6	60.0	0	0
+INP1
+
+% Trial: 829
+==>
+SND1	0	17	6	60.0	0	0
+INP1
+
+% Trial: 830
+==>
+SND1	0	18	6	60.0	0	0
+INP1
+
+% Trial: 831
+==>
+SND1	0	19	6	60.0	0	0
+INP1
+
+% Trial: 832
+==>
+SND1	0	20	6	60.0	0	0
+INP1
+
+% Trial: 833
+==>
+SND1	0	21	6	60.0	0	0
+INP1
+
+% Trial: 834
+==>
+SND1	0	22	6	60.0	0	0
+INP1
+
+% Trial: 835
+==>
+SND1	0	23	6	60.0	0	0
+INP1
+
+% Trial: 836
+==>
+SND1	0	24	6	60.0	0	0
+INP1
+
+% Trial: 837
+==>
+SND1	0	25	6	60.0	0	0
+INP1
+
+% Trial: 838
+==>
+SND1	0	26	6	60.0	0	0
+INP1
+
+% Trial: 839
+==>
+SND1	0	27	6	60.0	0	0
+INP1
+
+% Trial: 840
+==>
+SND1	0	28	6	60.0	0	0
+INP1
+
+% Trial: 841
+==>
+SND1	0	29	6	60.0	0	0
+INP1
+
+% Trial: 842
+==>
+SND1	0	1	6	70.0	0	0
+INP1
+
+% Trial: 843
+==>
+SND1	0	2	6	70.0	0	0
+INP1
+
+% Trial: 844
+==>
+SND1	0	3	6	70.0	0	0
+INP1
+
+% Trial: 845
+==>
+SND1	0	4	6	70.0	0	0
+INP1
+
+% Trial: 846
+==>
+SND1	0	5	6	70.0	0	0
+INP1
+
+% Trial: 847
+==>
+SND1	0	6	6	70.0	0	0
+INP1
+
+% Trial: 848
+==>
+SND1	0	7	6	70.0	0	0
+INP1
+
+% Trial: 849
+==>
+SND1	0	8	6	70.0	0	0
+INP1
+
+% Trial: 850
+==>
+SND1	0	9	6	70.0	0	0
+INP1
+
+% Trial: 851
+==>
+SND1	0	10	6	70.0	0	0
+INP1
+
+% Trial: 852
+==>
+SND1	0	11	6	70.0	0	0
+INP1
+
+% Trial: 853
+==>
+SND1	0	12	6	70.0	0	0
+INP1
+
+% Trial: 854
+==>
+SND1	0	13	6	70.0	0	0
+INP1
+
+% Trial: 855
+==>
+SND1	0	14	6	70.0	0	0
+INP1
+
+% Trial: 856
+==>
+SND1	0	15	6	70.0	0	0
+INP1
+
+% Trial: 857
+==>
+SND1	0	16	6	70.0	0	0
+INP1
+
+% Trial: 858
+==>
+SND1	0	17	6	70.0	0	0
+INP1
+
+% Trial: 859
+==>
+SND1	0	18	6	70.0	0	0
+INP1
+
+% Trial: 860
+==>
+SND1	0	19	6	70.0	0	0
+INP1
+
+% Trial: 861
+==>
+SND1	0	20	6	70.0	0	0
+INP1
+
+% Trial: 862
+==>
+SND1	0	21	6	70.0	0	0
+INP1
+
+% Trial: 863
+==>
+SND1	0	22	6	70.0	0	0
+INP1
+
+% Trial: 864
+==>
+SND1	0	23	6	70.0	0	0
+INP1
+
+% Trial: 865
+==>
+SND1	0	24	6	70.0	0	0
+INP1
+
+% Trial: 866
+==>
+SND1	0	25	6	70.0	0	0
+INP1
+
+% Trial: 867
+==>
+SND1	0	26	6	70.0	0	0
+INP1
+
+% Trial: 868
+==>
+SND1	0	27	6	70.0	0	0
+INP1
+
+% Trial: 869
+==>
+SND1	0	28	6	70.0	0	0
+INP1
+
+% Trial: 870
+==>
+SND1	0	29	6	70.0	0	0
+INP1
+
+% Trial: 871
+==>
+SND1	0	1	7	30.0	0	0
+INP1
+
+% Trial: 872
+==>
+SND1	0	2	7	30.0	0	0
+INP1
+
+% Trial: 873
+==>
+SND1	0	3	7	30.0	0	0
+INP1
+
+% Trial: 874
+==>
+SND1	0	4	7	30.0	0	0
+INP1
+
+% Trial: 875
+==>
+SND1	0	5	7	30.0	0	0
+INP1
+
+% Trial: 876
+==>
+SND1	0	6	7	30.0	0	0
+INP1
+
+% Trial: 877
+==>
+SND1	0	7	7	30.0	0	0
+INP1
+
+% Trial: 878
+==>
+SND1	0	8	7	30.0	0	0
+INP1
+
+% Trial: 879
+==>
+SND1	0	9	7	30.0	0	0
+INP1
+
+% Trial: 880
+==>
+SND1	0	10	7	30.0	0	0
+INP1
+
+% Trial: 881
+==>
+SND1	0	11	7	30.0	0	0
+INP1
+
+% Trial: 882
+==>
+SND1	0	12	7	30.0	0	0
+INP1
+
+% Trial: 883
+==>
+SND1	0	13	7	30.0	0	0
+INP1
+
+% Trial: 884
+==>
+SND1	0	14	7	30.0	0	0
+INP1
+
+% Trial: 885
+==>
+SND1	0	15	7	30.0	0	0
+INP1
+
+% Trial: 886
+==>
+SND1	0	16	7	30.0	0	0
+INP1
+
+% Trial: 887
+==>
+SND1	0	17	7	30.0	0	0
+INP1
+
+% Trial: 888
+==>
+SND1	0	18	7	30.0	0	0
+INP1
+
+% Trial: 889
+==>
+SND1	0	19	7	30.0	0	0
+INP1
+
+% Trial: 890
+==>
+SND1	0	20	7	30.0	0	0
+INP1
+
+% Trial: 891
+==>
+SND1	0	21	7	30.0	0	0
+INP1
+
+% Trial: 892
+==>
+SND1	0	22	7	30.0	0	0
+INP1
+
+% Trial: 893
+==>
+SND1	0	23	7	30.0	0	0
+INP1
+
+% Trial: 894
+==>
+SND1	0	24	7	30.0	0	0
+INP1
+
+% Trial: 895
+==>
+SND1	0	25	7	30.0	0	0
+INP1
+
+% Trial: 896
+==>
+SND1	0	26	7	30.0	0	0
+INP1
+
+% Trial: 897
+==>
+SND1	0	27	7	30.0	0	0
+INP1
+
+% Trial: 898
+==>
+SND1	0	28	7	30.0	0	0
+INP1
+
+% Trial: 899
+==>
+SND1	0	29	7	30.0	0	0
+INP1
+
+% Trial: 900
+==>
+SND1	0	1	7	40.0	0	0
+INP1
+
+% Trial: 901
+==>
+SND1	0	2	7	40.0	0	0
+INP1
+
+% Trial: 902
+==>
+SND1	0	3	7	40.0	0	0
+INP1
+
+% Trial: 903
+==>
+SND1	0	4	7	40.0	0	0
+INP1
+
+% Trial: 904
+==>
+SND1	0	5	7	40.0	0	0
+INP1
+
+% Trial: 905
+==>
+SND1	0	6	7	40.0	0	0
+INP1
+
+% Trial: 906
+==>
+SND1	0	7	7	40.0	0	0
+INP1
+
+% Trial: 907
+==>
+SND1	0	8	7	40.0	0	0
+INP1
+
+% Trial: 908
+==>
+SND1	0	9	7	40.0	0	0
+INP1
+
+% Trial: 909
+==>
+SND1	0	10	7	40.0	0	0
+INP1
+
+% Trial: 910
+==>
+SND1	0	11	7	40.0	0	0
+INP1
+
+% Trial: 911
+==>
+SND1	0	12	7	40.0	0	0
+INP1
+
+% Trial: 912
+==>
+SND1	0	13	7	40.0	0	0
+INP1
+
+% Trial: 913
+==>
+SND1	0	14	7	40.0	0	0
+INP1
+
+% Trial: 914
+==>
+SND1	0	15	7	40.0	0	0
+INP1
+
+% Trial: 915
+==>
+SND1	0	16	7	40.0	0	0
+INP1
+
+% Trial: 916
+==>
+SND1	0	17	7	40.0	0	0
+INP1
+
+% Trial: 917
+==>
+SND1	0	18	7	40.0	0	0
+INP1
+
+% Trial: 918
+==>
+SND1	0	19	7	40.0	0	0
+INP1
+
+% Trial: 919
+==>
+SND1	0	20	7	40.0	0	0
+INP1
+
+% Trial: 920
+==>
+SND1	0	21	7	40.0	0	0
+INP1
+
+% Trial: 921
+==>
+SND1	0	22	7	40.0	0	0
+INP1
+
+% Trial: 922
+==>
+SND1	0	23	7	40.0	0	0
+INP1
+
+% Trial: 923
+==>
+SND1	0	24	7	40.0	0	0
+INP1
+
+% Trial: 924
+==>
+SND1	0	25	7	40.0	0	0
+INP1
+
+% Trial: 925
+==>
+SND1	0	26	7	40.0	0	0
+INP1
+
+% Trial: 926
+==>
+SND1	0	27	7	40.0	0	0
+INP1
+
+% Trial: 927
+==>
+SND1	0	28	7	40.0	0	0
+INP1
+
+% Trial: 928
+==>
+SND1	0	29	7	40.0	0	0
+INP1
+
+% Trial: 929
+==>
+SND1	0	1	7	50.0	0	0
+INP1
+
+% Trial: 930
+==>
+SND1	0	2	7	50.0	0	0
+INP1
+
+% Trial: 931
+==>
+SND1	0	3	7	50.0	0	0
+INP1
+
+% Trial: 932
+==>
+SND1	0	4	7	50.0	0	0
+INP1
+
+% Trial: 933
+==>
+SND1	0	5	7	50.0	0	0
+INP1
+
+% Trial: 934
+==>
+SND1	0	6	7	50.0	0	0
+INP1
+
+% Trial: 935
+==>
+SND1	0	7	7	50.0	0	0
+INP1
+
+% Trial: 936
+==>
+SND1	0	8	7	50.0	0	0
+INP1
+
+% Trial: 937
+==>
+SND1	0	9	7	50.0	0	0
+INP1
+
+% Trial: 938
+==>
+SND1	0	10	7	50.0	0	0
+INP1
+
+% Trial: 939
+==>
+SND1	0	11	7	50.0	0	0
+INP1
+
+% Trial: 940
+==>
+SND1	0	12	7	50.0	0	0
+INP1
+
+% Trial: 941
+==>
+SND1	0	13	7	50.0	0	0
+INP1
+
+% Trial: 942
+==>
+SND1	0	14	7	50.0	0	0
+INP1
+
+% Trial: 943
+==>
+SND1	0	15	7	50.0	0	0
+INP1
+
+% Trial: 944
+==>
+SND1	0	16	7	50.0	0	0
+INP1
+
+% Trial: 945
+==>
+SND1	0	17	7	50.0	0	0
+INP1
+
+% Trial: 946
+==>
+SND1	0	18	7	50.0	0	0
+INP1
+
+% Trial: 947
+==>
+SND1	0	19	7	50.0	0	0
+INP1
+
+% Trial: 948
+==>
+SND1	0	20	7	50.0	0	0
+INP1
+
+% Trial: 949
+==>
+SND1	0	21	7	50.0	0	0
+INP1
+
+% Trial: 950
+==>
+SND1	0	22	7	50.0	0	0
+INP1
+
+% Trial: 951
+==>
+SND1	0	23	7	50.0	0	0
+INP1
+
+% Trial: 952
+==>
+SND1	0	24	7	50.0	0	0
+INP1
+
+% Trial: 953
+==>
+SND1	0	25	7	50.0	0	0
+INP1
+
+% Trial: 954
+==>
+SND1	0	26	7	50.0	0	0
+INP1
+
+% Trial: 955
+==>
+SND1	0	27	7	50.0	0	0
+INP1
+
+% Trial: 956
+==>
+SND1	0	28	7	50.0	0	0
+INP1
+
+% Trial: 957
+==>
+SND1	0	29	7	50.0	0	0
+INP1
+
+% Trial: 958
+==>
+SND1	0	1	7	60.0	0	0
+INP1
+
+% Trial: 959
+==>
+SND1	0	2	7	60.0	0	0
+INP1
+
+% Trial: 960
+==>
+SND1	0	3	7	60.0	0	0
+INP1
+
+% Trial: 961
+==>
+SND1	0	4	7	60.0	0	0
+INP1
+
+% Trial: 962
+==>
+SND1	0	5	7	60.0	0	0
+INP1
+
+% Trial: 963
+==>
+SND1	0	6	7	60.0	0	0
+INP1
+
+% Trial: 964
+==>
+SND1	0	7	7	60.0	0	0
+INP1
+
+% Trial: 965
+==>
+SND1	0	8	7	60.0	0	0
+INP1
+
+% Trial: 966
+==>
+SND1	0	9	7	60.0	0	0
+INP1
+
+% Trial: 967
+==>
+SND1	0	10	7	60.0	0	0
+INP1
+
+% Trial: 968
+==>
+SND1	0	11	7	60.0	0	0
+INP1
+
+% Trial: 969
+==>
+SND1	0	12	7	60.0	0	0
+INP1
+
+% Trial: 970
+==>
+SND1	0	13	7	60.0	0	0
+INP1
+
+% Trial: 971
+==>
+SND1	0	14	7	60.0	0	0
+INP1
+
+% Trial: 972
+==>
+SND1	0	15	7	60.0	0	0
+INP1
+
+% Trial: 973
+==>
+SND1	0	16	7	60.0	0	0
+INP1
+
+% Trial: 974
+==>
+SND1	0	17	7	60.0	0	0
+INP1
+
+% Trial: 975
+==>
+SND1	0	18	7	60.0	0	0
+INP1
+
+% Trial: 976
+==>
+SND1	0	19	7	60.0	0	0
+INP1
+
+% Trial: 977
+==>
+SND1	0	20	7	60.0	0	0
+INP1
+
+% Trial: 978
+==>
+SND1	0	21	7	60.0	0	0
+INP1
+
+% Trial: 979
+==>
+SND1	0	22	7	60.0	0	0
+INP1
+
+% Trial: 980
+==>
+SND1	0	23	7	60.0	0	0
+INP1
+
+% Trial: 981
+==>
+SND1	0	24	7	60.0	0	0
+INP1
+
+% Trial: 982
+==>
+SND1	0	25	7	60.0	0	0
+INP1
+
+% Trial: 983
+==>
+SND1	0	26	7	60.0	0	0
+INP1
+
+% Trial: 984
+==>
+SND1	0	27	7	60.0	0	0
+INP1
+
+% Trial: 985
+==>
+SND1	0	28	7	60.0	0	0
+INP1
+
+% Trial: 986
+==>
+SND1	0	29	7	60.0	0	0
+INP1
+
+% Trial: 987
+==>
+SND1	0	1	7	70.0	0	0
+INP1
+
+% Trial: 988
+==>
+SND1	0	2	7	70.0	0	0
+INP1
+
+% Trial: 989
+==>
+SND1	0	3	7	70.0	0	0
+INP1
+
+% Trial: 990
+==>
+SND1	0	4	7	70.0	0	0
+INP1
+
+% Trial: 991
+==>
+SND1	0	5	7	70.0	0	0
+INP1
+
+% Trial: 992
+==>
+SND1	0	6	7	70.0	0	0
+INP1
+
+% Trial: 993
+==>
+SND1	0	7	7	70.0	0	0
+INP1
+
+% Trial: 994
+==>
+SND1	0	8	7	70.0	0	0
+INP1
+
+% Trial: 995
+==>
+SND1	0	9	7	70.0	0	0
+INP1
+
+% Trial: 996
+==>
+SND1	0	10	7	70.0	0	0
+INP1
+
+% Trial: 997
+==>
+SND1	0	11	7	70.0	0	0
+INP1
+
+% Trial: 998
+==>
+SND1	0	12	7	70.0	0	0
+INP1
+
+% Trial: 999
+==>
+SND1	0	13	7	70.0	0	0
+INP1
+
+% Trial: 1000
+==>
+SND1	0	14	7	70.0	0	0
+INP1
+
+% Trial: 1001
+==>
+SND1	0	15	7	70.0	0	0
+INP1
+
+% Trial: 1002
+==>
+SND1	0	16	7	70.0	0	0
+INP1
+
+% Trial: 1003
+==>
+SND1	0	17	7	70.0	0	0
+INP1
+
+% Trial: 1004
+==>
+SND1	0	18	7	70.0	0	0
+INP1
+
+% Trial: 1005
+==>
+SND1	0	19	7	70.0	0	0
+INP1
+
+% Trial: 1006
+==>
+SND1	0	20	7	70.0	0	0
+INP1
+
+% Trial: 1007
+==>
+SND1	0	21	7	70.0	0	0
+INP1
+
+% Trial: 1008
+==>
+SND1	0	22	7	70.0	0	0
+INP1
+
+% Trial: 1009
+==>
+SND1	0	23	7	70.0	0	0
+INP1
+
+% Trial: 1010
+==>
+SND1	0	24	7	70.0	0	0
+INP1
+
+% Trial: 1011
+==>
+SND1	0	25	7	70.0	0	0
+INP1
+
+% Trial: 1012
+==>
+SND1	0	26	7	70.0	0	0
+INP1
+
+% Trial: 1013
+==>
+SND1	0	27	7	70.0	0	0
+INP1
+
+% Trial: 1014
+==>
+SND1	0	28	7	70.0	0	0
+INP1
+
+% Trial: 1015
+==>
+SND1	0	29	7	70.0	0	0
+INP1
+
+% Trial: 1016
+==>
+SND1	0	1	8	30.0	0	0
+INP1
+
+% Trial: 1017
+==>
+SND1	0	2	8	30.0	0	0
+INP1
+
+% Trial: 1018
+==>
+SND1	0	3	8	30.0	0	0
+INP1
+
+% Trial: 1019
+==>
+SND1	0	4	8	30.0	0	0
+INP1
+
+% Trial: 1020
+==>
+SND1	0	5	8	30.0	0	0
+INP1
+
+% Trial: 1021
+==>
+SND1	0	6	8	30.0	0	0
+INP1
+
+% Trial: 1022
+==>
+SND1	0	7	8	30.0	0	0
+INP1
+
+% Trial: 1023
+==>
+SND1	0	8	8	30.0	0	0
+INP1
+
+% Trial: 1024
+==>
+SND1	0	9	8	30.0	0	0
+INP1
+
+% Trial: 1025
+==>
+SND1	0	10	8	30.0	0	0
+INP1
+
+% Trial: 1026
+==>
+SND1	0	11	8	30.0	0	0
+INP1
+
+% Trial: 1027
+==>
+SND1	0	12	8	30.0	0	0
+INP1
+
+% Trial: 1028
+==>
+SND1	0	13	8	30.0	0	0
+INP1
+
+% Trial: 1029
+==>
+SND1	0	14	8	30.0	0	0
+INP1
+
+% Trial: 1030
+==>
+SND1	0	15	8	30.0	0	0
+INP1
+
+% Trial: 1031
+==>
+SND1	0	16	8	30.0	0	0
+INP1
+
+% Trial: 1032
+==>
+SND1	0	17	8	30.0	0	0
+INP1
+
+% Trial: 1033
+==>
+SND1	0	18	8	30.0	0	0
+INP1
+
+% Trial: 1034
+==>
+SND1	0	19	8	30.0	0	0
+INP1
+
+% Trial: 1035
+==>
+SND1	0	20	8	30.0	0	0
+INP1
+
+% Trial: 1036
+==>
+SND1	0	21	8	30.0	0	0
+INP1
+
+% Trial: 1037
+==>
+SND1	0	22	8	30.0	0	0
+INP1
+
+% Trial: 1038
+==>
+SND1	0	23	8	30.0	0	0
+INP1
+
+% Trial: 1039
+==>
+SND1	0	24	8	30.0	0	0
+INP1
+
+% Trial: 1040
+==>
+SND1	0	25	8	30.0	0	0
+INP1
+
+% Trial: 1041
+==>
+SND1	0	26	8	30.0	0	0
+INP1
+
+% Trial: 1042
+==>
+SND1	0	27	8	30.0	0	0
+INP1
+
+% Trial: 1043
+==>
+SND1	0	28	8	30.0	0	0
+INP1
+
+% Trial: 1044
+==>
+SND1	0	29	8	30.0	0	0
+INP1
+
+% Trial: 1045
+==>
+SND1	0	1	8	40.0	0	0
+INP1
+
+% Trial: 1046
+==>
+SND1	0	2	8	40.0	0	0
+INP1
+
+% Trial: 1047
+==>
+SND1	0	3	8	40.0	0	0
+INP1
+
+% Trial: 1048
+==>
+SND1	0	4	8	40.0	0	0
+INP1
+
+% Trial: 1049
+==>
+SND1	0	5	8	40.0	0	0
+INP1
+
+% Trial: 1050
+==>
+SND1	0	6	8	40.0	0	0
+INP1
+
+% Trial: 1051
+==>
+SND1	0	7	8	40.0	0	0
+INP1
+
+% Trial: 1052
+==>
+SND1	0	8	8	40.0	0	0
+INP1
+
+% Trial: 1053
+==>
+SND1	0	9	8	40.0	0	0
+INP1
+
+% Trial: 1054
+==>
+SND1	0	10	8	40.0	0	0
+INP1
+
+% Trial: 1055
+==>
+SND1	0	11	8	40.0	0	0
+INP1
+
+% Trial: 1056
+==>
+SND1	0	12	8	40.0	0	0
+INP1
+
+% Trial: 1057
+==>
+SND1	0	13	8	40.0	0	0
+INP1
+
+% Trial: 1058
+==>
+SND1	0	14	8	40.0	0	0
+INP1
+
+% Trial: 1059
+==>
+SND1	0	15	8	40.0	0	0
+INP1
+
+% Trial: 1060
+==>
+SND1	0	16	8	40.0	0	0
+INP1
+
+% Trial: 1061
+==>
+SND1	0	17	8	40.0	0	0
+INP1
+
+% Trial: 1062
+==>
+SND1	0	18	8	40.0	0	0
+INP1
+
+% Trial: 1063
+==>
+SND1	0	19	8	40.0	0	0
+INP1
+
+% Trial: 1064
+==>
+SND1	0	20	8	40.0	0	0
+INP1
+
+% Trial: 1065
+==>
+SND1	0	21	8	40.0	0	0
+INP1
+
+% Trial: 1066
+==>
+SND1	0	22	8	40.0	0	0
+INP1
+
+% Trial: 1067
+==>
+SND1	0	23	8	40.0	0	0
+INP1
+
+% Trial: 1068
+==>
+SND1	0	24	8	40.0	0	0
+INP1
+
+% Trial: 1069
+==>
+SND1	0	25	8	40.0	0	0
+INP1
+
+% Trial: 1070
+==>
+SND1	0	26	8	40.0	0	0
+INP1
+
+% Trial: 1071
+==>
+SND1	0	27	8	40.0	0	0
+INP1
+
+% Trial: 1072
+==>
+SND1	0	28	8	40.0	0	0
+INP1
+
+% Trial: 1073
+==>
+SND1	0	29	8	40.0	0	0
+INP1
+
+% Trial: 1074
+==>
+SND1	0	1	8	50.0	0	0
+INP1
+
+% Trial: 1075
+==>
+SND1	0	2	8	50.0	0	0
+INP1
+
+% Trial: 1076
+==>
+SND1	0	3	8	50.0	0	0
+INP1
+
+% Trial: 1077
+==>
+SND1	0	4	8	50.0	0	0
+INP1
+
+% Trial: 1078
+==>
+SND1	0	5	8	50.0	0	0
+INP1
+
+% Trial: 1079
+==>
+SND1	0	6	8	50.0	0	0
+INP1
+
+% Trial: 1080
+==>
+SND1	0	7	8	50.0	0	0
+INP1
+
+% Trial: 1081
+==>
+SND1	0	8	8	50.0	0	0
+INP1
+
+% Trial: 1082
+==>
+SND1	0	9	8	50.0	0	0
+INP1
+
+% Trial: 1083
+==>
+SND1	0	10	8	50.0	0	0
+INP1
+
+% Trial: 1084
+==>
+SND1	0	11	8	50.0	0	0
+INP1
+
+% Trial: 1085
+==>
+SND1	0	12	8	50.0	0	0
+INP1
+
+% Trial: 1086
+==>
+SND1	0	13	8	50.0	0	0
+INP1
+
+% Trial: 1087
+==>
+SND1	0	14	8	50.0	0	0
+INP1
+
+% Trial: 1088
+==>
+SND1	0	15	8	50.0	0	0
+INP1
+
+% Trial: 1089
+==>
+SND1	0	16	8	50.0	0	0
+INP1
+
+% Trial: 1090
+==>
+SND1	0	17	8	50.0	0	0
+INP1
+
+% Trial: 1091
+==>
+SND1	0	18	8	50.0	0	0
+INP1
+
+% Trial: 1092
+==>
+SND1	0	19	8	50.0	0	0
+INP1
+
+% Trial: 1093
+==>
+SND1	0	20	8	50.0	0	0
+INP1
+
+% Trial: 1094
+==>
+SND1	0	21	8	50.0	0	0
+INP1
+
+% Trial: 1095
+==>
+SND1	0	22	8	50.0	0	0
+INP1
+
+% Trial: 1096
+==>
+SND1	0	23	8	50.0	0	0
+INP1
+
+% Trial: 1097
+==>
+SND1	0	24	8	50.0	0	0
+INP1
+
+% Trial: 1098
+==>
+SND1	0	25	8	50.0	0	0
+INP1
+
+% Trial: 1099
+==>
+SND1	0	26	8	50.0	0	0
+INP1
+
+% Trial: 1100
+==>
+SND1	0	27	8	50.0	0	0
+INP1
+
+% Trial: 1101
+==>
+SND1	0	28	8	50.0	0	0
+INP1
+
+% Trial: 1102
+==>
+SND1	0	29	8	50.0	0	0
+INP1
+
+% Trial: 1103
+==>
+SND1	0	1	8	60.0	0	0
+INP1
+
+% Trial: 1104
+==>
+SND1	0	2	8	60.0	0	0
+INP1
+
+% Trial: 1105
+==>
+SND1	0	3	8	60.0	0	0
+INP1
+
+% Trial: 1106
+==>
+SND1	0	4	8	60.0	0	0
+INP1
+
+% Trial: 1107
+==>
+SND1	0	5	8	60.0	0	0
+INP1
+
+% Trial: 1108
+==>
+SND1	0	6	8	60.0	0	0
+INP1
+
+% Trial: 1109
+==>
+SND1	0	7	8	60.0	0	0
+INP1
+
+% Trial: 1110
+==>
+SND1	0	8	8	60.0	0	0
+INP1
+
+% Trial: 1111
+==>
+SND1	0	9	8	60.0	0	0
+INP1
+
+% Trial: 1112
+==>
+SND1	0	10	8	60.0	0	0
+INP1
+
+% Trial: 1113
+==>
+SND1	0	11	8	60.0	0	0
+INP1
+
+% Trial: 1114
+==>
+SND1	0	12	8	60.0	0	0
+INP1
+
+% Trial: 1115
+==>
+SND1	0	13	8	60.0	0	0
+INP1
+
+% Trial: 1116
+==>
+SND1	0	14	8	60.0	0	0
+INP1
+
+% Trial: 1117
+==>
+SND1	0	15	8	60.0	0	0
+INP1
+
+% Trial: 1118
+==>
+SND1	0	16	8	60.0	0	0
+INP1
+
+% Trial: 1119
+==>
+SND1	0	17	8	60.0	0	0
+INP1
+
+% Trial: 1120
+==>
+SND1	0	18	8	60.0	0	0
+INP1
+
+% Trial: 1121
+==>
+SND1	0	19	8	60.0	0	0
+INP1
+
+% Trial: 1122
+==>
+SND1	0	20	8	60.0	0	0
+INP1
+
+% Trial: 1123
+==>
+SND1	0	21	8	60.0	0	0
+INP1
+
+% Trial: 1124
+==>
+SND1	0	22	8	60.0	0	0
+INP1
+
+% Trial: 1125
+==>
+SND1	0	23	8	60.0	0	0
+INP1
+
+% Trial: 1126
+==>
+SND1	0	24	8	60.0	0	0
+INP1
+
+% Trial: 1127
+==>
+SND1	0	25	8	60.0	0	0
+INP1
+
+% Trial: 1128
+==>
+SND1	0	26	8	60.0	0	0
+INP1
+
+% Trial: 1129
+==>
+SND1	0	27	8	60.0	0	0
+INP1
+
+% Trial: 1130
+==>
+SND1	0	28	8	60.0	0	0
+INP1
+
+% Trial: 1131
+==>
+SND1	0	29	8	60.0	0	0
+INP1
+
+% Trial: 1132
+==>
+SND1	0	1	8	70.0	0	0
+INP1
+
+% Trial: 1133
+==>
+SND1	0	2	8	70.0	0	0
+INP1
+
+% Trial: 1134
+==>
+SND1	0	3	8	70.0	0	0
+INP1
+
+% Trial: 1135
+==>
+SND1	0	4	8	70.0	0	0
+INP1
+
+% Trial: 1136
+==>
+SND1	0	5	8	70.0	0	0
+INP1
+
+% Trial: 1137
+==>
+SND1	0	6	8	70.0	0	0
+INP1
+
+% Trial: 1138
+==>
+SND1	0	7	8	70.0	0	0
+INP1
+
+% Trial: 1139
+==>
+SND1	0	8	8	70.0	0	0
+INP1
+
+% Trial: 1140
+==>
+SND1	0	9	8	70.0	0	0
+INP1
+
+% Trial: 1141
+==>
+SND1	0	10	8	70.0	0	0
+INP1
+
+% Trial: 1142
+==>
+SND1	0	11	8	70.0	0	0
+INP1
+
+% Trial: 1143
+==>
+SND1	0	12	8	70.0	0	0
+INP1
+
+% Trial: 1144
+==>
+SND1	0	13	8	70.0	0	0
+INP1
+
+% Trial: 1145
+==>
+SND1	0	14	8	70.0	0	0
+INP1
+
+% Trial: 1146
+==>
+SND1	0	15	8	70.0	0	0
+INP1
+
+% Trial: 1147
+==>
+SND1	0	16	8	70.0	0	0
+INP1
+
+% Trial: 1148
+==>
+SND1	0	17	8	70.0	0	0
+INP1
+
+% Trial: 1149
+==>
+SND1	0	18	8	70.0	0	0
+INP1
+
+% Trial: 1150
+==>
+SND1	0	19	8	70.0	0	0
+INP1
+
+% Trial: 1151
+==>
+SND1	0	20	8	70.0	0	0
+INP1
+
+% Trial: 1152
+==>
+SND1	0	21	8	70.0	0	0
+INP1
+
+% Trial: 1153
+==>
+SND1	0	22	8	70.0	0	0
+INP1
+
+% Trial: 1154
+==>
+SND1	0	23	8	70.0	0	0
+INP1
+
+% Trial: 1155
+==>
+SND1	0	24	8	70.0	0	0
+INP1
+
+% Trial: 1156
+==>
+SND1	0	25	8	70.0	0	0
+INP1
+
+% Trial: 1157
+==>
+SND1	0	26	8	70.0	0	0
+INP1
+
+% Trial: 1158
+==>
+SND1	0	27	8	70.0	0	0
+INP1
+
+% Trial: 1159
+==>
+SND1	0	28	8	70.0	0	0
+INP1
+
+% Trial: 1160
+==>
+SND1	0	29	8	70.0	0	0
+INP1
+
+% Trial: 1161
+==>
+SND1	0	1	9	30.0	0	0
+INP1
+
+% Trial: 1162
+==>
+SND1	0	2	9	30.0	0	0
+INP1
+
+% Trial: 1163
+==>
+SND1	0	3	9	30.0	0	0
+INP1
+
+% Trial: 1164
+==>
+SND1	0	4	9	30.0	0	0
+INP1
+
+% Trial: 1165
+==>
+SND1	0	5	9	30.0	0	0
+INP1
+
+% Trial: 1166
+==>
+SND1	0	6	9	30.0	0	0
+INP1
+
+% Trial: 1167
+==>
+SND1	0	7	9	30.0	0	0
+INP1
+
+% Trial: 1168
+==>
+SND1	0	8	9	30.0	0	0
+INP1
+
+% Trial: 1169
+==>
+SND1	0	9	9	30.0	0	0
+INP1
+
+% Trial: 1170
+==>
+SND1	0	10	9	30.0	0	0
+INP1
+
+% Trial: 1171
+==>
+SND1	0	11	9	30.0	0	0
+INP1
+
+% Trial: 1172
+==>
+SND1	0	12	9	30.0	0	0
+INP1
+
+% Trial: 1173
+==>
+SND1	0	13	9	30.0	0	0
+INP1
+
+% Trial: 1174
+==>
+SND1	0	14	9	30.0	0	0
+INP1
+
+% Trial: 1175
+==>
+SND1	0	15	9	30.0	0	0
+INP1
+
+% Trial: 1176
+==>
+SND1	0	16	9	30.0	0	0
+INP1
+
+% Trial: 1177
+==>
+SND1	0	17	9	30.0	0	0
+INP1
+
+% Trial: 1178
+==>
+SND1	0	18	9	30.0	0	0
+INP1
+
+% Trial: 1179
+==>
+SND1	0	19	9	30.0	0	0
+INP1
+
+% Trial: 1180
+==>
+SND1	0	20	9	30.0	0	0
+INP1
+
+% Trial: 1181
+==>
+SND1	0	21	9	30.0	0	0
+INP1
+
+% Trial: 1182
+==>
+SND1	0	22	9	30.0	0	0
+INP1
+
+% Trial: 1183
+==>
+SND1	0	23	9	30.0	0	0
+INP1
+
+% Trial: 1184
+==>
+SND1	0	24	9	30.0	0	0
+INP1
+
+% Trial: 1185
+==>
+SND1	0	25	9	30.0	0	0
+INP1
+
+% Trial: 1186
+==>
+SND1	0	26	9	30.0	0	0
+INP1
+
+% Trial: 1187
+==>
+SND1	0	27	9	30.0	0	0
+INP1
+
+% Trial: 1188
+==>
+SND1	0	28	9	30.0	0	0
+INP1
+
+% Trial: 1189
+==>
+SND1	0	29	9	30.0	0	0
+INP1
+
+% Trial: 1190
+==>
+SND1	0	1	9	40.0	0	0
+INP1
+
+% Trial: 1191
+==>
+SND1	0	2	9	40.0	0	0
+INP1
+
+% Trial: 1192
+==>
+SND1	0	3	9	40.0	0	0
+INP1
+
+% Trial: 1193
+==>
+SND1	0	4	9	40.0	0	0
+INP1
+
+% Trial: 1194
+==>
+SND1	0	5	9	40.0	0	0
+INP1
+
+% Trial: 1195
+==>
+SND1	0	6	9	40.0	0	0
+INP1
+
+% Trial: 1196
+==>
+SND1	0	7	9	40.0	0	0
+INP1
+
+% Trial: 1197
+==>
+SND1	0	8	9	40.0	0	0
+INP1
+
+% Trial: 1198
+==>
+SND1	0	9	9	40.0	0	0
+INP1
+
+% Trial: 1199
+==>
+SND1	0	10	9	40.0	0	0
+INP1
+
+% Trial: 1200
+==>
+SND1	0	11	9	40.0	0	0
+INP1
+
+% Trial: 1201
+==>
+SND1	0	12	9	40.0	0	0
+INP1
+
+% Trial: 1202
+==>
+SND1	0	13	9	40.0	0	0
+INP1
+
+% Trial: 1203
+==>
+SND1	0	14	9	40.0	0	0
+INP1
+
+% Trial: 1204
+==>
+SND1	0	15	9	40.0	0	0
+INP1
+
+% Trial: 1205
+==>
+SND1	0	16	9	40.0	0	0
+INP1
+
+% Trial: 1206
+==>
+SND1	0	17	9	40.0	0	0
+INP1
+
+% Trial: 1207
+==>
+SND1	0	18	9	40.0	0	0
+INP1
+
+% Trial: 1208
+==>
+SND1	0	19	9	40.0	0	0
+INP1
+
+% Trial: 1209
+==>
+SND1	0	20	9	40.0	0	0
+INP1
+
+% Trial: 1210
+==>
+SND1	0	21	9	40.0	0	0
+INP1
+
+% Trial: 1211
+==>
+SND1	0	22	9	40.0	0	0
+INP1
+
+% Trial: 1212
+==>
+SND1	0	23	9	40.0	0	0
+INP1
+
+% Trial: 1213
+==>
+SND1	0	24	9	40.0	0	0
+INP1
+
+% Trial: 1214
+==>
+SND1	0	25	9	40.0	0	0
+INP1
+
+% Trial: 1215
+==>
+SND1	0	26	9	40.0	0	0
+INP1
+
+% Trial: 1216
+==>
+SND1	0	27	9	40.0	0	0
+INP1
+
+% Trial: 1217
+==>
+SND1	0	28	9	40.0	0	0
+INP1
+
+% Trial: 1218
+==>
+SND1	0	29	9	40.0	0	0
+INP1
+
+% Trial: 1219
+==>
+SND1	0	1	9	50.0	0	0
+INP1
+
+% Trial: 1220
+==>
+SND1	0	2	9	50.0	0	0
+INP1
+
+% Trial: 1221
+==>
+SND1	0	3	9	50.0	0	0
+INP1
+
+% Trial: 1222
+==>
+SND1	0	4	9	50.0	0	0
+INP1
+
+% Trial: 1223
+==>
+SND1	0	5	9	50.0	0	0
+INP1
+
+% Trial: 1224
+==>
+SND1	0	6	9	50.0	0	0
+INP1
+
+% Trial: 1225
+==>
+SND1	0	7	9	50.0	0	0
+INP1
+
+% Trial: 1226
+==>
+SND1	0	8	9	50.0	0	0
+INP1
+
+% Trial: 1227
+==>
+SND1	0	9	9	50.0	0	0
+INP1
+
+% Trial: 1228
+==>
+SND1	0	10	9	50.0	0	0
+INP1
+
+% Trial: 1229
+==>
+SND1	0	11	9	50.0	0	0
+INP1
+
+% Trial: 1230
+==>
+SND1	0	12	9	50.0	0	0
+INP1
+
+% Trial: 1231
+==>
+SND1	0	13	9	50.0	0	0
+INP1
+
+% Trial: 1232
+==>
+SND1	0	14	9	50.0	0	0
+INP1
+
+% Trial: 1233
+==>
+SND1	0	15	9	50.0	0	0
+INP1
+
+% Trial: 1234
+==>
+SND1	0	16	9	50.0	0	0
+INP1
+
+% Trial: 1235
+==>
+SND1	0	17	9	50.0	0	0
+INP1
+
+% Trial: 1236
+==>
+SND1	0	18	9	50.0	0	0
+INP1
+
+% Trial: 1237
+==>
+SND1	0	19	9	50.0	0	0
+INP1
+
+% Trial: 1238
+==>
+SND1	0	20	9	50.0	0	0
+INP1
+
+% Trial: 1239
+==>
+SND1	0	21	9	50.0	0	0
+INP1
+
+% Trial: 1240
+==>
+SND1	0	22	9	50.0	0	0
+INP1
+
+% Trial: 1241
+==>
+SND1	0	23	9	50.0	0	0
+INP1
+
+% Trial: 1242
+==>
+SND1	0	24	9	50.0	0	0
+INP1
+
+% Trial: 1243
+==>
+SND1	0	25	9	50.0	0	0
+INP1
+
+% Trial: 1244
+==>
+SND1	0	26	9	50.0	0	0
+INP1
+
+% Trial: 1245
+==>
+SND1	0	27	9	50.0	0	0
+INP1
+
+% Trial: 1246
+==>
+SND1	0	28	9	50.0	0	0
+INP1
+
+% Trial: 1247
+==>
+SND1	0	29	9	50.0	0	0
+INP1
+
+% Trial: 1248
+==>
+SND1	0	1	9	60.0	0	0
+INP1
+
+% Trial: 1249
+==>
+SND1	0	2	9	60.0	0	0
+INP1
+
+% Trial: 1250
+==>
+SND1	0	3	9	60.0	0	0
+INP1
+
+% Trial: 1251
+==>
+SND1	0	4	9	60.0	0	0
+INP1
+
+% Trial: 1252
+==>
+SND1	0	5	9	60.0	0	0
+INP1
+
+% Trial: 1253
+==>
+SND1	0	6	9	60.0	0	0
+INP1
+
+% Trial: 1254
+==>
+SND1	0	7	9	60.0	0	0
+INP1
+
+% Trial: 1255
+==>
+SND1	0	8	9	60.0	0	0
+INP1
+
+% Trial: 1256
+==>
+SND1	0	9	9	60.0	0	0
+INP1
+
+% Trial: 1257
+==>
+SND1	0	10	9	60.0	0	0
+INP1
+
+% Trial: 1258
+==>
+SND1	0	11	9	60.0	0	0
+INP1
+
+% Trial: 1259
+==>
+SND1	0	12	9	60.0	0	0
+INP1
+
+% Trial: 1260
+==>
+SND1	0	13	9	60.0	0	0
+INP1
+
+% Trial: 1261
+==>
+SND1	0	14	9	60.0	0	0
+INP1
+
+% Trial: 1262
+==>
+SND1	0	15	9	60.0	0	0
+INP1
+
+% Trial: 1263
+==>
+SND1	0	16	9	60.0	0	0
+INP1
+
+% Trial: 1264
+==>
+SND1	0	17	9	60.0	0	0
+INP1
+
+% Trial: 1265
+==>
+SND1	0	18	9	60.0	0	0
+INP1
+
+% Trial: 1266
+==>
+SND1	0	19	9	60.0	0	0
+INP1
+
+% Trial: 1267
+==>
+SND1	0	20	9	60.0	0	0
+INP1
+
+% Trial: 1268
+==>
+SND1	0	21	9	60.0	0	0
+INP1
+
+% Trial: 1269
+==>
+SND1	0	22	9	60.0	0	0
+INP1
+
+% Trial: 1270
+==>
+SND1	0	23	9	60.0	0	0
+INP1
+
+% Trial: 1271
+==>
+SND1	0	24	9	60.0	0	0
+INP1
+
+% Trial: 1272
+==>
+SND1	0	25	9	60.0	0	0
+INP1
+
+% Trial: 1273
+==>
+SND1	0	26	9	60.0	0	0
+INP1
+
+% Trial: 1274
+==>
+SND1	0	27	9	60.0	0	0
+INP1
+
+% Trial: 1275
+==>
+SND1	0	28	9	60.0	0	0
+INP1
+
+% Trial: 1276
+==>
+SND1	0	29	9	60.0	0	0
+INP1
+
+% Trial: 1277
+==>
+SND1	0	1	9	70.0	0	0
+INP1
+
+% Trial: 1278
+==>
+SND1	0	2	9	70.0	0	0
+INP1
+
+% Trial: 1279
+==>
+SND1	0	3	9	70.0	0	0
+INP1
+
+% Trial: 1280
+==>
+SND1	0	4	9	70.0	0	0
+INP1
+
+% Trial: 1281
+==>
+SND1	0	5	9	70.0	0	0
+INP1
+
+% Trial: 1282
+==>
+SND1	0	6	9	70.0	0	0
+INP1
+
+% Trial: 1283
+==>
+SND1	0	7	9	70.0	0	0
+INP1
+
+% Trial: 1284
+==>
+SND1	0	8	9	70.0	0	0
+INP1
+
+% Trial: 1285
+==>
+SND1	0	9	9	70.0	0	0
+INP1
+
+% Trial: 1286
+==>
+SND1	0	10	9	70.0	0	0
+INP1
+
+% Trial: 1287
+==>
+SND1	0	11	9	70.0	0	0
+INP1
+
+% Trial: 1288
+==>
+SND1	0	12	9	70.0	0	0
+INP1
+
+% Trial: 1289
+==>
+SND1	0	13	9	70.0	0	0
+INP1
+
+% Trial: 1290
+==>
+SND1	0	14	9	70.0	0	0
+INP1
+
+% Trial: 1291
+==>
+SND1	0	15	9	70.0	0	0
+INP1
+
+% Trial: 1292
+==>
+SND1	0	16	9	70.0	0	0
+INP1
+
+% Trial: 1293
+==>
+SND1	0	17	9	70.0	0	0
+INP1
+
+% Trial: 1294
+==>
+SND1	0	18	9	70.0	0	0
+INP1
+
+% Trial: 1295
+==>
+SND1	0	19	9	70.0	0	0
+INP1
+
+% Trial: 1296
+==>
+SND1	0	20	9	70.0	0	0
+INP1
+
+% Trial: 1297
+==>
+SND1	0	21	9	70.0	0	0
+INP1
+
+% Trial: 1298
+==>
+SND1	0	22	9	70.0	0	0
+INP1
+
+% Trial: 1299
+==>
+SND1	0	23	9	70.0	0	0
+INP1
+
+% Trial: 1300
+==>
+SND1	0	24	9	70.0	0	0
+INP1
+
+% Trial: 1301
+==>
+SND1	0	25	9	70.0	0	0
+INP1
+
+% Trial: 1302
+==>
+SND1	0	26	9	70.0	0	0
+INP1
+
+% Trial: 1303
+==>
+SND1	0	27	9	70.0	0	0
+INP1
+
+% Trial: 1304
+==>
+SND1	0	28	9	70.0	0	0
+INP1
+
+% Trial: 1305
+==>
+SND1	0	29	9	70.0	0	0
+INP1
+
+% Trial: 1306
+==>
+SND1	0	1	10	30.0	0	0
+INP1
+
+% Trial: 1307
+==>
+SND1	0	2	10	30.0	0	0
+INP1
+
+% Trial: 1308
+==>
+SND1	0	3	10	30.0	0	0
+INP1
+
+% Trial: 1309
+==>
+SND1	0	4	10	30.0	0	0
+INP1
+
+% Trial: 1310
+==>
+SND1	0	5	10	30.0	0	0
+INP1
+
+% Trial: 1311
+==>
+SND1	0	6	10	30.0	0	0
+INP1
+
+% Trial: 1312
+==>
+SND1	0	7	10	30.0	0	0
+INP1
+
+% Trial: 1313
+==>
+SND1	0	8	10	30.0	0	0
+INP1
+
+% Trial: 1314
+==>
+SND1	0	9	10	30.0	0	0
+INP1
+
+% Trial: 1315
+==>
+SND1	0	10	10	30.0	0	0
+INP1
+
+% Trial: 1316
+==>
+SND1	0	11	10	30.0	0	0
+INP1
+
+% Trial: 1317
+==>
+SND1	0	12	10	30.0	0	0
+INP1
+
+% Trial: 1318
+==>
+SND1	0	13	10	30.0	0	0
+INP1
+
+% Trial: 1319
+==>
+SND1	0	14	10	30.0	0	0
+INP1
+
+% Trial: 1320
+==>
+SND1	0	15	10	30.0	0	0
+INP1
+
+% Trial: 1321
+==>
+SND1	0	16	10	30.0	0	0
+INP1
+
+% Trial: 1322
+==>
+SND1	0	17	10	30.0	0	0
+INP1
+
+% Trial: 1323
+==>
+SND1	0	18	10	30.0	0	0
+INP1
+
+% Trial: 1324
+==>
+SND1	0	19	10	30.0	0	0
+INP1
+
+% Trial: 1325
+==>
+SND1	0	20	10	30.0	0	0
+INP1
+
+% Trial: 1326
+==>
+SND1	0	21	10	30.0	0	0
+INP1
+
+% Trial: 1327
+==>
+SND1	0	22	10	30.0	0	0
+INP1
+
+% Trial: 1328
+==>
+SND1	0	23	10	30.0	0	0
+INP1
+
+% Trial: 1329
+==>
+SND1	0	24	10	30.0	0	0
+INP1
+
+% Trial: 1330
+==>
+SND1	0	25	10	30.0	0	0
+INP1
+
+% Trial: 1331
+==>
+SND1	0	26	10	30.0	0	0
+INP1
+
+% Trial: 1332
+==>
+SND1	0	27	10	30.0	0	0
+INP1
+
+% Trial: 1333
+==>
+SND1	0	28	10	30.0	0	0
+INP1
+
+% Trial: 1334
+==>
+SND1	0	29	10	30.0	0	0
+INP1
+
+% Trial: 1335
+==>
+SND1	0	1	10	40.0	0	0
+INP1
+
+% Trial: 1336
+==>
+SND1	0	2	10	40.0	0	0
+INP1
+
+% Trial: 1337
+==>
+SND1	0	3	10	40.0	0	0
+INP1
+
+% Trial: 1338
+==>
+SND1	0	4	10	40.0	0	0
+INP1
+
+% Trial: 1339
+==>
+SND1	0	5	10	40.0	0	0
+INP1
+
+% Trial: 1340
+==>
+SND1	0	6	10	40.0	0	0
+INP1
+
+% Trial: 1341
+==>
+SND1	0	7	10	40.0	0	0
+INP1
+
+% Trial: 1342
+==>
+SND1	0	8	10	40.0	0	0
+INP1
+
+% Trial: 1343
+==>
+SND1	0	9	10	40.0	0	0
+INP1
+
+% Trial: 1344
+==>
+SND1	0	10	10	40.0	0	0
+INP1
+
+% Trial: 1345
+==>
+SND1	0	11	10	40.0	0	0
+INP1
+
+% Trial: 1346
+==>
+SND1	0	12	10	40.0	0	0
+INP1
+
+% Trial: 1347
+==>
+SND1	0	13	10	40.0	0	0
+INP1
+
+% Trial: 1348
+==>
+SND1	0	14	10	40.0	0	0
+INP1
+
+% Trial: 1349
+==>
+SND1	0	15	10	40.0	0	0
+INP1
+
+% Trial: 1350
+==>
+SND1	0	16	10	40.0	0	0
+INP1
+
+% Trial: 1351
+==>
+SND1	0	17	10	40.0	0	0
+INP1
+
+% Trial: 1352
+==>
+SND1	0	18	10	40.0	0	0
+INP1
+
+% Trial: 1353
+==>
+SND1	0	19	10	40.0	0	0
+INP1
+
+% Trial: 1354
+==>
+SND1	0	20	10	40.0	0	0
+INP1
+
+% Trial: 1355
+==>
+SND1	0	21	10	40.0	0	0
+INP1
+
+% Trial: 1356
+==>
+SND1	0	22	10	40.0	0	0
+INP1
+
+% Trial: 1357
+==>
+SND1	0	23	10	40.0	0	0
+INP1
+
+% Trial: 1358
+==>
+SND1	0	24	10	40.0	0	0
+INP1
+
+% Trial: 1359
+==>
+SND1	0	25	10	40.0	0	0
+INP1
+
+% Trial: 1360
+==>
+SND1	0	26	10	40.0	0	0
+INP1
+
+% Trial: 1361
+==>
+SND1	0	27	10	40.0	0	0
+INP1
+
+% Trial: 1362
+==>
+SND1	0	28	10	40.0	0	0
+INP1
+
+% Trial: 1363
+==>
+SND1	0	29	10	40.0	0	0
+INP1
+
+% Trial: 1364
+==>
+SND1	0	1	10	50.0	0	0
+INP1
+
+% Trial: 1365
+==>
+SND1	0	2	10	50.0	0	0
+INP1
+
+% Trial: 1366
+==>
+SND1	0	3	10	50.0	0	0
+INP1
+
+% Trial: 1367
+==>
+SND1	0	4	10	50.0	0	0
+INP1
+
+% Trial: 1368
+==>
+SND1	0	5	10	50.0	0	0
+INP1
+
+% Trial: 1369
+==>
+SND1	0	6	10	50.0	0	0
+INP1
+
+% Trial: 1370
+==>
+SND1	0	7	10	50.0	0	0
+INP1
+
+% Trial: 1371
+==>
+SND1	0	8	10	50.0	0	0
+INP1
+
+% Trial: 1372
+==>
+SND1	0	9	10	50.0	0	0
+INP1
+
+% Trial: 1373
+==>
+SND1	0	10	10	50.0	0	0
+INP1
+
+% Trial: 1374
+==>
+SND1	0	11	10	50.0	0	0
+INP1
+
+% Trial: 1375
+==>
+SND1	0	12	10	50.0	0	0
+INP1
+
+% Trial: 1376
+==>
+SND1	0	13	10	50.0	0	0
+INP1
+
+% Trial: 1377
+==>
+SND1	0	14	10	50.0	0	0
+INP1
+
+% Trial: 1378
+==>
+SND1	0	15	10	50.0	0	0
+INP1
+
+% Trial: 1379
+==>
+SND1	0	16	10	50.0	0	0
+INP1
+
+% Trial: 1380
+==>
+SND1	0	17	10	50.0	0	0
+INP1
+
+% Trial: 1381
+==>
+SND1	0	18	10	50.0	0	0
+INP1
+
+% Trial: 1382
+==>
+SND1	0	19	10	50.0	0	0
+INP1
+
+% Trial: 1383
+==>
+SND1	0	20	10	50.0	0	0
+INP1
+
+% Trial: 1384
+==>
+SND1	0	21	10	50.0	0	0
+INP1
+
+% Trial: 1385
+==>
+SND1	0	22	10	50.0	0	0
+INP1
+
+% Trial: 1386
+==>
+SND1	0	23	10	50.0	0	0
+INP1
+
+% Trial: 1387
+==>
+SND1	0	24	10	50.0	0	0
+INP1
+
+% Trial: 1388
+==>
+SND1	0	25	10	50.0	0	0
+INP1
+
+% Trial: 1389
+==>
+SND1	0	26	10	50.0	0	0
+INP1
+
+% Trial: 1390
+==>
+SND1	0	27	10	50.0	0	0
+INP1
+
+% Trial: 1391
+==>
+SND1	0	28	10	50.0	0	0
+INP1
+
+% Trial: 1392
+==>
+SND1	0	29	10	50.0	0	0
+INP1
+
+% Trial: 1393
+==>
+SND1	0	1	10	60.0	0	0
+INP1
+
+% Trial: 1394
+==>
+SND1	0	2	10	60.0	0	0
+INP1
+
+% Trial: 1395
+==>
+SND1	0	3	10	60.0	0	0
+INP1
+
+% Trial: 1396
+==>
+SND1	0	4	10	60.0	0	0
+INP1
+
+% Trial: 1397
+==>
+SND1	0	5	10	60.0	0	0
+INP1
+
+% Trial: 1398
+==>
+SND1	0	6	10	60.0	0	0
+INP1
+
+% Trial: 1399
+==>
+SND1	0	7	10	60.0	0	0
+INP1
+
+% Trial: 1400
+==>
+SND1	0	8	10	60.0	0	0
+INP1
+
+% Trial: 1401
+==>
+SND1	0	9	10	60.0	0	0
+INP1
+
+% Trial: 1402
+==>
+SND1	0	10	10	60.0	0	0
+INP1
+
+% Trial: 1403
+==>
+SND1	0	11	10	60.0	0	0
+INP1
+
+% Trial: 1404
+==>
+SND1	0	12	10	60.0	0	0
+INP1
+
+% Trial: 1405
+==>
+SND1	0	13	10	60.0	0	0
+INP1
+
+% Trial: 1406
+==>
+SND1	0	14	10	60.0	0	0
+INP1
+
+% Trial: 1407
+==>
+SND1	0	15	10	60.0	0	0
+INP1
+
+% Trial: 1408
+==>
+SND1	0	16	10	60.0	0	0
+INP1
+
+% Trial: 1409
+==>
+SND1	0	17	10	60.0	0	0
+INP1
+
+% Trial: 1410
+==>
+SND1	0	18	10	60.0	0	0
+INP1
+
+% Trial: 1411
+==>
+SND1	0	19	10	60.0	0	0
+INP1
+
+% Trial: 1412
+==>
+SND1	0	20	10	60.0	0	0
+INP1
+
+% Trial: 1413
+==>
+SND1	0	21	10	60.0	0	0
+INP1
+
+% Trial: 1414
+==>
+SND1	0	22	10	60.0	0	0
+INP1
+
+% Trial: 1415
+==>
+SND1	0	23	10	60.0	0	0
+INP1
+
+% Trial: 1416
+==>
+SND1	0	24	10	60.0	0	0
+INP1
+
+% Trial: 1417
+==>
+SND1	0	25	10	60.0	0	0
+INP1
+
+% Trial: 1418
+==>
+SND1	0	26	10	60.0	0	0
+INP1
+
+% Trial: 1419
+==>
+SND1	0	27	10	60.0	0	0
+INP1
+
+% Trial: 1420
+==>
+SND1	0	28	10	60.0	0	0
+INP1
+
+% Trial: 1421
+==>
+SND1	0	29	10	60.0	0	0
+INP1
+
+% Trial: 1422
+==>
+SND1	0	1	10	70.0	0	0
+INP1
+
+% Trial: 1423
+==>
+SND1	0	2	10	70.0	0	0
+INP1
+
+% Trial: 1424
+==>
+SND1	0	3	10	70.0	0	0
+INP1
+
+% Trial: 1425
+==>
+SND1	0	4	10	70.0	0	0
+INP1
+
+% Trial: 1426
+==>
+SND1	0	5	10	70.0	0	0
+INP1
+
+% Trial: 1427
+==>
+SND1	0	6	10	70.0	0	0
+INP1
+
+% Trial: 1428
+==>
+SND1	0	7	10	70.0	0	0
+INP1
+
+% Trial: 1429
+==>
+SND1	0	8	10	70.0	0	0
+INP1
+
+% Trial: 1430
+==>
+SND1	0	9	10	70.0	0	0
+INP1
+
+% Trial: 1431
+==>
+SND1	0	10	10	70.0	0	0
+INP1
+
+% Trial: 1432
+==>
+SND1	0	11	10	70.0	0	0
+INP1
+
+% Trial: 1433
+==>
+SND1	0	12	10	70.0	0	0
+INP1
+
+% Trial: 1434
+==>
+SND1	0	13	10	70.0	0	0
+INP1
+
+% Trial: 1435
+==>
+SND1	0	14	10	70.0	0	0
+INP1
+
+% Trial: 1436
+==>
+SND1	0	15	10	70.0	0	0
+INP1
+
+% Trial: 1437
+==>
+SND1	0	16	10	70.0	0	0
+INP1
+
+% Trial: 1438
+==>
+SND1	0	17	10	70.0	0	0
+INP1
+
+% Trial: 1439
+==>
+SND1	0	18	10	70.0	0	0
+INP1
+
+% Trial: 1440
+==>
+SND1	0	19	10	70.0	0	0
+INP1
+
+% Trial: 1441
+==>
+SND1	0	20	10	70.0	0	0
+INP1
+
+% Trial: 1442
+==>
+SND1	0	21	10	70.0	0	0
+INP1
+
+% Trial: 1443
+==>
+SND1	0	22	10	70.0	0	0
+INP1
+
+% Trial: 1444
+==>
+SND1	0	23	10	70.0	0	0
+INP1
+
+% Trial: 1445
+==>
+SND1	0	24	10	70.0	0	0
+INP1
+
+% Trial: 1446
+==>
+SND1	0	25	10	70.0	0	0
+INP1
+
+% Trial: 1447
+==>
+SND1	0	26	10	70.0	0	0
+INP1
+
+% Trial: 1448
+==>
+SND1	0	27	10	70.0	0	0
+INP1
+
+% Trial: 1449
+==>
+SND1	0	28	10	70.0	0	0
+INP1
+
+% Trial: 1450
+==>
+SND1	0	29	10	70.0	0	0
+INP1
+
+% Trial: 1451
+==>
+SND1	0	1	11	30.0	0	0
+INP1
+
+% Trial: 1452
+==>
+SND1	0	2	11	30.0	0	0
+INP1
+
+% Trial: 1453
+==>
+SND1	0	3	11	30.0	0	0
+INP1
+
+% Trial: 1454
+==>
+SND1	0	4	11	30.0	0	0
+INP1
+
+% Trial: 1455
+==>
+SND1	0	5	11	30.0	0	0
+INP1
+
+% Trial: 1456
+==>
+SND1	0	6	11	30.0	0	0
+INP1
+
+% Trial: 1457
+==>
+SND1	0	7	11	30.0	0	0
+INP1
+
+% Trial: 1458
+==>
+SND1	0	8	11	30.0	0	0
+INP1
+
+% Trial: 1459
+==>
+SND1	0	9	11	30.0	0	0
+INP1
+
+% Trial: 1460
+==>
+SND1	0	10	11	30.0	0	0
+INP1
+
+% Trial: 1461
+==>
+SND1	0	11	11	30.0	0	0
+INP1
+
+% Trial: 1462
+==>
+SND1	0	12	11	30.0	0	0
+INP1
+
+% Trial: 1463
+==>
+SND1	0	13	11	30.0	0	0
+INP1
+
+% Trial: 1464
+==>
+SND1	0	14	11	30.0	0	0
+INP1
+
+% Trial: 1465
+==>
+SND1	0	15	11	30.0	0	0
+INP1
+
+% Trial: 1466
+==>
+SND1	0	16	11	30.0	0	0
+INP1
+
+% Trial: 1467
+==>
+SND1	0	17	11	30.0	0	0
+INP1
+
+% Trial: 1468
+==>
+SND1	0	18	11	30.0	0	0
+INP1
+
+% Trial: 1469
+==>
+SND1	0	19	11	30.0	0	0
+INP1
+
+% Trial: 1470
+==>
+SND1	0	20	11	30.0	0	0
+INP1
+
+% Trial: 1471
+==>
+SND1	0	21	11	30.0	0	0
+INP1
+
+% Trial: 1472
+==>
+SND1	0	22	11	30.0	0	0
+INP1
+
+% Trial: 1473
+==>
+SND1	0	23	11	30.0	0	0
+INP1
+
+% Trial: 1474
+==>
+SND1	0	24	11	30.0	0	0
+INP1
+
+% Trial: 1475
+==>
+SND1	0	25	11	30.0	0	0
+INP1
+
+% Trial: 1476
+==>
+SND1	0	26	11	30.0	0	0
+INP1
+
+% Trial: 1477
+==>
+SND1	0	27	11	30.0	0	0
+INP1
+
+% Trial: 1478
+==>
+SND1	0	28	11	30.0	0	0
+INP1
+
+% Trial: 1479
+==>
+SND1	0	29	11	30.0	0	0
+INP1
+
+% Trial: 1480
+==>
+SND1	0	1	11	40.0	0	0
+INP1
+
+% Trial: 1481
+==>
+SND1	0	2	11	40.0	0	0
+INP1
+
+% Trial: 1482
+==>
+SND1	0	3	11	40.0	0	0
+INP1
+
+% Trial: 1483
+==>
+SND1	0	4	11	40.0	0	0
+INP1
+
+% Trial: 1484
+==>
+SND1	0	5	11	40.0	0	0
+INP1
+
+% Trial: 1485
+==>
+SND1	0	6	11	40.0	0	0
+INP1
+
+% Trial: 1486
+==>
+SND1	0	7	11	40.0	0	0
+INP1
+
+% Trial: 1487
+==>
+SND1	0	8	11	40.0	0	0
+INP1
+
+% Trial: 1488
+==>
+SND1	0	9	11	40.0	0	0
+INP1
+
+% Trial: 1489
+==>
+SND1	0	10	11	40.0	0	0
+INP1
+
+% Trial: 1490
+==>
+SND1	0	11	11	40.0	0	0
+INP1
+
+% Trial: 1491
+==>
+SND1	0	12	11	40.0	0	0
+INP1
+
+% Trial: 1492
+==>
+SND1	0	13	11	40.0	0	0
+INP1
+
+% Trial: 1493
+==>
+SND1	0	14	11	40.0	0	0
+INP1
+
+% Trial: 1494
+==>
+SND1	0	15	11	40.0	0	0
+INP1
+
+% Trial: 1495
+==>
+SND1	0	16	11	40.0	0	0
+INP1
+
+% Trial: 1496
+==>
+SND1	0	17	11	40.0	0	0
+INP1
+
+% Trial: 1497
+==>
+SND1	0	18	11	40.0	0	0
+INP1
+
+% Trial: 1498
+==>
+SND1	0	19	11	40.0	0	0
+INP1
+
+% Trial: 1499
+==>
+SND1	0	20	11	40.0	0	0
+INP1
+
+% Trial: 1500
+==>
+SND1	0	21	11	40.0	0	0
+INP1
+
+% Trial: 1501
+==>
+SND1	0	22	11	40.0	0	0
+INP1
+
+% Trial: 1502
+==>
+SND1	0	23	11	40.0	0	0
+INP1
+
+% Trial: 1503
+==>
+SND1	0	24	11	40.0	0	0
+INP1
+
+% Trial: 1504
+==>
+SND1	0	25	11	40.0	0	0
+INP1
+
+% Trial: 1505
+==>
+SND1	0	26	11	40.0	0	0
+INP1
+
+% Trial: 1506
+==>
+SND1	0	27	11	40.0	0	0
+INP1
+
+% Trial: 1507
+==>
+SND1	0	28	11	40.0	0	0
+INP1
+
+% Trial: 1508
+==>
+SND1	0	29	11	40.0	0	0
+INP1
+
+% Trial: 1509
+==>
+SND1	0	1	11	50.0	0	0
+INP1
+
+% Trial: 1510
+==>
+SND1	0	2	11	50.0	0	0
+INP1
+
+% Trial: 1511
+==>
+SND1	0	3	11	50.0	0	0
+INP1
+
+% Trial: 1512
+==>
+SND1	0	4	11	50.0	0	0
+INP1
+
+% Trial: 1513
+==>
+SND1	0	5	11	50.0	0	0
+INP1
+
+% Trial: 1514
+==>
+SND1	0	6	11	50.0	0	0
+INP1
+
+% Trial: 1515
+==>
+SND1	0	7	11	50.0	0	0
+INP1
+
+% Trial: 1516
+==>
+SND1	0	8	11	50.0	0	0
+INP1
+
+% Trial: 1517
+==>
+SND1	0	9	11	50.0	0	0
+INP1
+
+% Trial: 1518
+==>
+SND1	0	10	11	50.0	0	0
+INP1
+
+% Trial: 1519
+==>
+SND1	0	11	11	50.0	0	0
+INP1
+
+% Trial: 1520
+==>
+SND1	0	12	11	50.0	0	0
+INP1
+
+% Trial: 1521
+==>
+SND1	0	13	11	50.0	0	0
+INP1
+
+% Trial: 1522
+==>
+SND1	0	14	11	50.0	0	0
+INP1
+
+% Trial: 1523
+==>
+SND1	0	15	11	50.0	0	0
+INP1
+
+% Trial: 1524
+==>
+SND1	0	16	11	50.0	0	0
+INP1
+
+% Trial: 1525
+==>
+SND1	0	17	11	50.0	0	0
+INP1
+
+% Trial: 1526
+==>
+SND1	0	18	11	50.0	0	0
+INP1
+
+% Trial: 1527
+==>
+SND1	0	19	11	50.0	0	0
+INP1
+
+% Trial: 1528
+==>
+SND1	0	20	11	50.0	0	0
+INP1
+
+% Trial: 1529
+==>
+SND1	0	21	11	50.0	0	0
+INP1
+
+% Trial: 1530
+==>
+SND1	0	22	11	50.0	0	0
+INP1
+
+% Trial: 1531
+==>
+SND1	0	23	11	50.0	0	0
+INP1
+
+% Trial: 1532
+==>
+SND1	0	24	11	50.0	0	0
+INP1
+
+% Trial: 1533
+==>
+SND1	0	25	11	50.0	0	0
+INP1
+
+% Trial: 1534
+==>
+SND1	0	26	11	50.0	0	0
+INP1
+
+% Trial: 1535
+==>
+SND1	0	27	11	50.0	0	0
+INP1
+
+% Trial: 1536
+==>
+SND1	0	28	11	50.0	0	0
+INP1
+
+% Trial: 1537
+==>
+SND1	0	29	11	50.0	0	0
+INP1
+
+% Trial: 1538
+==>
+SND1	0	1	11	60.0	0	0
+INP1
+
+% Trial: 1539
+==>
+SND1	0	2	11	60.0	0	0
+INP1
+
+% Trial: 1540
+==>
+SND1	0	3	11	60.0	0	0
+INP1
+
+% Trial: 1541
+==>
+SND1	0	4	11	60.0	0	0
+INP1
+
+% Trial: 1542
+==>
+SND1	0	5	11	60.0	0	0
+INP1
+
+% Trial: 1543
+==>
+SND1	0	6	11	60.0	0	0
+INP1
+
+% Trial: 1544
+==>
+SND1	0	7	11	60.0	0	0
+INP1
+
+% Trial: 1545
+==>
+SND1	0	8	11	60.0	0	0
+INP1
+
+% Trial: 1546
+==>
+SND1	0	9	11	60.0	0	0
+INP1
+
+% Trial: 1547
+==>
+SND1	0	10	11	60.0	0	0
+INP1
+
+% Trial: 1548
+==>
+SND1	0	11	11	60.0	0	0
+INP1
+
+% Trial: 1549
+==>
+SND1	0	12	11	60.0	0	0
+INP1
+
+% Trial: 1550
+==>
+SND1	0	13	11	60.0	0	0
+INP1
+
+% Trial: 1551
+==>
+SND1	0	14	11	60.0	0	0
+INP1
+
+% Trial: 1552
+==>
+SND1	0	15	11	60.0	0	0
+INP1
+
+% Trial: 1553
+==>
+SND1	0	16	11	60.0	0	0
+INP1
+
+% Trial: 1554
+==>
+SND1	0	17	11	60.0	0	0
+INP1
+
+% Trial: 1555
+==>
+SND1	0	18	11	60.0	0	0
+INP1
+
+% Trial: 1556
+==>
+SND1	0	19	11	60.0	0	0
+INP1
+
+% Trial: 1557
+==>
+SND1	0	20	11	60.0	0	0
+INP1
+
+% Trial: 1558
+==>
+SND1	0	21	11	60.0	0	0
+INP1
+
+% Trial: 1559
+==>
+SND1	0	22	11	60.0	0	0
+INP1
+
+% Trial: 1560
+==>
+SND1	0	23	11	60.0	0	0
+INP1
+
+% Trial: 1561
+==>
+SND1	0	24	11	60.0	0	0
+INP1
+
+% Trial: 1562
+==>
+SND1	0	25	11	60.0	0	0
+INP1
+
+% Trial: 1563
+==>
+SND1	0	26	11	60.0	0	0
+INP1
+
+% Trial: 1564
+==>
+SND1	0	27	11	60.0	0	0
+INP1
+
+% Trial: 1565
+==>
+SND1	0	28	11	60.0	0	0
+INP1
+
+% Trial: 1566
+==>
+SND1	0	29	11	60.0	0	0
+INP1
+
+% Trial: 1567
+==>
+SND1	0	1	11	70.0	0	0
+INP1
+
+% Trial: 1568
+==>
+SND1	0	2	11	70.0	0	0
+INP1
+
+% Trial: 1569
+==>
+SND1	0	3	11	70.0	0	0
+INP1
+
+% Trial: 1570
+==>
+SND1	0	4	11	70.0	0	0
+INP1
+
+% Trial: 1571
+==>
+SND1	0	5	11	70.0	0	0
+INP1
+
+% Trial: 1572
+==>
+SND1	0	6	11	70.0	0	0
+INP1
+
+% Trial: 1573
+==>
+SND1	0	7	11	70.0	0	0
+INP1
+
+% Trial: 1574
+==>
+SND1	0	8	11	70.0	0	0
+INP1
+
+% Trial: 1575
+==>
+SND1	0	9	11	70.0	0	0
+INP1
+
+% Trial: 1576
+==>
+SND1	0	10	11	70.0	0	0
+INP1
+
+% Trial: 1577
+==>
+SND1	0	11	11	70.0	0	0
+INP1
+
+% Trial: 1578
+==>
+SND1	0	12	11	70.0	0	0
+INP1
+
+% Trial: 1579
+==>
+SND1	0	13	11	70.0	0	0
+INP1
+
+% Trial: 1580
+==>
+SND1	0	14	11	70.0	0	0
+INP1
+
+% Trial: 1581
+==>
+SND1	0	15	11	70.0	0	0
+INP1
+
+% Trial: 1582
+==>
+SND1	0	16	11	70.0	0	0
+INP1
+
+% Trial: 1583
+==>
+SND1	0	17	11	70.0	0	0
+INP1
+
+% Trial: 1584
+==>
+SND1	0	18	11	70.0	0	0
+INP1
+
+% Trial: 1585
+==>
+SND1	0	19	11	70.0	0	0
+INP1
+
+% Trial: 1586
+==>
+SND1	0	20	11	70.0	0	0
+INP1
+
+% Trial: 1587
+==>
+SND1	0	21	11	70.0	0	0
+INP1
+
+% Trial: 1588
+==>
+SND1	0	22	11	70.0	0	0
+INP1
+
+% Trial: 1589
+==>
+SND1	0	23	11	70.0	0	0
+INP1
+
+% Trial: 1590
+==>
+SND1	0	24	11	70.0	0	0
+INP1
+
+% Trial: 1591
+==>
+SND1	0	25	11	70.0	0	0
+INP1
+
+% Trial: 1592
+==>
+SND1	0	26	11	70.0	0	0
+INP1
+
+% Trial: 1593
+==>
+SND1	0	27	11	70.0	0	0
+INP1
+
+% Trial: 1594
+==>
+SND1	0	28	11	70.0	0	0
+INP1
+
+% Trial: 1595
+==>
+SND1	0	29	11	70.0	0	0
+INP1
+
+% Trial: 1596
+==>
+SND1	0	1	12	30.0	0	0
+INP1
+
+% Trial: 1597
+==>
+SND1	0	2	12	30.0	0	0
+INP1
+
+% Trial: 1598
+==>
+SND1	0	3	12	30.0	0	0
+INP1
+
+% Trial: 1599
+==>
+SND1	0	4	12	30.0	0	0
+INP1
+
+% Trial: 1600
+==>
+SND1	0	5	12	30.0	0	0
+INP1
+
+% Trial: 1601
+==>
+SND1	0	6	12	30.0	0	0
+INP1
+
+% Trial: 1602
+==>
+SND1	0	7	12	30.0	0	0
+INP1
+
+% Trial: 1603
+==>
+SND1	0	8	12	30.0	0	0
+INP1
+
+% Trial: 1604
+==>
+SND1	0	9	12	30.0	0	0
+INP1
+
+% Trial: 1605
+==>
+SND1	0	10	12	30.0	0	0
+INP1
+
+% Trial: 1606
+==>
+SND1	0	11	12	30.0	0	0
+INP1
+
+% Trial: 1607
+==>
+SND1	0	12	12	30.0	0	0
+INP1
+
+% Trial: 1608
+==>
+SND1	0	13	12	30.0	0	0
+INP1
+
+% Trial: 1609
+==>
+SND1	0	14	12	30.0	0	0
+INP1
+
+% Trial: 1610
+==>
+SND1	0	15	12	30.0	0	0
+INP1
+
+% Trial: 1611
+==>
+SND1	0	16	12	30.0	0	0
+INP1
+
+% Trial: 1612
+==>
+SND1	0	17	12	30.0	0	0
+INP1
+
+% Trial: 1613
+==>
+SND1	0	18	12	30.0	0	0
+INP1
+
+% Trial: 1614
+==>
+SND1	0	19	12	30.0	0	0
+INP1
+
+% Trial: 1615
+==>
+SND1	0	20	12	30.0	0	0
+INP1
+
+% Trial: 1616
+==>
+SND1	0	21	12	30.0	0	0
+INP1
+
+% Trial: 1617
+==>
+SND1	0	22	12	30.0	0	0
+INP1
+
+% Trial: 1618
+==>
+SND1	0	23	12	30.0	0	0
+INP1
+
+% Trial: 1619
+==>
+SND1	0	24	12	30.0	0	0
+INP1
+
+% Trial: 1620
+==>
+SND1	0	25	12	30.0	0	0
+INP1
+
+% Trial: 1621
+==>
+SND1	0	26	12	30.0	0	0
+INP1
+
+% Trial: 1622
+==>
+SND1	0	27	12	30.0	0	0
+INP1
+
+% Trial: 1623
+==>
+SND1	0	28	12	30.0	0	0
+INP1
+
+% Trial: 1624
+==>
+SND1	0	29	12	30.0	0	0
+INP1
+
+% Trial: 1625
+==>
+SND1	0	1	12	40.0	0	0
+INP1
+
+% Trial: 1626
+==>
+SND1	0	2	12	40.0	0	0
+INP1
+
+% Trial: 1627
+==>
+SND1	0	3	12	40.0	0	0
+INP1
+
+% Trial: 1628
+==>
+SND1	0	4	12	40.0	0	0
+INP1
+
+% Trial: 1629
+==>
+SND1	0	5	12	40.0	0	0
+INP1
+
+% Trial: 1630
+==>
+SND1	0	6	12	40.0	0	0
+INP1
+
+% Trial: 1631
+==>
+SND1	0	7	12	40.0	0	0
+INP1
+
+% Trial: 1632
+==>
+SND1	0	8	12	40.0	0	0
+INP1
+
+% Trial: 1633
+==>
+SND1	0	9	12	40.0	0	0
+INP1
+
+% Trial: 1634
+==>
+SND1	0	10	12	40.0	0	0
+INP1
+
+% Trial: 1635
+==>
+SND1	0	11	12	40.0	0	0
+INP1
+
+% Trial: 1636
+==>
+SND1	0	12	12	40.0	0	0
+INP1
+
+% Trial: 1637
+==>
+SND1	0	13	12	40.0	0	0
+INP1
+
+% Trial: 1638
+==>
+SND1	0	14	12	40.0	0	0
+INP1
+
+% Trial: 1639
+==>
+SND1	0	15	12	40.0	0	0
+INP1
+
+% Trial: 1640
+==>
+SND1	0	16	12	40.0	0	0
+INP1
+
+% Trial: 1641
+==>
+SND1	0	17	12	40.0	0	0
+INP1
+
+% Trial: 1642
+==>
+SND1	0	18	12	40.0	0	0
+INP1
+
+% Trial: 1643
+==>
+SND1	0	19	12	40.0	0	0
+INP1
+
+% Trial: 1644
+==>
+SND1	0	20	12	40.0	0	0
+INP1
+
+% Trial: 1645
+==>
+SND1	0	21	12	40.0	0	0
+INP1
+
+% Trial: 1646
+==>
+SND1	0	22	12	40.0	0	0
+INP1
+
+% Trial: 1647
+==>
+SND1	0	23	12	40.0	0	0
+INP1
+
+% Trial: 1648
+==>
+SND1	0	24	12	40.0	0	0
+INP1
+
+% Trial: 1649
+==>
+SND1	0	25	12	40.0	0	0
+INP1
+
+% Trial: 1650
+==>
+SND1	0	26	12	40.0	0	0
+INP1
+
+% Trial: 1651
+==>
+SND1	0	27	12	40.0	0	0
+INP1
+
+% Trial: 1652
+==>
+SND1	0	28	12	40.0	0	0
+INP1
+
+% Trial: 1653
+==>
+SND1	0	29	12	40.0	0	0
+INP1
+
+% Trial: 1654
+==>
+SND1	0	1	12	50.0	0	0
+INP1
+
+% Trial: 1655
+==>
+SND1	0	2	12	50.0	0	0
+INP1
+
+% Trial: 1656
+==>
+SND1	0	3	12	50.0	0	0
+INP1
+
+% Trial: 1657
+==>
+SND1	0	4	12	50.0	0	0
+INP1
+
+% Trial: 1658
+==>
+SND1	0	5	12	50.0	0	0
+INP1
+
+% Trial: 1659
+==>
+SND1	0	6	12	50.0	0	0
+INP1
+
+% Trial: 1660
+==>
+SND1	0	7	12	50.0	0	0
+INP1
+
+% Trial: 1661
+==>
+SND1	0	8	12	50.0	0	0
+INP1
+
+% Trial: 1662
+==>
+SND1	0	9	12	50.0	0	0
+INP1
+
+% Trial: 1663
+==>
+SND1	0	10	12	50.0	0	0
+INP1
+
+% Trial: 1664
+==>
+SND1	0	11	12	50.0	0	0
+INP1
+
+% Trial: 1665
+==>
+SND1	0	12	12	50.0	0	0
+INP1
+
+% Trial: 1666
+==>
+SND1	0	13	12	50.0	0	0
+INP1
+
+% Trial: 1667
+==>
+SND1	0	14	12	50.0	0	0
+INP1
+
+% Trial: 1668
+==>
+SND1	0	15	12	50.0	0	0
+INP1
+
+% Trial: 1669
+==>
+SND1	0	16	12	50.0	0	0
+INP1
+
+% Trial: 1670
+==>
+SND1	0	17	12	50.0	0	0
+INP1
+
+% Trial: 1671
+==>
+SND1	0	18	12	50.0	0	0
+INP1
+
+% Trial: 1672
+==>
+SND1	0	19	12	50.0	0	0
+INP1
+
+% Trial: 1673
+==>
+SND1	0	20	12	50.0	0	0
+INP1
+
+% Trial: 1674
+==>
+SND1	0	21	12	50.0	0	0
+INP1
+
+% Trial: 1675
+==>
+SND1	0	22	12	50.0	0	0
+INP1
+
+% Trial: 1676
+==>
+SND1	0	23	12	50.0	0	0
+INP1
+
+% Trial: 1677
+==>
+SND1	0	24	12	50.0	0	0
+INP1
+
+% Trial: 1678
+==>
+SND1	0	25	12	50.0	0	0
+INP1
+
+% Trial: 1679
+==>
+SND1	0	26	12	50.0	0	0
+INP1
+
+% Trial: 1680
+==>
+SND1	0	27	12	50.0	0	0
+INP1
+
+% Trial: 1681
+==>
+SND1	0	28	12	50.0	0	0
+INP1
+
+% Trial: 1682
+==>
+SND1	0	29	12	50.0	0	0
+INP1
+
+% Trial: 1683
+==>
+SND1	0	1	12	60.0	0	0
+INP1
+
+% Trial: 1684
+==>
+SND1	0	2	12	60.0	0	0
+INP1
+
+% Trial: 1685
+==>
+SND1	0	3	12	60.0	0	0
+INP1
+
+% Trial: 1686
+==>
+SND1	0	4	12	60.0	0	0
+INP1
+
+% Trial: 1687
+==>
+SND1	0	5	12	60.0	0	0
+INP1
+
+% Trial: 1688
+==>
+SND1	0	6	12	60.0	0	0
+INP1
+
+% Trial: 1689
+==>
+SND1	0	7	12	60.0	0	0
+INP1
+
+% Trial: 1690
+==>
+SND1	0	8	12	60.0	0	0
+INP1
+
+% Trial: 1691
+==>
+SND1	0	9	12	60.0	0	0
+INP1
+
+% Trial: 1692
+==>
+SND1	0	10	12	60.0	0	0
+INP1
+
+% Trial: 1693
+==>
+SND1	0	11	12	60.0	0	0
+INP1
+
+% Trial: 1694
+==>
+SND1	0	12	12	60.0	0	0
+INP1
+
+% Trial: 1695
+==>
+SND1	0	13	12	60.0	0	0
+INP1
+
+% Trial: 1696
+==>
+SND1	0	14	12	60.0	0	0
+INP1
+
+% Trial: 1697
+==>
+SND1	0	15	12	60.0	0	0
+INP1
+
+% Trial: 1698
+==>
+SND1	0	16	12	60.0	0	0
+INP1
+
+% Trial: 1699
+==>
+SND1	0	17	12	60.0	0	0
+INP1
+
+% Trial: 1700
+==>
+SND1	0	18	12	60.0	0	0
+INP1
+
+% Trial: 1701
+==>
+SND1	0	19	12	60.0	0	0
+INP1
+
+% Trial: 1702
+==>
+SND1	0	20	12	60.0	0	0
+INP1
+
+% Trial: 1703
+==>
+SND1	0	21	12	60.0	0	0
+INP1
+
+% Trial: 1704
+==>
+SND1	0	22	12	60.0	0	0
+INP1
+
+% Trial: 1705
+==>
+SND1	0	23	12	60.0	0	0
+INP1
+
+% Trial: 1706
+==>
+SND1	0	24	12	60.0	0	0
+INP1
+
+% Trial: 1707
+==>
+SND1	0	25	12	60.0	0	0
+INP1
+
+% Trial: 1708
+==>
+SND1	0	26	12	60.0	0	0
+INP1
+
+% Trial: 1709
+==>
+SND1	0	27	12	60.0	0	0
+INP1
+
+% Trial: 1710
+==>
+SND1	0	28	12	60.0	0	0
+INP1
+
+% Trial: 1711
+==>
+SND1	0	29	12	60.0	0	0
+INP1
+
+% Trial: 1712
+==>
+SND1	0	1	12	70.0	0	0
+INP1
+
+% Trial: 1713
+==>
+SND1	0	2	12	70.0	0	0
+INP1
+
+% Trial: 1714
+==>
+SND1	0	3	12	70.0	0	0
+INP1
+
+% Trial: 1715
+==>
+SND1	0	4	12	70.0	0	0
+INP1
+
+% Trial: 1716
+==>
+SND1	0	5	12	70.0	0	0
+INP1
+
+% Trial: 1717
+==>
+SND1	0	6	12	70.0	0	0
+INP1
+
+% Trial: 1718
+==>
+SND1	0	7	12	70.0	0	0
+INP1
+
+% Trial: 1719
+==>
+SND1	0	8	12	70.0	0	0
+INP1
+
+% Trial: 1720
+==>
+SND1	0	9	12	70.0	0	0
+INP1
+
+% Trial: 1721
+==>
+SND1	0	10	12	70.0	0	0
+INP1
+
+% Trial: 1722
+==>
+SND1	0	11	12	70.0	0	0
+INP1
+
+% Trial: 1723
+==>
+SND1	0	12	12	70.0	0	0
+INP1
+
+% Trial: 1724
+==>
+SND1	0	13	12	70.0	0	0
+INP1
+
+% Trial: 1725
+==>
+SND1	0	14	12	70.0	0	0
+INP1
+
+% Trial: 1726
+==>
+SND1	0	15	12	70.0	0	0
+INP1
+
+% Trial: 1727
+==>
+SND1	0	16	12	70.0	0	0
+INP1
+
+% Trial: 1728
+==>
+SND1	0	17	12	70.0	0	0
+INP1
+
+% Trial: 1729
+==>
+SND1	0	18	12	70.0	0	0
+INP1
+
+% Trial: 1730
+==>
+SND1	0	19	12	70.0	0	0
+INP1
+
+% Trial: 1731
+==>
+SND1	0	20	12	70.0	0	0
+INP1
+
+% Trial: 1732
+==>
+SND1	0	21	12	70.0	0	0
+INP1
+
+% Trial: 1733
+==>
+SND1	0	22	12	70.0	0	0
+INP1
+
+% Trial: 1734
+==>
+SND1	0	23	12	70.0	0	0
+INP1
+
+% Trial: 1735
+==>
+SND1	0	24	12	70.0	0	0
+INP1
+
+% Trial: 1736
+==>
+SND1	0	25	12	70.0	0	0
+INP1
+
+% Trial: 1737
+==>
+SND1	0	26	12	70.0	0	0
+INP1
+
+% Trial: 1738
+==>
+SND1	0	27	12	70.0	0	0
+INP1
+
+% Trial: 1739
+==>
+SND1	0	28	12	70.0	0	0
+INP1
+
+% Trial: 1740
+==>
+SND1	0	29	12	70.0	0	0
+INP1
+
+% Trial: 1741
+==>
+SND1	0	1	13	30.0	0	0
+INP1
+
+% Trial: 1742
+==>
+SND1	0	2	13	30.0	0	0
+INP1
+
+% Trial: 1743
+==>
+SND1	0	3	13	30.0	0	0
+INP1
+
+% Trial: 1744
+==>
+SND1	0	4	13	30.0	0	0
+INP1
+
+% Trial: 1745
+==>
+SND1	0	5	13	30.0	0	0
+INP1
+
+% Trial: 1746
+==>
+SND1	0	6	13	30.0	0	0
+INP1
+
+% Trial: 1747
+==>
+SND1	0	7	13	30.0	0	0
+INP1
+
+% Trial: 1748
+==>
+SND1	0	8	13	30.0	0	0
+INP1
+
+% Trial: 1749
+==>
+SND1	0	9	13	30.0	0	0
+INP1
+
+% Trial: 1750
+==>
+SND1	0	10	13	30.0	0	0
+INP1
+
+% Trial: 1751
+==>
+SND1	0	11	13	30.0	0	0
+INP1
+
+% Trial: 1752
+==>
+SND1	0	12	13	30.0	0	0
+INP1
+
+% Trial: 1753
+==>
+SND1	0	13	13	30.0	0	0
+INP1
+
+% Trial: 1754
+==>
+SND1	0	14	13	30.0	0	0
+INP1
+
+% Trial: 1755
+==>
+SND1	0	15	13	30.0	0	0
+INP1
+
+% Trial: 1756
+==>
+SND1	0	16	13	30.0	0	0
+INP1
+
+% Trial: 1757
+==>
+SND1	0	17	13	30.0	0	0
+INP1
+
+% Trial: 1758
+==>
+SND1	0	18	13	30.0	0	0
+INP1
+
+% Trial: 1759
+==>
+SND1	0	19	13	30.0	0	0
+INP1
+
+% Trial: 1760
+==>
+SND1	0	20	13	30.0	0	0
+INP1
+
+% Trial: 1761
+==>
+SND1	0	21	13	30.0	0	0
+INP1
+
+% Trial: 1762
+==>
+SND1	0	22	13	30.0	0	0
+INP1
+
+% Trial: 1763
+==>
+SND1	0	23	13	30.0	0	0
+INP1
+
+% Trial: 1764
+==>
+SND1	0	24	13	30.0	0	0
+INP1
+
+% Trial: 1765
+==>
+SND1	0	25	13	30.0	0	0
+INP1
+
+% Trial: 1766
+==>
+SND1	0	26	13	30.0	0	0
+INP1
+
+% Trial: 1767
+==>
+SND1	0	27	13	30.0	0	0
+INP1
+
+% Trial: 1768
+==>
+SND1	0	28	13	30.0	0	0
+INP1
+
+% Trial: 1769
+==>
+SND1	0	29	13	30.0	0	0
+INP1
+
+% Trial: 1770
+==>
+SND1	0	1	13	40.0	0	0
+INP1
+
+% Trial: 1771
+==>
+SND1	0	2	13	40.0	0	0
+INP1
+
+% Trial: 1772
+==>
+SND1	0	3	13	40.0	0	0
+INP1
+
+% Trial: 1773
+==>
+SND1	0	4	13	40.0	0	0
+INP1
+
+% Trial: 1774
+==>
+SND1	0	5	13	40.0	0	0
+INP1
+
+% Trial: 1775
+==>
+SND1	0	6	13	40.0	0	0
+INP1
+
+% Trial: 1776
+==>
+SND1	0	7	13	40.0	0	0
+INP1
+
+% Trial: 1777
+==>
+SND1	0	8	13	40.0	0	0
+INP1
+
+% Trial: 1778
+==>
+SND1	0	9	13	40.0	0	0
+INP1
+
+% Trial: 1779
+==>
+SND1	0	10	13	40.0	0	0
+INP1
+
+% Trial: 1780
+==>
+SND1	0	11	13	40.0	0	0
+INP1
+
+% Trial: 1781
+==>
+SND1	0	12	13	40.0	0	0
+INP1
+
+% Trial: 1782
+==>
+SND1	0	13	13	40.0	0	0
+INP1
+
+% Trial: 1783
+==>
+SND1	0	14	13	40.0	0	0
+INP1
+
+% Trial: 1784
+==>
+SND1	0	15	13	40.0	0	0
+INP1
+
+% Trial: 1785
+==>
+SND1	0	16	13	40.0	0	0
+INP1
+
+% Trial: 1786
+==>
+SND1	0	17	13	40.0	0	0
+INP1
+
+% Trial: 1787
+==>
+SND1	0	18	13	40.0	0	0
+INP1
+
+% Trial: 1788
+==>
+SND1	0	19	13	40.0	0	0
+INP1
+
+% Trial: 1789
+==>
+SND1	0	20	13	40.0	0	0
+INP1
+
+% Trial: 1790
+==>
+SND1	0	21	13	40.0	0	0
+INP1
+
+% Trial: 1791
+==>
+SND1	0	22	13	40.0	0	0
+INP1
+
+% Trial: 1792
+==>
+SND1	0	23	13	40.0	0	0
+INP1
+
+% Trial: 1793
+==>
+SND1	0	24	13	40.0	0	0
+INP1
+
+% Trial: 1794
+==>
+SND1	0	25	13	40.0	0	0
+INP1
+
+% Trial: 1795
+==>
+SND1	0	26	13	40.0	0	0
+INP1
+
+% Trial: 1796
+==>
+SND1	0	27	13	40.0	0	0
+INP1
+
+% Trial: 1797
+==>
+SND1	0	28	13	40.0	0	0
+INP1
+
+% Trial: 1798
+==>
+SND1	0	29	13	40.0	0	0
+INP1
+
+% Trial: 1799
+==>
+SND1	0	1	13	50.0	0	0
+INP1
+
+% Trial: 1800
+==>
+SND1	0	2	13	50.0	0	0
+INP1
+
+% Trial: 1801
+==>
+SND1	0	3	13	50.0	0	0
+INP1
+
+% Trial: 1802
+==>
+SND1	0	4	13	50.0	0	0
+INP1
+
+% Trial: 1803
+==>
+SND1	0	5	13	50.0	0	0
+INP1
+
+% Trial: 1804
+==>
+SND1	0	6	13	50.0	0	0
+INP1
+
+% Trial: 1805
+==>
+SND1	0	7	13	50.0	0	0
+INP1
+
+% Trial: 1806
+==>
+SND1	0	8	13	50.0	0	0
+INP1
+
+% Trial: 1807
+==>
+SND1	0	9	13	50.0	0	0
+INP1
+
+% Trial: 1808
+==>
+SND1	0	10	13	50.0	0	0
+INP1
+
+% Trial: 1809
+==>
+SND1	0	11	13	50.0	0	0
+INP1
+
+% Trial: 1810
+==>
+SND1	0	12	13	50.0	0	0
+INP1
+
+% Trial: 1811
+==>
+SND1	0	13	13	50.0	0	0
+INP1
+
+% Trial: 1812
+==>
+SND1	0	14	13	50.0	0	0
+INP1
+
+% Trial: 1813
+==>
+SND1	0	15	13	50.0	0	0
+INP1
+
+% Trial: 1814
+==>
+SND1	0	16	13	50.0	0	0
+INP1
+
+% Trial: 1815
+==>
+SND1	0	17	13	50.0	0	0
+INP1
+
+% Trial: 1816
+==>
+SND1	0	18	13	50.0	0	0
+INP1
+
+% Trial: 1817
+==>
+SND1	0	19	13	50.0	0	0
+INP1
+
+% Trial: 1818
+==>
+SND1	0	20	13	50.0	0	0
+INP1
+
+% Trial: 1819
+==>
+SND1	0	21	13	50.0	0	0
+INP1
+
+% Trial: 1820
+==>
+SND1	0	22	13	50.0	0	0
+INP1
+
+% Trial: 1821
+==>
+SND1	0	23	13	50.0	0	0
+INP1
+
+% Trial: 1822
+==>
+SND1	0	24	13	50.0	0	0
+INP1
+
+% Trial: 1823
+==>
+SND1	0	25	13	50.0	0	0
+INP1
+
+% Trial: 1824
+==>
+SND1	0	26	13	50.0	0	0
+INP1
+
+% Trial: 1825
+==>
+SND1	0	27	13	50.0	0	0
+INP1
+
+% Trial: 1826
+==>
+SND1	0	28	13	50.0	0	0
+INP1
+
+% Trial: 1827
+==>
+SND1	0	29	13	50.0	0	0
+INP1
+
+% Trial: 1828
+==>
+SND1	0	1	13	60.0	0	0
+INP1
+
+% Trial: 1829
+==>
+SND1	0	2	13	60.0	0	0
+INP1
+
+% Trial: 1830
+==>
+SND1	0	3	13	60.0	0	0
+INP1
+
+% Trial: 1831
+==>
+SND1	0	4	13	60.0	0	0
+INP1
+
+% Trial: 1832
+==>
+SND1	0	5	13	60.0	0	0
+INP1
+
+% Trial: 1833
+==>
+SND1	0	6	13	60.0	0	0
+INP1
+
+% Trial: 1834
+==>
+SND1	0	7	13	60.0	0	0
+INP1
+
+% Trial: 1835
+==>
+SND1	0	8	13	60.0	0	0
+INP1
+
+% Trial: 1836
+==>
+SND1	0	9	13	60.0	0	0
+INP1
+
+% Trial: 1837
+==>
+SND1	0	10	13	60.0	0	0
+INP1
+
+% Trial: 1838
+==>
+SND1	0	11	13	60.0	0	0
+INP1
+
+% Trial: 1839
+==>
+SND1	0	12	13	60.0	0	0
+INP1
+
+% Trial: 1840
+==>
+SND1	0	13	13	60.0	0	0
+INP1
+
+% Trial: 1841
+==>
+SND1	0	14	13	60.0	0	0
+INP1
+
+% Trial: 1842
+==>
+SND1	0	15	13	60.0	0	0
+INP1
+
+% Trial: 1843
+==>
+SND1	0	16	13	60.0	0	0
+INP1
+
+% Trial: 1844
+==>
+SND1	0	17	13	60.0	0	0
+INP1
+
+% Trial: 1845
+==>
+SND1	0	18	13	60.0	0	0
+INP1
+
+% Trial: 1846
+==>
+SND1	0	19	13	60.0	0	0
+INP1
+
+% Trial: 1847
+==>
+SND1	0	20	13	60.0	0	0
+INP1
+
+% Trial: 1848
+==>
+SND1	0	21	13	60.0	0	0
+INP1
+
+% Trial: 1849
+==>
+SND1	0	22	13	60.0	0	0
+INP1
+
+% Trial: 1850
+==>
+SND1	0	23	13	60.0	0	0
+INP1
+
+% Trial: 1851
+==>
+SND1	0	24	13	60.0	0	0
+INP1
+
+% Trial: 1852
+==>
+SND1	0	25	13	60.0	0	0
+INP1
+
+% Trial: 1853
+==>
+SND1	0	26	13	60.0	0	0
+INP1
+
+% Trial: 1854
+==>
+SND1	0	27	13	60.0	0	0
+INP1
+
+% Trial: 1855
+==>
+SND1	0	28	13	60.0	0	0
+INP1
+
+% Trial: 1856
+==>
+SND1	0	29	13	60.0	0	0
+INP1
+
+% Trial: 1857
+==>
+SND1	0	1	13	70.0	0	0
+INP1
+
+% Trial: 1858
+==>
+SND1	0	2	13	70.0	0	0
+INP1
+
+% Trial: 1859
+==>
+SND1	0	3	13	70.0	0	0
+INP1
+
+% Trial: 1860
+==>
+SND1	0	4	13	70.0	0	0
+INP1
+
+% Trial: 1861
+==>
+SND1	0	5	13	70.0	0	0
+INP1
+
+% Trial: 1862
+==>
+SND1	0	6	13	70.0	0	0
+INP1
+
+% Trial: 1863
+==>
+SND1	0	7	13	70.0	0	0
+INP1
+
+% Trial: 1864
+==>
+SND1	0	8	13	70.0	0	0
+INP1
+
+% Trial: 1865
+==>
+SND1	0	9	13	70.0	0	0
+INP1
+
+% Trial: 1866
+==>
+SND1	0	10	13	70.0	0	0
+INP1
+
+% Trial: 1867
+==>
+SND1	0	11	13	70.0	0	0
+INP1
+
+% Trial: 1868
+==>
+SND1	0	12	13	70.0	0	0
+INP1
+
+% Trial: 1869
+==>
+SND1	0	13	13	70.0	0	0
+INP1
+
+% Trial: 1870
+==>
+SND1	0	14	13	70.0	0	0
+INP1
+
+% Trial: 1871
+==>
+SND1	0	15	13	70.0	0	0
+INP1
+
+% Trial: 1872
+==>
+SND1	0	16	13	70.0	0	0
+INP1
+
+% Trial: 1873
+==>
+SND1	0	17	13	70.0	0	0
+INP1
+
+% Trial: 1874
+==>
+SND1	0	18	13	70.0	0	0
+INP1
+
+% Trial: 1875
+==>
+SND1	0	19	13	70.0	0	0
+INP1
+
+% Trial: 1876
+==>
+SND1	0	20	13	70.0	0	0
+INP1
+
+% Trial: 1877
+==>
+SND1	0	21	13	70.0	0	0
+INP1
+
+% Trial: 1878
+==>
+SND1	0	22	13	70.0	0	0
+INP1
+
+% Trial: 1879
+==>
+SND1	0	23	13	70.0	0	0
+INP1
+
+% Trial: 1880
+==>
+SND1	0	24	13	70.0	0	0
+INP1
+
+% Trial: 1881
+==>
+SND1	0	25	13	70.0	0	0
+INP1
+
+% Trial: 1882
+==>
+SND1	0	26	13	70.0	0	0
+INP1
+
+% Trial: 1883
+==>
+SND1	0	27	13	70.0	0	0
+INP1
+
+% Trial: 1884
+==>
+SND1	0	28	13	70.0	0	0
+INP1
+
+% Trial: 1885
+==>
+SND1	0	29	13	70.0	0	0
+INP1
+
+% Trial: 1886
+==>
+SND1	0	1	14	30.0	0	0
+INP1
+
+% Trial: 1887
+==>
+SND1	0	2	14	30.0	0	0
+INP1
+
+% Trial: 1888
+==>
+SND1	0	3	14	30.0	0	0
+INP1
+
+% Trial: 1889
+==>
+SND1	0	4	14	30.0	0	0
+INP1
+
+% Trial: 1890
+==>
+SND1	0	5	14	30.0	0	0
+INP1
+
+% Trial: 1891
+==>
+SND1	0	6	14	30.0	0	0
+INP1
+
+% Trial: 1892
+==>
+SND1	0	7	14	30.0	0	0
+INP1
+
+% Trial: 1893
+==>
+SND1	0	8	14	30.0	0	0
+INP1
+
+% Trial: 1894
+==>
+SND1	0	9	14	30.0	0	0
+INP1
+
+% Trial: 1895
+==>
+SND1	0	10	14	30.0	0	0
+INP1
+
+% Trial: 1896
+==>
+SND1	0	11	14	30.0	0	0
+INP1
+
+% Trial: 1897
+==>
+SND1	0	12	14	30.0	0	0
+INP1
+
+% Trial: 1898
+==>
+SND1	0	13	14	30.0	0	0
+INP1
+
+% Trial: 1899
+==>
+SND1	0	14	14	30.0	0	0
+INP1
+
+% Trial: 1900
+==>
+SND1	0	15	14	30.0	0	0
+INP1
+
+% Trial: 1901
+==>
+SND1	0	16	14	30.0	0	0
+INP1
+
+% Trial: 1902
+==>
+SND1	0	17	14	30.0	0	0
+INP1
+
+% Trial: 1903
+==>
+SND1	0	18	14	30.0	0	0
+INP1
+
+% Trial: 1904
+==>
+SND1	0	19	14	30.0	0	0
+INP1
+
+% Trial: 1905
+==>
+SND1	0	20	14	30.0	0	0
+INP1
+
+% Trial: 1906
+==>
+SND1	0	21	14	30.0	0	0
+INP1
+
+% Trial: 1907
+==>
+SND1	0	22	14	30.0	0	0
+INP1
+
+% Trial: 1908
+==>
+SND1	0	23	14	30.0	0	0
+INP1
+
+% Trial: 1909
+==>
+SND1	0	24	14	30.0	0	0
+INP1
+
+% Trial: 1910
+==>
+SND1	0	25	14	30.0	0	0
+INP1
+
+% Trial: 1911
+==>
+SND1	0	26	14	30.0	0	0
+INP1
+
+% Trial: 1912
+==>
+SND1	0	27	14	30.0	0	0
+INP1
+
+% Trial: 1913
+==>
+SND1	0	28	14	30.0	0	0
+INP1
+
+% Trial: 1914
+==>
+SND1	0	29	14	30.0	0	0
+INP1
+
+% Trial: 1915
+==>
+SND1	0	1	14	40.0	0	0
+INP1
+
+% Trial: 1916
+==>
+SND1	0	2	14	40.0	0	0
+INP1
+
+% Trial: 1917
+==>
+SND1	0	3	14	40.0	0	0
+INP1
+
+% Trial: 1918
+==>
+SND1	0	4	14	40.0	0	0
+INP1
+
+% Trial: 1919
+==>
+SND1	0	5	14	40.0	0	0
+INP1
+
+% Trial: 1920
+==>
+SND1	0	6	14	40.0	0	0
+INP1
+
+% Trial: 1921
+==>
+SND1	0	7	14	40.0	0	0
+INP1
+
+% Trial: 1922
+==>
+SND1	0	8	14	40.0	0	0
+INP1
+
+% Trial: 1923
+==>
+SND1	0	9	14	40.0	0	0
+INP1
+
+% Trial: 1924
+==>
+SND1	0	10	14	40.0	0	0
+INP1
+
+% Trial: 1925
+==>
+SND1	0	11	14	40.0	0	0
+INP1
+
+% Trial: 1926
+==>
+SND1	0	12	14	40.0	0	0
+INP1
+
+% Trial: 1927
+==>
+SND1	0	13	14	40.0	0	0
+INP1
+
+% Trial: 1928
+==>
+SND1	0	14	14	40.0	0	0
+INP1
+
+% Trial: 1929
+==>
+SND1	0	15	14	40.0	0	0
+INP1
+
+% Trial: 1930
+==>
+SND1	0	16	14	40.0	0	0
+INP1
+
+% Trial: 1931
+==>
+SND1	0	17	14	40.0	0	0
+INP1
+
+% Trial: 1932
+==>
+SND1	0	18	14	40.0	0	0
+INP1
+
+% Trial: 1933
+==>
+SND1	0	19	14	40.0	0	0
+INP1
+
+% Trial: 1934
+==>
+SND1	0	20	14	40.0	0	0
+INP1
+
+% Trial: 1935
+==>
+SND1	0	21	14	40.0	0	0
+INP1
+
+% Trial: 1936
+==>
+SND1	0	22	14	40.0	0	0
+INP1
+
+% Trial: 1937
+==>
+SND1	0	23	14	40.0	0	0
+INP1
+
+% Trial: 1938
+==>
+SND1	0	24	14	40.0	0	0
+INP1
+
+% Trial: 1939
+==>
+SND1	0	25	14	40.0	0	0
+INP1
+
+% Trial: 1940
+==>
+SND1	0	26	14	40.0	0	0
+INP1
+
+% Trial: 1941
+==>
+SND1	0	27	14	40.0	0	0
+INP1
+
+% Trial: 1942
+==>
+SND1	0	28	14	40.0	0	0
+INP1
+
+% Trial: 1943
+==>
+SND1	0	29	14	40.0	0	0
+INP1
+
+% Trial: 1944
+==>
+SND1	0	1	14	50.0	0	0
+INP1
+
+% Trial: 1945
+==>
+SND1	0	2	14	50.0	0	0
+INP1
+
+% Trial: 1946
+==>
+SND1	0	3	14	50.0	0	0
+INP1
+
+% Trial: 1947
+==>
+SND1	0	4	14	50.0	0	0
+INP1
+
+% Trial: 1948
+==>
+SND1	0	5	14	50.0	0	0
+INP1
+
+% Trial: 1949
+==>
+SND1	0	6	14	50.0	0	0
+INP1
+
+% Trial: 1950
+==>
+SND1	0	7	14	50.0	0	0
+INP1
+
+% Trial: 1951
+==>
+SND1	0	8	14	50.0	0	0
+INP1
+
+% Trial: 1952
+==>
+SND1	0	9	14	50.0	0	0
+INP1
+
+% Trial: 1953
+==>
+SND1	0	10	14	50.0	0	0
+INP1
+
+% Trial: 1954
+==>
+SND1	0	11	14	50.0	0	0
+INP1
+
+% Trial: 1955
+==>
+SND1	0	12	14	50.0	0	0
+INP1
+
+% Trial: 1956
+==>
+SND1	0	13	14	50.0	0	0
+INP1
+
+% Trial: 1957
+==>
+SND1	0	14	14	50.0	0	0
+INP1
+
+% Trial: 1958
+==>
+SND1	0	15	14	50.0	0	0
+INP1
+
+% Trial: 1959
+==>
+SND1	0	16	14	50.0	0	0
+INP1
+
+% Trial: 1960
+==>
+SND1	0	17	14	50.0	0	0
+INP1
+
+% Trial: 1961
+==>
+SND1	0	18	14	50.0	0	0
+INP1
+
+% Trial: 1962
+==>
+SND1	0	19	14	50.0	0	0
+INP1
+
+% Trial: 1963
+==>
+SND1	0	20	14	50.0	0	0
+INP1
+
+% Trial: 1964
+==>
+SND1	0	21	14	50.0	0	0
+INP1
+
+% Trial: 1965
+==>
+SND1	0	22	14	50.0	0	0
+INP1
+
+% Trial: 1966
+==>
+SND1	0	23	14	50.0	0	0
+INP1
+
+% Trial: 1967
+==>
+SND1	0	24	14	50.0	0	0
+INP1
+
+% Trial: 1968
+==>
+SND1	0	25	14	50.0	0	0
+INP1
+
+% Trial: 1969
+==>
+SND1	0	26	14	50.0	0	0
+INP1
+
+% Trial: 1970
+==>
+SND1	0	27	14	50.0	0	0
+INP1
+
+% Trial: 1971
+==>
+SND1	0	28	14	50.0	0	0
+INP1
+
+% Trial: 1972
+==>
+SND1	0	29	14	50.0	0	0
+INP1
+
+% Trial: 1973
+==>
+SND1	0	1	14	60.0	0	0
+INP1
+
+% Trial: 1974
+==>
+SND1	0	2	14	60.0	0	0
+INP1
+
+% Trial: 1975
+==>
+SND1	0	3	14	60.0	0	0
+INP1
+
+% Trial: 1976
+==>
+SND1	0	4	14	60.0	0	0
+INP1
+
+% Trial: 1977
+==>
+SND1	0	5	14	60.0	0	0
+INP1
+
+% Trial: 1978
+==>
+SND1	0	6	14	60.0	0	0
+INP1
+
+% Trial: 1979
+==>
+SND1	0	7	14	60.0	0	0
+INP1
+
+% Trial: 1980
+==>
+SND1	0	8	14	60.0	0	0
+INP1
+
+% Trial: 1981
+==>
+SND1	0	9	14	60.0	0	0
+INP1
+
+% Trial: 1982
+==>
+SND1	0	10	14	60.0	0	0
+INP1
+
+% Trial: 1983
+==>
+SND1	0	11	14	60.0	0	0
+INP1
+
+% Trial: 1984
+==>
+SND1	0	12	14	60.0	0	0
+INP1
+
+% Trial: 1985
+==>
+SND1	0	13	14	60.0	0	0
+INP1
+
+% Trial: 1986
+==>
+SND1	0	14	14	60.0	0	0
+INP1
+
+% Trial: 1987
+==>
+SND1	0	15	14	60.0	0	0
+INP1
+
+% Trial: 1988
+==>
+SND1	0	16	14	60.0	0	0
+INP1
+
+% Trial: 1989
+==>
+SND1	0	17	14	60.0	0	0
+INP1
+
+% Trial: 1990
+==>
+SND1	0	18	14	60.0	0	0
+INP1
+
+% Trial: 1991
+==>
+SND1	0	19	14	60.0	0	0
+INP1
+
+% Trial: 1992
+==>
+SND1	0	20	14	60.0	0	0
+INP1
+
+% Trial: 1993
+==>
+SND1	0	21	14	60.0	0	0
+INP1
+
+% Trial: 1994
+==>
+SND1	0	22	14	60.0	0	0
+INP1
+
+% Trial: 1995
+==>
+SND1	0	23	14	60.0	0	0
+INP1
+
+% Trial: 1996
+==>
+SND1	0	24	14	60.0	0	0
+INP1
+
+% Trial: 1997
+==>
+SND1	0	25	14	60.0	0	0
+INP1
+
+% Trial: 1998
+==>
+SND1	0	26	14	60.0	0	0
+INP1
+
+% Trial: 1999
+==>
+SND1	0	27	14	60.0	0	0
+INP1
+
+% Trial: 2000
+==>
+SND1	0	28	14	60.0	0	0
+INP1
+
+% Trial: 2001
+==>
+SND1	0	29	14	60.0	0	0
+INP1
+
+% Trial: 2002
+==>
+SND1	0	1	14	70.0	0	0
+INP1
+
+% Trial: 2003
+==>
+SND1	0	2	14	70.0	0	0
+INP1
+
+% Trial: 2004
+==>
+SND1	0	3	14	70.0	0	0
+INP1
+
+% Trial: 2005
+==>
+SND1	0	4	14	70.0	0	0
+INP1
+
+% Trial: 2006
+==>
+SND1	0	5	14	70.0	0	0
+INP1
+
+% Trial: 2007
+==>
+SND1	0	6	14	70.0	0	0
+INP1
+
+% Trial: 2008
+==>
+SND1	0	7	14	70.0	0	0
+INP1
+
+% Trial: 2009
+==>
+SND1	0	8	14	70.0	0	0
+INP1
+
+% Trial: 2010
+==>
+SND1	0	9	14	70.0	0	0
+INP1
+
+% Trial: 2011
+==>
+SND1	0	10	14	70.0	0	0
+INP1
+
+% Trial: 2012
+==>
+SND1	0	11	14	70.0	0	0
+INP1
+
+% Trial: 2013
+==>
+SND1	0	12	14	70.0	0	0
+INP1
+
+% Trial: 2014
+==>
+SND1	0	13	14	70.0	0	0
+INP1
+
+% Trial: 2015
+==>
+SND1	0	14	14	70.0	0	0
+INP1
+
+% Trial: 2016
+==>
+SND1	0	15	14	70.0	0	0
+INP1
+
+% Trial: 2017
+==>
+SND1	0	16	14	70.0	0	0
+INP1
+
+% Trial: 2018
+==>
+SND1	0	17	14	70.0	0	0
+INP1
+
+% Trial: 2019
+==>
+SND1	0	18	14	70.0	0	0
+INP1
+
+% Trial: 2020
+==>
+SND1	0	19	14	70.0	0	0
+INP1
+
+% Trial: 2021
+==>
+SND1	0	20	14	70.0	0	0
+INP1
+
+% Trial: 2022
+==>
+SND1	0	21	14	70.0	0	0
+INP1
+
+% Trial: 2023
+==>
+SND1	0	22	14	70.0	0	0
+INP1
+
+% Trial: 2024
+==>
+SND1	0	23	14	70.0	0	0
+INP1
+
+% Trial: 2025
+==>
+SND1	0	24	14	70.0	0	0
+INP1
+
+% Trial: 2026
+==>
+SND1	0	25	14	70.0	0	0
+INP1
+
+% Trial: 2027
+==>
+SND1	0	26	14	70.0	0	0
+INP1
+
+% Trial: 2028
+==>
+SND1	0	27	14	70.0	0	0
+INP1
+
+% Trial: 2029
+==>
+SND1	0	28	14	70.0	0	0
+INP1
+
+% Trial: 2030
+==>
+SND1	0	29	14	70.0	0	0
+INP1

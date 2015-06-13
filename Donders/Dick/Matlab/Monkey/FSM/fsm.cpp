@@ -1,0 +1,875 @@
+///////////////////////////////////////////////////////////////////////////
+//                            FSM
+///////////////////////////////////////////////////////////////////////////
+#ifndef WIN32_LEAN_AND_MEAN
+#define WIN32_LEAN_AND_MEAN
+#endif
+
+#include "mex.h"
+#include <windows.h>
+#include "..\include\globals.h"
+#include <process.h>            // used for thread
+#include <matrix.h>
+#include <math.h>
+#include <time.h>
+
+#include <MMSystem.h>
+#pragma comment(lib, "winmm")
+
+#pragma comment(lib,"inpout32.lib")
+
+short _stdcall Inp32(short PortAddress);
+void  _stdcall Out32(short PortAddress, short data);
+
+void   myThread(LPVOID pVoid);
+
+int     trialInfo[maxStim][maxParam];
+int     nStim;
+double  startTrial;
+int     outputPIO = 0;
+
+//=======================================================================//
+void mexFunction(int nlhs, mxArray *plhs[],
+                 int nrhs, const mxArray *prhs[])
+{
+  int threadNr;
+  (void) plhs;          // unused parameters
+  (void) prhs;
+  
+   timeBeginPeriod(1);
+  _beginthread(myThread, 0, &threadNr);
+}
+//=======================================================================//
+double getTimerFrequency(void)
+{
+    LARGE_INTEGER freq;
+	QueryPerformanceFrequency(&freq); 
+    return ((double) freq.QuadPart);
+}
+double getTimerCount(void)
+{
+    LARGE_INTEGER cnt;
+	QueryPerformanceCounter(&cnt);
+    return ((double) cnt.QuadPart);
+} 
+double getElapsedTime(double start, double stop, double mult)
+{
+    // mult = 1 -> sec, mult = 1000 -> mSec
+    return mult*((stop-start)/timerFrequency);
+}
+//=======================================================================//
+int readLPT1(short port)
+{
+	int inp = Inp32(port);
+	
+	return inp;
+}
+int getPIO(int mask)
+{	
+	int val  = readLPT1(LPTstatus);
+	val = (val >> 3) & 0xFF;
+	if ((val & 0x10) > 0)          // invert bit 4 (was bit 7)
+		val &= 0xEF;
+	else
+		val |= 0x10;
+	return (val & mask);
+}
+void writeLPT1(short port, short val)
+{
+	Out32(port, val);
+}
+void setPIO(int mask)
+{
+	writeLPT1(LPTdata,mask);
+}
+//=======================================================================//
+//	RS232 - I2C
+bool AFM_openSerial(DWORD baud)
+{
+	bool bRet = false;
+	DCB dcb;
+	COMMTIMEOUTS CommTimeouts;
+	CommTimeouts.ReadIntervalTimeout = 1;
+	CommTimeouts.ReadTotalTimeoutMultiplier = 1;
+	CommTimeouts.ReadTotalTimeoutConstant = 1;
+	CommTimeouts.WriteTotalTimeoutMultiplier = 1;
+	CommTimeouts.WriteTotalTimeoutConstant = 1;
+	serial = CreateFile(TEXT("COM1"),
+					   GENERIC_READ | GENERIC_WRITE,
+					   0, NULL,
+					   OPEN_EXISTING,
+					   FILE_ATTRIBUTE_NORMAL,
+					   NULL);
+	SetCommTimeouts(serial,&CommTimeouts);
+    if (serial != INVALID_HANDLE_VALUE)
+	{
+		dcb.DCBlength = sizeof(DCB);
+		if (GetCommState(serial,&dcb))
+		{
+			dcb.BaudRate = baud;
+			dcb.ByteSize = 8;
+			dcb.Parity   = 0;
+			dcb.StopBits = 0;
+			dcb.fDtrControl = 2;
+			dcb.fBinary = true;
+			dcb.fParity = false;
+			bRet = SetCommState(serial,&dcb);
+		}
+	} 
+	return bRet;
+}
+void AFM_close()
+{
+	CloseHandle(serial);
+}
+bool AFM_slaveWrite(char *outBuf,int number)
+{
+	DWORD bytesWritten;
+	bool bRet;
+	bRet = WriteFile(serial,outBuf,number,&bytesWritten,NULL);
+	return true;
+}
+DWORD AFM_slaveRead(char *inpBuf, int number)
+{
+	DWORD bytesRead;
+	bool bRet;
+	DWORD ans;
+	int repeat = 5;
+	inpBuf[0] = 'E';
+	while ((inpBuf[0] == 'E') && (repeat > 0))
+	{
+		bRet = ReadFile(serial,inpBuf,number,&bytesRead,NULL);
+		if (bRet)
+			if (inpBuf[0] == 'E')
+			{
+				ans = 0;
+				repeat--;
+			}
+			else
+				ans = bytesRead;
+		else
+		{
+			printf("RS232 read error\n");
+			ans = 0;
+		}
+	}
+	if (inpBuf[0] == 'E')
+		printf("I2C read error\n");
+	return ans;
+}
+int AFM_readStatus(char *outBuf,int number)
+{
+	char inChar;
+	int val;
+	DWORD bytesRead, bytesWritten;
+	bool bRet;
+	bytesRead = 0;
+	bRet = WriteFile(serial,outBuf,number,&bytesWritten,NULL);
+	do
+	{	
+			bRet = ReadFile(serial,&inChar,1,&bytesRead,NULL);
+	}while (bytesRead == 0);
+	val = (int) inChar;
+	return (val & 0XF);
+}
+//=======================================================================//
+void updateLedDriver(int numberIC, int color, int intensity)
+{
+	int IC, itmp, digit1, digit2, number;
+	bool bRet;
+
+	if (color == cRed)
+	{
+		IC = 0X70;				// choose a nonexistent ic for green
+		IC = IC | numberIC;		// choose the red ic
+	}
+	else
+	{
+		IC = 0X07;
+		IC = IC | (numberIC << 4);
+	}
+	number = sprintf(&outBuf[0],"%d %d %d\r\n",ledICselect, 1, IC);
+	DWORD d1= AFM_slaveWrite(&outBuf[0],number);
+	DWORD d2= AFM_slaveRead(&inpBuf[0], 2);
+
+	itmp = ledData[color][numberIC];
+	digit1 = itmp & 0XFF;
+	digit2 = ((itmp >> 8) & 0XFF);
+	itmp = (intensity << 4) | 0X06;
+
+	number = sprintf(&outBuf[0],"%d %d %d %d %d %d\r\n",
+						        ledICdata, 4, 0, itmp, digit1, digit2);
+	d1= AFM_slaveWrite(&outBuf[0],number);
+	d2= AFM_slaveRead(&inpBuf[0], 2);
+}
+void clearLedsky(void)
+{
+	for (int color=0; color<2; color++)
+	{
+		for (int IC=0; IC<5; IC++)
+		{
+			ledData[color][IC] = 0x0000;
+			updateLedDriver(IC, color, 0);
+		}
+		for (int spoke=0; spoke<12; spoke++)
+			skyData[color][spoke] = 0;
+	}
+}
+void LedOnOff(int ring, int spoke, int color, int intensity, bool OnOff)
+{
+	int numberIC;
+	int led;
+	int tmp;
+
+	if (spoke > 0) spoke -= 1;
+	if (OnOff)
+	{
+		tmp = (intensity << 3*ring);
+		skyData[color][spoke] |= tmp;
+	}
+	else
+	{
+		tmp = (0x7 << 3*ring);
+		skyData[color][spoke] &= ~tmp;
+	}
+	if (ring == 0)
+	{
+		numberIC = 0;
+		if (OnOff)
+			ledData[color][numberIC] |= 0x0001;
+		else
+			ledData[color][numberIC] &= ~0x0001;
+	}
+	else
+	{
+		led = LEDADDRESS[spoke][ring-1];
+		numberIC = (led & 0xF0000) >> 16;
+		led = led & 0xFFFF;
+		if (OnOff)
+			ledData[color][numberIC] |= led;
+		else
+			ledData[color][numberIC] &= ~led;
+	}
+	updateLedDriver(numberIC, color, intensity);
+}
+void testLedsky(int color,int Ton)
+{
+    for (int ring = 0; ring < 6; ring++)
+    {
+        for (int spoke = 1; spoke < 13; spoke++)
+        {
+            LedOnOff(ring,spoke,color,7,true);
+            Sleep(Ton);
+            LedOnOff(ring,spoke,color,7,false);
+        }
+    }
+}
+//=======================================================================//
+void selectSpeaker(int ring, int spoke, int source)
+{
+	int number, board, mute;
+	DWORD d1;
+	DWORD d2;
+
+	if (ring > 0)
+	{
+		number = sprintf(&outBuf[0],"%d %d %d\r\n",boardSelect,1,preBoard); 
+		d1     = AFM_slaveWrite(&outBuf[0],number);
+		d2     = AFM_slaveRead(&inpBuf[0], 2);
+		number = sprintf(&outBuf[0],"%d %d %d\r\n",muteSelect, 1, 0XFF);
+		d1     = AFM_slaveWrite(&outBuf[0],number);
+		d2     = AFM_slaveRead(&inpBuf[0], 2);
+
+		board = speakerData[spoke-1][ring-1] & 0X0000FF;
+		mute  = (speakerData[spoke-1][ring-1] >> 8) & 0X0000FF;
+		preBoard = board;
+
+		number = sprintf(&outBuf[0],"%d %d %d\r\n",boardSelect,1,board);
+		d1     = AFM_slaveWrite(&outBuf[0],number);
+		d2     = AFM_slaveRead(&inpBuf[0], 2);
+
+		number = sprintf(&outBuf[0],"%d %d %d\r\n",sourceSelect,1,0X00);
+		d1     = AFM_slaveWrite(&outBuf[0],number);
+		d2     = AFM_slaveRead(&inpBuf[0], 2);
+
+		number = sprintf(&outBuf[0],"%d %d %d\r\n",muteSelect,1,mute);
+		d1     = AFM_slaveWrite(&outBuf[0],number);
+		d2     = AFM_slaveRead(&inpBuf[0], 2);
+	}
+	
+}
+//=======================================================================//
+void execError(void)
+{
+    double now  = getTimerCount();
+    int newTime = (int) getElapsedTime(startTrial,now,1000.0);
+    int status;
+    
+    for (int index = 0; index < nStim; index++)
+    {
+        status = trialInfo[index][11];
+        if (status == statInit)
+        {
+            trialInfo[index][ 1] = -1;
+            trialInfo[index][ 3] = -1;
+            trialInfo[index][11] = statError;
+        }
+        if (status == statRun)
+        {
+            trialInfo[index][3]  = -1;
+            trialInfo[index][4]  = newTime;
+            trialInfo[index][11] = statError;
+        }
+    }
+	clearLedsky();
+}
+//=======================================================================//
+void execEvent(int event)
+{
+    double now  = getTimerCount();
+    int newTime = (int) getElapsedTime(startTrial,now,1000.0);
+    int status;
+    int index;
+
+    if (event > 0)
+    {
+        for (index = 0; index < nStim; index++)
+        {
+            if (trialInfo[index][1] == event)    // start
+            {
+                trialInfo[index][1]  = 0;
+                trialInfo[index][2] += newTime;
+            }
+            if (trialInfo[index][3] == event)    // stop
+            {
+                trialInfo[index][3]  = 0;
+                trialInfo[index][4] += newTime;
+            }
+        }
+    }
+}
+//=======================================================================//
+int execBarFlank(int index)
+{
+    double now = getTimerCount();
+    int newTime = (int) getElapsedTime(startTrial,now,1000.0);
+	int	bit    = (1 << (trialInfo[index][9]));
+	int mode   = trialInfo[index][7];
+	int status = trialInfo[index][11];
+    bool bar   = (getPIO(0xFF) & bit);  // 1-pressed
+    int edge   = trialInfo[index][8];
+    
+	if ((status == statDone) || (status == statError)) // ready or error
+		return statDone;
+
+    if (status == statInit)
+	{
+		if ((trialInfo[index][1] == 0) &&	    // start event has happened
+			(newTime >= (trialInfo[index][2]))) // time past 
+		{
+			if (((edge == 1) &&  bar) || ((edge == 0) && !bar))
+            {
+       			trialInfo[index][ 2] = newTime;
+        		trialInfo[index][11] = statError;
+                execError();
+    			return statDone;
+            }
+            else
+            {
+       			trialInfo[index][ 2] = newTime;
+                trialInfo[index][11] = statRun;
+                return statRun;
+            }
+		}
+		return statInit;
+	}
+
+    if (status == statRun)
+	{
+		if ((trialInfo[index][3] == 0) &&	      // stop event
+			(newTime >= (trialInfo[index][4])))   // time past 
+		{
+            trialInfo[index][ 4] = newTime;
+        	trialInfo[index][11] = statError;
+            execError();
+            return statDone;
+        }
+        else
+        {
+			if (((edge == 1) &&  bar) || ((edge == 0) && !bar))
+            {
+                trialInfo[index][ 3] = 0;       // else it is counted twice
+                trialInfo[index][ 4] = newTime;
+        		trialInfo[index][11] = statDone;
+                execEvent(trialInfo[index][10]);
+                return statDone;
+            }
+		}
+		return statRun;
+	}
+}
+//=======================================================================//
+int execBarLevel(int index)
+{	
+    double now = getTimerCount();
+    int newTime = (int) getElapsedTime(startTrial,now,1000.0);
+	int	bit    = (1 << (trialInfo[index][9]));
+	int mode   = trialInfo[index][7];
+	int status = trialInfo[index][11];
+    bool bar   = (getPIO(0xFF) & bit);  // 1-pressed
+    int level  = trialInfo[index][8];
+    
+	if ((status == statDone) || (status == statError)) // ready or error
+		return statDone;
+
+    if (status == statInit)
+	{
+		if ((trialInfo[index][1] == 0) &&	    // start event has happened
+			(newTime >= (trialInfo[index][2]))) // time past 
+		{
+   			trialInfo[index][ 2] = newTime;
+            trialInfo[index][11] = statRun;
+            return statRun;
+		}
+		return statInit;
+	}
+
+    if (status == statRun)
+	{
+		if ((trialInfo[index][3] == 0) &&	      // stop event
+			(newTime >= (trialInfo[index][4])))   // time past 
+		{
+            trialInfo[index][ 4] = newTime;
+        	trialInfo[index][11] = statDone;
+            execEvent(trialInfo[index][10]);
+			return statDone;
+        }
+        else
+        {
+			if (((level == 1) &&  !bar) || ((level == 0) &&  bar))
+            {
+                trialInfo[index][ 3] = 0;     
+                trialInfo[index][ 4] = newTime;
+        		trialInfo[index][11] = statError;
+				execError();
+                return statDone;
+            }
+		}
+		return statRun;
+	}
+}
+//=======================================================================//
+int execBarCheck(int index)
+{
+    double now = getTimerCount();
+    int newTime = (int) getElapsedTime(startTrial,now,1000.0);
+	int	bit    = (1 << (trialInfo[index][9]));
+	int mode   = trialInfo[index][7];
+	int status = trialInfo[index][11];
+    bool bar   = (getPIO(0xFF) & bit);  // 1-pressed
+    int level  = trialInfo[index][8];
+    
+	if ((status == statDone) || (status == statError)) // ready or error
+		return statDone;
+
+    if (status == statInit)
+	{
+		if ((trialInfo[index][1] == 0) &&	    // start event has happened
+			(newTime >= (trialInfo[index][2]))) // time past 
+		{
+   			trialInfo[index][ 2] = newTime;
+            trialInfo[index][11] = statRun;
+            return statRun;
+		}
+		return statInit;
+	}
+
+    if (status == statRun)
+	{
+		if ((trialInfo[index][3] == 0) &&	      // stop event
+			(newTime >= (trialInfo[index][4])))   // time past 
+		{
+            trialInfo[index][ 4] = newTime;
+        	trialInfo[index][11] = statError;
+            execError();
+			return statDone;
+        }
+        else
+		{
+			if (((level == 1) &&  bar) || ((level == 0) && !bar))
+			{
+                trialInfo[index][ 3] = 0;     
+                trialInfo[index][ 4] = newTime;
+        		trialInfo[index][11] = statDone;
+                execEvent(trialInfo[index][10]);
+				return statDone;
+			}
+		}
+		return statRun;
+	}
+}
+//=======================================================================//
+int execBar(int index)
+{
+	int ans = 0;
+	int mode   = trialInfo[index][7];
+
+
+	switch(mode)
+	{
+	case 0:	ans = execBarFlank(index);	break;
+	case 1:	ans = execBarLevel(index);	break;
+	case 2: ans = execBarCheck(index);	break;
+	}
+	return ans;
+}
+//=======================================================================//
+int execBit(int index)
+{
+    double now  = getTimerCount();
+    int newTime = (int) getElapsedTime(startTrial,now,1000.0);
+	int status  = trialInfo[index][11];
+	int	bit     = (1 << (trialInfo[index][9]));
+    int level   = trialInfo[index][8];
+
+   	if ((status == statDone) || (status == statError)) // ready or error
+        return statDone;
+
+    if (status == statInit)
+	{
+		if ((trialInfo[index][1] == 0) &&	    // start event has happened
+			(newTime >= (trialInfo[index][2]))) // time past 
+		{
+            trialInfo[index][11] = statRun;
+            trialInfo[index][2]  = newTime;
+            if (level == 1)
+                outputPIO |= bit;
+            else
+                outputPIO &= ~bit;
+            setPIO(outputPIO);
+            return statRun;
+		}
+		return statInit;
+	}
+
+    if (status == statRun)
+	{
+		if ((trialInfo[index][3] == 0) &&	      // stop event
+			(newTime >= (trialInfo[index][4])))   // time past 
+		{
+            trialInfo[index][4]  = newTime;
+            trialInfo[index][11] = statDone;
+            if (level == 1)
+                outputPIO &= ~bit;
+            else
+                outputPIO |= bit;
+            setPIO(outputPIO);
+            execEvent(trialInfo[index][10]);
+    		return statDone;
+		}
+		return statRun;
+	}
+}
+//=======================================================================//
+int execRew(int index)
+{
+    double now  = getTimerCount();
+    int newTime = (int) getElapsedTime(startTrial,now,1000.0);
+	int status = trialInfo[index][11];
+	int	bit     = (1 << (trialInfo[index][9]));
+
+   	if ((status == statDone) || (status == statError)) // ready or error
+        return statDone;
+
+    if (status == statInit)
+	{
+		if ((trialInfo[index][1] == 0) &&	    // start event has happened
+			(newTime >= (trialInfo[index][2]))) // time past 
+		{
+            trialInfo[index][11] = statRun;
+            trialInfo[index][2]  = newTime;
+            outputPIO |= bit;
+            setPIO(outputPIO);
+            return statRun;
+		}
+		return statInit;
+	}
+
+    if (status == statRun)
+	{
+		if ((trialInfo[index][3] == 0) &&	      // stop event
+			(newTime >= (trialInfo[index][4])))   // time past 
+		{
+            trialInfo[index][4]  = newTime;
+            trialInfo[index][11] = statDone;
+            outputPIO &= ~bit;
+            setPIO(outputPIO);
+            execEvent(trialInfo[index][10]);
+    		return statDone;
+		}
+		return statRun;
+	}
+}
+//=======================================================================//
+int setMaxLedIntensity(int value)
+{
+	int number = sprintf(&outBuf[0],"%d %d %d\r\n",
+						        ledIntensity, 1, value);
+	DWORD d1= AFM_slaveWrite(&outBuf[0],number);
+	DWORD d2= AFM_slaveRead(&inpBuf[0], 2);
+    
+    return statDone;
+}
+int execLed(int index)
+{
+    double now    = getTimerCount();
+    int newTime   = (int) getElapsedTime(startTrial,now,1000.0);
+	int ring      = trialInfo[index][ 5];
+	int spoke     = trialInfo[index][ 6];
+	int color     = trialInfo[index][ 9];
+	int intensity = trialInfo[index][ 8];
+	int status    = trialInfo[index][11];
+
+   	if ((status == statDone) || (status == statError)) // ready or error
+        return statDone;
+
+    if (status == statInit)
+	{
+		if ((trialInfo[index][1] == 0) &&	    // start event has happened
+			(newTime >= (trialInfo[index][2]))) // time past 
+		{
+            trialInfo[index][11] = statRun;
+            trialInfo[index][2]  = newTime;
+            LedOnOff(ring, spoke, color, intensity, true);
+            return statRun;
+		}
+		return statInit;
+	}
+
+    if (status == statRun)
+	{
+		if ((trialInfo[index][3] == 0) &&	      // stop event
+			(newTime >= (trialInfo[index][4])))   // time past 
+		{
+            trialInfo[index][4]  = newTime;
+            trialInfo[index][11] = statDone;
+            LedOnOff(ring, spoke, color, intensity, false);
+            execEvent(trialInfo[index][10]);
+    		return statDone;
+		}
+		return statRun;
+	}
+}
+//=======================================================================//
+void resetAll(void)
+{
+    setPIO(0x00);                               // set output low
+    timerFrequency = getTimerFrequency();       // if available
+    
+   	bool b = AFM_openSerial(115200);            // open serial port
+   	clearLedsky();
+}
+//=======================================================================//
+void myThread(LPVOID pVoid)
+{
+    const mxArray *myValues;
+    const mxArray *myCmd;
+    const mxArray *myReady;
+    const mxArray *myBusy;
+    const mxArray *myResults;
+    const mxArray *myTrial;         // array = 20*13
+
+    myValues = mexGetVariablePtr("base","values");
+    myCmd    = mexGetVariablePtr("base","cmd");
+    myReady  = mexGetVariablePtr("base","ready");
+    myBusy   = mexGetVariablePtr("base","busy");
+    myResults= mexGetVariablePtr("base","results");
+    myTrial  = mexGetVariablePtr("base","curTrial");
+
+    double *valuesPtr;
+    double *cmdPtr;
+    double *readyPtr;
+    double *busyPtr;
+    double *resultsPtr;
+    double *trialPtr;
+    
+    valuesPtr = mxGetPr(myValues); 
+    cmdPtr    = mxGetPr(myCmd);
+    readyPtr  = mxGetPr(myReady);
+    busyPtr   = mxGetPr(myBusy);
+    resultsPtr= mxGetPr(myResults);
+    trialPtr  = mxGetPr(myTrial);
+
+    int     m, n, k;
+    double  ITI;
+    int     done;
+    int     cmdFlag;
+    int     command;
+    int     ring;
+    int     spoke;
+    int     color;
+    int     Ton;
+    int     ready;
+    int     value;
+    double  startProg, startLp, stopLp, newTime;
+
+    Sleep(100);  // wait for matlab to start
+    resetAll();
+    
+    ready   = 0;
+    cmdFlag = 0;
+    startProg = getTimerCount();
+    while (ready == 0)
+    {
+        startLp = getTimerCount();
+        // loop: at least 1 mSec
+        cmdFlag = (int) *cmdPtr;
+        if (cmdFlag == 1)
+        {
+            *busyPtr = 1.0;
+            command = (int) *(valuesPtr+1);
+            switch(command)
+            {
+                case cmdTestLeds:
+                    color = (int) *(valuesPtr+2);
+                    Ton   = (int) *(valuesPtr+3);
+                    testLedsky(color,Ton);
+                    newTime = getTimerCount();
+                    *(resultsPtr+0) = 2;
+                    *(resultsPtr+1) = 
+                            getElapsedTime(startLp,newTime,1000.0);
+                    break;
+                case cmdLedOn:
+                    ring  = (int) *(valuesPtr+2);
+                    spoke = (int) *(valuesPtr+3);
+                    color = (int) *(valuesPtr+4);
+                    LedOnOff(ring, spoke, color, 7, true);
+                    newTime = getTimerCount();
+                    *(resultsPtr+0) = 2;
+                    *(resultsPtr+1) = 
+                            getElapsedTime(startLp,newTime,1000.0);
+                    break;
+                case cmdLedOff:
+                    ring  = (int) *(valuesPtr+2);
+                    spoke = (int) *(valuesPtr+3);
+                    color = (int) *(valuesPtr+4);
+                    LedOnOff(ring, spoke, color, 7, false);
+                    newTime = getTimerCount();
+                    *(resultsPtr+0) = 2;
+                    *(resultsPtr+1) = 
+                            getElapsedTime(startLp,newTime,1000.0);
+                    break;
+                case cmdGetPIO:
+                    value = getPIO(0xFF);
+                    newTime = getTimerCount();
+                    *(resultsPtr+0) = 3;
+                    *(resultsPtr+1) = 
+                            getElapsedTime(startLp,newTime,1000.0);
+                    *(resultsPtr+2) = value;
+                    Sleep(1);
+                    break;
+                case cmdSetPIO:
+                    value = (int) *(valuesPtr+2);
+                    value &= 0xFF;
+                    outputPIO = value;
+                    setPIO(outputPIO);
+                    newTime = getTimerCount();
+                    *(resultsPtr+0) = 3;
+                    *(resultsPtr+1) = 
+                            getElapsedTime(startLp,newTime,1000.0);
+                    *(resultsPtr+2) = value;
+                    Sleep(1);
+                    break;
+                case cmdMaxInt:
+                    value = (int) *(valuesPtr+2);
+                    setMaxLedIntensity(value);
+                    newTime = getTimerCount();
+                    *(resultsPtr+0) = 3;
+                    *(resultsPtr+1) = 
+                            getElapsedTime(startLp,newTime,1000.0);
+                    *(resultsPtr+2) = value;
+                    Sleep(1);
+                    break;
+                case cmdNextTrial:
+                    ITI   = *(valuesPtr+2);           // ITI mSec
+                    nStim = (int) *(valuesPtr+3);     // #stims
+                    // Get trial information
+                    for (n = 0; n < nStim; n++)
+                    {
+                        for (k=0; k < maxParam;k++)
+                        {
+                            trialInfo[n][k]=(int)*(trialPtr+n+k*maxStim);
+                        }
+                    }
+                    // ITI
+                    newTime = getTimerCount();
+                    *(resultsPtr+0) = 3;
+                    *(resultsPtr+1) = 
+                            getElapsedTime(startProg,newTime,1.0); // sec
+                    while (getElapsedTime(startLp,newTime,1000.0) < ITI)
+                    {
+                        newTime = getTimerCount();
+                    }
+                    *(resultsPtr+2) = 
+                            getElapsedTime(startLp,newTime,1000.0);
+                    // Sound ?, then select speaker
+                    for (n=0; n<nStim; n++)
+                    {
+                        if (trialInfo[n][0] == stimSnd)
+                            selectSpeaker(trialInfo[n][5],trialInfo[n][6],
+                                          trialInfo[n][7]);
+                    }
+                    // T0 trial
+                    startTrial = getTimerCount();
+                    done = -1;
+                    while (done != 0)
+                    {
+                        done = 0;
+                        for (n=0; n<nStim; n++)
+                        {
+            				switch (trialInfo[n][0])    // stim
+                       		{
+                                case stimLed: 
+                                    m = execLed(n); done += m; break;
+                                case stimBar: 
+                                    m = execBar(n); done += m; break;
+                                case stimBit:
+                                    m = execBit(n); done += m; break;
+                                case stimSnd:
+                                    m = execBit(n); done += m; break;
+                                case stimRew:
+                                    m = execRew(n); done += m; break;
+                    		}
+                        }
+                    }
+                    printf("ready\n");
+                    for (n = 0; n < nStim; n++)
+                    {
+                        for (k=0; k < maxParam;k++)
+                        {
+                            *(trialPtr+n+k*maxStim) = 
+                                    (double) trialInfo[n][k];
+                        }
+                    }
+                    break;
+                default:
+                    Sleep(1);
+                    break;
+            }
+            while (*cmdPtr != 2)
+                Sleep(1);
+            *busyPtr = 0.0;
+        }
+        stopLp  = getTimerCount();
+        
+        if (getElapsedTime(startLp, stopLp, 1000.0) < 1.0)
+            Sleep(1);
+        
+        ready = (int) *readyPtr;
+    }
+    
+    AFM_close();
+    timeEndPeriod(1);
+    _endthread();
+ }
+//=======================================================================//

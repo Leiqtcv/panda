@@ -1,0 +1,210 @@
+ARM COMPILER V2.11,  ADC                                                                   16/02/10  15:01:46  PAGE 1   
+
+
+ARM COMPILER V2.11, COMPILATION OF MODULE ADC
+OBJECT MODULE PLACED IN ADC.OBJ
+COMPILER INVOKED BY: C:\Keil\ARM\BIN\CA.exe ADC.c THUMB BROWSE TABS(4) 
+
+stmt  level    source
+
+    1          /*************************************************************************
+    2                                  ADC.c
+    3          
+    4          Project         Controller      DJH MBFYS UMCN
+    5          ----------------------------------------------
+    6          Versie 1.00     14-09-2005      Dick Heeren
+    7          **************************************************************************/
+    8          #include <lpc21xx.h> 
+    9          #include "ADC.h"
+   10          #include "Config.h"
+   11          #include "Clock.h"
+   12          
+   13          static adc_buffer   AdcBuffer;
+   14          static fit_buffer   FitBuffer;
+   15          static int          AdcActive;
+   16          
+   17          void ADC_SetFitDataFlag(void)
+   18          {
+   19   1          FitBuffer.flag = 1;
+   20   1      }
+   21          
+   22          void ADC_ClrFitDataFlag(void)
+   23          {
+   24   1          FitBuffer.flag = 0;
+   25   1      }
+   26          
+   27          void ADC_Init(void)
+   28          {   // Clock AD converter has to be less than 4.5 MHz.   (50 Mhz / (CLKDIV+1))  
+   29   1          // Channels 0..3             7:0  -> 0F
+   30   1          // Clock divided by         15:8  -> FF     (0D = 3.5714 MHz)    (FF = 0.19607 mHz)
+   31   1          // Burst mode off           16    ->  0
+   32   1          // CLKS 11 clocks           19:17 ->  0
+   33   1          // Power down PDN=1         21    ->  1
+   34   1          // No start                 26:24 ->  0
+   35   1          int i,n,channel;
+   36   1      
+   37   1          for(i=0; i<8; i++)
+   38   1          {
+   39   2              AdcBuffer.select[i] = 1;
+   40   2          }
+   41   1      
+   42   1          for(i=0; i<8; i++)
+   43   1          {
+   44   2              for (n=0; n<11; n++)
+   45   2              {
+   46   3                  AdcBuffer.data[i][n] = 0;
+   47   3              }
+   48   2          }
+   49   1      
+   50   1          AdcActive = 0;
+   51   1          channel = (1 << AdcActive);
+   52   1          PINSEL1 |= 0x55 << 22;              // channels 0,1,2,3
+   53   1          ADCR = channel;
+   54   1          ADCR |= ((0xFF << 8) | (1 << 21)); 
+   55   1      
+   56   1          VICVectAddr3 = (unsigned long)ADC_irq;
+   57   1          VICVectCntl3 = 0x20 | 18;       // ADC interrupt (irq enable + number of interrupt)
+   58   1          VICIntEnable = 1 << 18;         // Enable ADC interrupt
+   59   1      
+ARM COMPILER V2.11,  ADC                                                                   16/02/10  15:01:46  PAGE 2   
+
+   60   1          ADCR |= (0x001 << 24);
+   61   1          FitBuffer.flag = 1;
+   62   1          FitBuffer.pnt  = 0;
+   63   1      }
+   64          
+   65          void ADC_irq(void) __irq
+   66          {
+   67   1          int i, val, chan;
+   68   1          double dVal;
+   69   1      
+   70   1          val  = ((ADDR >>  6) & 0x03FF);     // Get result
+   71   1          chan = ((ADDR >> 24) & 0x0003);     // and channel
+   72   1          if (FitBuffer.flag == 1)
+   73   1          {
+   74   2              chan = chan | (AdcActive & 0x04);   // add group (multiplexer)
+   75   2              dVal = val;
+   76   2              dVal = (dVal-512.0)/36.5;
+   77   2              for (i=1; i<10; i++)
+   78   2              {
+   79   3                  AdcBuffer.data[chan][i] = AdcBuffer.data[chan][i+1];
+   80   3              }
+   81   2              AdcBuffer.data[chan][10] = dVal;
+   82   2      
+   83   2              dVal = 0;
+   84   2              for (i=1; i<11; i++)
+   85   2              {
+   86   3                  dVal += AdcBuffer.data[chan][i];    
+   87   3              }
+   88   2      
+   89   2              AdcBuffer.data[chan][0] = dVal/10.0;
+   90   2      
+   91   2              if (chan == 3) 
+   92   2              {
+   93   3                  FitBuffer.data[chan][FitBuffer.pnt] = dVal/10.0;
+   94   3      
+   95   3                  FitBuffer.pnt++;
+   96   3                  FitBuffer.pnt = (FitBuffer.pnt % 50);
+   97   3              }
+   98   2       
+   99   2              AdcActive = AdcNext(AdcActive);
+  100   2              if ((AdcActive & 0x04) > 0)         // select group
+  101   2                  IOCLR0 = 0x8000;
+  102   2              else
+  103   2                  IOSET0 = 0x8000;
+  104   2              chan = (1 << (AdcActive & 0x03));   // remove group select
+  105   2          }
+  106   1          VICVectAddr = 3;                        // Acknowledge interrupt
+  107   1      
+  108   1          ADCR &= ~0xF;
+  109   1          ADCR |= chan;
+  110   1          ADCR |= (0x001 << 24);
+  111   1      
+  112   1      }
+  113          
+  114          void ADC_Select(int sel)
+  115          {
+  116   1          int i;
+  117   1          for (i = 0;i < 8;i++)
+  118   1          {
+  119   2              AdcBuffer.select[i] = 1;// (sel >> i) & 0x01;
+  120   2          }
+  121   1      }
+*** WARNING C47 IN LINE 114 OF ADC.C: 'sel': unreferenced parameter
+  122          
+  123          int AdcNext(int current)
+  124          {
+ARM COMPILER V2.11,  ADC                                                                   16/02/10  15:01:46  PAGE 3   
+
+  125   1          int next;
+  126   1          next = current;
+  127   1          if (++next == 8) next = 0;
+  128   1          while ((AdcBuffer.select[next] == 0) && (next != current))
+  129   1          {
+  130   2              if (++next == 8) next = 0;
+  131   2          }
+  132   1          return next;
+  133   1      }
+  134          
+  135          adc_buffer ADC_GetSamples()
+  136          {
+  137   1          return AdcBuffer;
+  138   1      }
+  139          
+  140          void *ADC_FitData()
+  141          {
+  142   1          fit_buffer *ptr;
+  143   1          ptr = &FitBuffer;
+  144   1          return ptr;
+  145   1      }
+  146          
+  147          double simulateNN(int netw)
+  148          {
+  149   1          int i, n, nn, nh, lp;
+  150   1          double temp, test[6], val;
+  151   1          double inp[6];
+  152   1      //  adc_buffer AdcBuffer;
+  153   1      
+  154   1      //  AdcBuffer = ADC_GetSamples();
+  155   1          val = 0;
+  156   1      
+  157   1          lp=netw;
+  158   1          for (nn=0;nn<NNs[lp].nInput;nn++)
+*** ERROR C67 IN LINE 158 OF ADC.C: 'NNs': undefined identifier
+  159   1          {
+  160   2              inp[nn]  =  AdcBuffer.data[NNs[lp].channels[nn]-1][0];
+*** ERROR C67 IN LINE 160 OF ADC.C: 'NNs': undefined identifier
+  161   2              test[nn] =  NNs[lp].scaleInput[nn][0]*inp[nn]+NNs[lp].scaleInput[nn][1];
+*** ERROR C67 IN LINE 161 OF ADC.C: 'NNs': undefined identifier
+*** ERROR C67 IN LINE 161 OF ADC.C: 'NNs': undefined identifier
+  162   2          }
+  163   1      
+  164   1          val = 0;
+  165   1          for (nh=0;nh<NNs[lp].nHidden;nh++)
+*** ERROR C67 IN LINE 165 OF ADC.C: 'NNs': undefined identifier
+  166   1          {
+  167   2              temp = 0;
+  168   2              for (nn=0;nn<NNs[lp].nInput;nn++)
+*** ERROR C67 IN LINE 168 OF ADC.C: 'NNs': undefined identifier
+  169   2              {
+  170   3                  temp = temp + test[nn]*NNs[lp].weightsHidden[nn][nh];
+*** ERROR C67 IN LINE 170 OF ADC.C: 'NNs': undefined identifier
+  171   3              }
+  172   2              val = val + NNs[lp].weightsOutput[nh]*tansig(temp+NNs[lp].biasHidden[nh]);
+*** ERROR C67 IN LINE 172 OF ADC.C: 'NNs': undefined identifier
+*** ERROR C67 IN LINE 172 OF ADC.C: 'NNs': undefined identifier
+*** WARNING C140 IN LINE 172 OF ADC.C: 'tansig' undefined; assuming 'extern int tansig()'
+  173   2          }
+  174   1          val = val + NNs[lp].biasOutput;
+*** ERROR C67 IN LINE 174 OF ADC.C: 'NNs': undefined identifier
+  175   1          val = NNs[lp].scaleOutput[0]*val+NNs[lp].scaleOutput[1];
+*** ERROR C67 IN LINE 175 OF ADC.C: 'NNs': undefined identifier
+*** ERROR C67 IN LINE 175 OF ADC.C: 'NNs': undefined identifier
+  176   1          return val;
+  177   1      }
+ARM COMPILER V2.11,  ADC                                                                   16/02/10  15:01:46  PAGE 4   
+
+*** WARNING C47 IN LINE 149 OF ADC.C: 'i': unreferenced local variable
+*** WARNING C47 IN LINE 149 OF ADC.C: 'n': unreferenced local variable
+
+ARM COMPILATION COMPLETE.  4 WARNING(S),  12 ERROR(S)

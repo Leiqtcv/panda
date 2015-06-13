@@ -1,0 +1,661 @@
+ARM COMPILER V2.11,  serial                                                                28/04/10  15:26:51  PAGE 1   
+
+
+ARM COMPILER V2.11, COMPILATION OF MODULE serial
+OBJECT MODULE PLACED IN serial.OBJ
+COMPILER INVOKED BY: C:\Keil\ARM\BIN\CA.exe serial.c THUMB BROWSE TABS(4) 
+
+stmt  level    source
+
+    1          /*************************************************************************
+    2                                  Serial.c
+    3          
+    4          Project         Controller      DJH MBFYS UMCN
+    5          ----------------------------------------------
+    6          Versie 1.00     17-11-2005      Dick Heeren
+    7          **************************************************************************/
+    8          
+    9          /*
+   10              Serial receive (Rx) and transmit (Tx) data.
+   11              Default settings: 8 bits, no parity, 1 stop bit and baudrate = 9600
+   12                
+   13              The length of the receive and transmit buffer must be a power of 2.
+   14              Each buffer has a next_in and a next_out index.
+   15              (next_in - next_out) = the number of characters in the buffer.
+   16              If next_in = next_out, the buffer is empty.
+   17              If next_in = next_out, then next_in is the total number of characters sent or received.
+   18          */
+   19          
+   20          #include <lpc21xx.h> 
+   21          #include "Serial.h"
+   22          #include "Config.h"
+   23          
+   24          #define BufferSize 1024
+   25          
+   26          typedef struct 
+   27          {
+   28              unsigned int    nextIn;
+   29              unsigned int    nextOut;
+   30              char            Buffer[BufferSize];
+   31          } buffer_struct;
+   32          
+   33          static buffer_struct RxBuffer;
+   34          static buffer_struct TxBuffer;
+   35          
+   36          // Number of characters in the Rx and TX buffer
+   37          #define RxBufLength ((unsigned short) (RxBuffer.nextIn-RxBuffer.nextOut))
+   38          #define TxBufLength ((unsigned short) (TxBuffer.nextIn-TxBuffer.nextOut))
+   39          
+   40          static unsigned int tx_restart = 1; // Non zero if TX restart is required
+   41          unsigned long UART0_Baudrate;
+   42          
+   43          void UART0_Init(void)
+   44          {
+   45   1          // Clear com buffers indexes
+   46   1          RxBuffer.nextIn = 0; RxBuffer.nextOut = 0;
+   47   1          TxBuffer.nextIn = 0; TxBuffer.nextOut = 0;
+   48   1          tx_restart = 1;
+   49   1      
+   50   1          // Setup serial port registers
+   51   1          PINSEL0 = PINSEL0 & 0xFFFFFFF0;
+   52   1          PINSEL0 = PINSEL0 | 0x00000005; // Eanable TxD0 and RxD0
+   53   1      
+   54   1          U0IER = 0x00;                   // Disable UART0 interrupts
+   55   1      
+   56   1          U0LCR = 0x03;                   // 8 bits, no parity, 1 stop bit
+   57   1      
+   58   1          UART0_SetBaud(115200);          // Baudrate = 115200
+   59   1      
+ARM COMPILER V2.11,  serial                                                                28/04/10  15:26:51  PAGE 2   
+
+   60   1          VICVectAddr2 = (unsigned long)UART0_irq;
+   61   1          VICVectCntl2 = 0x20 | 6;        // UART0 interrupt (irq enable + interrupt number)
+   62   1          VICIntEnable = 1 << 6;          // Enable UART0 interrupt
+   63   1      
+   64   1          U0IER = 0x07;                   // Enable RBR, THRE, Rx line status interrupts
+   65   1      
+   66   1          U0FCR = 0x01;                   // Enable and clear FIFO's
+   67   1      }
+   68          
+   69          void UART0_Stop(void)
+   70          {
+   71   1          U0IER = 0x00;                   // Disable UART0 interrupts
+   72   1          U0FCR = 0x00;                   // Disable FIFO's
+   73   1      }
+   74          
+   75          void UART0_SetBaud(unsigned int rate)
+   76          {
+   77   1          unsigned long newRate;
+   78   1      
+   79   1          UART0_Baudrate = rate; 
+   80   1          newRate = ((LPCconfig()->PLL_Multiplier*LPCconfig()->crystal) / rate) / 16;
+   81   1      
+   82   1          U0LCR |= 0x80;                  // enable access to divisor latch (LSB, MSB) register
+   83   1      
+   84   1          U0DLL = newRate & 0x00FF;
+   85   1          U0DLM = (newRate & 0xFF00)>>8;
+   86   1      
+   87   1          U0LCR &= ~0x80;                 // enable access to U0RBR and U0THR
+   88   1      }
+   89          
+   90          void UART0_irq(void) __irq
+   91          {
+   92   1          volatile char dummy;
+   93   1          volatile char IIR;
+   94   1          buffer_struct *pnt;
+   95   1      
+   96   1          while (((IIR = U0IIR) & 0x01) == 0)     // At least one interrupt is pending
+   97   1          {
+   98   2              switch (IIR & 0x0E)
+   99   2              {
+  100   3              case 0x06:                          // Receive line status
+  101   3                  dummy = U0LSR;                  // Clear interrupt source
+  102   3                  break;
+  103   3              case 0x04:                          // Receive data available
+  104   3              case 0x0C:                          // Character timeout
+  105   3                  pnt = &RxBuffer;
+  106   3                  if (((pnt->nextIn - pnt->nextOut) & ~(BufferSize-1)) == 0) // Room ?
+  107   3                  {
+  108   4                      pnt->Buffer[pnt->nextIn++ & (BufferSize-1)] = U0RBR;
+  109   4                  }
+  110   3                  break;
+  111   3              case 0x02:                          // THRE interrupt
+  112   3                  pnt = &TxBuffer;
+  113   3                  if (pnt->nextIn != pnt->nextOut)
+  114   3                  {
+  115   4                      U0THR = pnt->Buffer[pnt->nextOut++ & (BufferSize-1)];
+  116   4                      tx_restart = 0;
+  117   4                  }
+  118   3                  else
+  119   3                  {
+  120   4                      tx_restart = 1;
+  121   4                  }
+  122   3                  break;
+  123   3              default:
+  124   3                  break;
+  125   3              }
+ARM COMPILER V2.11,  serial                                                                28/04/10  15:26:51  PAGE 3   
+
+  126   2          }
+  127   1          VICVectAddr = 2;                        // Acknowledge interrupt
+  128   1      }
+  129          unsigned short UART0_RxNumber(void)
+  130          {
+  131   1          return RxBufLength;
+  132   1      }
+  133          
+  134          unsigned short UART0_TxEmpty(void)
+  135          {
+  136   1          return TxBufLength;
+  137   1      }
+  138          
+  139          int UART0_Get(void)
+  140          {
+  141   1          buffer_struct *pnt = &RxBuffer;
+  142   1      
+  143   1          if (RxBufLength == 0)
+  144   1              return (-1);
+  145   1      
+  146   1          return (pnt->Buffer[(pnt->nextOut++) & (BufferSize - 1)]);
+  147   1      }
+  148          
+  149          int UART0_Put(char data) //?
+  150          {
+  151   1          buffer_struct *pnt = &TxBuffer;
+  152   1      
+  153   1          if (TxBufLength >= BufferSize)
+  154   1              return (-1);                        // Buffer full, return error
+  155   1      
+  156   1          if (tx_restart)
+  157   1          {
+  158   2              tx_restart = 0;
+  159   2              U0THR = data;
+  160   2          }
+  161   1          else
+  162   1          {
+  163   2              pnt->Buffer[pnt->nextIn++ & (BufferSize - 1)] = data;
+  164   2          }
+  165   1      
+  166   1          return (0);
+  167   1      }
+  168          
+  169          int UART0_Str(char data[128],int n)
+  170          {
+  171   1          int i;
+  172   1          for (i=0; i<n; i++)
+  173   1          { 
+  174   2              if (UART0_Put(data[i]) == -1) return -1;
+  175   2          }
+  176   1          return 0;
+  177   1      }
+ARM COMPILER V2.11,  serial                                                                28/04/10  15:26:51  PAGE 4   
+
+ASSEMBLY LISTING OF GENERATED OBJECT CODE
+
+
+
+*** EXTERNALS:
+ EXTERN CODE16 (LPCconfig?T)
+ EXTERN CODE16 (?C?UDIV?T)
+
+
+
+*** PUBLICS:
+ PUBLIC         UART0_irq?A
+ PUBLIC         UART0_Init?T
+ PUBLIC         UART0_SetBaud?T
+ PUBLIC         UART0_RxNumber?T
+ PUBLIC         UART0_TxEmpty?T
+ PUBLIC         UART0_Get?T
+ PUBLIC         UART0_Put?T
+ PUBLIC         UART0_Str?T
+ PUBLIC         UART0_Stop?T
+ PUBLIC         UART0_Baudrate
+
+
+
+*** DATA SEGMENT '?DT0?serial':
+ 00000000          RxBuffer:
+ 00000000            DS          1032
+ 00000408          TxBuffer:
+ 00000408            DS          1032
+ 00000810          tx_restart:
+ 00000810           BEGIN_INIT
+ 00000810  00000001  DD          0x1
+ 00000814           END_INIT
+ 00000814          UART0_Baudrate:
+ 00000814            DS          4
+
+
+
+*** CODE SEGMENT '?PR?UART0_Init?T?serial':
+   43: void UART0_Init(void)
+ 00000000  B500      PUSH        {LR}
+   46:     RxBuffer.nextIn = 0; RxBuffer.nextOut = 0;
+ 00000002  2100      MOV         R1,#0x0
+ 00000004  4800      LDR         R0,=RxBuffer ; RxBuffer
+ 00000006  6001      STR         R1,[R0,#0x0] ; RxBuffer
+ 00000008  2100      MOV         R1,#0x0
+ 0000000A  4800      LDR         R0,=RxBuffer + 0x4 ; RxBuffer+4
+ 0000000C  6001      STR         R1,[R0,#0x0] ; RxBuffer+4
+   47:     TxBuffer.nextIn = 0; TxBuffer.nextOut = 0;
+ 0000000E  2100      MOV         R1,#0x0
+ 00000010  4800      LDR         R0,=TxBuffer ; TxBuffer
+ 00000012  6001      STR         R1,[R0,#0x0] ; TxBuffer
+ 00000014  2100      MOV         R1,#0x0
+ 00000016  4800      LDR         R0,=TxBuffer + 0x4 ; TxBuffer+4
+ 00000018  6001      STR         R1,[R0,#0x0] ; TxBuffer+4
+   48:     tx_restart = 1;
+ 0000001A  2101      MOV         R1,#0x1
+ 0000001C  4800      LDR         R0,=tx_restart ; tx_restart
+ 0000001E  6001      STR         R1,[R0,#0x0] ; tx_restart
+   51:     PINSEL0 = PINSEL0 & 0xFFFFFFF0;
+ 00000020  4800      LDR         R0,=0xE002C000
+ 00000022  6801      LDR         R1,[R0,#0x0]
+ 00000024  200F      MOV         R0,#0xF
+ 00000026  4381      BIC         R1,R0
+ 00000028  4800      LDR         R0,=0xE002C000
+ 0000002A  6001      STR         R1,[R0,#0x0]
+   52:     PINSEL0 = PINSEL0 | 0x00000005; // Eanable TxD0 and RxD0
+ 0000002C  4800      LDR         R0,=0xE002C000
+ 0000002E  6801      LDR         R1,[R0,#0x0]
+ 00000030  2005      MOV         R0,#0x5
+ 00000032  4301      ORR         R1,R0
+ 00000034  4800      LDR         R0,=0xE002C000
+ 00000036  6001      STR         R1,[R0,#0x0]
+ARM COMPILER V2.11,  serial                                                                28/04/10  15:26:51  PAGE 5   
+
+   54:     U0IER = 0x00;                   // Disable UART0 interrupts
+ 00000038  2100      MOV         R1,#0x0
+ 0000003A  4800      LDR         R0,=0xE000C004
+ 0000003C  7001      STRB        R1,[R0,#0x0]
+   56:     U0LCR = 0x03;                   // 8 bits, no parity, 1 stop bit
+ 0000003E  2103      MOV         R1,#0x3
+ 00000040  4800      LDR         R0,=0xE000C00C
+ 00000042  7001      STRB        R1,[R0,#0x0]
+   58:     UART0_SetBaud(115200);          // Baudrate = 115200
+ 00000044  4800      LDR         R0,=0x1C200
+ 00000046  F7FF      BL          UART0_SetBaud?T  ; T=0x0001  (1)
+ 00000048  FFDB      BL          UART0_SetBaud?T  ; T=0x0001  (2)
+   60:     VICVectAddr2 = (unsigned long)UART0_irq;
+ 0000004A  4900      LDR         R1,=UART0_irq?A ; UART0_irq?A
+ 0000004C  4800      LDR         R0,=0xFFFFF108
+ 0000004E  6001      STR         R1,[R0,#0x0]
+   61:     VICVectCntl2 = 0x20 | 6;        // UART0 interrupt (irq enable + interrupt number)
+ 00000050  2126      MOV         R1,#0x26
+ 00000052  4800      LDR         R0,=0xFFFFF208
+ 00000054  6001      STR         R1,[R0,#0x0]
+   62:     VICIntEnable = 1 << 6;          // Enable UART0 interrupt
+ 00000056  2140      MOV         R1,#0x40
+ 00000058  4800      LDR         R0,=0xFFFFF010
+ 0000005A  6001      STR         R1,[R0,#0x0]
+   64:     U0IER = 0x07;                   // Enable RBR, THRE, Rx line status interrupts
+ 0000005C  2107      MOV         R1,#0x7
+ 0000005E  4800      LDR         R0,=0xE000C004
+ 00000060  7001      STRB        R1,[R0,#0x0]
+   66:     U0FCR = 0x01;                   // Enable and clear FIFO's
+ 00000062  2101      MOV         R1,#0x1
+ 00000064  4800      LDR         R0,=0xE000C008
+ 00000066  7001      STRB        R1,[R0,#0x0]
+   67: }
+ 00000068  BC08      POP         {R3}
+ 0000006A  4718      BX          R3
+ 0000006C          ENDP ; 'UART0_Init?T'
+
+
+*** CODE SEGMENT '?PR?UART0_Stop?T?serial':
+   71:     U0IER = 0x00;                   // Disable UART0 interrupts
+ 00000000  2100      MOV         R1,#0x0
+ 00000002  4800      LDR         R0,=0xE000C004
+ 00000004  7001      STRB        R1,[R0,#0x0]
+   72:     U0FCR = 0x00;                   // Disable FIFO's
+ 00000006  2100      MOV         R1,#0x0
+ 00000008  4800      LDR         R0,=0xE000C008
+ 0000000A  7001      STRB        R1,[R0,#0x0]
+   73: }
+ 0000000C  4770      BX          R14
+ 0000000E          ENDP ; 'UART0_Stop?T'
+
+
+*** CODE SEGMENT '?PR?UART0_SetBaud?T?serial':
+   75: void UART0_SetBaud(unsigned int rate)
+ 00000000  B530      PUSH        {R4-R5,LR}
+ 00000002  1C04      MOV         R4,R0 ; rate
+ 00000004  ---- Variable 'rate' assigned to Register 'R4' ----
+   76: {
+ 00000004            ; SCOPE-START
+   79:     UART0_Baudrate = rate; 
+ 00000004  1C21      MOV         R1,R4 ; rate
+ 00000006  4800      LDR         R0,=UART0_Baudrate ; UART0_Baudrate
+ 00000008  6001      STR         R1,[R0,#0x0] ; UART0_Baudrate
+   80:     newRate = ((LPCconfig()->PLL_Multiplier*LPCconfig()->crystal) / rate) / 16;
+ 0000000A  F7FF      BL          LPCconfig?T  ; T=0x0001  (1)
+ 0000000C  FFF9      BL          LPCconfig?T  ; T=0x0001  (2)
+ 0000000E  7900      LDRB        R0,[R0,#0x4]
+ 00000010  1C05      MOV         R5,R0
+ 00000012  F7FF      BL          LPCconfig?T  ; T=0x0001  (1)
+ 00000014  FFF5      BL          LPCconfig?T  ; T=0x0001  (2)
+ARM COMPILER V2.11,  serial                                                                28/04/10  15:26:51  PAGE 6   
+
+ 00000016  6800      LDR         R0,[R0,#0x0] ; LPCconfig?T
+ 00000018  4368      MUL         R0,R5
+ 0000001A  1C21      MOV         R1,R4 ; rate
+ 0000001C  F7FF      BL          ?C?UDIV?T  ; T=0x0001  (1) ; ?C?UDIV?T
+ 0000001E  FFF0      BL          ?C?UDIV?T  ; T=0x0001  (2) ; ?C?UDIV?T
+ 00000020  1C08      MOV         R0,R1
+ 00000022  0901      LSR         R1,R0,#0x4
+ 00000024  ---- Variable 'newRate' assigned to Register 'R1' ----
+   82:     U0LCR |= 0x80;                  // enable access to divisor latch (LSB, MSB) register
+ 00000024  2380      MOV         R3,#0x80
+ 00000026  4800      LDR         R0,=0xE000C00C
+ 00000028  7802      LDRB        R2,[R0,#0x0]
+ 0000002A  431A      ORR         R2,R3
+ 0000002C  7002      STRB        R2,[R0,#0x0]
+   84:     U0DLL = newRate & 0x00FF;
+ 0000002E  22FF      MOV         R2,#0xFF
+ 00000030  400A      AND         R2,R1 ; newRate
+ 00000032  4800      LDR         R0,=0xE000C000
+ 00000034  7002      STRB        R2,[R0,#0x0]
+   85:     U0DLM = (newRate & 0xFF00)>>8;
+ 00000036  4800      LDR         R0,=0xFF00
+ 00000038  4001      AND         R1,R0
+ 0000003A  0A09      LSR         R1,R1,#0x8 ; newRate
+ 0000003C  4800      LDR         R0,=0xE000C004
+ 0000003E  7001      STRB        R1,[R0,#0x0]
+   87:     U0LCR &= ~0x80;                 // enable access to U0RBR and U0THR
+ 00000040  227F      MOV         R2,#0x7F
+ 00000042  4800      LDR         R0,=0xE000C00C
+ 00000044  7801      LDRB        R1,[R0,#0x0]
+ 00000046  4011      AND         R1,R2
+ 00000048  7001      STRB        R1,[R0,#0x0]
+ 0000004A            ; SCOPE-END
+   88: }
+ 0000004A  BC30      POP         {R4-R5}
+ 0000004C  BC08      POP         {R3}
+ 0000004E  4718      BX          R3
+ 00000050          ENDP ; 'UART0_SetBaud?T'
+
+
+*** CODE SEGMENT '?PR?UART0_irq?A?serial':
+   90: void UART0_irq(void) __irq
+ 00000000  E92D001F  STMDB       R13!,{R0-R4}
+ 00000004  E24DD008  SUB         R13,R13,#0x0008
+ 00000008  ---- Variable 'pnt' assigned to Register 'R0' ----
+   91: {
+ 00000008            ; SCOPE-START
+   96:     while (((IIR = U0IIR) & 0x01) == 0)     // At least one interrupt is pending
+ 00000008  EA000037  B           L_1  ; Targ=0xEC
+ 0000000C          L_3:
+   98:         switch (IIR & 0x0E)
+ 0000000C  E59D1004  LDR         R1,[R13,#0x4] ; IIR
+ 00000010  E1A01C01  MOV         R1,R1,LSL #24
+ 00000014  E1A01C21  MOV         R1,R1,LSR #24
+ 00000018  E201100E  AND         R1,R1,#0x000E
+ 0000001C  E3510002  CMP         R1,#0x0002
+ 00000020  0A00001B  BEQ         L_6  ; Targ=0x94
+ 00000024  E3510004  CMP         R1,#0x0004
+ 00000028  0A000007  BEQ         L_10  ; Targ=0x4C
+ 0000002C  E351000C  CMP         R1,#0x000C
+ 00000030  0A000005  BEQ         L_10  ; Targ=0x4C
+ 00000034  E3510006  CMP         R1,#0x0006
+ 00000038  1A00002B  BNE         L_1  ; Targ=0xEC
+  100:         case 0x06:                          // Receive line status
+ 0000003C          L_9:
+  101:             dummy = U0LSR;                  // Clear interrupt source
+ 0000003C  E5101000  LDR         R1,=0xE000C014
+ 00000040  E5D11000  LDRB        R1,[R1,#0x0]
+ 00000044  E58D1000  STR         R1,[R13,#0x0] ; dummy
+ARM COMPILER V2.11,  serial                                                                28/04/10  15:26:51  PAGE 7   
+
+  102:             break;
+ 00000048  EA000027  B           L_1  ; Targ=0xEC
+  104:         case 0x0C:                          // Character timeout
+ 0000004C          L_10:
+  105:             pnt = &RxBuffer;
+ 0000004C  E5100000  LDR         R0,=RxBuffer ; RxBuffer
+  106:             if (((pnt->nextIn - pnt->nextOut) & ~(BufferSize-1)) == 0) // Room ?
+ 00000050  E5902004  LDR         R2,[R0,#0x4]
+ 00000054  E5901000  LDR         R1,[R0,#0x0] ; pnt
+ 00000058  E0411002  SUB         R1,R1,R2 ; pnt
+ 0000005C  E5102000  LDR         R2,=0xFFFFFC00
+ 00000060  E1110002  TST         R1,R2
+ 00000064  1A000020  BNE         L_1  ; Targ=0xEC
+  108:                 pnt->Buffer[pnt->nextIn++ & (BufferSize-1)] = U0RBR;
+ 00000068  E5101000  LDR         R1,=0xE000C000
+ 0000006C  E5D11000  LDRB        R1,[R1,#0x0]
+ 00000070  E1A03000  MOV         R3,R0 ; pnt
+ 00000074  E5932000  LDR         R2,[R3,#0x0] ; pnt
+ 00000078  E2824001  ADD         R4,R2,#0x0001
+ 0000007C  E5834000  STR         R4,[R3,#0x0] ; pnt
+ 00000080  E5103000  LDR         R3,=0x3FF
+ 00000084  E0022003  AND         R2,R2,R3
+ 00000088  E0802002  ADD         R2,R0,R2 ; pnt
+ 0000008C  E5C21008  STRB        R1,[R2,#0x8]
+  110:             break;
+ 00000090  EA000015  B           L_1  ; Targ=0xEC
+  111:         case 0x02:                          // THRE interrupt
+ 00000094          L_6:
+  112:             pnt = &TxBuffer;
+ 00000094  E5100000  LDR         R0,=TxBuffer ; TxBuffer
+  113:             if (pnt->nextIn != pnt->nextOut)
+ 00000098  E5902004  LDR         R2,[R0,#0x4]
+ 0000009C  E5901000  LDR         R1,[R0,#0x0] ; pnt
+ 000000A0  E1510002  CMP         R1,R2 ; pnt
+ 000000A4  0A00000D  BEQ         L_12  ; Targ=0xE0
+  115:                 U0THR = pnt->Buffer[pnt->nextOut++ & (BufferSize-1)];
+ 000000A8  E2802004  ADD         R2,R0,#0x0004 ; pnt
+ 000000AC  E5921000  LDR         R1,[R2,#0x0] ; pnt
+ 000000B0  E2813001  ADD         R3,R1,#0x0001
+ 000000B4  E5823000  STR         R3,[R2,#0x0] ; pnt
+ 000000B8  E5102000  LDR         R2,=0x3FF
+ 000000BC  E0011002  AND         R1,R1,R2
+ 000000C0  E0801001  ADD         R1,R0,R1 ; pnt
+ 000000C4  E5D12008  LDRB        R2,[R1,#0x8]
+ 000000C8  E5101000  LDR         R1,=0xE000C000
+ 000000CC  E5C12000  STRB        R2,[R1,#0x0]
+  116:                 tx_restart = 0;
+ 000000D0  E3A02000  MOV         R2,#0x0
+ 000000D4  E5101000  LDR         R1,=tx_restart ; tx_restart
+ 000000D8  E5812000  STR         R2,[R1,#0x0] ; tx_restart
+  117:             }
+ 000000DC  EA000002  B           L_1  ; Targ=0xEC
+ 000000E0          L_12:
+  120:                 tx_restart = 1;
+ 000000E0  E3A02001  MOV         R2,#0x1
+ 000000E4  E5101000  LDR         R1,=tx_restart ; tx_restart
+ 000000E8  E5812000  STR         R2,[R1,#0x0] ; tx_restart
+  126:     }
+ 000000EC          L_1:
+ 000000EC  E5101000  LDR         R1,=0xE000C008
+ 000000F0  E5D11000  LDRB        R1,[R1,#0x0]
+ 000000F4  E58D1004  STR         R1,[R13,#0x4] ; IIR
+ 000000F8  E3110001  TST         R1,#0x0001
+ 000000FC  0AFFFFC2  BEQ         L_3  ; Targ=0xC
+  127:       VICVectAddr = 2;                      // Acknowledge interrupt
+ 00000100  E3A02002  MOV         R2,#0x2
+ARM COMPILER V2.11,  serial                                                                28/04/10  15:26:51  PAGE 8   
+
+ 00000104  E5101000  LDR         R1,=0xFFFFF030
+ 00000108  E5812000  STR         R2,[R1,#0x0]
+ 0000010C            ; SCOPE-END
+  128: }
+ 0000010C  E28DD008  ADD         R13,R13,#0x0008
+ 00000110  E8BD001F  LDMIA       R13!,{R0-R4}
+ 00000114  E25EF004  SUBS        R15,R14,#0x0004
+ 00000118          ENDP ; 'UART0_irq?A'
+
+
+*** CODE SEGMENT '?PR?UART0_RxNumber?T?serial':
+  131:     return RxBufLength;
+ 00000000  4800      LDR         R0,=RxBuffer + 0x4 ; RxBuffer+4
+ 00000002  6801      LDR         R1,[R0,#0x0] ; RxBuffer+4
+ 00000004  4800      LDR         R0,=RxBuffer ; RxBuffer
+ 00000006  6800      LDR         R0,[R0,#0x0] ; RxBuffer
+ 00000008  1A40      SUB         R0,R1
+  132: }
+ 0000000A  4770      BX          R14
+ 0000000C          ENDP ; 'UART0_RxNumber?T'
+
+
+*** CODE SEGMENT '?PR?UART0_TxEmpty?T?serial':
+  136:     return TxBufLength;
+ 00000000  4800      LDR         R0,=TxBuffer + 0x4 ; TxBuffer+4
+ 00000002  6801      LDR         R1,[R0,#0x0] ; TxBuffer+4
+ 00000004  4800      LDR         R0,=TxBuffer ; TxBuffer
+ 00000006  6800      LDR         R0,[R0,#0x0] ; TxBuffer
+ 00000008  1A40      SUB         R0,R1
+  137: }
+ 0000000A  4770      BX          R14
+ 0000000C          ENDP ; 'UART0_TxEmpty?T'
+
+
+*** CODE SEGMENT '?PR?UART0_Get?T?serial':
+  140: {
+ 00000000            ; SCOPE-START
+  141:     buffer_struct *pnt = &RxBuffer;
+ 00000000  4800      LDR         R1,=RxBuffer ; RxBuffer
+ 00000002  ---- Variable 'pnt' assigned to Register 'R1' ----
+  143:     if (RxBufLength == 0)
+ 00000002  4800      LDR         R0,=RxBuffer + 0x4 ; RxBuffer+4
+ 00000004  6802      LDR         R2,[R0,#0x0] ; RxBuffer+4
+ 00000006  4800      LDR         R0,=RxBuffer ; RxBuffer
+ 00000008  6800      LDR         R0,[R0,#0x0] ; RxBuffer
+ 0000000A  1A80      SUB         R0,R2
+ 0000000C  2800      CMP         R0,#0x0
+ 0000000E  D101      BNE         L_16  ; T=0x00000014
+  144:         return (-1);
+ 00000010  4800      LDR         R0,=0xFFFFFFFF
+ 00000012  E009      B           L_17  ; T=0x00000028
+ 00000014          L_16:
+  146:     return (pnt->Buffer[(pnt->nextOut++) & (BufferSize - 1)]);
+ 00000014  1C0A      MOV         R2,R1 ; pnt
+ 00000016  3204      ADD         R2,#0x4
+ 00000018  6810      LDR         R0,[R2,#0x0] ; pnt
+ 0000001A  1C03      MOV         R3,R0
+ 0000001C  3301      ADD         R3,#0x1
+ 0000001E  6013      STR         R3,[R2,#0x0] ; pnt
+ 00000020  4800      LDR         R2,=0x3FF
+ 00000022  4010      AND         R0,R2
+ 00000024  1808      ADD         R0,R1,R0 ; pnt
+ 00000026  7A00      LDRB        R0,[R0,#0x8]
+ 00000028            ; SCOPE-END
+  147: }
+ 00000028          L_17:
+ 00000028  4770      BX          R14
+ 0000002A          ENDP ; 'UART0_Get?T'
+
+
+*** CODE SEGMENT '?PR?UART0_Put?T?serial':
+  149: int UART0_Put(char data) //?
+ 00000000  B410      PUSH        {R4}
+ 00000002  1C01      MOV         R1,R0 ; data
+ARM COMPILER V2.11,  serial                                                                28/04/10  15:26:51  PAGE 9   
+
+ 00000004  ---- Variable 'data' assigned to Register 'R1' ----
+  150: {
+ 00000004            ; SCOPE-START
+  151:     buffer_struct *pnt = &TxBuffer;
+ 00000004  4800      LDR         R2,=TxBuffer ; TxBuffer
+ 00000006  ---- Variable 'pnt' assigned to Register 'R2' ----
+  153:     if (TxBufLength >= BufferSize)
+ 00000006  4800      LDR         R0,=TxBuffer + 0x4 ; TxBuffer+4
+ 00000008  6803      LDR         R3,[R0,#0x0] ; TxBuffer+4
+ 0000000A  4800      LDR         R0,=TxBuffer ; TxBuffer
+ 0000000C  6800      LDR         R0,[R0,#0x0] ; TxBuffer
+ 0000000E  1AC0      SUB         R0,R3
+ 00000010  4800      LDR         R3,=0x400
+ 00000012  4298      CMP         R0,R3
+ 00000014  D301      BCC         L_18  ; T=0x0000001A
+  154:         return (-1);                        // Buffer full, return error
+ 00000016  4800      LDR         R0,=0xFFFFFFFF
+ 00000018  E013      B           L_19  ; T=0x00000042
+ 0000001A          L_18:
+  156:     if (tx_restart)
+ 0000001A  4800      LDR         R0,=tx_restart ; tx_restart
+ 0000001C  6800      LDR         R0,[R0,#0x0] ; tx_restart
+ 0000001E  2800      CMP         R0,#0x0
+ 00000020  D005      BEQ         L_20  ; T=0x0000002E
+  158:         tx_restart = 0;
+ 00000022  2300      MOV         R3,#0x0
+ 00000024  4800      LDR         R0,=tx_restart ; tx_restart
+ 00000026  6003      STR         R3,[R0,#0x0] ; tx_restart
+  159:         U0THR = data;
+ 00000028  4800      LDR         R3,=0xE000C000
+ 0000002A  7019      STRB        R1,[R3,#0x0] ; data
+  160:     }
+ 0000002C  E008      B           L_21  ; T=0x00000040
+ 0000002E          L_20:
+  163:         pnt->Buffer[pnt->nextIn++ & (BufferSize - 1)] = data;
+ 0000002E  1C13      MOV         R3,R2 ; pnt
+ 00000030  6818      LDR         R0,[R3,#0x0] ; pnt
+ 00000032  1C04      MOV         R4,R0
+ 00000034  3401      ADD         R4,#0x1
+ 00000036  601C      STR         R4,[R3,#0x0] ; pnt
+ 00000038  4800      LDR         R3,=0x3FF
+ 0000003A  4018      AND         R0,R3
+ 0000003C  1812      ADD         R2,R0 ; pnt
+ 0000003E  7211      STRB        R1,[R2,#0x8] ; data
+  164:     }
+ 00000040          L_21:
+  166:     return (0);
+ 00000040  2000      MOV         R0,#0x0
+ 00000042            ; SCOPE-END
+  167: }
+ 00000042          L_19:
+ 00000042  BC10      POP         {R4}
+ 00000044  4770      BX          R14
+ 00000046          ENDP ; 'UART0_Put?T'
+
+
+*** CODE SEGMENT '?PR?UART0_Str?T?serial':
+  169: int UART0_Str(char data[128],int n)
+ 00000000  B570      PUSH        {R4-R6,LR}
+ 00000002  1C0E      MOV         R6,R1 ; n
+ 00000004  ---- Variable 'n' assigned to Register 'R6' ----
+ 00000004  1C05      MOV         R5,R0 ; data
+ 00000006  ---- Variable 'data' assigned to Register 'R5' ----
+  170: {
+ 00000006            ; SCOPE-START
+  172:     for (i=0; i<n; i++)
+ 00000006  2400      MOV         R4,#0x0
+ 00000008  ---- Variable 'i' assigned to Register 'R4' ----
+ARM COMPILER V2.11,  serial                                                                28/04/10  15:26:51  PAGE 10  
+
+ 00000008  E008      B           L_24  ; T=0x0000001C
+ 0000000A          L_25:
+  174:         if (UART0_Put(data[i]) == -1) return -1;
+ 0000000A  5D28      LDRB        R0,[R5,R4]
+ 0000000C  F7FF      BL          UART0_Put?T  ; T=0x0001  (1)
+ 0000000E  FFF8      BL          UART0_Put?T  ; T=0x0001  (2)
+ 00000010  2101      MOV         R1,#0x1
+ 00000012  42C8      CMN         R0,R1 ; UART0_Put?T
+ 00000014  D101      BNE         L_22  ; T=0x0000001A
+ 00000016  4800      LDR         R0,=0xFFFFFFFF
+ 00000018  E003      B           L_28  ; T=0x00000022
+  175:     }
+ 0000001A          L_22:
+ 0000001A  3401      ADD         R4,#0x1
+ 0000001C          L_24:
+ 0000001C  42B4      CMP         R4,R6 ; i
+ 0000001E  DBF4      BLT         L_25  ; T=0x0000000A
+  176:     return 0;
+ 00000020  2000      MOV         R0,#0x0
+ 00000022            ; SCOPE-END
+  177: }
+ 00000022          L_28:
+ 00000022  BC70      POP         {R4-R6}
+ 00000024  BC08      POP         {R3}
+ 00000026  4718      BX          R3
+ 00000028          ENDP ; 'UART0_Str?T'
+
+
+
+Module Information          Static
+----------------------------------
+  code size            =    ------
+  data size            =      2072
+  const size           =    ------
+End of Module Information.
+
+
+ARM COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

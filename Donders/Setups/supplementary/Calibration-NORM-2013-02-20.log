@@ -1,0 +1,242 @@
+ 	File: D:\HumanV1\Rachel\DAT\Calibration-NORM-2013-02-20.log
+ ---------------------------------------------------------------
+	Max.Trl	Rpts	Dif.Trl	ITI--Range		Rnd	#
+ 0	56		1	56		100	100		0	8
+ ---------------------------------------------------------------
+	channr	LP	rate	#	name
+ 0	0		250	1000	100	Eye H
+ 0	1		250	1000	100	Eye V
+ 0	2		250	1000	100	Eye F
+ 0	3		250	1000	100	Button
+ 0	4		250	1000	100	chan 5
+ 0	5		250	1000	100	chan 6
+ 0	6		250	1000	100	chan 7
+ 0	7		250	1000	100	chan 8
+ ===============================================================
+							ITI->	set	real	span
+ Trl	Stm	Type	X	Y	On	Off	Int	Attr	Bit	Flnk
+ ===============================================================
+ 								100	100	0
+  1	 1	Trg0	 NaN	 NaN	-81053	    0	 NaN	 NaN	   2	   1
+  1	 2	 Acq	 NaN	 NaN	    0	  800	 NaN	 NaN	1017	   1
+  1	 3	 Led	  90	 101	-81052	  101	   7	   1	 NaN	   1
+ 								100	100	0
+  2	 1	Trg0	 NaN	 NaN	-3244	    0	 NaN	 NaN	   2	   2
+  2	 2	 Acq	 NaN	 NaN	    0	  800	 NaN	 NaN	1017	   2
+  2	 3	 Led	 -90	   4	-3243	  101	   7	   1	 NaN	   2
+ 								100	100	0
+  3	 1	Trg0	 NaN	 NaN	-2413	    0	 NaN	 NaN	   2	   3
+  3	 2	 Acq	 NaN	 NaN	    0	  800	 NaN	 NaN	1017	   3
+  3	 3	 Led	 -90	   8	-2412	  101	   7	   1	 NaN	   3
+ 								100	100	0
+  4	 1	Trg0	 NaN	 NaN	-2661	    0	 NaN	 NaN	   2	   4
+  4	 2	 Acq	 NaN	 NaN	    0	  800	 NaN	 NaN	1017	   4
+  4	 3	 Led	 -90	  12	-2660	  101	   7	   1	 NaN	   4
+ 								100	100	0
+  5	 1	Trg0	 NaN	 NaN	-2875	    0	 NaN	 NaN	   2	   5
+  5	 2	 Acq	 NaN	 NaN	    0	  800	 NaN	 NaN	1017	   5
+  5	 3	 Led	 -90	  16	-2874	  101	   7	   1	 NaN	   5
+ 								100	100	0
+  6	 1	Trg0	 NaN	 NaN	-2765	    0	 NaN	 NaN	   2	   6
+  6	 2	 Acq	 NaN	 NaN	    0	  800	 NaN	 NaN	1017	   6
+  6	 3	 Led	 -90	  20	-2764	  101	   7	   1	 NaN	   6
+ 								100	100	0
+  7	 1	Trg0	 NaN	 NaN	-2796	    0	 NaN	 NaN	   2	   7
+  7	 2	 Acq	 NaN	 NaN	    0	  800	 NaN	 NaN	1017	   7
+  7	 3	 Led	 -90	  24	-2795	  101	   7	   1	 NaN	   7
+ 								100	100	0
+  8	 1	Trg0	 NaN	 NaN	-2008	    0	 NaN	 NaN	   2	   8
+  8	 2	 Acq	 NaN	 NaN	    0	  800	 NaN	 NaN	1017	   8
+  8	 3	 Led	 -90	  28	-2007	  101	   7	   1	 NaN	   8
+ 								100	100	0
+  9	 1	Trg0	 NaN	 NaN	-5722	    0	 NaN	 NaN	   2	   9
+  9	 2	 Acq	 NaN	 NaN	    0	  800	 NaN	 NaN	1017	   9
+  9	 3	 Led	 -80	  12	-5721	  101	   7	   1	 NaN	   9
+ 								100	100	0
+ 10	 1	Trg0	 NaN	 NaN	-2123	    0	 NaN	 NaN	   2	  10
+ 10	 2	 Acq	 NaN	 NaN	    0	  800	 NaN	 NaN	1017	  10
+ 10	 3	 Led	 -67	   8	-2122	  101	   7	   1	 NaN	  10
+ 								100	100	0
+ 11	 1	Trg0	 NaN	 NaN	-2301	    0	 NaN	 NaN	   2	  11
+ 11	 2	 Acq	 NaN	 NaN	    0	  800	 NaN	 NaN	1017	  11
+ 11	 3	 Led	 -67	  16	-2300	  101	   7	   1	 NaN	  11
+ 								100	100	0
+ 12	 1	Trg0	 NaN	 NaN	-2027	    0	 NaN	 NaN	   2	  12
+ 12	 2	 Acq	 NaN	 NaN	    0	  800	 NaN	 NaN	1017	  12
+ 12	 3	 Led	 -60	  12	-2026	  101	   7	   1	 NaN	  12
+ 								100	100	0
+ 13	 1	Trg0	 NaN	 NaN	-2125	    0	 NaN	 NaN	   2	  13
+ 13	 2	 Acq	 NaN	 NaN	    0	  800	 NaN	 NaN	1017	  13
+ 13	 3	 Led	 -57	   4	-2124	  101	   7	   1	 NaN	  13
+ 								100	100	0
+ 14	 1	Trg0	 NaN	 NaN	-2195	    0	 NaN	 NaN	   2	  14
+ 14	 2	 Acq	 NaN	 NaN	    0	  800	 NaN	 NaN	1017	  14
+ 14	 3	 Led	 -57	  20	-2194	  101	   7	   1	 NaN	  14
+ 								100	100	0
+ 15	 1	Trg0	 NaN	 NaN	-2006	    0	 NaN	 NaN	   2	  15
+ 15	 2	 Acq	 NaN	 NaN	    0	  800	 NaN	 NaN	1017	  15
+ 15	 3	 Led	 -43	   8	-2005	  101	   7	   1	 NaN	  15
+ 								100	100	0
+ 16	 1	Trg0	 NaN	 NaN	-2278	    0	 NaN	 NaN	   2	  16
+ 16	 2	 Acq	 NaN	 NaN	    0	  800	 NaN	 NaN	1017	  16
+ 16	 3	 Led	 -43	  16	-2277	  101	   7	   1	 NaN	  16
+ 								100	100	0
+ 17	 1	Trg0	 NaN	 NaN	-2709	    0	 NaN	 NaN	   2	  17
+ 17	 2	 Acq	 NaN	 NaN	    0	  800	 NaN	 NaN	1017	  17
+ 17	 3	 Led	 -43	  24	-2708	  101	   7	   1	 NaN	  17
+ 								100	100	0
+ 18	 1	Trg0	 NaN	 NaN	-6282	    0	 NaN	 NaN	   2	  18
+ 18	 2	 Acq	 NaN	 NaN	    0	  800	 NaN	 NaN	1017	  18
+ 18	 3	 Led	 140	 101	-6281	  101	   7	   1	 NaN	  18
+ 								100	100	0
+ 19	 1	Trg0	 NaN	 NaN	-2401	    0	 NaN	 NaN	   2	  19
+ 19	 2	 Acq	 NaN	 NaN	    0	  800	 NaN	 NaN	1017	  19
+ 19	 3	 Led	 -40	  12	-2400	  101	   7	   1	 NaN	  19
+ 								100	100	0
+ 20	 1	Trg0	 NaN	 NaN	-2066	    0	 NaN	 NaN	   2	  20
+ 20	 2	 Acq	 NaN	 NaN	    0	  800	 NaN	 NaN	1017	  20
+ 20	 3	 Led	 -27	   4	-2065	  101	   7	   1	 NaN	  20
+ 								100	100	0
+ 21	 1	Trg0	 NaN	 NaN	-3014	    0	 NaN	 NaN	   2	  21
+ 21	 2	 Acq	 NaN	 NaN	    0	  800	 NaN	 NaN	1017	  21
+ 21	 3	 Led	 -27	  20	-3013	  101	   7	   1	 NaN	  21
+ 								100	100	0
+ 22	 1	Trg0	 NaN	 NaN	-1982	    0	 NaN	 NaN	   2	  22
+ 22	 2	 Acq	 NaN	 NaN	    0	  800	 NaN	 NaN	1017	  22
+ 22	 3	 Led	 -21	   8	-1981	  101	   7	   1	 NaN	  22
+ 								100	100	0
+ 23	 1	Trg0	 NaN	 NaN	-1859	    0	 NaN	 NaN	   2	  23
+ 23	 2	 Acq	 NaN	 NaN	    0	  800	 NaN	 NaN	1017	  23
+ 23	 3	 Led	 -21	  16	-1858	  101	   7	   1	 NaN	  23
+ 								100	100	0
+ 24	 1	Trg0	 NaN	 NaN	-2439	    0	 NaN	 NaN	   2	  24
+ 24	 2	 Acq	 NaN	 NaN	    0	  800	 NaN	 NaN	1017	  24
+ 24	 3	 Led	 -20	  12	-2438	  101	   7	   1	 NaN	  24
+ 								100	100	0
+ 25	 1	Trg0	 NaN	 NaN	-4526	    0	 NaN	 NaN	   2	  25
+ 25	 2	 Acq	 NaN	 NaN	    0	  800	 NaN	 NaN	1017	  25
+ 25	 3	 Led	 180	 101	-4525	  101	   7	   1	 NaN	  25
+ 								100	100	0
+ 26	 1	Trg0	 NaN	 NaN	-2744	    0	 NaN	 NaN	   2	  26
+ 26	 2	 Acq	 NaN	 NaN	    0	  800	 NaN	 NaN	1017	  26
+ 26	 3	 Led	   0	   4	-2743	  101	   7	   1	 NaN	  26
+ 								100	100	0
+ 27	 1	Trg0	 NaN	 NaN	-1810	    0	 NaN	 NaN	   2	  27
+ 27	 2	 Acq	 NaN	 NaN	    0	  800	 NaN	 NaN	1017	  27
+ 27	 3	 Led	   0	   8	-1809	  101	   7	   1	 NaN	  27
+ 								100	100	0
+ 28	 1	Trg0	 NaN	 NaN	-1251	    0	 NaN	 NaN	   2	  28
+ 28	 2	 Acq	 NaN	 NaN	    0	  800	 NaN	 NaN	1017	  28
+ 28	 3	 Led	   0	  12	-1250	  101	   7	   1	 NaN	  28
+ 								100	100	0
+ 29	 1	Trg0	 NaN	 NaN	-1800	    0	 NaN	 NaN	   2	  29
+ 29	 2	 Acq	 NaN	 NaN	    0	  800	 NaN	 NaN	1017	  29
+ 29	 3	 Led	   0	  16	-1799	  101	   7	   1	 NaN	  29
+ 								100	100	0
+ 30	 1	Trg0	 NaN	 NaN	-1713	    0	 NaN	 NaN	   2	  30
+ 30	 2	 Acq	 NaN	 NaN	    0	  800	 NaN	 NaN	1017	  30
+ 30	 3	 Led	   0	  20	-1712	  101	   7	   1	 NaN	  30
+ 								100	100	0
+ 31	 1	Trg0	 NaN	 NaN	-1783	    0	 NaN	 NaN	   2	  31
+ 31	 2	 Acq	 NaN	 NaN	    0	  800	 NaN	 NaN	1017	  31
+ 31	 3	 Led	   0	  24	-1782	  101	   7	   1	 NaN	  31
+ 								100	100	0
+ 32	 1	Trg0	 NaN	 NaN	-1670	    0	 NaN	 NaN	   2	  32
+ 32	 2	 Acq	 NaN	 NaN	    0	  800	 NaN	 NaN	1017	  32
+ 32	 3	 Led	   0	  28	-1669	  101	   7	   1	 NaN	  32
+ 								100	100	0
+ 33	 1	Trg0	 NaN	 NaN	-3354	    0	 NaN	 NaN	   2	  33
+ 33	 2	 Acq	 NaN	 NaN	    0	  800	 NaN	 NaN	1017	  33
+ 33	 3	 Led	 -90	 101	-3353	  101	   7	   1	 NaN	  33
+ 								100	100	0
+ 34	 1	Trg0	 NaN	 NaN	-3294	    0	 NaN	 NaN	   2	  34
+ 34	 2	 Acq	 NaN	 NaN	    0	  800	 NaN	 NaN	1017	  34
+ 34	 3	 Led	  20	  12	-3293	  101	   7	   1	 NaN	  34
+ 								100	100	0
+ 35	 1	Trg0	 NaN	 NaN	-1962	    0	 NaN	 NaN	   2	  35
+ 35	 2	 Acq	 NaN	 NaN	    0	  800	 NaN	 NaN	1017	  35
+ 35	 3	 Led	  21	   8	-1961	  101	   7	   1	 NaN	  35
+ 								100	100	0
+ 36	 1	Trg0	 NaN	 NaN	-1972	    0	 NaN	 NaN	   2	  36
+ 36	 2	 Acq	 NaN	 NaN	    0	  800	 NaN	 NaN	1017	  36
+ 36	 3	 Led	  21	  16	-1971	  101	   7	   1	 NaN	  36
+ 								100	100	0
+ 37	 1	Trg0	 NaN	 NaN	-2336	    0	 NaN	 NaN	   2	  37
+ 37	 2	 Acq	 NaN	 NaN	    0	  800	 NaN	 NaN	1017	  37
+ 37	 3	 Led	  27	   4	-2335	  101	   7	   1	 NaN	  37
+ 								100	100	0
+ 38	 1	Trg0	 NaN	 NaN	-2399	    0	 NaN	 NaN	   2	  38
+ 38	 2	 Acq	 NaN	 NaN	    0	  800	 NaN	 NaN	1017	  38
+ 38	 3	 Led	  27	  20	-2398	  101	   7	   1	 NaN	  38
+ 								100	100	0
+ 39	 1	Trg0	 NaN	 NaN	-1734	    0	 NaN	 NaN	   2	  39
+ 39	 2	 Acq	 NaN	 NaN	    0	  800	 NaN	 NaN	1017	  39
+ 39	 3	 Led	  40	  12	-1733	  101	   7	   1	 NaN	  39
+ 								100	100	0
+ 40	 1	Trg0	 NaN	 NaN	-1681	    0	 NaN	 NaN	   2	  40
+ 40	 2	 Acq	 NaN	 NaN	    0	  800	 NaN	 NaN	1017	  40
+ 40	 3	 Led	  43	   8	-1680	  101	   7	   1	 NaN	  40
+ 								100	100	0
+ 41	 1	Trg0	 NaN	 NaN	-1945	    0	 NaN	 NaN	   2	  41
+ 41	 2	 Acq	 NaN	 NaN	    0	  800	 NaN	 NaN	1017	  41
+ 41	 3	 Led	  43	  16	-1944	  101	   7	   1	 NaN	  41
+ 								100	100	0
+ 42	 1	Trg0	 NaN	 NaN	-2968	    0	 NaN	 NaN	   2	  42
+ 42	 2	 Acq	 NaN	 NaN	    0	  800	 NaN	 NaN	1017	  42
+ 42	 3	 Led	  43	  24	-2967	  101	   7	   1	 NaN	  42
+ 								100	100	0
+ 43	 1	Trg0	 NaN	 NaN	-12865	    0	 NaN	 NaN	   2	  43
+ 43	 2	 Acq	 NaN	 NaN	    0	  800	 NaN	 NaN	1017	  43
+ 43	 3	 Led	-140	 101	-12864	  101	   7	   1	 NaN	  43
+ 								100	100	0
+ 44	 1	Trg0	 NaN	 NaN	-30892	    0	 NaN	 NaN	   2	  44
+ 44	 2	 Acq	 NaN	 NaN	    0	  800	 NaN	 NaN	1017	  44
+ 44	 3	 Led	  57	   4	-30891	  101	   7	   1	 NaN	  44
+ 								100	100	0
+ 45	 1	Trg0	 NaN	 NaN	-3330	    0	 NaN	 NaN	   2	  45
+ 45	 2	 Acq	 NaN	 NaN	    0	  800	 NaN	 NaN	1017	  45
+ 45	 3	 Led	  57	  20	-3329	  101	   7	   1	 NaN	  45
+ 								100	100	0
+ 46	 1	Trg0	 NaN	 NaN	-3790	    0	 NaN	 NaN	   2	  46
+ 46	 2	 Acq	 NaN	 NaN	    0	  800	 NaN	 NaN	1017	  46
+ 46	 3	 Led	  60	  12	-3789	  101	   7	   1	 NaN	  46
+ 								100	100	0
+ 47	 1	Trg0	 NaN	 NaN	-1818	    0	 NaN	 NaN	   2	  47
+ 47	 2	 Acq	 NaN	 NaN	    0	  800	 NaN	 NaN	1017	  47
+ 47	 3	 Led	  67	   8	-1817	  101	   7	   1	 NaN	  47
+ 								100	100	0
+ 48	 1	Trg0	 NaN	 NaN	-2047	    0	 NaN	 NaN	   2	  48
+ 48	 2	 Acq	 NaN	 NaN	    0	  800	 NaN	 NaN	1017	  48
+ 48	 3	 Led	  67	  16	-2046	  101	   7	   1	 NaN	  48
+ 								100	100	0
+ 49	 1	Trg0	 NaN	 NaN	-2456	    0	 NaN	 NaN	   2	  49
+ 49	 2	 Acq	 NaN	 NaN	    0	  800	 NaN	 NaN	1017	  49
+ 49	 3	 Led	  80	  12	-2455	  101	   7	   1	 NaN	  49
+ 								100	100	0
+ 50	 1	Trg0	 NaN	 NaN	-2533	    0	 NaN	 NaN	   2	  50
+ 50	 2	 Acq	 NaN	 NaN	    0	  800	 NaN	 NaN	1017	  50
+ 50	 3	 Led	  90	   4	-2532	  101	   7	   1	 NaN	  50
+ 								100	100	0
+ 51	 1	Trg0	 NaN	 NaN	-2386	    0	 NaN	 NaN	   2	  51
+ 51	 2	 Acq	 NaN	 NaN	    0	  800	 NaN	 NaN	1017	  51
+ 51	 3	 Led	  90	   8	-2385	  101	   7	   1	 NaN	  51
+ 								100	100	0
+ 52	 1	Trg0	 NaN	 NaN	-1225	    0	 NaN	 NaN	   2	  52
+ 52	 2	 Acq	 NaN	 NaN	    0	  800	 NaN	 NaN	1017	  52
+ 52	 3	 Led	  90	  12	-1224	  101	   7	   1	 NaN	  52
+ 								100	100	0
+ 53	 1	Trg0	 NaN	 NaN	-1960	    0	 NaN	 NaN	   2	  53
+ 53	 2	 Acq	 NaN	 NaN	    0	  800	 NaN	 NaN	1017	  53
+ 53	 3	 Led	  90	  16	-1959	  101	   7	   1	 NaN	  53
+ 								100	100	0
+ 54	 1	Trg0	 NaN	 NaN	-1805	    0	 NaN	 NaN	   2	  54
+ 54	 2	 Acq	 NaN	 NaN	    0	  800	 NaN	 NaN	1017	  54
+ 54	 3	 Led	  90	  20	-1804	  101	   7	   1	 NaN	  54
+ 								100	100	0
+ 55	 1	Trg0	 NaN	 NaN	-4380	    0	 NaN	 NaN	   2	  55
+ 55	 2	 Acq	 NaN	 NaN	    0	  800	 NaN	 NaN	1017	  55
+ 55	 3	 Led	  90	  24	-4379	  101	   7	   1	 NaN	  55
+ 								100	100	0
+ 56	 1	Trg0	 NaN	 NaN	-2561	    0	 NaN	 NaN	   2	  56
+ 56	 2	 Acq	 NaN	 NaN	    0	  800	 NaN	 NaN	1017	  56
+ 56	 3	 Led	  90	  28	-2560	  101	   7	   1	 NaN	  56

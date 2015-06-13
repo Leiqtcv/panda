@@ -1,0 +1,227 @@
+ARM COMPILER V2.11,  Clock                                                                 20/10/09  09:30:17  PAGE 1   
+
+
+ARM COMPILER V2.11, COMPILATION OF MODULE Clock
+OBJECT MODULE PLACED IN Clock.OBJ
+COMPILER INVOKED BY: C:\Keil\ARM\BIN\CA.exe Clock.c THUMB BROWSE TABS(4) 
+
+stmt  level    source
+
+    1          /*************************************************************************
+    2                                  clock.c
+    3          
+    4          Project         Trainen aap     DJH CNS UMCN
+    5          --------------------------------------------------------------------------
+    6          Versie 1.00     02-02-2006      Dick Heeren
+    7          **************************************************************************/
+    8          #include <lpc21xx.h> 
+    9          #include "Clock.h" 
+   10          
+   11          unsigned int Ticks;
+   12          unsigned int Seconds;
+   13          unsigned int Count;
+   14          
+   15          // Setup timer
+   16          void Clock_Init(void)
+   17          {
+   18   1          Seconds = 0;
+   19   1          Count   = 0;
+   20   1          Ticks = 0;
+   21   1          T0PR  = 0;      // prescale register
+   22   1          T0PC  = 0;      // prescale counter = max T0PR
+   23   1          T0MR0 = 50000;  // clock 1 mSec -> 50000 
+   24   1          T0MCR = 3;
+   25   1          T0TCR = 1;
+   26   1          VICVectAddr0 = (unsigned long) timer0;
+   27   1          VICVectCntl0 = 0x20 | 4;
+   28   1          VICIntEnable = 1 << 4; 
+   29   1      }
+   30          
+   31          // Timer
+   32          void timer0(void) __irq
+   33          {
+   34   1          Ticks++;
+   35   1      
+   36   1          if (++Count == 1000)    // clock 1 mSec 
+   37   1          {
+   38   2              Seconds++;
+   39   2              Count = 0;
+   40   2          }
+   41   1      
+   42   1          T0IR = 1;
+   43   1          VICVectAddr = 0;
+   44   1      }
+   45          
+   46          unsigned int Clock_GetTicks(void)
+   47          {
+   48   1          return Ticks;
+   49   1      }
+   50          
+   51          unsigned int Clock_GetSeconds(void)
+   52          {
+   53   1          return Seconds;
+   54   1      }
+   55          
+   56          void Clock_Reset(void)
+   57          {
+   58   1          Ticks   = 0;
+   59   1      }
+ARM COMPILER V2.11,  Clock                                                                 20/10/09  09:30:17  PAGE 2   
+
+ASSEMBLY LISTING OF GENERATED OBJECT CODE
+
+
+
+*** PUBLICS:
+ PUBLIC         Clock_Init?T
+ PUBLIC         Clock_GetTicks?T
+ PUBLIC         Clock_GetSeconds?T
+ PUBLIC         Clock_Reset?T
+ PUBLIC         timer0?A
+ PUBLIC         Ticks
+ PUBLIC         Seconds
+ PUBLIC         Count
+
+
+
+*** DATA SEGMENT '?DT0?Clock':
+ 00000000          Ticks:
+ 00000000            DS          4
+ 00000004          Seconds:
+ 00000004            DS          4
+ 00000008          Count:
+ 00000008            DS          4
+
+
+
+*** CODE SEGMENT '?PR?Clock_Init?T?Clock':
+   18:     Seconds = 0;
+ 00000000  2100      MOV         R1,#0x0
+ 00000002  4800      LDR         R0,=Seconds ; Seconds
+ 00000004  6001      STR         R1,[R0,#0x0] ; Seconds
+   19:     Count   = 0;
+ 00000006  2100      MOV         R1,#0x0
+ 00000008  4800      LDR         R0,=Count ; Count
+ 0000000A  6001      STR         R1,[R0,#0x0] ; Count
+   20:     Ticks = 0;
+ 0000000C  2100      MOV         R1,#0x0
+ 0000000E  4800      LDR         R0,=Ticks ; Ticks
+ 00000010  6001      STR         R1,[R0,#0x0] ; Ticks
+   21:     T0PR  = 0;      // prescale register
+ 00000012  2100      MOV         R1,#0x0
+ 00000014  4800      LDR         R0,=0xE000400C
+ 00000016  6001      STR         R1,[R0,#0x0]
+   22:     T0PC  = 0;      // prescale counter = max T0PR
+ 00000018  2100      MOV         R1,#0x0
+ 0000001A  4800      LDR         R0,=0xE0004010
+ 0000001C  6001      STR         R1,[R0,#0x0]
+   23:     T0MR0 = 50000;  // clock 1 mSec -> 50000 
+ 0000001E  4800      LDR         R1,=0xC350
+ 00000020  4800      LDR         R0,=0xE0004018
+ 00000022  6001      STR         R1,[R0,#0x0]
+   24:     T0MCR = 3;
+ 00000024  2103      MOV         R1,#0x3
+ 00000026  4800      LDR         R0,=0xE0004014
+ 00000028  6001      STR         R1,[R0,#0x0]
+   25:     T0TCR = 1;
+ 0000002A  2101      MOV         R1,#0x1
+ 0000002C  4800      LDR         R0,=0xE0004004
+ 0000002E  6001      STR         R1,[R0,#0x0]
+   26:     VICVectAddr0 = (unsigned long) timer0;
+ 00000030  4900      LDR         R1,=timer0?A ; timer0?A
+ 00000032  4800      LDR         R0,=0xFFFFF100
+ 00000034  6001      STR         R1,[R0,#0x0]
+   27:     VICVectCntl0 = 0x20 | 4;
+ 00000036  2124      MOV         R1,#0x24
+ 00000038  4800      LDR         R0,=0xFFFFF200
+ 0000003A  6001      STR         R1,[R0,#0x0]
+   28:     VICIntEnable = 1 << 4; 
+ 0000003C  2110      MOV         R1,#0x10
+ 0000003E  4800      LDR         R0,=0xFFFFF010
+ 00000040  6001      STR         R1,[R0,#0x0]
+ARM COMPILER V2.11,  Clock                                                                 20/10/09  09:30:17  PAGE 3   
+
+   29: }
+ 00000042  4770      BX          R14
+ 00000044          ENDP ; 'Clock_Init?T'
+
+
+*** CODE SEGMENT '?PR?timer0?A?Clock':
+   32: void timer0(void) __irq
+ 00000000  E92D0003  STMDB       R13!,{R0-R1}
+   34:     Ticks++;
+ 00000004  E5100000  LDR         R0,=Ticks ; Ticks
+ 00000008  E5901000  LDR         R1,[R0,#0x0] ; Ticks
+ 0000000C  E2811001  ADD         R1,R1,#0x0001
+ 00000010  E5801000  STR         R1,[R0,#0x0] ; Ticks
+   36:     if (++Count == 1000)    // clock 1 mSec 
+ 00000014  E5101000  LDR         R1,=Count ; Count
+ 00000018  E5910000  LDR         R0,[R1,#0x0] ; Count
+ 0000001C  E2800001  ADD         R0,R0,#0x0001
+ 00000020  E5810000  STR         R0,[R1,#0x0] ; Count
+ 00000024  E3500FFA  CMP         R0,#0x03E8
+ 00000028  1A000006  BNE         L_1  ; Targ=0x48
+   38:         Seconds++;
+ 0000002C  E5100000  LDR         R0,=Seconds ; Seconds
+ 00000030  E5901000  LDR         R1,[R0,#0x0] ; Seconds
+ 00000034  E2811001  ADD         R1,R1,#0x0001
+ 00000038  E5801000  STR         R1,[R0,#0x0] ; Seconds
+   39:         Count = 0;
+ 0000003C  E3A01000  MOV         R1,#0x0
+ 00000040  E5100000  LDR         R0,=Count ; Count
+ 00000044  E5801000  STR         R1,[R0,#0x0] ; Count
+   40:     }
+ 00000048          L_1:
+   42:     T0IR = 1;
+ 00000048  E3A01001  MOV         R1,#0x1
+ 0000004C  E5100000  LDR         R0,=0xE0004000
+ 00000050  E5801000  STR         R1,[R0,#0x0]
+   43:     VICVectAddr = 0;
+ 00000054  E3A01000  MOV         R1,#0x0
+ 00000058  E5100000  LDR         R0,=0xFFFFF030
+ 0000005C  E5801000  STR         R1,[R0,#0x0]
+   44: }
+ 00000060  E8BD0003  LDMIA       R13!,{R0-R1}
+ 00000064  E25EF004  SUBS        R15,R14,#0x0004
+ 00000068          ENDP ; 'timer0?A'
+
+
+*** CODE SEGMENT '?PR?Clock_GetTicks?T?Clock':
+   48:     return Ticks;
+ 00000000  4800      LDR         R0,=Ticks ; Ticks
+ 00000002  6800      LDR         R0,[R0,#0x0] ; Ticks
+   49: }
+ 00000004  4770      BX          R14
+ 00000006          ENDP ; 'Clock_GetTicks?T'
+
+
+*** CODE SEGMENT '?PR?Clock_GetSeconds?T?Clock':
+   53:     return Seconds;
+ 00000000  4800      LDR         R0,=Seconds ; Seconds
+ 00000002  6800      LDR         R0,[R0,#0x0] ; Seconds
+   54: }
+ 00000004  4770      BX          R14
+ 00000006          ENDP ; 'Clock_GetSeconds?T'
+
+
+*** CODE SEGMENT '?PR?Clock_Reset?T?Clock':
+   58:     Ticks   = 0;
+ 00000000  2100      MOV         R1,#0x0
+ 00000002  4800      LDR         R0,=Ticks ; Ticks
+ 00000004  6001      STR         R1,[R0,#0x0] ; Ticks
+ 00000006  4770      BX          R14
+ 00000008          ENDP ; 'Clock_Reset?T'
+
+
+
+Module Information          Static
+----------------------------------
+  code size            =    ------
+ARM COMPILER V2.11,  Clock                                                                 20/10/09  09:30:17  PAGE 4   
+
+  data size            =        12
+  const size           =    ------
+End of Module Information.
+
+
+ARM COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

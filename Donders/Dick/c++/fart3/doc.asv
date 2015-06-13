@@ -1,0 +1,90 @@
+=========================================================================
+                            	STIMS
+=========================================================================
+Positie wordt, afhankelijk van de stimulus, gegeven in x/y coördinaat
+of ring/spaak. pos = [1 3]
+
+Start en stop tijd wordt gegeven als een offset tov een event, event 0
+is de de start van een trial. Een event kan maar door één stimulus en
+maar eenmaal worden gegenereerd. Een event is een ID en geeft dus niet een
+volgorde van voorkomen aan. start = [0 100]: start na 100 mSec na het
+starten van een nieuwe trial, [stop = [1 200]: stopt 200 mSec na event 1
+
+De status van een stimulus loopt van 2 (init), 1 (run) naar 0 (ready).
+Is naar het beëindigen van een stimulus de status ongelijk aan 0 dan is
+de trial voortijdig afgebroken. Bij stat = 2 zijn beide tijden 0, bij
+stat = 1 is de starttijd juist en de stop tijd weer 0.
+
+Input argumenten en resultaat van de verschillende stimuli in doubles
+De stimuli worden in een matrix van stims geplaatst en met functie ....
+naar de client verzonden.
+=========================================================================
+stimLed 10
+    input argumenten
+        kind  = stimLed
+        pos   = [x y]
+        level = intensiteit        (0..255)
+        start = [event offset]
+        stop  = [event offset]
+        event = 0
+        stat  = 2
+    resultaat
+        kind  = stimLed            
+        start = tijd tov van start trial
+        stop  = tijd tov van start trial
+-------------------------------------------------------------------------
+=========================================================================
+                            	COMMANDS
+=========================================================================
+Commando's geven minimaal error code terug, bij geen fout dan is de error
+code gelijk aan de commando code. Bij een negatieve waarde is een fout
+opgetreden (zie lijst met mogelijke errors). De tweede variabele is een
+matrix.
+=========================================================================
+cmdGetStatus 101
+    input argumenten
+        kind = cmdgetStatus
+    resultaat
+        string met status informatie
+=> result =  = mexServer(cmdSetClock);
+result = "<error> <mode> <tijd> <status>"
+Mode geeft fase programma: 0-init, 
+                           1-preTrial, 2-runTrial, 3-postTrial,
+                           4-abortTrial
+Bij mode = 0 is de status "idle"
+Status geeft de toestand van de verschillende stimuli aan.
+Na start en 4 stimuli bv 2222, tijdens de run wordt dit bv 0112 (eerste
+stimulus afgehandeld, tweede en derde actief, vierde wacht nog) en als 
+alle stimuli zijn verwerkt 0000
+-------------------------------------------------------------------------
+cmdSetClock 102
+    input argumenten
+        kind = cmdSetClock
+    resultaat
+        Klok FSM op nul gezet.
+=> result = mexServer(cmdSetClock)
+result(0) = aantal waarden (1)
+result(1) = error
+-------------------------------------------------------------------------
+cmdGetClock 103
+    input argumenten
+        kind = cmdGetClock
+    resultaat
+        tijd FSM 
+=> result = mexServer(cmdGetClock)
+result(0) = aantal waarden (2)
+result(1) = error
+result(2) = tijd
+-------------------------------------------------------------------------
+cmdNextTrial 110
+-------------------------------------------------------------------------
+cmdStartTrial 111
+-------------------------------------------------------------------------
+cmdResultTrial 112
+-------------------------------------------------------------------------
+cmdAbortTrial 113
+=========================================================================
+                            	ERRORS
+=========================================================================
+   
+

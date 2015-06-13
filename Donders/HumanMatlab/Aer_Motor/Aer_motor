@@ -1,0 +1,98 @@
+#include "windows.h"
+#include "stdio.h"
+#include "mex.h"
+#include "math.h"
+#include "time.h"
+#include "AerSys.h"
+/*
+ *  
+ */
+AERERR_CODE eRc;
+int         nError;
+int         com1 = 0;
+int         LF = 10;
+long        timeOnEnter;
+
+bool Aer_Activity() {
+    return true;
+}
+
+bool Aer_Status() {
+    return true;
+}
+
+bool Aer_MoveAbs() {
+	return true;
+}
+
+bool Aer_MoveEnable() {
+	return true;
+}
+
+bool Aer_MoveDisable() {
+	return true;
+}
+
+bool Aer_Homing() {
+	return true;
+}
+
+int Aer_Init(void) {
+    HAERCTRL hAerCtrl = NULL;
+	eRc = AerSysInitialize(0, NULL, 1, &hAerCtrl, 
+							NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
+    mexPrintf("Init=> %d %d\n",eRc,hAerCtrl);
+	eRc = AerMoveEnable(hAerCtrl, AXISINDEX_1);
+	if (eRc == AERERR_NOERR)
+        eRc = AerMoveWaitDone(hAerCtrl, AXISINDEX_1, 100, 1);
+    mexPrintf("Enable=> %d %d\n",eRc,hAerCtrl);
+//	eRc = AerMoveAbsolute(hAerCtrl, AXISINDEX_1,  1000, 1000);
+	eRc = AerMoveHome(hAerCtrl, AXISINDEX_1);
+    mexPrintf("Home=> %d %d\n",eRc,hAerCtrl);
+	
+	if (eRc == AERSVR_SELF_ID_NONE)		nError =  2;
+	if (eRc == AERSVR_LINK_LAYER_NONE)	nError =  1;
+	if (eRc == AERERR_NOERR)			nError =  0;
+    return hAerCtrl;
+}
+
+void mexFunction(int nLeft, mxArray *pLeft[],
+        int nRight, const mxArray *pRight[]) {
+    
+    HAERCTRL hAerCtrl;
+    int mode   = 0;
+    int len    = 0;
+    int i, d, n, d1, d2;
+    char word[10];
+    char str[80];
+    
+    mxArray *xArg;
+    char *arg;
+    char *stim = &str[0];
+    int     index, r, c, colLen, rowLen, nStim, ITI, span, pnt;
+    double  *pR, *pL;
+    double  *xValues;
+    double  *outArray;
+    double  *msg;
+    bool	leftFlag = false;
+    bool    EOL = false;
+    
+    timeOnEnter = clock();
+    if (nRight == 2) {
+        pR = mxGetPr(pRight[0]);     	// pointer to first input arg: mode
+        mode = (int) *pR;
+        xArg = pRight[1];               // pointer to second input arg: arg
+        xValues = mxGetPr(xArg);
+        rowLen  = mxGetN(xArg);         // in case of numbers
+        colLen  = mxGetM(xArg);
+        len     = colLen*(rowLen+1);       // or strings
+        arg     = mxCalloc(len, sizeof(char)); // allocate space
+        mxGetString(xArg, arg, len);      // arg points now to Arguments
+        
+        switch (mode) {
+            case 0:	mexPrintf("Initialize motor\n");
+            hAerCtrl = Aer_Init();
+            break;
+        }
+    }
+}

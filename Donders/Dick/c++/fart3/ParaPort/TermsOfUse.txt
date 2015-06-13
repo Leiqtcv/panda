@@ -1,0 +1,86 @@
+Terms of Use:
+ 
+Legal Notice
+The information, documentation or software (the "Materials") on this website 
+(the "Site") are provided by Paul R. ADAM as a service to his customers. Single 
+copies may be downloaded subject to the agreement below. 
+
+READ THIS END USER LICENSE AGREEMENT CAREFULLY. 
+BY DOWNLOADING OR INSTALLING ANY SOFTWARE, YOU AGREE 
+TO BE BOUND BY THIS AGREEMENT. 
+IF YOU DO NOT AGREE TO THESE TERMS, DO NOT USE 
+THE SITE OR DOWNLOAD ANY MATERIALS FROM IT. 
+
+SINGLE COPY LICENSE: The Materials at this Site are copyrighted and any 
+unauthorized use of any Materials at this Site may violate copyright, trademark, 
+and other laws. You may download one copy of the Materials on a single computer 
+for your personal, noncommercial internal use only unless specifically licensed 
+to do otherwise by Paul R. ADAM in writing or as allowed by any license terms 
+which accompany or are provided with individual Materials. 
+
+This is a license, not a transfer of title, and is subject to the following 
+restrictions:
+
+You may not: 
+  modify the Materials or use them for any commercial purpose, or any public 
+  display, performance, sale or rental; 
+  decompile, reverse engineer, disassemble or otherwise attempt to discover the 
+  source code or underlying ideas or algorithms of the software Materials except 
+  and only to the extent permitted by applicable law; 
+  remove any copyright or other proprietary notices from the Materials; 
+  transfer the Materials to another person. You agree to prevent any 
+  unauthorized copying of the Materials; 
+  use the Materials for purposes of providing a service bureau, including, 
+  without limitation, providing third-party hosting, or third-party application 
+  integration or application service provider-type services, or any similar 
+  services; 
+  use the Materials in connection with hazardous activities, or any activity for 
+  which failure of the Materials might result in death or serious bodily injury 
+  to you or a third party; 
+  use or deploy beta or evaluation software Materials in a production 
+  environment 
+ 
+OWNERSHIP OF MATERIALS: The Materials are copyrighted and are protected by 
+worldwide copyright laws and treaty provisions. They may not be copied, 
+reproduced, modified, published, uploaded, posted, transmitted, or distributed 
+in any way, without Paul R. ADAM's prior written permission. Except as expressly 
+provided herein, Paul R. ADAM and his suppliers do not grant any express or 
+implied right to you under any patents, copyrights, trademarks, or trade secret 
+information. Other rights may be granted to you by Paul R. ADAM in writing or 
+incorporated elsewhere in the Materials. 
+
+TERMINATION OF THIS LICENSE: Paul R. ADAM may terminate this license at any time 
+if you are in breach of the terms of this Agreement. Upon termination, you will 
+immediately destroy the Materials. 
+
+DISCLAIMER OF WARRANTY: UNLESS SPECIFIED IN THIS AGREEMENT, 
+ALL EXPRESS OR IMPLIED CONDITIONS, REPRESENTATIONS AND 
+WARRANTIES, INCLUDING ANY IMPLIED WARRANTY OF MERCHANTABILITY, 
+FITNESS FOR A PARTICULAR PURPOSE OR NON-INFRINGEMENT ARE 
+DISCLAIMED, EXCEPT TO THE EXTENT THAT THESE DISCLAIMERS ARE 
+HELD TO BE LEGALLY INVALID. 
+Paul R. ADAM further does not warrant the accuracy 
+or completeness of the information, text, graphics, links or other items 
+contained within these Materials. Paul R. ADAM may make changes to these 
+Materials, or to the products described therein, at any time without notice. 
+Paul R. ADAM makes no commitment to update the Materials. 
+
+LIMITATION OF LIABILITY: TO THE EXTENT NOT PROHIBITED BY LAW, 
+IN NO EVENT WILL Paul R. ADAM BE LIABLE FOR ANY LOST REVENUE, 
+PROFIT OR DATA, OR FOR SPECIAL, INDIRECT, CONSEQUENTIAL, 
+INCIDENTAL OR PUNITIVE DAMAGES, HOWEVER CAUSED REGARDLESS OF 
+THE THEORY OF LIABILITY, ARISING OUT OF OR RELATED TO THE 
+USE OF OR INABILITY TO USE SOFTWARE, EVEN IF Paul R. ADAM 
+HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+
+LINKS TO OTHER MATERIALS: The linked sites are not under the control of 
+Paul R. ADAM and Paul R. ADAM is not responsible for the content of any linked 
+site or any link contained in a linked site. Paul R. ADAM reserves the right to 
+terminate any link or linking program at any time. Paul R. ADAM does not endorse 
+companies or products to which it links and reserves the right to note as such 
+on its web pages. If you decide to access any of the third party sites linked to 
+this Site, you do this entirely at your own risk. 
+
+GENERAL: Paul R. ADAM may revise these Terms at any time by updating this 
+posting. 
+  

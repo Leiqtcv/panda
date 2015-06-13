@@ -1,0 +1,736 @@
+%
+%% Experiment: C:\Human\DAT
+%
+ITI		0	0
+Trials	145
+Repeats	1
+Random	0	% 0=no, 1=per set, 2=all trials
+Motor		n
+
+% MOD	X	Y	ID	INT	On	On	Off	Off	Event
+%			edg	bit	Event	Time	Event	Time
+
+% Trial: 1
+==>
+SND1	0	1	16	30.0	0	0
+INP1
+
+% Trial: 2
+==>
+SND1	0	2	16	30.0	0	0
+INP1
+
+% Trial: 3
+==>
+SND1	0	3	16	30.0	0	0
+INP1
+
+% Trial: 4
+==>
+SND1	0	4	16	30.0	0	0
+INP1
+
+% Trial: 5
+==>
+SND1	0	5	16	30.0	0	0
+INP1
+
+% Trial: 6
+==>
+SND1	0	6	16	30.0	0	0
+INP1
+
+% Trial: 7
+==>
+SND1	0	7	16	30.0	0	0
+INP1
+
+% Trial: 8
+==>
+SND1	0	8	16	30.0	0	0
+INP1
+
+% Trial: 9
+==>
+SND1	0	9	16	30.0	0	0
+INP1
+
+% Trial: 10
+==>
+SND1	0	10	16	30.0	0	0
+INP1
+
+% Trial: 11
+==>
+SND1	0	11	16	30.0	0	0
+INP1
+
+% Trial: 12
+==>
+SND1	0	12	16	30.0	0	0
+INP1
+
+% Trial: 13
+==>
+SND1	0	13	16	30.0	0	0
+INP1
+
+% Trial: 14
+==>
+SND1	0	14	16	30.0	0	0
+INP1
+
+% Trial: 15
+==>
+SND1	0	15	16	30.0	0	0
+INP1
+
+% Trial: 16
+==>
+SND1	0	16	16	30.0	0	0
+INP1
+
+% Trial: 17
+==>
+SND1	0	17	16	30.0	0	0
+INP1
+
+% Trial: 18
+==>
+SND1	0	18	16	30.0	0	0
+INP1
+
+% Trial: 19
+==>
+SND1	0	19	16	30.0	0	0
+INP1
+
+% Trial: 20
+==>
+SND1	0	20	16	30.0	0	0
+INP1
+
+% Trial: 21
+==>
+SND1	0	21	16	30.0	0	0
+INP1
+
+% Trial: 22
+==>
+SND1	0	22	16	30.0	0	0
+INP1
+
+% Trial: 23
+==>
+SND1	0	23	16	30.0	0	0
+INP1
+
+% Trial: 24
+==>
+SND1	0	24	16	30.0	0	0
+INP1
+
+% Trial: 25
+==>
+SND1	0	25	16	30.0	0	0
+INP1
+
+% Trial: 26
+==>
+SND1	0	26	16	30.0	0	0
+INP1
+
+% Trial: 27
+==>
+SND1	0	27	16	30.0	0	0
+INP1
+
+% Trial: 28
+==>
+SND1	0	28	16	30.0	0	0
+INP1
+
+% Trial: 29
+==>
+SND1	0	29	16	30.0	0	0
+INP1
+
+% Trial: 30
+==>
+SND1	0	1	16	40.0	0	0
+INP1
+
+% Trial: 31
+==>
+SND1	0	2	16	40.0	0	0
+INP1
+
+% Trial: 32
+==>
+SND1	0	3	16	40.0	0	0
+INP1
+
+% Trial: 33
+==>
+SND1	0	4	16	40.0	0	0
+INP1
+
+% Trial: 34
+==>
+SND1	0	5	16	40.0	0	0
+INP1
+
+% Trial: 35
+==>
+SND1	0	6	16	40.0	0	0
+INP1
+
+% Trial: 36
+==>
+SND1	0	7	16	40.0	0	0
+INP1
+
+% Trial: 37
+==>
+SND1	0	8	16	40.0	0	0
+INP1
+
+% Trial: 38
+==>
+SND1	0	9	16	40.0	0	0
+INP1
+
+% Trial: 39
+==>
+SND1	0	10	16	40.0	0	0
+INP1
+
+% Trial: 40
+==>
+SND1	0	11	16	40.0	0	0
+INP1
+
+% Trial: 41
+==>
+SND1	0	12	16	40.0	0	0
+INP1
+
+% Trial: 42
+==>
+SND1	0	13	16	40.0	0	0
+INP1
+
+% Trial: 43
+==>
+SND1	0	14	16	40.0	0	0
+INP1
+
+% Trial: 44
+==>
+SND1	0	15	16	40.0	0	0
+INP1
+
+% Trial: 45
+==>
+SND1	0	16	16	40.0	0	0
+INP1
+
+% Trial: 46
+==>
+SND1	0	17	16	40.0	0	0
+INP1
+
+% Trial: 47
+==>
+SND1	0	18	16	40.0	0	0
+INP1
+
+% Trial: 48
+==>
+SND1	0	19	16	40.0	0	0
+INP1
+
+% Trial: 49
+==>
+SND1	0	20	16	40.0	0	0
+INP1
+
+% Trial: 50
+==>
+SND1	0	21	16	40.0	0	0
+INP1
+
+% Trial: 51
+==>
+SND1	0	22	16	40.0	0	0
+INP1
+
+% Trial: 52
+==>
+SND1	0	23	16	40.0	0	0
+INP1
+
+% Trial: 53
+==>
+SND1	0	24	16	40.0	0	0
+INP1
+
+% Trial: 54
+==>
+SND1	0	25	16	40.0	0	0
+INP1
+
+% Trial: 55
+==>
+SND1	0	26	16	40.0	0	0
+INP1
+
+% Trial: 56
+==>
+SND1	0	27	16	40.0	0	0
+INP1
+
+% Trial: 57
+==>
+SND1	0	28	16	40.0	0	0
+INP1
+
+% Trial: 58
+==>
+SND1	0	29	16	40.0	0	0
+INP1
+
+% Trial: 59
+==>
+SND1	0	1	16	50.0	0	0
+INP1
+
+% Trial: 60
+==>
+SND1	0	2	16	50.0	0	0
+INP1
+
+% Trial: 61
+==>
+SND1	0	3	16	50.0	0	0
+INP1
+
+% Trial: 62
+==>
+SND1	0	4	16	50.0	0	0
+INP1
+
+% Trial: 63
+==>
+SND1	0	5	16	50.0	0	0
+INP1
+
+% Trial: 64
+==>
+SND1	0	6	16	50.0	0	0
+INP1
+
+% Trial: 65
+==>
+SND1	0	7	16	50.0	0	0
+INP1
+
+% Trial: 66
+==>
+SND1	0	8	16	50.0	0	0
+INP1
+
+% Trial: 67
+==>
+SND1	0	9	16	50.0	0	0
+INP1
+
+% Trial: 68
+==>
+SND1	0	10	16	50.0	0	0
+INP1
+
+% Trial: 69
+==>
+SND1	0	11	16	50.0	0	0
+INP1
+
+% Trial: 70
+==>
+SND1	0	12	16	50.0	0	0
+INP1
+
+% Trial: 71
+==>
+SND1	0	13	16	50.0	0	0
+INP1
+
+% Trial: 72
+==>
+SND1	0	14	16	50.0	0	0
+INP1
+
+% Trial: 73
+==>
+SND1	0	15	16	50.0	0	0
+INP1
+
+% Trial: 74
+==>
+SND1	0	16	16	50.0	0	0
+INP1
+
+% Trial: 75
+==>
+SND1	0	17	16	50.0	0	0
+INP1
+
+% Trial: 76
+==>
+SND1	0	18	16	50.0	0	0
+INP1
+
+% Trial: 77
+==>
+SND1	0	19	16	50.0	0	0
+INP1
+
+% Trial: 78
+==>
+SND1	0	20	16	50.0	0	0
+INP1
+
+% Trial: 79
+==>
+SND1	0	21	16	50.0	0	0
+INP1
+
+% Trial: 80
+==>
+SND1	0	22	16	50.0	0	0
+INP1
+
+% Trial: 81
+==>
+SND1	0	23	16	50.0	0	0
+INP1
+
+% Trial: 82
+==>
+SND1	0	24	16	50.0	0	0
+INP1
+
+% Trial: 83
+==>
+SND1	0	25	16	50.0	0	0
+INP1
+
+% Trial: 84
+==>
+SND1	0	26	16	50.0	0	0
+INP1
+
+% Trial: 85
+==>
+SND1	0	27	16	50.0	0	0
+INP1
+
+% Trial: 86
+==>
+SND1	0	28	16	50.0	0	0
+INP1
+
+% Trial: 87
+==>
+SND1	0	29	16	50.0	0	0
+INP1
+
+% Trial: 88
+==>
+SND1	0	1	16	60.0	0	0
+INP1
+
+% Trial: 89
+==>
+SND1	0	2	16	60.0	0	0
+INP1
+
+% Trial: 90
+==>
+SND1	0	3	16	60.0	0	0
+INP1
+
+% Trial: 91
+==>
+SND1	0	4	16	60.0	0	0
+INP1
+
+% Trial: 92
+==>
+SND1	0	5	16	60.0	0	0
+INP1
+
+% Trial: 93
+==>
+SND1	0	6	16	60.0	0	0
+INP1
+
+% Trial: 94
+==>
+SND1	0	7	16	60.0	0	0
+INP1
+
+% Trial: 95
+==>
+SND1	0	8	16	60.0	0	0
+INP1
+
+% Trial: 96
+==>
+SND1	0	9	16	60.0	0	0
+INP1
+
+% Trial: 97
+==>
+SND1	0	10	16	60.0	0	0
+INP1
+
+% Trial: 98
+==>
+SND1	0	11	16	60.0	0	0
+INP1
+
+% Trial: 99
+==>
+SND1	0	12	16	60.0	0	0
+INP1
+
+% Trial: 100
+==>
+SND1	0	13	16	60.0	0	0
+INP1
+
+% Trial: 101
+==>
+SND1	0	14	16	60.0	0	0
+INP1
+
+% Trial: 102
+==>
+SND1	0	15	16	60.0	0	0
+INP1
+
+% Trial: 103
+==>
+SND1	0	16	16	60.0	0	0
+INP1
+
+% Trial: 104
+==>
+SND1	0	17	16	60.0	0	0
+INP1
+
+% Trial: 105
+==>
+SND1	0	18	16	60.0	0	0
+INP1
+
+% Trial: 106
+==>
+SND1	0	19	16	60.0	0	0
+INP1
+
+% Trial: 107
+==>
+SND1	0	20	16	60.0	0	0
+INP1
+
+% Trial: 108
+==>
+SND1	0	21	16	60.0	0	0
+INP1
+
+% Trial: 109
+==>
+SND1	0	22	16	60.0	0	0
+INP1
+
+% Trial: 110
+==>
+SND1	0	23	16	60.0	0	0
+INP1
+
+% Trial: 111
+==>
+SND1	0	24	16	60.0	0	0
+INP1
+
+% Trial: 112
+==>
+SND1	0	25	16	60.0	0	0
+INP1
+
+% Trial: 113
+==>
+SND1	0	26	16	60.0	0	0
+INP1
+
+% Trial: 114
+==>
+SND1	0	27	16	60.0	0	0
+INP1
+
+% Trial: 115
+==>
+SND1	0	28	16	60.0	0	0
+INP1
+
+% Trial: 116
+==>
+SND1	0	29	16	60.0	0	0
+INP1
+
+% Trial: 117
+==>
+SND1	0	1	16	70.0	0	0
+INP1
+
+% Trial: 118
+==>
+SND1	0	2	16	70.0	0	0
+INP1
+
+% Trial: 119
+==>
+SND1	0	3	16	70.0	0	0
+INP1
+
+% Trial: 120
+==>
+SND1	0	4	16	70.0	0	0
+INP1
+
+% Trial: 121
+==>
+SND1	0	5	16	70.0	0	0
+INP1
+
+% Trial: 122
+==>
+SND1	0	6	16	70.0	0	0
+INP1
+
+% Trial: 123
+==>
+SND1	0	7	16	70.0	0	0
+INP1
+
+% Trial: 124
+==>
+SND1	0	8	16	70.0	0	0
+INP1
+
+% Trial: 125
+==>
+SND1	0	9	16	70.0	0	0
+INP1
+
+% Trial: 126
+==>
+SND1	0	10	16	70.0	0	0
+INP1
+
+% Trial: 127
+==>
+SND1	0	11	16	70.0	0	0
+INP1
+
+% Trial: 128
+==>
+SND1	0	12	16	70.0	0	0
+INP1
+
+% Trial: 129
+==>
+SND1	0	13	16	70.0	0	0
+INP1
+
+% Trial: 130
+==>
+SND1	0	14	16	70.0	0	0
+INP1
+
+% Trial: 131
+==>
+SND1	0	15	16	70.0	0	0
+INP1
+
+% Trial: 132
+==>
+SND1	0	16	16	70.0	0	0
+INP1
+
+% Trial: 133
+==>
+SND1	0	17	16	70.0	0	0
+INP1
+
+% Trial: 134
+==>
+SND1	0	18	16	70.0	0	0
+INP1
+
+% Trial: 135
+==>
+SND1	0	19	16	70.0	0	0
+INP1
+
+% Trial: 136
+==>
+SND1	0	20	16	70.0	0	0
+INP1
+
+% Trial: 137
+==>
+SND1	0	21	16	70.0	0	0
+INP1
+
+% Trial: 138
+==>
+SND1	0	22	16	70.0	0	0
+INP1
+
+% Trial: 139
+==>
+SND1	0	23	16	70.0	0	0
+INP1
+
+% Trial: 140
+==>
+SND1	0	24	16	70.0	0	0
+INP1
+
+% Trial: 141
+==>
+SND1	0	25	16	70.0	0	0
+INP1
+
+% Trial: 142
+==>
+SND1	0	26	16	70.0	0	0
+INP1
+
+% Trial: 143
+==>
+SND1	0	27	16	70.0	0	0
+INP1
+
+% Trial: 144
+==>
+SND1	0	28	16	70.0	0	0
+INP1
+
+% Trial: 145
+==>
+SND1	0	29	16	70.0	0	0
+INP1

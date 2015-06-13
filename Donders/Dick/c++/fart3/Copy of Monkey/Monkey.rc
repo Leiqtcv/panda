@@ -1,0 +1,980 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\Monkey.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\Monkey.ico"
+IDR_MonkeyTYPE          ICON                    "res\\MonkeyDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "Parameter setting"
+    BEGIN
+        MENUITEM "Timing",                      ID_PARAMETERSETTING_TIMING
+        MENUITEM "Leds",                        ID_PARAMETERSETTING_LEDS
+        MENUITEM "Recording",                   ID_PARAMETERSETTING_RECORDING, INACTIVE
+        MENUITEM "Plots",                       ID_PARAMETERSETTING_PLOTS, INACTIVE
+        MENUITEM "Reward",                      ID_PARAMETERSETTING_REWARD
+    END
+    POPUP "Acoustic stimuli"
+    BEGIN
+        MENUITEM "Stimulus type",               ID_ACOUSTICSTIMULI_STIMULUSTYPE
+        MENUITEM SEPARATOR
+        MENUITEM "Tone",                        ID_ACOUSTICSTIMULI_TONE
+        MENUITEM "Noise",                       ID_ACOUSTICSTIMULI_NOISE
+        MENUITEM "Ripple",                      ID_ACOUSTICSTIMULI_RIPPLE
+        MENUITEM "No Sound",                    ID_ACOUSTICSTIMULI_NOSOUND
+    END
+    MENUITEM "Test",                        ID_TEST
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About Monkey...",            ID_APP_ABOUT
+    END
+    POPUP "Mode"
+    BEGIN
+        MENUITEM "Active",                      ID_MODE_ACTIVE
+        MENUITEM "Passive",                     ID_MODE_PASSIVE
+    END
+    MENUITEM "Start",                       ID_START
+    MENUITEM "Stop",                        ID_STOP
+    MENUITEM "Exit",                        ID_EXIT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About Monkey"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "Monkey Version 1.0",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2011",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,16,WS_GROUP
+END
+
+IDD_FSM DIALOGEX 0, 0, 206, 47
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION
+CAPTION "FSM"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT1,7,7,192,13,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "Bar active high",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,24,63,10
+END
+
+IDD_RIPPLE DIALOGEX 0, 0, 99, 29
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION
+CAPTION "Ripple"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT1,7,7,81,15,ES_AUTOHSCROLL
+END
+
+IDD_BAR DIALOGEX 100, 100, 801, 66
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION
+CAPTION "Bar"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_SPIN1,"msctls_updown32",UDS_ARROWKEYS,14,24,11,14
+END
+
+IDD_PARAMETER_TIMING DIALOGEX 0, 0, 186, 194
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION
+CAPTION "Parameters: Timing"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Hide",IDOK,129,173,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,7,173,50,14
+    PUSHBUTTON      "Apply",IDC_Apply,69,173,50,14
+    EDITTEXT        IDC_EDIT1,103,15,40,14,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_SPIN1,"msctls_updown32",UDS_ARROWKEYS,145,14,11,14
+    LTEXT           "Fixation (mSec)",IDC_STATIC,16,17,80,8,0,WS_EX_RIGHT
+    EDITTEXT        IDC_EDIT2,103,34,40,14,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_SPIN2,"msctls_updown32",UDS_ARROWKEYS,145,33,11,14
+    LTEXT           "Target Fixed  (mSec)",IDC_STATIC,16,36,80,8,0,WS_EX_RIGHT
+    EDITTEXT        IDC_EDIT3,103,53,40,14,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_SPIN3,"msctls_updown32",UDS_ARROWKEYS,145,52,11,14
+    LTEXT           "Target Random (mSec)",IDC_STATIC,16,55,80,8,0,WS_EX_RIGHT
+    EDITTEXT        IDC_EDIT4,103,72,40,14,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_SPIN4,"msctls_updown32",UDS_ARROWKEYS,145,71,11,14
+    LTEXT           "Target Changed (mSec)",IDC_STATIC,16,74,80,8,0,WS_EX_RIGHT
+    EDITTEXT        IDC_EDIT5,103,106,40,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Random Target (mSec)",IDC_STATIC,16,108,80,8,0,WS_EX_RIGHT
+    EDITTEXT        IDC_EDIT6,23,141,40,14,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_SPIN6,"msctls_updown32",UDS_ARROWKEYS,65,141,11,14
+    EDITTEXT        IDC_EDIT7,113,141,40,14,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_SPIN7,"msctls_updown32",UDS_ARROWKEYS,155,141,11,14
+    LTEXT           "Range valid reaction times",IDC_STATIC,46,129,94,8,0,WS_EX_RIGHT
+    LTEXT           "==>",IDC_STATIC,83,144,21,8,0,WS_EX_RIGHT
+END
+
+IDD_PARAMETER_LEDS DIALOGEX 0, 0, 204, 241
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION
+CAPTION "Parameters: Leds"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,147,220,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,7,220,50,14
+    PUSHBUTTON      "Apply",IDC_Apply,77,220,50,14
+    EDITTEXT        IDC_EDIT1,58,23,16,14,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_SPIN1,"msctls_updown32",UDS_ARROWKEYS,76,23,11,14
+    LTEXT           "Minimum",IDC_STATIC,22,26,31,8,0,WS_EX_RIGHT
+    EDITTEXT        IDC_EDIT8,133,23,16,14,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_SPIN5,"msctls_updown32",UDS_ARROWKEYS,151,23,11,14
+    LTEXT           "Maximum",IDC_STATIC,97,26,31,8,0,WS_EX_RIGHT
+    EDITTEXT        IDC_EDIT9,115,146,24,14,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_SPIN8,"msctls_updown32",UDS_ARROWKEYS,143,146,11,14
+    LTEXT           "Fixation Intensity (0..7)",IDC_STATIC,30,150,80,8,0,WS_EX_RIGHT
+    EDITTEXT        IDC_EDIT2,115,162,24,14,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_SPIN2,"msctls_updown32",UDS_ARROWKEYS,143,162,11,14
+    LTEXT           "Target Intensity (0..7)",IDC_STATIC,25,165,85,8,0,WS_EX_RIGHT
+    EDITTEXT        IDC_EDIT3,115,178,24,14,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_SPIN3,"msctls_updown32",UDS_ARROWKEYS,143,178,11,14
+    LTEXT           "Target Changed Intensity (0..7)",IDC_STATIC,7,180,103,8,0,WS_EX_RIGHT
+    EDITTEXT        IDC_EDIT4,115,194,24,14,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_SPIN4,"msctls_updown32",UDS_ARROWKEYS,143,194,11,14
+    LTEXT           "Percentage Changed (0..100)",IDC_STATIC,7,194,103,8,0,WS_EX_RIGHT
+    CONTROL         "no led",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,162,194,35,10
+    LTEXT           "Led Ring (0..5)",IDC_STATIC,79,7,49,8
+    CONTROL         "position fix = position target",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,35,55,107,10
+    GROUPBOX        "Color Fixation Led",IDC_STATIC,24,75,152,28
+    CONTROL         "Red",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON | WS_GROUP,35,87,29,10
+    CONTROL         "Green",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,127,85,35,10
+    GROUPBOX        "Color Target Led",IDC_STATIC,23,107,152,28
+    CONTROL         "Red",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON | WS_GROUP,35,119,29,10
+    CONTROL         "Green",IDC_RADIO4,"Button",BS_AUTORADIOBUTTON,127,117,35,10
+END
+
+IDD_PARAMETER_REWARD DIALOGEX 0, 0, 186, 193
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION
+CAPTION "Parameters: Rewards"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,129,172,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,7,172,50,14
+    PUSHBUTTON      "Apply",IDC_Apply,67,172,50,14
+    CONTROL         "Press Bar",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,69,30,46,10
+    CONTROL         "Release Bar",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,69,41,54,10
+    EDITTEXT        IDC_EDIT1,52,74,23,12,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN1,"msctls_updown32",UDS_ARROWKEYS,77,73,11,14
+    EDITTEXT        IDC_EDIT8,52,89,23,12,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN5,"msctls_updown32",UDS_ARROWKEYS,77,89,11,14
+    EDITTEXT        IDC_EDIT9,52,142,23,12,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN8,"msctls_updown32",UDS_ARROWKEYS,77,141,11,14
+    LTEXT           "Reward during the following actions",IDC_STATIC,33,19,115,8
+    LTEXT           "Release/press factor",IDC_STATIC,95,77,68,8
+    LTEXT           "mSec per unit",IDC_STATIC,95,92,44,8
+    LTEXT           "* 0.1 sec",IDC_STATIC,95,145,30,8
+    LTEXT           "_____________________________________",IDC_STATIC,17,116,149,8
+    LTEXT           "Extra delay when released too early",IDC_STATIC,33,130,117,8
+    EDITTEXT        IDC_EDIT10,52,104,23,12,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN9,"msctls_updown32",UDS_ARROWKEYS,77,104,11,14
+    LTEXT           "Latency after press bar",IDC_STATIC,95,106,76,8
+END
+
+IDD_ACOUSTIC_TYPE DIALOGEX 0, 0, 186, 207
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION
+CAPTION "Acoustic stimuli: Type"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,129,186,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,7,186,50,14
+    PUSHBUTTON      "Apply",IDC_Apply,68,186,50,14
+    CONTROL         "Tone",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON | WS_GROUP,75,16,32,10
+    CONTROL         "Noise",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,75,30,33,10
+    CONTROL         "Ripple",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON,75,44,35,10
+    CONTROL         "No Sound",IDC_RADIO4,"Button",BS_AUTORADIOBUTTON,75,58,47,10
+    CONTROL         "Static is followed by dynamic",IDC_RADIO5,"Button",BS_AUTORADIOBUTTON | WS_GROUP,42,90,107,10
+    CONTROL         "Dynamic is followed by static",IDC_RADIO6,"Button",BS_AUTORADIOBUTTON,42,103,107,10
+    CONTROL         "finish the simulus",IDC_RADIO7,"Button",BS_AUTORADIOBUTTON | WS_GROUP,61,143,70,10
+    CONTROL         "abort the simulus ",IDC_RADIO8,"Button",BS_AUTORADIOBUTTON,61,154,73,10
+    LTEXT           "After the bar is released",IDC_STATIC,55,133,79,8
+    LTEXT           "____________________________________",IDC_STATIC,21,116,145,8
+    LTEXT           "____________________________________",IDC_STATIC,21,73,145,8
+END
+
+IDD_ACOUSTIC_TONE DIALOGEX 0, 0, 277, 130
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION
+CAPTION "Acoustic stimulus: Tone"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,219,109,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,7,109,50,14
+    PUSHBUTTON      "Apply",IDC_Apply,113,109,50,14
+    LTEXT           "Carrier Frequency (Hz)",IDC_STATIC,28,32,74,8,0,WS_EX_RIGHT
+    EDITTEXT        IDC_EDIT1,108,28,28,14,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_SPIN1,"msctls_updown32",UDS_ARROWKEYS,138,28,11,14
+    EDITTEXT        IDC_EDIT8,162,28,28,14,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_SPIN5,"msctls_updown32",UDS_ARROWKEYS,192,28,11,14
+    CONTROL         "",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,214,31,16,10
+    LTEXT           "Attenuation (dB)",IDC_STATIC,48,49,54,8,0,WS_EX_RIGHT
+    EDITTEXT        IDC_EDIT9,108,46,28,14,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_SPIN8,"msctls_updown32",UDS_ARROWKEYS,138,46,11,14
+    EDITTEXT        IDC_EDIT10,162,46,28,14,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_SPIN9,"msctls_updown32",UDS_ARROWKEYS,192,46,11,14
+    CONTROL         "",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,214,48,16,10
+    GROUPBOX        "",IDC_STATIC,7,7,263,95
+    LTEXT           "Modulation Frequency (Hz)",IDC_STATIC,15,66,87,8,0,WS_EX_RIGHT
+    EDITTEXT        IDC_EDIT11,108,64,28,14,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_SPIN10,"msctls_updown32",UDS_ARROWKEYS,138,64,11,14
+    EDITTEXT        IDC_EDIT12,162,64,28,14,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_SPIN11,"msctls_updown32",UDS_ARROWKEYS,192,64,11,14
+    CONTROL         "",IDC_CHECK3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,214,65,16,10
+    LTEXT           "Modulation Depth (%)",IDC_STATIC,30,83,72,8,0,WS_EX_RIGHT
+    EDITTEXT        IDC_EDIT13,108,82,28,14,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_SPIN12,"msctls_updown32",UDS_ARROWKEYS,138,82,11,14
+    EDITTEXT        IDC_EDIT14,162,82,28,14,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_SPIN13,"msctls_updown32",UDS_ARROWKEYS,192,82,11,14
+    CONTROL         "",IDC_CHECK4,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,214,82,16,10
+    LTEXT           "Mean                    +/-                Vary",IDC_STATIC,111,15,116,8
+    CONTROL         "Zero",IDC_CHECK5,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,236,65,31,10
+END
+
+IDD_ACOUSTIC_NOISE DIALOGEX 0, 0, 276, 111
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION
+CAPTION "Acoustic simulus: Noise"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,219,90,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,7,90,50,14
+    LTEXT           "Attenuation (dB)",IDC_STATIC,48,27,54,8,0,WS_EX_RIGHT
+    EDITTEXT        IDC_EDIT9,108,24,28,14,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_SPIN8,"msctls_updown32",UDS_ARROWKEYS,138,24,11,14
+    EDITTEXT        IDC_EDIT10,162,24,28,14,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_SPIN9,"msctls_updown32",UDS_ARROWKEYS,192,24,11,14
+    CONTROL         "",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,214,26,16,10
+    GROUPBOX        "",IDC_STATIC,7,7,262,73
+    LTEXT           "Modulation Frequency (Hz)",IDC_STATIC,15,44,87,8,0,WS_EX_RIGHT
+    EDITTEXT        IDC_EDIT11,108,42,28,14,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_SPIN10,"msctls_updown32",UDS_ARROWKEYS,138,42,11,14
+    EDITTEXT        IDC_EDIT12,162,42,28,14,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_SPIN11,"msctls_updown32",UDS_ARROWKEYS,192,42,11,14
+    CONTROL         "",IDC_CHECK3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,214,43,16,10
+    LTEXT           "Modulation Depth (%)",IDC_STATIC,30,61,72,8,0,WS_EX_RIGHT
+    EDITTEXT        IDC_EDIT13,108,60,28,14,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_SPIN12,"msctls_updown32",UDS_ARROWKEYS,138,60,11,14
+    EDITTEXT        IDC_EDIT14,162,60,28,14,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_SPIN13,"msctls_updown32",UDS_ARROWKEYS,192,60,11,14
+    CONTROL         "",IDC_CHECK4,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,214,60,16,10
+    LTEXT           "Mean                    +/-                Vary",IDC_STATIC,111,11,116,8
+    CONTROL         "Zero",IDC_CHECK5,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,231,43,31,10
+    PUSHBUTTON      "Apply",IDC_Apply,112,90,50,14
+END
+
+IDD_ACOUSTIC_RIPPLE DIALOGEX 0, 0, 278, 239
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION
+CAPTION "Acoustic stimulus: Ripple"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,221,218,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,7,218,50,14
+    LTEXT           "Carrier Frequency (Hz)",IDC_STATIC,34,28,74,8
+    EDITTEXT        IDC_EDIT1,109,25,30,14,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_SPIN1,"msctls_updown32",UDS_ARROWKEYS,139,26,11,14
+    EDITTEXT        IDC_EDIT8,159,26,30,14,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_SPIN14,"msctls_updown32",UDS_ARROWKEYS,191,26,11,14
+    CONTROL         "",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,213,29,16,10
+    LTEXT           "Attenuation (dB)",IDC_STATIC,54,46,54,8
+    EDITTEXT        IDC_EDIT15,109,43,30,14,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_SPIN15,"msctls_updown32",UDS_ARROWKEYS,139,44,11,14
+    EDITTEXT        IDC_EDIT16,159,44,30,14,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_SPIN16,"msctls_updown32",UDS_ARROWKEYS,191,44,11,14
+    CONTROL         "",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,213,47,16,10
+    LTEXT           "Modulation Frequency (Hz)",IDC_STATIC,21,63,87,8
+    EDITTEXT        IDC_EDIT17,109,60,30,14,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_SPIN17,"msctls_updown32",UDS_ARROWKEYS,139,61,11,14
+    EDITTEXT        IDC_EDIT18,159,61,30,14,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_SPIN18,"msctls_updown32",UDS_ARROWKEYS,191,62,11,14
+    CONTROL         "",IDC_CHECK6,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,213,64,16,10
+    LTEXT           "Modulation Depth (%)",IDC_STATIC,36,81,72,8
+    EDITTEXT        IDC_EDIT19,109,78,30,14,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_SPIN19,"msctls_updown32",UDS_ARROWKEYS,139,79,11,14
+    EDITTEXT        IDC_EDIT20,159,79,30,14,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_SPIN20,"msctls_updown32",UDS_ARROWKEYS,191,79,11,14
+    CONTROL         "",IDC_CHECK7,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,213,82,16,10
+    LTEXT           "Density (cyc/oct)",IDC_STATIC,52,126,56,8
+    EDITTEXT        IDC_EDIT21,109,123,30,14,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_SPIN21,"msctls_updown32",UDS_ARROWKEYS,139,124,11,14
+    EDITTEXT        IDC_EDIT22,159,124,30,14,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_SPIN22,"msctls_updown32",UDS_ARROWKEYS,191,124,11,14
+    CONTROL         "",IDC_CHECK8,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,213,127,16,10
+    LTEXT           "Spectral width (semitones)",IDC_STATIC,22,144,86,8
+    EDITTEXT        IDC_EDIT23,109,141,30,14,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_SPIN23,"msctls_updown32",UDS_ARROWKEYS,139,142,11,14
+    LTEXT           "Number of Components",IDC_STATIC,32,161,76,8
+    EDITTEXT        IDC_EDIT25,109,158,30,14,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_SPIN25,"msctls_updown32",UDS_ARROWKEYS,139,159,11,14
+    LTEXT           "Ripple Phase at F0",IDC_STATIC,48,179,60,8
+    EDITTEXT        IDC_EDIT27,109,176,30,14,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_SPIN27,"msctls_updown32",UDS_ARROWKEYS,139,177,11,14
+    CONTROL         "Freeze",IDC_CHECK11,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,227,180,38,10
+    LTEXT           " Mean                    +/-           Vary",IDC_STATIC,119,14,108,8
+    CONTROL         "Zero",IDC_CHECK12,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,227,64,31,10
+    GROUPBOX        "",IDC_STATIC,7,7,264,94
+    GROUPBOX        "",IDC_STATIC,7,103,264,111
+    LTEXT           " Mean                    +/-           Vary",IDC_STATIC,119,111,108,8
+    PUSHBUTTON      "Test Ripple",IDC_Test,75,196,132,14
+    PUSHBUTTON      "Apply",IDC_Apply1,117,218,50,14
+END
+
+IDD_TESTING DIALOGEX 0, 0, 186, 210
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION
+CAPTION "Testing"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Close",IDOK,123,187,50,14
+    EDITTEXT        IDC_EDIT1,123,14,21,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Maximum led intensity (0..255)",IDC_STATIC,22,17,100,8
+    CONTROL         "",IDC_SPIN1,"msctls_updown32",UDS_ARROWKEYS,146,14,11,14
+    PUSHBUTTON      "Apply",IDC_Apply,123,33,50,14
+    GROUPBOX        "",IDC_STATIC,7,7,172,46
+    CONTROL         "Red",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON | WS_GROUP,18,70,29,10
+    CONTROL         "Green",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,18,86,35,10
+    EDITTEXT        IDC_EDIT8,123,67,21,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Intensity (0..7)",IDC_STATIC,70,70,50,8
+    CONTROL         "",IDC_SPIN5,"msctls_updown32",UDS_ARROWKEYS,145,67,11,14
+    EDITTEXT        IDC_EDIT9,123,84,21,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Ontime (mSec)",IDC_STATIC,72,87,48,8
+    CONTROL         "",IDC_SPIN8,"msctls_updown32",UDS_ARROWKEYS,146,84,11,14
+    PUSHBUTTON      "Test",IDC_Test,123,104,50,14
+    GROUPBOX        "Sky",IDC_STATIC,7,61,172,62
+    CONTROL         "",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,37,143,16,10
+    CONTROL         "",IDC_CHECK9,"Button",BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,53,143,16,10
+    CONTROL         "",IDC_CHECK7,"Button",BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,69,143,16,10
+    CONTROL         "",IDC_CHECK14,"Button",BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,85,143,16,10
+    CONTROL         "",IDC_CHECK16,"Button",BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,101,143,16,10
+    CONTROL         "",IDC_CHECK17,"Button",BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,117,143,16,10
+    CONTROL         "",IDC_CHECK19,"Button",BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,133,143,16,10
+    CONTROL         "",IDC_CHECK21,"Button",BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,149,143,16,10
+    LTEXT           "7      6      5      4      3      2      1      0",IDC_STATIC,40,153,117,8
+    CONTROL         "",IDC_CHECK5,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,37,161,16,10
+    CONTROL         "",IDC_CHECK10,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,53,161,16,10
+    CONTROL         "",IDC_CHECK13,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,69,161,16,10
+    CONTROL         "",IDC_CHECK15,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,85,161,16,10
+    CONTROL         "",IDC_CHECK18,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,101,161,16,10
+    CONTROL         "",IDC_CHECK20,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,117,161,16,10
+    CONTROL         "",IDC_CHECK22,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,133,161,16,10
+    CONTROL         "",IDC_CHECK23,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,149,161,16,10
+    LTEXT           "IN",IDC_STATIC,19,144,8,8
+    LTEXT           "OUT",IDC_STATIC,19,162,15,8
+    GROUPBOX        "Printer port",IDC_STATIC,7,131,172,47
+    CONTROL         "Run",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,71,106,29,10
+END
+
+IDD_CUMULATIVE DIALOGEX 0, 0, 404, 183
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION
+CAPTION "Running average of percentage correct trials (n=32)"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+IDD_HISTO DIALOGEX 0, 0, 344, 130
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Reaction times"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Visual",IDC_CHECK1,7,7,36,12
+    PUSHBUTTON      "Auditorial",IDC_CHECK2,50,7,36,12
+END
+
+IDD_INFO DIALOGEX 0, 0, 186, 274
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Information"
+FONT 8, "Courier New", 400, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_EDIT1,22,20,143,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT8,22,39,143,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT24,22,58,143,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT26,22,77,61,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT15,22,110,143,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT9,22,129,143,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT28,22,146,143,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT29,22,164,143,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT30,105,76,60,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT31,22,182,143,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT32,22,201,60,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT34,22,226,143,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT33,105,201,60,14,ES_AUTOHSCROLL | ES_READONLY
+    GROUPBOX        "Parameters",IDC_STATIC,7,7,172,89
+    GROUPBOX        "Score",IDC_STATIC,7,99,172,121
+    PUSHBUTTON      "",IDC_BUTTON2,21,245,145,18
+END
+
+IDD_SKY DIALOGEX 0, 0, 186, 161
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Led Sky"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+IDD_SUMMARY DIALOGEX 0, 0, 186, 221
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Trial Summary"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Hide",IDOK,129,200,50,14
+    PUSHBUTTON      "Stop",IDC_BUTTON1,7,200,50,14
+    GROUPBOX        "",IDC_STATIC,7,7,172,102
+END
+
+IDD_YesNo DIALOGEX 0, 0, 69, 57
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Exit"
+FONT 10, "Microsoft Sans Serif", 400, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "Yes",IDOK,37,35,25,14
+    PUSHBUTTON      "No",IDCANCEL,7,35,25,14
+    LTEXT           "Are you sure ?",IDC_STATIC,12,14,42,8
+END
+
+IDD_WELCOME DIALOGEX 0, 0, 186, 116
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Monkey version 1.0"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Go",IDOK,129,95,50,14
+    PUSHBUTTON      "Exit",IDCANCEL,7,95,50,14
+    EDITTEXT        IDC_EDIT1,40,8,139,14,ES_AUTOHSCROLL
+    LTEXT           "Date",IDC_STATIC,20,10,16,8,0,WS_EX_RIGHT
+    EDITTEXT        IDC_EDIT8,40,24,139,14,ES_AUTOHSCROLL
+    LTEXT           "Time",IDC_STATIC,20,26,16,8,0,WS_EX_RIGHT
+    EDITTEXT        IDC_EDIT24,40,57,139,14,ES_AUTOHSCROLL
+    LTEXT           "Map",IDC_STATIC,22,59,14,8,0,WS_EX_RIGHT
+    EDITTEXT        IDC_EDIT26,40,73,139,14,ES_AUTOHSCROLL
+    LTEXT           "Filename",IDC_STATIC,7,75,29,8,0,WS_EX_RIGHT
+    LTEXT           "___________________________________________",IDC_STATIC,7,40,172,8
+END
+
+IDD_TDT3 DIALOGEX 0, 0, 220, 63
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION
+CAPTION "TDT3"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "PA5",IDC_STATIC,150,7,63,49
+    GROUPBOX        "RP2.1",IDC_STATIC,79,7,63,49
+    GROUPBOX        "ZBus",IDC_STATIC,7,7,63,49
+    CONTROL         "",IDC_X1,"{D323A625-1D13-11D4-8858-444553540000}",WS_TABSTOP,7,31,60,25
+    CONTROL         "",IDC_X2,"{EC05FCDE-300D-4CE3-9774-A4C377507BD7}",WS_TABSTOP,153,31,60,25
+    CHECKBOX        "Connected",IDC_CHECK1,87,17,51,10
+    CHECKBOX        "Loaded",IDC_CHECK2,87,30,39,10
+    CHECKBOX        "Running",IDC_CHECK6,87,44,42,10
+    CHECKBOX        "Connected",IDC_CHECK24,155,16,51,10
+    CONTROL         "",IDC_X3,"{79734A6C-8E6E-4998-B834-3E4E481232B0}",WS_TABSTOP,7,7,60,25
+    CHECKBOX        "Connected",IDC_CHECK25,13,17,51,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "TODO: <Company name>"
+            VALUE "FileDescription", "TODO: <File description>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "Monkey.exe"
+            VALUE "LegalCopyright", "TODO: (c) <Company name>.  All rights reserved."
+            VALUE "OriginalFilename", "Monkey.exe"
+            VALUE "ProductName", "TODO: <Product name>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_FSM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 199
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 39
+    END
+
+    IDD_RIPPLE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 88
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 22
+    END
+
+    IDD_BAR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 794
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 59
+    END
+
+    IDD_PARAMETER_TIMING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 187
+    END
+
+    IDD_PARAMETER_LEDS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 197
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 234
+    END
+
+    IDD_PARAMETER_REWARD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 186
+    END
+
+    IDD_ACOUSTIC_TYPE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 200
+    END
+
+    IDD_ACOUSTIC_TONE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 270
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 123
+    END
+
+    IDD_ACOUSTIC_NOISE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 269
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 104
+    END
+
+    IDD_ACOUSTIC_RIPPLE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 271
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 232
+    END
+
+    IDD_TESTING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 203
+    END
+
+    IDD_CUMULATIVE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 397
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 176
+    END
+
+    IDD_HISTO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 337
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 123
+    END
+
+    IDD_INFO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 267
+    END
+
+    IDD_SKY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 154
+    END
+
+    IDD_SUMMARY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 214
+    END
+
+    IDD_YesNo, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 62
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 50
+    END
+
+    IDD_WELCOME, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 109
+    END
+
+    IDD_TDT3, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 213
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 56
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_TDT3 DLGINIT
+BEGIN
+    IDC_X1, 0x376, 20, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x094d, 0x0000, 0x043d, 0x0000, 0x0000, 
+0x0000, 
+    IDC_X2, 0x376, 20, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x094d, 0x0000, 0x043d, 0x0000, 0x0000, 
+0x0000, 
+    IDC_X3, 0x376, 20, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x094d, 0x0000, 0x043d, 0x0000, 0x0000, 
+0x0000, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDP_OLE_INIT_FAILED     "OLE initialization failed.  Make sure that the OLE libraries are the correct version."
+END
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "Monkey\n\nMonkey\n\n\nMonkey.Document\nMonkey.Document"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "Monkey"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\Monkey.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

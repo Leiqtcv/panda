@@ -1,0 +1,22 @@
+%=========================================================================
+%                           Setup connection
+%=========================================================================
+function ret = tools(cmds)
+    data(1) = 2;
+    data(2) = cmds.TCPinit;
+    result = mexServer(data);
+    if (result == cmds.TCPinit)
+        ret = 0;
+    else
+        ret = -1;   % error
+    end
+    if (result > 0)
+        data(1) = 2;
+        data(2) = cmds.TCPquery;
+        result = mexServer(data);
+        if (result == cmds.TCPquery)
+        end
+    end
+    set(data.server_push_start,'Visible','off');
+end
+

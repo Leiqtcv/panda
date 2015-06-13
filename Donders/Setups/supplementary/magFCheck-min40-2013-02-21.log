@@ -1,0 +1,441 @@
+ 	File: D:\HumanV1\Marc\DAT\magFCheck-min40-2013-02-21.log
+ ---------------------------------------------------------------
+	Max.Trl	Rpts	Dif.Trl	ITI--Range		Rnd	#
+ 0	84		1	85		0	0		0	8
+ ---------------------------------------------------------------
+	channr	LP	rate	#	name
+ 0	0		250	1000	5000	Eye H
+ 0	1		250	1000	5000	Eye V
+ 0	2		250	1000	5000	Eye F
+ 0	3		250	1000	5000	Button
+ 0	4		250	1000	5000	chan 5
+ 0	5		250	1000	5000	chan 6
+ 0	6		250	1000	5000	chan 7
+ 0	7		250	1000	5000	chan 8
+ ===============================================================
+							ITI->	set	real	span
+ Trl	Stm	Type	X	Y	On	Off	Int	Attr	Bit	Flnk
+ ===============================================================
+ 								0	0	0
+  1	 1	Snd1	 -40	  12	    1	 1025	   0	   0	   0	   1
+  1	 2	Trg0	 NaN	 NaN	58336	58520	 NaN	 NaN	   2	   1
+ 								0	0	0
+  2	 1	 Sky	   0	   1	-2669	    3	  55	   1	 NaN	   2
+  2	 2	Trg0	 NaN	 NaN	 -166	   -1	 NaN	 NaN	   2	   2
+  2	 3	 Sky	   1	   1	    0	 2330	 255	   1	 NaN	   2
+  2	 4	 Acq	 NaN	 NaN	    0	40000	 NaN	 NaN	1017	   2
+ 								0	0	0
+  3	 1	 Sky	   0	   1	-1438	    3	  55	   1	 NaN	   3
+  3	 2	Trg0	 NaN	 NaN	 -154	   -1	 NaN	 NaN	   2	   3
+  3	 3	 Sky	   1	   2	    0	 3562	 255	   1	 NaN	   3
+  3	 4	 Acq	 NaN	 NaN	    0	40000	 NaN	 NaN	1017	   3
+ 								0	0	0
+  4	 1	 Sky	   0	   1	-1717	    3	  55	   1	 NaN	   4
+  4	 2	Trg0	 NaN	 NaN	 -122	   -1	 NaN	 NaN	   2	   4
+  4	 3	 Sky	   1	   3	    0	 3283	 255	   1	 NaN	   4
+  4	 4	 Acq	 NaN	 NaN	    0	40000	 NaN	 NaN	1017	   4
+ 								0	0	0
+  5	 1	 Sky	   0	   1	-1174	    3	  55	   1	 NaN	   5
+  5	 2	Trg0	 NaN	 NaN	 -199	   -1	 NaN	 NaN	   2	   5
+  5	 3	 Sky	   1	   4	    0	 3826	 255	   1	 NaN	   5
+  5	 4	 Acq	 NaN	 NaN	    0	40000	 NaN	 NaN	1017	   5
+ 								0	0	0
+  6	 1	 Sky	   0	   1	-1961	    2	  55	   1	 NaN	   6
+  6	 2	Trg0	 NaN	 NaN	 -167	   -1	 NaN	 NaN	   2	   6
+  6	 3	 Sky	   1	   5	    0	 3039	 255	   1	 NaN	   6
+  6	 4	 Acq	 NaN	 NaN	    0	40000	 NaN	 NaN	1017	   6
+ 								0	0	0
+  7	 1	 Sky	   0	   1	-1317	    3	  55	   1	 NaN	   7
+  7	 2	Trg0	 NaN	 NaN	 -179	   -1	 NaN	 NaN	   2	   7
+  7	 3	 Sky	   1	   6	    0	 3683	 255	   1	 NaN	   7
+  7	 4	 Acq	 NaN	 NaN	    0	40000	 NaN	 NaN	1017	   7
+ 								0	0	0
+  8	 1	 Sky	   0	   1	-1554	    2	  55	   1	 NaN	   8
+  8	 2	Trg0	 NaN	 NaN	 -148	   -2	 NaN	 NaN	   2	   8
+  8	 3	 Sky	   1	   7	    0	 3446	 255	   1	 NaN	   8
+  8	 4	 Acq	 NaN	 NaN	    0	40000	 NaN	 NaN	1017	   8
+ 								0	0	0
+  9	 1	 Sky	   0	   1	-1073	    3	  55	   1	 NaN	   9
+  9	 2	Trg0	 NaN	 NaN	 -173	   -1	 NaN	 NaN	   2	   9
+  9	 3	 Sky	   2	   1	    0	 3927	 255	   1	 NaN	   9
+  9	 4	 Acq	 NaN	 NaN	    0	40000	 NaN	 NaN	1017	   9
+ 								0	0	0
+ 10	 1	 Sky	   0	   1	-2486	    3	  55	   1	 NaN	  10
+ 10	 2	Trg0	 NaN	 NaN	 -192	   -1	 NaN	 NaN	   2	  10
+ 10	 3	 Sky	   2	   2	    0	 2514	 255	   1	 NaN	  10
+ 10	 4	 Acq	 NaN	 NaN	    0	40000	 NaN	 NaN	1017	  10
+ 								0	0	0
+ 11	 1	 Sky	   0	   1	-1290	    3	  55	   1	 NaN	  11
+ 11	 2	Trg0	 NaN	 NaN	 -198	   -1	 NaN	 NaN	   2	  11
+ 11	 3	 Sky	   2	   3	    0	 3710	 255	   1	 NaN	  11
+ 11	 4	 Acq	 NaN	 NaN	    0	40000	 NaN	 NaN	1017	  11
+ 								0	0	0
+ 12	 1	 Sky	   0	   1	-1240	    3	  55	   1	 NaN	  12
+ 12	 2	Trg0	 NaN	 NaN	 -198	   -1	 NaN	 NaN	   2	  12
+ 12	 3	 Sky	   2	   4	    0	 3760	 255	   1	 NaN	  12
+ 12	 4	 Acq	 NaN	 NaN	    0	40000	 NaN	 NaN	1017	  12
+ 								0	0	0
+ 13	 1	 Sky	   0	   1	-1552	    3	  55	   1	 NaN	  13
+ 13	 2	Trg0	 NaN	 NaN	 -160	   -1	 NaN	 NaN	   2	  13
+ 13	 3	 Sky	   2	   5	    0	 3448	 255	   1	 NaN	  13
+ 13	 4	 Acq	 NaN	 NaN	    0	40000	 NaN	 NaN	1017	  13
+ 								0	0	0
+ 14	 1	 Sky	   0	   1	-1498	    2	  55	   1	 NaN	  14
+ 14	 2	Trg0	 NaN	 NaN	 -167	   -1	 NaN	 NaN	   2	  14
+ 14	 3	 Sky	   2	   6	    0	 3502	 255	   1	 NaN	  14
+ 14	 4	 Acq	 NaN	 NaN	    0	40000	 NaN	 NaN	1017	  14
+ 								0	0	0
+ 15	 1	 Sky	   0	   1	-1695	    3	  55	   1	 NaN	  15
+ 15	 2	Trg0	 NaN	 NaN	 -173	   -1	 NaN	 NaN	   2	  15
+ 15	 3	 Sky	   2	   7	    0	 3305	 255	   1	 NaN	  15
+ 15	 4	 Acq	 NaN	 NaN	    0	40000	 NaN	 NaN	1017	  15
+ 								0	0	0
+ 16	 1	 Sky	   0	   1	-1054	    3	  55	   1	 NaN	  16
+ 16	 2	Trg0	 NaN	 NaN	 -179	   -1	 NaN	 NaN	   2	  16
+ 16	 3	 Sky	   3	   1	    0	 3946	 255	   1	 NaN	  16
+ 16	 4	 Acq	 NaN	 NaN	    0	40000	 NaN	 NaN	1017	  16
+ 								0	0	0
+ 17	 1	 Sky	   0	   1	-1611	    3	  55	   1	 NaN	  17
+ 17	 2	Trg0	 NaN	 NaN	 -186	   -1	 NaN	 NaN	   2	  17
+ 17	 3	 Sky	   3	   2	    0	 3389	 255	   1	 NaN	  17
+ 17	 4	 Acq	 NaN	 NaN	    0	40000	 NaN	 NaN	1017	  17
+ 								0	0	0
+ 18	 1	 Sky	   0	   1	 -958	    3	  55	   1	 NaN	  18
+ 18	 2	Trg0	 NaN	 NaN	 -173	   -1	 NaN	 NaN	   2	  18
+ 18	 3	 Sky	   3	   3	    0	 4042	 255	   1	 NaN	  18
+ 18	 4	 Acq	 NaN	 NaN	    0	40000	 NaN	 NaN	1017	  18
+ 								0	0	0
+ 19	 1	 Sky	   0	   1	-2077	    2	  55	   1	 NaN	  19
+ 19	 2	Trg0	 NaN	 NaN	 -186	   -1	 NaN	 NaN	   2	  19
+ 19	 3	 Sky	   3	   4	    0	 2923	 255	   1	 NaN	  19
+ 19	 4	 Acq	 NaN	 NaN	    0	40000	 NaN	 NaN	1017	  19
+ 								0	0	0
+ 20	 1	 Sky	   0	   1	-1832	    3	  55	   1	 NaN	  20
+ 20	 2	Trg0	 NaN	 NaN	 -179	   -1	 NaN	 NaN	   2	  20
+ 20	 3	 Sky	   3	   5	    0	 3168	 255	   1	 NaN	  20
+ 20	 4	 Acq	 NaN	 NaN	    0	40000	 NaN	 NaN	1017	  20
+ 								0	0	0
+ 21	 1	 Sky	   0	   1	-2367	    3	  55	   1	 NaN	  21
+ 21	 2	Trg0	 NaN	 NaN	 -217	   -1	 NaN	 NaN	   2	  21
+ 21	 3	 Sky	   3	   6	    0	 2633	 255	   1	 NaN	  21
+ 21	 4	 Acq	 NaN	 NaN	    0	40000	 NaN	 NaN	1017	  21
+ 								0	0	0
+ 22	 1	 Sky	   0	   1	-1013	    3	  55	   1	 NaN	  22
+ 22	 2	Trg0	 NaN	 NaN	 -217	   -1	 NaN	 NaN	   2	  22
+ 22	 3	 Sky	   3	   7	    0	 3987	 255	   1	 NaN	  22
+ 22	 4	 Acq	 NaN	 NaN	    0	40000	 NaN	 NaN	1017	  22
+ 								0	0	0
+ 23	 1	 Sky	   0	   1	-1569	    2	  55	   1	 NaN	  23
+ 23	 2	Trg0	 NaN	 NaN	 -186	   -1	 NaN	 NaN	   2	  23
+ 23	 3	 Sky	   4	   1	    0	 3430	 255	   1	 NaN	  23
+ 23	 4	 Acq	 NaN	 NaN	    0	40000	 NaN	 NaN	1017	  23
+ 								0	0	0
+ 24	 1	 Sky	   0	   1	-1251	    3	  55	   1	 NaN	  24
+ 24	 2	Trg0	 NaN	 NaN	 -198	   -1	 NaN	 NaN	   2	  24
+ 24	 3	 Sky	   4	   2	    0	 3749	 255	   1	 NaN	  24
+ 24	 4	 Acq	 NaN	 NaN	    0	40000	 NaN	 NaN	1017	  24
+ 								0	0	0
+ 25	 1	 Sky	   0	   1	-1259	    3	  55	   1	 NaN	  25
+ 25	 2	Trg0	 NaN	 NaN	 -160	   -1	 NaN	 NaN	   2	  25
+ 25	 3	 Sky	   4	   3	    0	 3741	 255	   1	 NaN	  25
+ 25	 4	 Acq	 NaN	 NaN	    0	40000	 NaN	 NaN	1017	  25
+ 								0	0	0
+ 26	 1	 Sky	   0	   1	-1371	    2	  55	   1	 NaN	  26
+ 26	 2	Trg0	 NaN	 NaN	 -180	   -2	 NaN	 NaN	   2	  26
+ 26	 3	 Sky	   4	   4	    0	 3629	 255	   1	 NaN	  26
+ 26	 4	 Acq	 NaN	 NaN	    0	40000	 NaN	 NaN	1017	  26
+ 								0	0	0
+ 27	 1	 Sky	   0	   1	-1922	    3	  55	   1	 NaN	  27
+ 27	 2	Trg0	 NaN	 NaN	 -179	   -1	 NaN	 NaN	   2	  27
+ 27	 3	 Sky	   4	   5	    0	 3078	 255	   1	 NaN	  27
+ 27	 4	 Acq	 NaN	 NaN	    0	40000	 NaN	 NaN	1017	  27
+ 								0	0	0
+ 28	 1	 Sky	   0	   1	-1836	    2	  55	   1	 NaN	  28
+ 28	 2	Trg0	 NaN	 NaN	 -192	   -1	 NaN	 NaN	   2	  28
+ 28	 3	 Sky	   4	   6	    0	 3164	 255	   1	 NaN	  28
+ 28	 4	 Acq	 NaN	 NaN	    0	40000	 NaN	 NaN	1017	  28
+ 								0	0	0
+ 29	 1	 Sky	   0	   1	-1484	    3	  55	   1	 NaN	  29
+ 29	 2	Trg0	 NaN	 NaN	 -179	   -1	 NaN	 NaN	   2	  29
+ 29	 3	 Sky	   4	   7	    0	 3516	 255	   1	 NaN	  29
+ 29	 4	 Acq	 NaN	 NaN	    0	40000	 NaN	 NaN	1017	  29
+ 								0	0	0
+ 30	 1	 Sky	   0	   1	-1364	    3	  55	   1	 NaN	  30
+ 30	 2	Trg0	 NaN	 NaN	 -147	   -1	 NaN	 NaN	   2	  30
+ 30	 3	 Sky	   5	   1	    0	 3636	 255	   1	 NaN	  30
+ 30	 4	 Acq	 NaN	 NaN	    0	40000	 NaN	 NaN	1017	  30
+ 								0	0	0
+ 31	 1	 Sky	   0	   1	-1796	    3	  55	   1	 NaN	  31
+ 31	 2	Trg0	 NaN	 NaN	 -185	   -1	 NaN	 NaN	   2	  31
+ 31	 3	 Sky	   5	   2	    0	 3204	 255	   1	 NaN	  31
+ 31	 4	 Acq	 NaN	 NaN	    0	40000	 NaN	 NaN	1017	  31
+ 								0	0	0
+ 32	 1	 Sky	   0	   1	-1340	    2	  55	   1	 NaN	  32
+ 32	 2	Trg0	 NaN	 NaN	 -160	   -1	 NaN	 NaN	   2	  32
+ 32	 3	 Sky	   5	   3	    0	 3660	 255	   1	 NaN	  32
+ 32	 4	 Acq	 NaN	 NaN	    0	40000	 NaN	 NaN	1017	  32
+ 								0	0	0
+ 33	 1	 Sky	   0	   1	-1561	    3	  55	   1	 NaN	  33
+ 33	 2	Trg0	 NaN	 NaN	 -160	   -1	 NaN	 NaN	   2	  33
+ 33	 3	 Sky	   5	   4	    0	 3438	 255	   1	 NaN	  33
+ 33	 4	 Acq	 NaN	 NaN	    0	40000	 NaN	 NaN	1017	  33
+ 								0	0	0
+ 34	 1	 Sky	   0	   1	-1248	    3	  55	   1	 NaN	  34
+ 34	 2	Trg0	 NaN	 NaN	 -211	   -1	 NaN	 NaN	   2	  34
+ 34	 3	 Sky	   5	   5	    0	 3752	 255	   1	 NaN	  34
+ 34	 4	 Acq	 NaN	 NaN	    0	40000	 NaN	 NaN	1017	  34
+ 								0	0	0
+ 35	 1	 Sky	   0	   1	-2321	    3	  55	   1	 NaN	  35
+ 35	 2	Trg0	 NaN	 NaN	 -185	   -1	 NaN	 NaN	   2	  35
+ 35	 3	 Sky	   5	   6	    0	 2679	 255	   1	 NaN	  35
+ 35	 4	 Acq	 NaN	 NaN	    0	40000	 NaN	 NaN	1017	  35
+ 								0	0	0
+ 36	 1	 Sky	   0	   1	-1177	    3	  55	   1	 NaN	  36
+ 36	 2	Trg0	 NaN	 NaN	 -204	   -1	 NaN	 NaN	   2	  36
+ 36	 3	 Sky	   5	   7	    0	 3823	 255	   1	 NaN	  36
+ 36	 4	 Acq	 NaN	 NaN	    0	40000	 NaN	 NaN	1017	  36
+ 								0	0	0
+ 37	 1	 Sky	   0	   1	-1267	    2	  55	   1	 NaN	  37
+ 37	 2	Trg0	 NaN	 NaN	 -198	   -1	 NaN	 NaN	   2	  37
+ 37	 3	 Sky	   6	   1	    0	 3733	 255	   1	 NaN	  37
+ 37	 4	 Acq	 NaN	 NaN	    0	40000	 NaN	 NaN	1017	  37
+ 								0	0	0
+ 38	 1	 Sky	   0	   1	-1247	    3	  55	   1	 NaN	  38
+ 38	 2	Trg0	 NaN	 NaN	 -173	   -1	 NaN	 NaN	   2	  38
+ 38	 3	 Sky	   6	   2	    0	 3753	 255	   1	 NaN	  38
+ 38	 4	 Acq	 NaN	 NaN	    0	40000	 NaN	 NaN	1017	  38
+ 								0	0	0
+ 39	 1	 Sky	   0	   1	-1352	    2	  55	   1	 NaN	  39
+ 39	 2	Trg0	 NaN	 NaN	 -173	   -2	 NaN	 NaN	   2	  39
+ 39	 3	 Sky	   6	   3	    0	 3648	 255	   1	 NaN	  39
+ 39	 4	 Acq	 NaN	 NaN	    0	40000	 NaN	 NaN	1017	  39
+ 								0	0	0
+ 40	 1	 Sky	   0	   1	-1498	    3	  55	   1	 NaN	  40
+ 40	 2	Trg0	 NaN	 NaN	 -210	   -1	 NaN	 NaN	   2	  40
+ 40	 3	 Sky	   6	   4	    0	 3502	 255	   1	 NaN	  40
+ 40	 4	 Acq	 NaN	 NaN	    0	40000	 NaN	 NaN	1017	  40
+ 								0	0	0
+ 41	 1	 Sky	   0	   1	-1088	    3	  55	   1	 NaN	  41
+ 41	 2	Trg0	 NaN	 NaN	 -192	   -1	 NaN	 NaN	   2	  41
+ 41	 3	 Sky	   6	   5	    0	 3912	 255	   1	 NaN	  41
+ 41	 4	 Acq	 NaN	 NaN	    0	40000	 NaN	 NaN	1017	  41
+ 								0	0	0
+ 42	 1	 Sky	   0	   1	-1961	    2	  55	   1	 NaN	  42
+ 42	 2	Trg0	 NaN	 NaN	 -198	   -1	 NaN	 NaN	   2	  42
+ 42	 3	 Sky	   6	   6	    0	 3039	 255	   1	 NaN	  42
+ 42	 4	 Acq	 NaN	 NaN	    0	40000	 NaN	 NaN	1017	  42
+ 								0	0	0
+ 43	 1	 Sky	   0	   1	-2047	    3	  55	   1	 NaN	  43
+ 43	 2	Trg0	 NaN	 NaN	 -185	   -1	 NaN	 NaN	   2	  43
+ 43	 3	 Sky	   6	   7	    0	 2953	 255	   1	 NaN	  43
+ 43	 4	 Acq	 NaN	 NaN	    0	40000	 NaN	 NaN	1017	  43
+ 								0	0	0
+ 44	 1	 Sky	   0	   1	-1543	    3	  55	   1	 NaN	  44
+ 44	 2	Trg0	 NaN	 NaN	 -172	   -1	 NaN	 NaN	   2	  44
+ 44	 3	 Sky	   7	   1	    0	 3457	 255	   1	 NaN	  44
+ 44	 4	 Acq	 NaN	 NaN	    0	40000	 NaN	 NaN	1017	  44
+ 								0	0	0
+ 45	 1	 Sky	   0	   1	-1409	    2	  55	   1	 NaN	  45
+ 45	 2	Trg0	 NaN	 NaN	 -192	   -2	 NaN	 NaN	   2	  45
+ 45	 3	 Sky	   7	   2	    0	 3591	 255	   1	 NaN	  45
+ 45	 4	 Acq	 NaN	 NaN	    0	40000	 NaN	 NaN	1017	  45
+ 								0	0	0
+ 46	 1	 Sky	   0	   1	-1425	    3	  55	   1	 NaN	  46
+ 46	 2	Trg0	 NaN	 NaN	 -179	   -1	 NaN	 NaN	   2	  46
+ 46	 3	 Sky	   7	   3	    0	 3575	 255	   1	 NaN	  46
+ 46	 4	 Acq	 NaN	 NaN	    0	40000	 NaN	 NaN	1017	  46
+ 								0	0	0
+ 47	 1	 Sky	   0	   1	-1851	    2	  55	   1	 NaN	  47
+ 47	 2	Trg0	 NaN	 NaN	 -179	   -2	 NaN	 NaN	   2	  47
+ 47	 3	 Sky	   7	   4	    0	 3149	 255	   1	 NaN	  47
+ 47	 4	 Acq	 NaN	 NaN	    0	40000	 NaN	 NaN	1017	  47
+ 								0	0	0
+ 48	 1	 Sky	   0	   1	-1169	    3	  55	   1	 NaN	  48
+ 48	 2	Trg0	 NaN	 NaN	 -211	   -1	 NaN	 NaN	   2	  48
+ 48	 3	 Sky	   7	   5	    0	 3831	 255	   1	 NaN	  48
+ 48	 4	 Acq	 NaN	 NaN	    0	40000	 NaN	 NaN	1017	  48
+ 								0	0	0
+ 49	 1	 Sky	   0	   1	-1541	    2	  55	   1	 NaN	  49
+ 49	 2	Trg0	 NaN	 NaN	 -205	   -1	 NaN	 NaN	   2	  49
+ 49	 3	 Sky	   7	   6	    0	 3459	 255	   1	 NaN	  49
+ 49	 4	 Acq	 NaN	 NaN	    0	40000	 NaN	 NaN	1017	  49
+ 								0	0	0
+ 50	 1	 Sky	   0	   1	-1935	    2	  55	   1	 NaN	  50
+ 50	 2	Trg0	 NaN	 NaN	 -186	   -1	 NaN	 NaN	   2	  50
+ 50	 3	 Sky	   7	   7	    0	 3064	 255	   1	 NaN	  50
+ 50	 4	 Acq	 NaN	 NaN	    0	40000	 NaN	 NaN	1017	  50
+ 								0	0	0
+ 51	 1	 Sky	   0	   1	-1977	    3	  55	   1	 NaN	  51
+ 51	 2	Trg0	 NaN	 NaN	 -204	   -1	 NaN	 NaN	   2	  51
+ 51	 3	 Sky	   8	   1	    0	 3023	 255	   1	 NaN	  51
+ 51	 4	 Acq	 NaN	 NaN	    0	40000	 NaN	 NaN	1017	  51
+ 								0	0	0
+ 52	 1	 Sky	   0	   1	-1990	    3	  55	   1	 NaN	  52
+ 52	 2	Trg0	 NaN	 NaN	 -179	   -1	 NaN	 NaN	   2	  52
+ 52	 3	 Sky	   8	   2	    0	 3010	 255	   1	 NaN	  52
+ 52	 4	 Acq	 NaN	 NaN	    0	40000	 NaN	 NaN	1017	  52
+ 								0	0	0
+ 53	 1	 Sky	   0	   1	-1103	    3	  55	   1	 NaN	  53
+ 53	 2	Trg0	 NaN	 NaN	 -204	   -1	 NaN	 NaN	   2	  53
+ 53	 3	 Sky	   8	   3	    0	 3897	 255	   1	 NaN	  53
+ 53	 4	 Acq	 NaN	 NaN	    0	40000	 NaN	 NaN	1017	  53
+ 								0	0	0
+ 54	 1	 Sky	   0	   1	-1947	    2	  55	   1	 NaN	  54
+ 54	 2	Trg0	 NaN	 NaN	 -224	   -1	 NaN	 NaN	   2	  54
+ 54	 3	 Sky	   8	   4	    0	 3053	 255	   1	 NaN	  54
+ 54	 4	 Acq	 NaN	 NaN	    0	40000	 NaN	 NaN	1017	  54
+ 								0	0	0
+ 55	 1	 Sky	   0	   1	-1342	    3	  55	   1	 NaN	  55
+ 55	 2	Trg0	 NaN	 NaN	 -197	   -1	 NaN	 NaN	   2	  55
+ 55	 3	 Sky	   8	   5	    0	 3658	 255	   1	 NaN	  55
+ 55	 4	 Acq	 NaN	 NaN	    0	40000	 NaN	 NaN	1017	  55
+ 								0	0	0
+ 56	 1	 Sky	   0	   1	-1952	    3	  55	   1	 NaN	  56
+ 56	 2	Trg0	 NaN	 NaN	 -204	   -1	 NaN	 NaN	   2	  56
+ 56	 3	 Sky	   8	   6	    0	 3048	 255	   1	 NaN	  56
+ 56	 4	 Acq	 NaN	 NaN	    0	40000	 NaN	 NaN	1017	  56
+ 								0	0	0
+ 57	 1	 Sky	   0	   1	-1302	    3	  55	   1	 NaN	  57
+ 57	 2	Trg0	 NaN	 NaN	 -210	   -1	 NaN	 NaN	   2	  57
+ 57	 3	 Sky	   8	   7	    0	 3698	 255	   1	 NaN	  57
+ 57	 4	 Acq	 NaN	 NaN	    0	40000	 NaN	 NaN	1017	  57
+ 								0	0	0
+ 58	 1	 Sky	   0	   1	-1770	    3	  55	   1	 NaN	  58
+ 58	 2	Trg0	 NaN	 NaN	 -185	   -1	 NaN	 NaN	   2	  58
+ 58	 3	 Sky	   9	   1	    0	 3229	 255	   1	 NaN	  58
+ 58	 4	 Acq	 NaN	 NaN	    0	40000	 NaN	 NaN	1017	  58
+ 								0	0	0
+ 59	 1	 Sky	   0	   1	-2323	    2	  55	   1	 NaN	  59
+ 59	 2	Trg0	 NaN	 NaN	 -179	   -1	 NaN	 NaN	   2	  59
+ 59	 3	 Sky	   9	   2	    0	 2676	 255	   1	 NaN	  59
+ 59	 4	 Acq	 NaN	 NaN	    0	40000	 NaN	 NaN	1017	  59
+ 								0	0	0
+ 60	 1	 Sky	   0	   1	-1528	    2	  55	   1	 NaN	  60
+ 60	 2	Trg0	 NaN	 NaN	 -204	   -1	 NaN	 NaN	   2	  60
+ 60	 3	 Sky	   9	   3	    0	 3472	 255	   1	 NaN	  60
+ 60	 4	 Acq	 NaN	 NaN	    0	40000	 NaN	 NaN	1017	  60
+ 								0	0	0
+ 61	 1	 Sky	   0	   1	-1509	    3	  55	   1	 NaN	  61
+ 61	 2	Trg0	 NaN	 NaN	 -178	   -1	 NaN	 NaN	   2	  61
+ 61	 3	 Sky	   9	   4	    0	 3491	 255	   1	 NaN	  61
+ 61	 4	 Acq	 NaN	 NaN	    0	40000	 NaN	 NaN	1017	  61
+ 								0	0	0
+ 62	 1	 Sky	   0	   1	-1744	    3	  55	   1	 NaN	  62
+ 62	 2	Trg0	 NaN	 NaN	 -217	   -1	 NaN	 NaN	   2	  62
+ 62	 3	 Sky	   9	   5	    0	 3256	 255	   1	 NaN	  62
+ 62	 4	 Acq	 NaN	 NaN	    0	40000	 NaN	 NaN	1017	  62
+ 								0	0	0
+ 63	 1	 Sky	   0	   1	 -930	    3	  55	   1	 NaN	  63
+ 63	 2	Trg0	 NaN	 NaN	 -172	   -1	 NaN	 NaN	   2	  63
+ 63	 3	 Sky	   9	   6	    0	 4070	 255	   1	 NaN	  63
+ 63	 4	 Acq	 NaN	 NaN	    0	40000	 NaN	 NaN	1017	  63
+ 								0	0	0
+ 64	 1	 Sky	   0	   1	-1168	    3	  55	   1	 NaN	  64
+ 64	 2	Trg0	 NaN	 NaN	 -185	   -1	 NaN	 NaN	   2	  64
+ 64	 3	 Sky	   9	   7	    0	 3831	 255	   1	 NaN	  64
+ 64	 4	 Acq	 NaN	 NaN	    0	40000	 NaN	 NaN	1017	  64
+ 								0	0	0
+ 65	 1	 Sky	   0	   1	-1623	    2	  55	   1	 NaN	  65
+ 65	 2	Trg0	 NaN	 NaN	 -166	   -1	 NaN	 NaN	   2	  65
+ 65	 3	 Sky	  10	   1	    0	 3377	 255	   1	 NaN	  65
+ 65	 4	 Acq	 NaN	 NaN	    0	40000	 NaN	 NaN	1017	  65
+ 								0	0	0
+ 66	 1	 Sky	   0	   1	-1330	    2	  55	   1	 NaN	  66
+ 66	 2	Trg0	 NaN	 NaN	 -160	   -2	 NaN	 NaN	   2	  66
+ 66	 3	 Sky	  10	   2	    0	 3670	 255	   1	 NaN	  66
+ 66	 4	 Acq	 NaN	 NaN	    0	40000	 NaN	 NaN	1017	  66
+ 								0	0	0
+ 67	 1	 Sky	   0	   1	-1406	    3	  55	   1	 NaN	  67
+ 67	 2	Trg0	 NaN	 NaN	 -179	   -1	 NaN	 NaN	   2	  67
+ 67	 3	 Sky	  10	   3	    0	 3593	 255	   1	 NaN	  67
+ 67	 4	 Acq	 NaN	 NaN	    0	40000	 NaN	 NaN	1017	  67
+ 								0	0	0
+ 68	 1	 Sky	   0	   1	-1684	    3	  55	   1	 NaN	  68
+ 68	 2	Trg0	 NaN	 NaN	 -217	   -1	 NaN	 NaN	   2	  68
+ 68	 3	 Sky	  10	   4	    0	 3316	 255	   1	 NaN	  68
+ 68	 4	 Acq	 NaN	 NaN	    0	40000	 NaN	 NaN	1017	  68
+ 								0	0	0
+ 69	 1	 Sky	   0	   1	-1838	    2	  55	   1	 NaN	  69
+ 69	 2	Trg0	 NaN	 NaN	 -217	   -1	 NaN	 NaN	   2	  69
+ 69	 3	 Sky	  10	   5	    0	 3162	 255	   1	 NaN	  69
+ 69	 4	 Acq	 NaN	 NaN	    0	40000	 NaN	 NaN	1017	  69
+ 								0	0	0
+ 70	 1	 Sky	   0	   1	-1214	    3	  55	   1	 NaN	  70
+ 70	 2	Trg0	 NaN	 NaN	 -185	   -1	 NaN	 NaN	   2	  70
+ 70	 3	 Sky	  10	   6	    0	 3786	 255	   1	 NaN	  70
+ 70	 4	 Acq	 NaN	 NaN	    0	40000	 NaN	 NaN	1017	  70
+ 								0	0	0
+ 71	 1	 Sky	   0	   1	-1366	    2	  55	   1	 NaN	  71
+ 71	 2	Trg0	 NaN	 NaN	 -179	   -1	 NaN	 NaN	   2	  71
+ 71	 3	 Sky	  10	   7	    0	 3634	 255	   1	 NaN	  71
+ 71	 4	 Acq	 NaN	 NaN	    0	40000	 NaN	 NaN	1017	  71
+ 								0	0	0
+ 72	 1	 Sky	   0	   1	-1519	    3	  55	   1	 NaN	  72
+ 72	 2	Trg0	 NaN	 NaN	 -179	   -1	 NaN	 NaN	   2	  72
+ 72	 3	 Sky	  11	   1	    0	 3481	 255	   1	 NaN	  72
+ 72	 4	 Acq	 NaN	 NaN	    0	40000	 NaN	 NaN	1017	  72
+ 								0	0	0
+ 73	 1	 Sky	   0	   1	-1364	    2	  55	   1	 NaN	  73
+ 73	 2	Trg0	 NaN	 NaN	 -160	   -1	 NaN	 NaN	   2	  73
+ 73	 3	 Sky	  11	   2	    0	 3636	 255	   1	 NaN	  73
+ 73	 4	 Acq	 NaN	 NaN	    0	40000	 NaN	 NaN	1017	  73
+ 								0	0	0
+ 74	 1	 Sky	   0	   1	-1445	    2	  55	   1	 NaN	  74
+ 74	 2	Trg0	 NaN	 NaN	 -179	   -2	 NaN	 NaN	   2	  74
+ 74	 3	 Sky	  11	   3	    0	 3555	 255	   1	 NaN	  74
+ 74	 4	 Acq	 NaN	 NaN	    0	40000	 NaN	 NaN	1017	  74
+ 								0	0	0
+ 75	 1	 Sky	   0	   1	-1440	    3	  55	   1	 NaN	  75
+ 75	 2	Trg0	 NaN	 NaN	 -198	   -1	 NaN	 NaN	   2	  75
+ 75	 3	 Sky	  11	   4	    0	 3560	 255	   1	 NaN	  75
+ 75	 4	 Acq	 NaN	 NaN	    0	40000	 NaN	 NaN	1017	  75
+ 								0	0	0
+ 76	 1	 Sky	   0	   1	-1950	    2	  55	   1	 NaN	  76
+ 76	 2	Trg0	 NaN	 NaN	 -198	   -1	 NaN	 NaN	   2	  76
+ 76	 3	 Sky	  11	   5	    0	 3050	 255	   1	 NaN	  76
+ 76	 4	 Acq	 NaN	 NaN	    0	40000	 NaN	 NaN	1017	  76
+ 								0	0	0
+ 77	 1	 Sky	   0	   1	-1460	    2	  55	   1	 NaN	  77
+ 77	 2	Trg0	 NaN	 NaN	 -179	   -1	 NaN	 NaN	   2	  77
+ 77	 3	 Sky	  11	   6	    0	 3540	 255	   1	 NaN	  77
+ 77	 4	 Acq	 NaN	 NaN	    0	40000	 NaN	 NaN	1017	  77
+ 								0	0	0
+ 78	 1	 Sky	   0	   1	-1601	    2	  55	   1	 NaN	  78
+ 78	 2	Trg0	 NaN	 NaN	 -211	   -2	 NaN	 NaN	   2	  78
+ 78	 3	 Sky	  11	   7	    0	 3399	 255	   1	 NaN	  78
+ 78	 4	 Acq	 NaN	 NaN	    0	40000	 NaN	 NaN	1017	  78
+ 								0	0	0
+ 79	 1	 Sky	   0	   1	-2624	    2	  55	   1	 NaN	  79
+ 79	 2	Trg0	 NaN	 NaN	 -223	   -1	 NaN	 NaN	   2	  79
+ 79	 3	 Sky	  12	   1	    0	 2376	 255	   1	 NaN	  79
+ 79	 4	 Acq	 NaN	 NaN	    0	40000	 NaN	 NaN	1017	  79
+ 								0	0	0
+ 80	 1	 Sky	   0	   1	 -900	    3	  55	   1	 NaN	  80
+ 80	 2	Trg0	 NaN	 NaN	 -197	   -1	 NaN	 NaN	   2	  80
+ 80	 3	 Sky	  12	   2	    0	 4100	 255	   1	 NaN	  80
+ 80	 4	 Acq	 NaN	 NaN	    0	40000	 NaN	 NaN	1017	  80
+ 								0	0	0
+ 81	 1	 Sky	   0	   1	-1640	    3	  55	   1	 NaN	  81
+ 81	 2	Trg0	 NaN	 NaN	 -223	   -1	 NaN	 NaN	   2	  81
+ 81	 3	 Sky	  12	   3	    0	 3360	 255	   1	 NaN	  81
+ 81	 4	 Acq	 NaN	 NaN	    0	40000	 NaN	 NaN	1017	  81
+ 								0	0	0
+ 82	 1	 Sky	   0	   1	-1392	    2	  55	   1	 NaN	  82
+ 82	 2	Trg0	 NaN	 NaN	 -185	   -2	 NaN	 NaN	   2	  82
+ 82	 3	 Sky	  12	   4	    0	 3608	 255	   1	 NaN	  82
+ 82	 4	 Acq	 NaN	 NaN	    0	40000	 NaN	 NaN	1017	  82
+ 								0	0	0
+ 83	 1	 Sky	   0	   1	-1271	    2	  55	   1	 NaN	  83
+ 83	 2	Trg0	 NaN	 NaN	 -204	   -2	 NaN	 NaN	   2	  83
+ 83	 3	 Sky	  12	   5	    0	 3728	 255	   1	 NaN	  83
+ 83	 4	 Acq	 NaN	 NaN	    0	40000	 NaN	 NaN	1017	  83
+ 								0	0	0
+ 84	 1	 Sky	   0	   1	-1498	    2	  55	   1	 NaN	  84
+ 84	 2	Trg0	 NaN	 NaN	 -173	   -1	 NaN	 NaN	   2	  84
+ 84	 3	 Sky	  12	   6	    0	 3502	 255	   1	 NaN	  84
+ 84	 4	 Acq	 NaN	 NaN	    0	40000	 NaN	 NaN	1017	  84
+ 								0	0	0
+ 85	 1	 Sky	   0	   1	-1505	    2	  55	   1	 NaN	  85
+ 85	 2	Trg0	 NaN	 NaN	 -179	   -1	 NaN	 NaN	   2	  85
+ 85	 3	 Sky	  12	   7	    0	 3495	 255	   1	 NaN	  85
+ 85	 4	 Acq	 NaN	 NaN	    0	40000	 NaN	 NaN	1017	  85

@@ -1,0 +1,192 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <!--
+This HTML is auto-generated from an M-file.
+To make changes, update the M-file and republish this document.
+      --><title>marcRipple</title><meta name="generator" content="MATLAB 7.10"><meta name="date" content="2012-03-13"><meta name="m-file" content="marcRipple"><style type="text/css">
+
+body {
+  background-color: white;
+  margin:10px;
+}
+
+h1 {
+  color: #990000; 
+  font-size: x-large;
+}
+
+h2 {
+  color: #990000;
+  font-size: medium;
+}
+
+/* Make the text shrink to fit narrow windows, but not stretch too far in 
+wide windows. */ 
+p,h1,h2,div.content div {
+  max-width: 600px;
+  /* Hack for IE6 */
+  width: auto !important; width: 600px;
+}
+
+pre.codeinput {
+  background: #EEEEEE;
+  padding: 10px;
+}
+@media print {
+  pre.codeinput {word-wrap:break-word; width:100%;}
+} 
+
+span.keyword {color: #0000FF}
+span.comment {color: #228B22}
+span.string {color: #A020F0}
+span.untermstring {color: #B20000}
+span.syscmd {color: #B28C00}
+
+pre.codeoutput {
+  color: #666666;
+  padding: 10px;
+}
+
+pre.error {
+  color: red;
+}
+
+p.footer {
+  text-align: right;
+  font-size: xx-small;
+  font-weight: lighter;
+  font-style: italic;
+  color: gray;
+}
+
+  </style></head><body><div class="content"><pre class="codeinput"><span class="comment">%</span>
+<span class="comment">% TDT3, 1 rack: RP2.1 en PA.5</span>
+<span class="comment">%</span>
+circuitRP2 = <span class="string">'C:\Dick\marcRipple.rco'</span>;
+
+[zBus   err(1)] = ZBUS(1);              <span class="comment">% number of racks</span>
+[RP2_1  err(2)] = RP2(1,circuitRP2);
+[PA5_1  err(3)] = PA5(1);
+
+ok = (sum(err) == 0);
+<span class="comment">%</span>
+<span class="comment">% make sinus</span>
+<span class="comment">%</span>
+maxSamples = 200000;        <span class="comment">% TDT serial store source = 10^6</span>
+tone = zeros(1,maxSamples);
+<span class="keyword">for</span> i=1:maxSamples
+    tone(i) = sin(2*pi*i/100);
+<span class="keyword">end</span>
+
+<span class="comment">%</span>
+<span class="comment">% set attenuation</span>
+<span class="comment">%</span>
+PA5_1.SetAtten(10);
+
+<span class="keyword">for</span> lp=1:10
+<span class="comment">%</span>
+disp(<span class="string">'% load sound'</span>);
+<span class="comment">%</span>
+RP2_1.WriteTagV(<span class="string">'WavData'</span>, 0, tone(1:maxSamples));
+RP2_1.SetTagVal(<span class="string">'WavCount'</span>,maxSamples-1);
+
+<span class="comment">%</span>
+<span class="comment">% start sound</span>
+<span class="comment">%</span>
+RP2_1.SoftTrg(1);
+
+<span class="comment">%</span>
+<span class="comment">% do something useful</span>
+<span class="comment">%</span>
+pause(2);
+<span class="comment">%</span>
+<span class="comment">% stop sound</span>
+<span class="comment">%</span>
+RP2_1.SetTagVal(<span class="string">'WavCount'</span>,0);
+
+<span class="comment">%</span>
+<span class="comment">% wait while busy</span>
+<span class="comment">%</span>
+busy = RP2_1.GetTagVal(<span class="string">'Busy'</span>);
+cnt = 0;
+<span class="keyword">while</span> busy == 1
+    cnt = cnt + 1;
+    Busy = RP2_1.GetTagVal(<span class="string">'Busy'</span>);
+    fprintf(<span class="string">'wait %3d\n'</span>,cnt);
+<span class="keyword">end</span>
+<span class="comment">%</span>
+<span class="comment">%that's all</span>
+<span class="comment">%</span>
+<span class="keyword">end</span>
+</pre><pre class="codeoutput">% load sound
+</pre><pre class="codeoutput">No appropriate method, property, or field SetTagVal for class handle.handle.
+
+Error in ==&gt; marcRipple at 44
+RP2_1.SetTagVal('WavCount',0);
+</pre><p class="footer"><br>
+      Published with MATLAB&reg; 7.10<br></p></div><!--
+##### SOURCE BEGIN #####
+%
+% TDT3, 1 rack: RP2.1 en PA.5
+%
+circuitRP2 = 'C:\Dick\marcRipple.rco';
+    
+[zBus   err(1)] = ZBUS(1);              % number of racks
+[RP2_1  err(2)] = RP2(1,circuitRP2);   
+[PA5_1  err(3)] = PA5(1); 
+
+ok = (sum(err) == 0);
+%
+% make sinus
+%
+maxSamples = 200000;        % TDT serial store source = 10^6
+tone = zeros(1,maxSamples);
+for i=1:maxSamples
+    tone(i) = sin(2*pi*i/100);
+end
+
+%
+% set attenuation
+%
+PA5_1.SetAtten(10);
+
+for lp=1:10
+%
+disp('% load sound');
+%
+RP2_1.WriteTagV('WavData', 0, tone(1:maxSamples));
+RP2_1.SetTagVal('WavCount',maxSamples-1);
+
+%
+% start sound
+%
+RP2_1.SoftTrg(1);
+
+%
+% do something useful
+%
+pause(2);
+%
+% stop sound
+%
+RP2_1.SetTagVal('WavCount',0);
+
+%
+% wait while busy
+%
+busy = RP2_1.GetTagVal('Busy');
+cnt = 0;
+while busy == 1
+    cnt = cnt + 1;
+    Busy = RP2_1.GetTagVal('Busy');
+    fprintf('wait %3d\n',cnt);
+end
+%
+%that's all
+%
+end
+##### SOURCE END #####
+--></body></html>

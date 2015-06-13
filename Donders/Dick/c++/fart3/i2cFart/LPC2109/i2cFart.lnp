@@ -1,0 +1,9 @@
+"Config.obj",
+"Startup.obj",
+"serial.obj",
+"i2c.obj",
+"i2cFart.obj" 
+TO "i2cFart" 
+CASE 
+CLASSES (DATA (0x40000000-0x40003FFF), 
+CODE (0x0-0x1FFFF), CONST (0x0-0x1FFFF)) 
